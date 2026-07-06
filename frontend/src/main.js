@@ -1,14 +1,46 @@
-import { renderAppStatus } from "./app.js";
-import { getRuntimeModeLabel } from "./config/runtime-mode.js";
+/**
+ * ==========================================================
+ * NexaPOS Alpha 1.0
+ * Application Bootstrap
+ * ==========================================================
+ */
 
-function renderCurrentStatus() {
-renderAppStatus({
-runtimeMode: getRuntimeModeLabel(),
-isOnline: navigator.onLine,
+import { APP_CONFIG } from "./config/app-config.js";
+
+import {
+  startOfflineStateManager,
+  subscribeToConnectivity
+} from "./core/offline-state.js";
+
+import { startSyncTrigger } from "./core/sync-trigger.js";
+import { recoverEventQueue } from "./core/queue-recovery.js";
+import { getOfflineHealth } from "./core/offline-health.js";
+import { log } from "./core/logger.js";
+
+const runtimeElement = document.getElementById("runtime-mode");
+const connectionElement = document.getElementById("connection-status");
+
+runtimeElement.textContent =
+  `Runtime mode: ${APP_CONFIG.DEFAULT_RUNTIME_MODE}`;
+
+subscribeToConnectivity((state) => {
+  connectionElement.textContent =
+    `Connection status: ${state.isOnline ? "Online" : "Offline"}`;
 });
+
+async function bootstrap() {
+
+  startOfflineStateManager();
+
+  startSyncTrigger();
+
+  await recoverEventQueue();
+
+  const health = getOfflineHealth();
+
+  log("Offline Health", health);
+
+  log("NexaPOS Alpha initialized.");
 }
 
-renderCurrentStatus();
-
-window.addEventListener("online", renderCurrentStatus);
-window.addEventListener("offline", renderCurrentStatus);
+bootstrap();
