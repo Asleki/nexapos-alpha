@@ -27,9 +27,11 @@ export function validateRuntime(event) {
     };
   }
 
+  const runtimeMode = event.context?.session?.runtimeMode;
+
   const allowedModes = Object.values(RuntimeMode);
 
-  if (!allowedModes.includes(event.runtimeMode)) {
+  if (!allowedModes.includes(runtimeMode)) {
     return {
       valid: false,
       validator: "runtime",

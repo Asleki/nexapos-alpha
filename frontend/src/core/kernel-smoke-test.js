@@ -22,8 +22,16 @@ import { log } from "./logger.js";
 export async function runKernelSmokeTest() {
   const testEvent = createEvent({
     type: "KERNEL_SMOKE_TEST",
-    actorId: "SYSTEM_TEST",
-    deviceId: "SIMULATED_DEVICE",
+    context: {
+      identity: {
+        identityId: "SYSTEM_TEST",
+        actorType: "system",
+        displayName: "Kernel Smoke Test",
+        estateId: "SIMULATION_ESTATE",
+        businessUnit: "Kernel",
+      },
+      deviceId: "SIMULATED_DEVICE",
+    },
     payload: {
       purpose: "Validate kernel event pipeline",
     },
