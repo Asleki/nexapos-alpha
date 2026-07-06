@@ -4,6 +4,7 @@
  * Application Bootstrap
  * ==========================================================
  */
+ 
 
 import { APP_CONFIG } from "./config/app-config.js";
 
@@ -39,6 +40,7 @@ async function bootstrap() {
   const health = getOfflineHealth();
 
   log("Offline Health", health);
+  
 
   log("NexaPOS Alpha initialized.");
 }

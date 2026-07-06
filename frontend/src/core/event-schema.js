@@ -11,7 +11,12 @@
  * queued,
  * and synchronized later.
  */
+/**
+ * Current event schema version.
+ */
+export const EVENT_SCHEMA_VERSION = "1.0.0";
 
+/**
 /**
  * Supported runtime modes.
  */
@@ -43,6 +48,7 @@ export function createEvent({
 }) {
   return Object.freeze({
     eventId: crypto.randomUUID(),
+    schemaVersion: EVENT_SCHEMA_VERSION,
 
     eventType: type,
 
