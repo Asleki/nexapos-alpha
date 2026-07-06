@@ -1,0 +1,11 @@
+{
+  "name": "NexaPOS Alpha 1.0",
+  "short_name": "NexaPOS",
+  "description": "Offline-first simulation foundation for NexaPOS Alpha 1.0.",
+  "start_url": "../frontend/index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "icons": []
+}
