@@ -7,13 +7,14 @@
  * ==========================================================
  *
  * Responsibility:
- * Execute UniFry business operations by
- * interacting with the NexaPOS Kernel.
+ * Execute UniFry business operations through
+ * the NexaPOS execution foundation.
  *
  * Depends On:
  * - unifry-events.js
  * - kernel-engine.js
  * - read-model-engine.js
+ * - execution-engine.js
  * - unifry-projection.js
  *
  * Used By:
@@ -29,6 +30,7 @@
 import { executeKernel } from "../../core/kernel-engine.js";
 import { updateReadModel } from "../../core/read-model-engine.js";
 import { createUniFryOrderCreatedEvent } from "./unifry-events.js";
+import { executeOperation } from "./execution/execution-engine.js";
 
 import {
   UNIFRY_ACTIVE_ORDERS_PROJECTION,
@@ -39,6 +41,7 @@ export async function createUniFryOrder({
   context = {},
   order = {},
 } = {}) {
+
   const event = createUniFryOrderCreatedEvent({
     context,
     ...order,
@@ -51,6 +54,7 @@ export async function createUniFryOrder({
       accepted: false,
       kernel: kernelResult,
       projection: null,
+      execution: null,
     };
   }
 
@@ -64,9 +68,21 @@ export async function createUniFryOrder({
     },
   });
 
+  const executionResult = await executeOperation({
+    workflow: "UNIFRY_ORDER_CREATED_WORKFLOW",
+    event,
+    kernel: kernelResult,
+    projection: projectionResult,
+    state: {
+      updated: projectionResult.projected === true,
+    },
+  });
+
   return {
     accepted: true,
     kernel: kernelResult,
     projection: projectionResult,
+    execution: executionResult,
   };
+
 }
