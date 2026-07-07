@@ -3,12 +3,12 @@
  * NexaPOS Alpha 1.0
  * File: unifry-service.js
  * Layer: UniFry Module
- * NEES: Business Module Execution Layer
+ * NEES: Business Module Execution Layer / NEM-013
  * ==========================================================
  *
  * Responsibility:
  * Execute UniFry business operations through
- * the NexaPOS execution foundation.
+ * the NexaPOS live operational pipeline.
  *
  * Depends On:
  * - unifry-events.js
@@ -42,6 +42,9 @@ export async function createUniFryOrder({
   order = {},
 } = {}) {
 
+  const workflow =
+    "UNIFRY_ORDER_CREATED_WORKFLOW";
+
   const event = createUniFryOrderCreatedEvent({
     context,
     ...order,
@@ -69,17 +72,14 @@ export async function createUniFryOrder({
   });
 
   const executionResult = await executeOperation({
-    workflow: "UNIFRY_ORDER_CREATED_WORKFLOW",
+    workflow,
     event,
     kernel: kernelResult,
     projection: projectionResult,
-    state: {
-      updated: projectionResult.projected === true,
-    },
   });
 
   return {
-    accepted: true,
+    accepted: executionResult.accepted === true,
     kernel: kernelResult,
     projection: projectionResult,
     execution: executionResult,
