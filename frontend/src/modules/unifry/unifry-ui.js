@@ -7,11 +7,13 @@
  * ==========================================================
  *
  * Responsibility:
- * Render the first UniFry vertical slice UI.
+ * Render the first UniFry vertical slice UI and
+ * react to application state updates.
  *
  * Depends On:
  * - unifry-service.js
  * - read-model-store.js
+ * - state-subscriber.js
  *
  * Used By:
  * - main.js
@@ -25,6 +27,7 @@
 
 import { createUniFryOrder } from "./unifry-service.js";
 import { getReadModel } from "../../core/read-model-store.js";
+import { subscribe } from "../../core/state/state-subscriber.js";
 
 const DEFAULT_CONTEXT = {
   identity: {
@@ -38,6 +41,7 @@ const DEFAULT_CONTEXT = {
 };
 
 function renderOrders(container) {
+
   const model = getReadModel("UNIFRY_ACTIVE_ORDERS") ?? {
     orders: [],
     totalOrders: 0,
@@ -45,12 +49,23 @@ function renderOrders(container) {
 
   container.innerHTML = `
     <section class="app-shell" aria-label="UniFry prototype">
-      <p class="eyebrow">UniFry Prototype</p>
-      <h1>Active Orders</h1>
 
-      <p>Total orders: ${model.totalOrders}</p>
+      <p class="eyebrow">
+        UniFry Prototype
+      </p>
 
-      <button id="create-unifry-order" type="button">
+      <h1>
+        Active Orders
+      </h1>
+
+      <p>
+        Total orders: ${model.totalOrders}
+      </p>
+
+      <button
+        id="create-unifry-order"
+        type="button"
+      >
         Create Fries Order
       </button>
 
@@ -65,12 +80,14 @@ function renderOrders(container) {
           `)
           .join("")}
       </ul>
+
     </section>
   `;
 
   document
     .getElementById("create-unifry-order")
     ?.addEventListener("click", async () => {
+
       await createUniFryOrder({
         context: DEFAULT_CONTEXT,
         order: {
@@ -81,11 +98,12 @@ function renderOrders(container) {
         },
       });
 
-      renderOrders(container);
     });
+
 }
 
 export function renderUniFryPrototype() {
+
   const app = document.getElementById("app");
 
   if (!app) {
@@ -93,4 +111,9 @@ export function renderUniFryPrototype() {
   }
 
   renderOrders(app);
+
+  subscribe(() => {
+    renderOrders(app);
+  });
+
 }

@@ -8,10 +8,12 @@
  *
  * Responsibility:
  * Coordinate the complete Read Model Engine by
- * executing registered projections against events.
+ * executing registered projections against events
+ * and publishing read model updates into application state.
  *
  * Depends On:
  * - projection-engine.js
+ * - state-engine.js
  *
  * Used By:
  * - kernel-engine.js
@@ -26,6 +28,7 @@
  */
 
 import { projectEvent } from "./projection-engine.js";
+import { updateApplicationState } from "./state/state-engine.js";
 
 export function updateReadModel({
   projectionName,
@@ -34,11 +37,23 @@ export function updateReadModel({
   initialState = {}
 }) {
 
-  return projectEvent({
+  const projectionResult = projectEvent({
     projectionName,
     readModelName,
     event,
     initialState
   });
+
+  if (projectionResult.projected) {
+    updateApplicationState((state) => ({
+      ...state,
+      readModels: {
+        ...state.readModels,
+        [readModelName]: projectionResult.readModel,
+      },
+    }));
+  }
+
+  return projectionResult;
 
 }

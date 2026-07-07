@@ -32,6 +32,7 @@ subscribeToConnectivity((state) => {
 });
 
 async function bootstrap() {
+
   startOfflineStateManager();
 
   startSyncTrigger();
@@ -47,6 +48,7 @@ async function bootstrap() {
   renderUniFryPrototype();
 
   log("NexaPOS Alpha initialized.");
+
 }
 
 bootstrap();
