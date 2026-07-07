@@ -29,6 +29,10 @@ import { OrderStatus } from "./order-status.js";
 
 export const OrderTransition = Object.freeze({
 
+  INITIAL: [
+    OrderStatus.CREATED,
+  ],
+
   [OrderStatus.CREATED]: [
     OrderStatus.VALIDATED,
     OrderStatus.CANCELLED,
@@ -72,8 +76,11 @@ export function isValidTransition(
   nextStatus
 ) {
 
+  const transitionKey =
+    currentStatus ?? "INITIAL";
+
   const allowed =
-    OrderTransition[currentStatus] ?? [];
+    OrderTransition[transitionKey] ?? [];
 
   return allowed.includes(nextStatus);
 
