@@ -3,7 +3,7 @@
  * NexaPOS Alpha 1.0
  * File: workflow-integration.js
  * Layer: UniFry Workflow Integration
- * NEES: NEM-006
+ * NEES: NEM-006 / NEM-009
  * ==========================================================
  *
  * Responsibility:
@@ -13,6 +13,7 @@
  * Depends On:
  * - workflow-context.js
  * - workflow-result.js
+ * - lifecycle-integration.js
  * - ../workflow/workflow-engine.js
  *
  * Used By:
@@ -30,6 +31,10 @@ import { createWorkflowContext } from "./workflow-context.js";
 import { createWorkflowResult } from "./workflow-result.js";
 
 import { executeWorkflow } from "../workflow/workflow-engine.js";
+
+import {
+  executeLifecycleIntegration
+} from "./lifecycle/lifecycle-integration.js";
 
 export async function executeWorkflowIntegration({
 
@@ -51,6 +56,16 @@ export async function executeWorkflowIntegration({
 
 } = {}) {
 
+  const lifecycleResult = lifecycle ?? executeLifecycleIntegration({
+
+    workflow,
+
+    event,
+
+    currentStatus: null,
+
+  });
+
   const context = createWorkflowContext({
 
     workflow,
@@ -59,7 +74,7 @@ export async function executeWorkflowIntegration({
 
     kernel,
 
-    lifecycle,
+    lifecycle: lifecycleResult,
 
     timeline,
 
@@ -79,7 +94,7 @@ export async function executeWorkflowIntegration({
 
     kernel,
 
-    lifecycle,
+    lifecycle: lifecycleResult,
 
     timeline,
 
@@ -91,7 +106,9 @@ export async function executeWorkflowIntegration({
 
   return createWorkflowResult({
 
-    accepted: workflowReport.accepted,
+    accepted:
+      workflowReport.accepted === true &&
+      lifecycleResult.accepted === true,
 
     workflow,
 
@@ -103,7 +120,10 @@ export async function executeWorkflowIntegration({
 
     },
 
-    reason: workflowReport.reason ?? null,
+    reason:
+      lifecycleResult.reason ??
+      workflowReport.reason ??
+      null,
 
   });
 
