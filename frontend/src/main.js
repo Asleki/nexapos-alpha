@@ -4,7 +4,6 @@
  * Application Bootstrap
  * ==========================================================
  */
- 
 
 import { APP_CONFIG } from "./config/app-config.js";
 
@@ -18,6 +17,9 @@ import { recoverEventQueue } from "./core/queue-recovery.js";
 import { getOfflineHealth } from "./core/offline-health.js";
 import { log } from "./core/logger.js";
 
+import { registerUniFry } from "./modules/unifry/unifry-bootstrap.js";
+import { renderUniFryPrototype } from "./modules/unifry/unifry-ui.js";
+
 const runtimeElement = document.getElementById("runtime-mode");
 const connectionElement = document.getElementById("connection-status");
 
@@ -30,17 +32,19 @@ subscribeToConnectivity((state) => {
 });
 
 async function bootstrap() {
-
   startOfflineStateManager();
 
   startSyncTrigger();
+
+  registerUniFry();
 
   await recoverEventQueue();
 
   const health = getOfflineHealth();
 
   log("Offline Health", health);
-  
+
+  renderUniFryPrototype();
 
   log("NexaPOS Alpha initialized.");
 }

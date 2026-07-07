@@ -25,15 +25,7 @@
 
 import { SecurityErrorCode } from "./security-errors.js";
 
-/**
- * Alpha Phase
- *
- * Permissions are not yet role-driven.
- * This validator acts as the extension point
- * for the future RBAC engine.
- */
 export function validatePermissionSecurity(event) {
-
   const identity = event?.context?.identity;
 
   if (!identity) {
@@ -41,13 +33,12 @@ export function validatePermissionSecurity(event) {
       allowed: false,
       validator: "permission",
       code: SecurityErrorCode.PERMISSION_DENIED,
-      reason: "Identity context is unavailable."
+      reason: "Identity context is unavailable.",
     };
   }
 
   return {
     allowed: true,
-    validator: "permission"
+    validator: "permission",
   };
-
 }
