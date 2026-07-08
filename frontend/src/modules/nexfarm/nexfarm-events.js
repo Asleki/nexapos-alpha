@@ -181,3 +181,18 @@ export function createMoistureTestRecordedEvent({
     },
   });
 }
+
+export function createWeightCapturedEvent({
+  context = {},
+  intakeId,
+  weightKg,
+} = {}) {
+  return createEvent({
+    type: NexFarmEventType.WEIGHT_CAPTURED,
+    context,
+    payload: {
+      intakeId,
+      weightKg,
+    },
+  });
+}

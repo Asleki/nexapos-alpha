@@ -35,6 +35,7 @@ import {
   createGrainIntakeStartedEvent,
   createGrainTypeSelectedEvent,
   createMoistureTestRecordedEvent,
+  createWeightCapturedEvent,
 } from "./nexfarm-events.js";
 
 import { executeOperation } from "./execution/execution-engine.js";
@@ -221,6 +222,52 @@ export async function recordMoistureTest({
     state: {
       updated: true,
       moistureTestRecorded: true,
+    },
+  });
+
+  return {
+    accepted: executionResult.accepted === true,
+    kernel: kernelResult,
+    projection: null,
+    execution: executionResult,
+  };
+
+}
+
+export async function captureWeight({
+  context = {},
+  intake = {},
+  lifecycle = null,
+} = {}) {
+
+  const workflow =
+    "NEXFARM_WEIGHT_CAPTURED_WORKFLOW";
+
+  const event = createWeightCapturedEvent({
+    context,
+    ...intake,
+  });
+
+  const kernelResult = await executeKernel(event);
+
+  if (!kernelResult.accepted) {
+    return {
+      accepted: false,
+      kernel: kernelResult,
+      projection: null,
+      execution: null,
+    };
+  }
+
+  const executionResult = await executeOperation({
+    workflow,
+    event,
+    kernel: kernelResult,
+    lifecycle,
+    projection: null,
+    state: {
+      updated: true,
+      weightCaptured: true,
     },
   });
 
