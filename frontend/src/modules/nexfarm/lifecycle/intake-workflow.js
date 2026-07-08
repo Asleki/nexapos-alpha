@@ -37,6 +37,9 @@ export function resolveIntakeWorkflowStatus(eventType) {
     WEIGHT_CAPTURED:
       IntakeStatus.WEIGHED,
 
+    PRICE_PREVIEW_CREATED:
+      IntakeStatus.PACKAGING_READY,
+
     PACKAGING_SUGGESTED:
       IntakeStatus.PACKAGING_READY,
 

@@ -196,3 +196,30 @@ export function createWeightCapturedEvent({
     },
   });
 }
+
+export function createPricePreviewCreatedEvent({
+  context = {},
+  intakeId,
+  grainType,
+  moisturePercentage,
+  weightKg,
+  priceChartVersion,
+  pricePerKg,
+  grossAmount,
+  currency = "KES",
+} = {}) {
+  return createEvent({
+    type: NexFarmEventType.PRICE_PREVIEW_CREATED,
+    context,
+    payload: {
+      intakeId,
+      grainType,
+      moisturePercentage,
+      weightKg,
+      priceChartVersion,
+      pricePerKg,
+      grossAmount,
+      currency,
+    },
+  });
+}
