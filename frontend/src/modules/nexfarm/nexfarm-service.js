@@ -33,6 +33,7 @@ import { updateReadModel } from "../../core/read-model-engine.js";
 import {
   createSupplierRegisteredEvent,
   createGrainIntakeStartedEvent,
+  createGrainTypeSelectedEvent,
 } from "./nexfarm-events.js";
 
 import { executeOperation } from "./execution/execution-engine.js";
@@ -127,6 +128,52 @@ export async function startGrainIntake({
     state: {
       updated: true,
       intakeStarted: true,
+    },
+  });
+
+  return {
+    accepted: executionResult.accepted === true,
+    kernel: kernelResult,
+    projection: null,
+    execution: executionResult,
+  };
+
+}
+
+export async function selectGrainType({
+  context = {},
+  intake = {},
+  lifecycle = null,
+} = {}) {
+
+  const workflow =
+    "NEXFARM_GRAIN_TYPE_SELECTED_WORKFLOW";
+
+  const event = createGrainTypeSelectedEvent({
+    context,
+    ...intake,
+  });
+
+  const kernelResult = await executeKernel(event);
+
+  if (!kernelResult.accepted) {
+    return {
+      accepted: false,
+      kernel: kernelResult,
+      projection: null,
+      execution: null,
+    };
+  }
+
+  const executionResult = await executeOperation({
+    workflow,
+    event,
+    kernel: kernelResult,
+    lifecycle,
+    projection: null,
+    state: {
+      updated: true,
+      grainTypeSelected: true,
     },
   });
 

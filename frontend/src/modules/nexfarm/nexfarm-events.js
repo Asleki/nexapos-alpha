@@ -151,3 +151,18 @@ export function createGrainIntakeStartedEvent({
     },
   });
 }
+
+export function createGrainTypeSelectedEvent({
+  context = {},
+  intakeId,
+  grainType,
+} = {}) {
+  return createEvent({
+    type: NexFarmEventType.GRAIN_TYPE_SELECTED,
+    context,
+    payload: {
+      intakeId,
+      grainType,
+    },
+  });
+}

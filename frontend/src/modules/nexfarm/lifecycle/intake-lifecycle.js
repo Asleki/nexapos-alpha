@@ -17,12 +17,15 @@ export function executeIntakeLifecycle({
 } = {}) {
 
   const currentStatus =
+    lifecycle?.lifecycle?.context?.currentStatus ??
     lifecycle?.context?.currentStatus ??
     IntakeStatus.INITIAL;
 
   const nextStatus =
+    resolveIntakeWorkflowStatus(event?.eventType) ??
+    lifecycle?.lifecycle?.context?.nextStatus ??
     lifecycle?.context?.nextStatus ??
-    resolveIntakeWorkflowStatus(event?.eventType);
+    null;
 
   const accepted =
     isValidIntakeTransition(

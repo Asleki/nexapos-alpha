@@ -22,6 +22,9 @@ export function resolveIntakeWorkflowStatus(eventType) {
     GRAIN_DELIVERY_STARTED:
       IntakeStatus.DELIVERY_STARTED,
 
+    GRAIN_TYPE_SELECTED:
+      IntakeStatus.INSPECTED,
+
     GRAIN_VISUALLY_INSPECTED:
       IntakeStatus.INSPECTED,
 
