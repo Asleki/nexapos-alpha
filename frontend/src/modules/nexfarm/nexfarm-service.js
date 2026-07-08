@@ -34,6 +34,7 @@ import {
   createSupplierRegisteredEvent,
   createGrainIntakeStartedEvent,
   createGrainTypeSelectedEvent,
+  createMoistureTestRecordedEvent,
 } from "./nexfarm-events.js";
 
 import { executeOperation } from "./execution/execution-engine.js";
@@ -174,6 +175,52 @@ export async function selectGrainType({
     state: {
       updated: true,
       grainTypeSelected: true,
+    },
+  });
+
+  return {
+    accepted: executionResult.accepted === true,
+    kernel: kernelResult,
+    projection: null,
+    execution: executionResult,
+  };
+
+}
+
+export async function recordMoistureTest({
+  context = {},
+  intake = {},
+  lifecycle = null,
+} = {}) {
+
+  const workflow =
+    "NEXFARM_MOISTURE_TEST_RECORDED_WORKFLOW";
+
+  const event = createMoistureTestRecordedEvent({
+    context,
+    ...intake,
+  });
+
+  const kernelResult = await executeKernel(event);
+
+  if (!kernelResult.accepted) {
+    return {
+      accepted: false,
+      kernel: kernelResult,
+      projection: null,
+      execution: null,
+    };
+  }
+
+  const executionResult = await executeOperation({
+    workflow,
+    event,
+    kernel: kernelResult,
+    lifecycle,
+    projection: null,
+    state: {
+      updated: true,
+      moistureTestRecorded: true,
     },
   });
 

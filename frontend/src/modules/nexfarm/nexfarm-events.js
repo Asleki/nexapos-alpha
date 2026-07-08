@@ -166,3 +166,18 @@ export function createGrainTypeSelectedEvent({
     },
   });
 }
+
+export function createMoistureTestRecordedEvent({
+  context = {},
+  intakeId,
+  moisturePercentage,
+} = {}) {
+  return createEvent({
+    type: NexFarmEventType.MOISTURE_TEST_RECORDED,
+    context,
+    payload: {
+      intakeId,
+      moisturePercentage,
+    },
+  });
+}
