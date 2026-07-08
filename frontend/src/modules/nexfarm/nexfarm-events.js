@@ -20,6 +20,8 @@
  * - Update projections directly
  */
 
+import { createEvent } from "../../core/event-schema.js";
+
 export const NexFarmEventType = Object.freeze({
 
   /**
@@ -113,3 +115,39 @@ export const NexFarmEventType = Object.freeze({
     "INTAKE_CANCELLED",
 
 });
+
+export function createSupplierRegisteredEvent({
+  context = {},
+  supplierId,
+  firstName,
+  lastName,
+  nationalId,
+  phone,
+} = {}) {
+  return createEvent({
+    type: NexFarmEventType.SUPPLIER_REGISTERED,
+    context,
+    payload: {
+      supplierId,
+      firstName,
+      lastName,
+      nationalId,
+      phone,
+    },
+  });
+}
+
+export function createGrainIntakeStartedEvent({
+  context = {},
+  intakeId = crypto.randomUUID(),
+  receivedAt = new Date().toISOString(),
+} = {}) {
+  return createEvent({
+    type: NexFarmEventType.GRAIN_INTAKE_STARTED,
+    context,
+    payload: {
+      intakeId,
+      receivedAt,
+    },
+  });
+}

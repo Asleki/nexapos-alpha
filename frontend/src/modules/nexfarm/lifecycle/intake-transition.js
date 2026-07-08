@@ -12,6 +12,7 @@ import { IntakeStatus } from "./intake-status.js";
 export const IntakeTransition = Object.freeze({
   [IntakeStatus.INITIAL]: [
     IntakeStatus.REGISTERED,
+    IntakeStatus.DELIVERY_STARTED,
   ],
 
   [IntakeStatus.REGISTERED]: [

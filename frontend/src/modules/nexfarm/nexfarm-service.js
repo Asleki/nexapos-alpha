@@ -29,7 +29,12 @@
 
 import { executeKernel } from "../../core/kernel-engine.js";
 import { updateReadModel } from "../../core/read-model-engine.js";
-import { createSupplierRegisteredEvent } from "./nexfarm-events.js";
+
+import {
+  createSupplierRegisteredEvent,
+  createGrainIntakeStartedEvent,
+} from "./nexfarm-events.js";
+
 import { executeOperation } from "./execution/execution-engine.js";
 
 import {
@@ -85,6 +90,50 @@ export async function registerNexFarmSupplier({
     accepted: executionResult.accepted === true,
     kernel: kernelResult,
     projection: projectionResult,
+    execution: executionResult,
+  };
+
+}
+
+export async function startGrainIntake({
+  context = {},
+  intake = {},
+} = {}) {
+
+  const workflow =
+    "NEXFARM_GRAIN_INTAKE_STARTED_WORKFLOW";
+
+  const event = createGrainIntakeStartedEvent({
+    context,
+    ...intake,
+  });
+
+  const kernelResult = await executeKernel(event);
+
+  if (!kernelResult.accepted) {
+    return {
+      accepted: false,
+      kernel: kernelResult,
+      projection: null,
+      execution: null,
+    };
+  }
+
+  const executionResult = await executeOperation({
+    workflow,
+    event,
+    kernel: kernelResult,
+    projection: null,
+    state: {
+      updated: true,
+      intakeStarted: true,
+    },
+  });
+
+  return {
+    accepted: executionResult.accepted === true,
+    kernel: kernelResult,
+    projection: null,
     execution: executionResult,
   };
 

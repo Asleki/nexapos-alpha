@@ -16,6 +16,9 @@ export function resolveIntakeWorkflowStatus(eventType) {
     SUPPLIER_REGISTERED:
       IntakeStatus.REGISTERED,
 
+    GRAIN_INTAKE_STARTED:
+      IntakeStatus.DELIVERY_STARTED,
+
     GRAIN_DELIVERY_STARTED:
       IntakeStatus.DELIVERY_STARTED,
 
