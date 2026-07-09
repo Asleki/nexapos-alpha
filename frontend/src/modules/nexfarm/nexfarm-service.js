@@ -63,6 +63,10 @@ import {
 } from "./storage/rack-engine.js";
 
 import {
+  analyzeDryingResult,
+} from "./storage/drying-engine.js";
+
+import {
   NEXFARM_SUPPLIER_DIRECTORY_PROJECTION,
   NEXFARM_SUPPLIER_DIRECTORY_READ_MODEL,
 } from "./nexfarm-projection.js";
@@ -732,6 +736,32 @@ export async function assignSolarDrying({
   const workflow =
     "NEXFARM_SOLAR_DRYING_ASSIGNED_WORKFLOW";
 
+  const dryingResult =
+    analyzeDryingResult({
+      beforeDryingWeightKg:
+        drying.beforeDryingWeightKg,
+      afterDryingWeightKg:
+        drying.afterDryingWeightKg,
+      moistureBefore:
+        drying.moistureBefore,
+      moistureAfter:
+        drying.moistureAfter,
+      dryingStartedAt:
+        drying.dryingStartedAt,
+      dryingEndedAt:
+        drying.dryingEndedAt,
+    });
+
+  if (!dryingResult.accepted) {
+    return {
+      accepted: false,
+      kernel: null,
+      projection: null,
+      execution: null,
+      drying: dryingResult,
+    };
+  }
+
   const event = createSolarDryingAssignedEvent({
     context,
     ...drying,
@@ -745,6 +775,7 @@ export async function assignSolarDrying({
       kernel: kernelResult,
       projection: null,
       execution: null,
+      drying: dryingResult,
     };
   }
 
@@ -765,6 +796,7 @@ export async function assignSolarDrying({
     kernel: kernelResult,
     projection: null,
     execution: executionResult,
+    drying: dryingResult,
   };
 
 }
