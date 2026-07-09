@@ -37,6 +37,7 @@ import {
   createMoistureTestRecordedEvent,
   createWeightCapturedEvent,
   createPricePreviewCreatedEvent,
+  createSupplierAcceptedOfferEvent,
 } from "./nexfarm-events.js";
 
 import { executeOperation } from "./execution/execution-engine.js";
@@ -315,6 +316,52 @@ export async function createPricePreview({
     state: {
       updated: true,
       pricePreviewCreated: true,
+    },
+  });
+
+  return {
+    accepted: executionResult.accepted === true,
+    kernel: kernelResult,
+    projection: null,
+    execution: executionResult,
+  };
+
+}
+
+export async function acceptSupplierOffer({
+  context = {},
+  intake = {},
+  lifecycle = null,
+} = {}) {
+
+  const workflow =
+    "NEXFARM_SUPPLIER_ACCEPTED_OFFER_WORKFLOW";
+
+  const event = createSupplierAcceptedOfferEvent({
+    context,
+    ...intake,
+  });
+
+  const kernelResult = await executeKernel(event);
+
+  if (!kernelResult.accepted) {
+    return {
+      accepted: false,
+      kernel: kernelResult,
+      projection: null,
+      execution: null,
+    };
+  }
+
+  const executionResult = await executeOperation({
+    workflow,
+    event,
+    kernel: kernelResult,
+    lifecycle,
+    projection: null,
+    state: {
+      updated: true,
+      supplierAcceptedOffer: true,
     },
   });
 

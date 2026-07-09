@@ -223,3 +223,32 @@ export function createPricePreviewCreatedEvent({
     },
   });
 }
+
+export function createSupplierAcceptedOfferEvent({
+  context = {},
+  intakeId,
+  grainType,
+  moisturePercentage,
+  weightKg,
+  priceChartVersion,
+  pricePerKg,
+  grossAmount,
+  currency = "KES",
+  acceptedAt = new Date().toISOString(),
+} = {}) {
+  return createEvent({
+    type: NexFarmEventType.SUPPLIER_ACCEPTED_OFFER,
+    context,
+    payload: {
+      intakeId,
+      grainType,
+      moisturePercentage,
+      weightKg,
+      priceChartVersion,
+      pricePerKg,
+      grossAmount,
+      currency,
+      acceptedAt,
+    },
+  });
+}

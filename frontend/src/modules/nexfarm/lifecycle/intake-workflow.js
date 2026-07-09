@@ -38,7 +38,10 @@ export function resolveIntakeWorkflowStatus(eventType) {
       IntakeStatus.WEIGHED,
 
     PRICE_PREVIEW_CREATED:
-      IntakeStatus.PACKAGING_READY,
+      IntakeStatus.PRICE_PREVIEWED,
+
+    SUPPLIER_ACCEPTED_OFFER:
+      IntakeStatus.OFFER_ACCEPTED,
 
     PACKAGING_SUGGESTED:
       IntakeStatus.PACKAGING_READY,

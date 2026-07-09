@@ -34,6 +34,14 @@ export const IntakeTransition = Object.freeze({
   ],
 
   [IntakeStatus.WEIGHED]: [
+    IntakeStatus.PRICE_PREVIEWED,
+  ],
+
+  [IntakeStatus.PRICE_PREVIEWED]: [
+    IntakeStatus.OFFER_ACCEPTED,
+  ],
+
+  [IntakeStatus.OFFER_ACCEPTED]: [
     IntakeStatus.PACKAGING_READY,
   ],
 
