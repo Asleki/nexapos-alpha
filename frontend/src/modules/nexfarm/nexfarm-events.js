@@ -320,3 +320,117 @@ export function createBagCreatedEvent({
   });
 
 }
+
+export function createQrAssignedEvent({
+  context = {},
+  intakeId,
+  bagId,
+  labelCode,
+  grainType,
+  bagSizeKg,
+  actualWeightKg,
+  qrPayload,
+  qrValue,
+  printableLabel,
+  assignedAt = new Date().toISOString(),
+} = {}) {
+
+  return createEvent({
+    type: NexFarmEventType.QR_ASSIGNED,
+    context,
+    payload: {
+      intakeId,
+      bagId,
+      labelCode,
+      grainType,
+      bagSizeKg,
+      actualWeightKg,
+      qrPayload,
+      qrValue,
+      printableLabel,
+      assignedAt,
+    },
+  });
+
+}
+
+export function createRackAssignedEvent({
+  context = {},
+  intakeId,
+  bagId,
+  grainType,
+  bagSizeKg,
+  actualWeightKg,
+  rackSection,
+  row,
+  column,
+  locationCode,
+  assignedAt = new Date().toISOString(),
+} = {}) {
+
+  return createEvent({
+    type: NexFarmEventType.RACK_ASSIGNED,
+    context,
+    payload: {
+      intakeId,
+      bagId,
+      grainType,
+      bagSizeKg,
+      actualWeightKg,
+      rackSection,
+      row,
+      column,
+      locationCode,
+      assignedAt,
+    },
+  });
+
+}
+
+export function createSolarDryingAssignedEvent({
+  context = {},
+  intakeId,
+  grainType,
+  moisturePercentage,
+  beforeDryingWeightKg,
+  dryingZoneId,
+  dryingStartedAt = new Date().toISOString(),
+} = {}) {
+
+  return createEvent({
+    type: NexFarmEventType.SOLAR_DRYING_ASSIGNED,
+    context,
+    payload: {
+      intakeId,
+      grainType,
+      moisturePercentage,
+      beforeDryingWeightKg,
+      dryingZoneId,
+      dryingStartedAt,
+    },
+  });
+
+}
+
+export function createEZoneAssignedEvent({
+  context = {},
+  intakeId,
+  grainType,
+  eZoneKg,
+  sourceReason = "packaging_remainder",
+  assignedAt = new Date().toISOString(),
+} = {}) {
+
+  return createEvent({
+    type: NexFarmEventType.EZONE_ASSIGNED,
+    context,
+    payload: {
+      intakeId,
+      grainType,
+      eZoneKg,
+      sourceReason,
+      assignedAt,
+    },
+  });
+
+}

@@ -40,6 +40,10 @@ import {
   createSupplierAcceptedOfferEvent,
   createPackagingSuggestedEvent,
   createBagCreatedEvent,
+  createQrAssignedEvent,
+  createRackAssignedEvent,
+  createSolarDryingAssignedEvent,
+  createEZoneAssignedEvent,
 } from "./nexfarm-events.js";
 
 import { executeOperation } from "./execution/execution-engine.js";
@@ -47,6 +51,16 @@ import { executeOperation } from "./execution/execution-engine.js";
 import {
   suggestPackaging,
 } from "./packaging/packaging-engine.js";
+
+import {
+  createBagQrPayload,
+  encodeBagQrValue,
+  createPrintableBagLabel,
+} from "./storage/qr-engine.js";
+
+import {
+  suggestRackAssignment,
+} from "./storage/rack-engine.js";
 
 import {
   NEXFARM_SUPPLIER_DIRECTORY_PROJECTION,
@@ -484,6 +498,311 @@ export async function createNexFarmBag({
     state: {
       updated: true,
       bagCreated: true,
+    },
+  });
+
+  return {
+    accepted: executionResult.accepted === true,
+    kernel: kernelResult,
+    projection: null,
+    execution: executionResult,
+  };
+
+}
+
+export async function assignQrToNexFarmBag({
+  context = {},
+  bag = {},
+  lifecycle = null,
+} = {}) {
+
+  const workflow =
+    "NEXFARM_QR_ASSIGNED_WORKFLOW";
+
+  const qrPayloadResult =
+    createBagQrPayload({
+      bagId:
+        bag.bagId,
+      labelCode:
+        bag.labelCode ??
+        bag.bagId,
+      intakeId:
+        bag.intakeId,
+      grainType:
+        bag.grainType,
+      bagSizeKg:
+        bag.bagSizeKg,
+      actualWeightKg:
+        bag.actualWeightKg,
+      estateId:
+        bag.estateId ?? null,
+    });
+
+  if (!qrPayloadResult.accepted) {
+    return {
+      accepted: false,
+      kernel: null,
+      projection: null,
+      execution: null,
+      qr: qrPayloadResult,
+    };
+  }
+
+  const qrValueResult =
+    encodeBagQrValue({
+      payload:
+        qrPayloadResult.payload,
+    });
+
+  if (!qrValueResult.accepted) {
+    return {
+      accepted: false,
+      kernel: null,
+      projection: null,
+      execution: null,
+      qr: qrValueResult,
+    };
+  }
+
+  const labelResult =
+    createPrintableBagLabel({
+      payload:
+        qrPayloadResult.payload,
+      qrValue:
+        qrValueResult.qrValue,
+    });
+
+  if (!labelResult.accepted) {
+    return {
+      accepted: false,
+      kernel: null,
+      projection: null,
+      execution: null,
+      qr: labelResult,
+    };
+  }
+
+  const labelCode =
+    bag.labelCode ??
+    bag.bagId;
+
+  const event = createQrAssignedEvent({
+    context,
+    ...bag,
+    labelCode,
+    qrPayload:
+      qrPayloadResult.payload,
+    qrValue:
+      qrValueResult.qrValue,
+    printableLabel:
+      labelResult.label,
+  });
+
+  const kernelResult = await executeKernel(event);
+
+  if (!kernelResult.accepted) {
+    return {
+      accepted: false,
+      kernel: kernelResult,
+      projection: null,
+      execution: null,
+      qr: {
+        payload:
+          qrPayloadResult,
+        value:
+          qrValueResult,
+        label:
+          labelResult,
+      },
+    };
+  }
+
+  const executionResult = await executeOperation({
+    workflow,
+    event,
+    kernel: kernelResult,
+    lifecycle,
+    projection: null,
+    state: {
+      updated: true,
+      qrAssigned: true,
+    },
+  });
+
+  return {
+    accepted: executionResult.accepted === true,
+    kernel: kernelResult,
+    projection: null,
+    execution: executionResult,
+    qr: {
+      payload:
+        qrPayloadResult,
+      value:
+        qrValueResult,
+      label:
+        labelResult,
+    },
+  };
+
+}
+
+export async function assignRackToNexFarmBag({
+  context = {},
+  bag = {},
+  rack = {},
+  lifecycle = null,
+} = {}) {
+
+  const workflow =
+    "NEXFARM_RACK_ASSIGNED_WORKFLOW";
+
+  const rackResult =
+    suggestRackAssignment({
+      grainType:
+        bag.grainType,
+      bagSizeKg:
+        bag.bagSizeKg,
+      availableLocations:
+        rack.availableLocations ?? [],
+    });
+
+  if (!rackResult.accepted) {
+    return {
+      accepted: false,
+      kernel: null,
+      projection: null,
+      execution: null,
+      rack: rackResult,
+    };
+  }
+
+  const event = createRackAssignedEvent({
+    context,
+    ...bag,
+    rackSection:
+      rackResult.location.rackSection,
+    row:
+      rackResult.location.row,
+    column:
+      rackResult.location.column,
+    locationCode:
+      rackResult.location.locationCode,
+  });
+
+  const kernelResult = await executeKernel(event);
+
+  if (!kernelResult.accepted) {
+    return {
+      accepted: false,
+      kernel: kernelResult,
+      projection: null,
+      execution: null,
+      rack: rackResult,
+    };
+  }
+
+  const executionResult = await executeOperation({
+    workflow,
+    event,
+    kernel: kernelResult,
+    lifecycle,
+    projection: null,
+    state: {
+      updated: true,
+      rackAssigned: true,
+    },
+  });
+
+  return {
+    accepted: executionResult.accepted === true,
+    kernel: kernelResult,
+    projection: null,
+    execution: executionResult,
+    rack: rackResult,
+  };
+
+}
+
+export async function assignSolarDrying({
+  context = {},
+  drying = {},
+  lifecycle = null,
+} = {}) {
+
+  const workflow =
+    "NEXFARM_SOLAR_DRYING_ASSIGNED_WORKFLOW";
+
+  const event = createSolarDryingAssignedEvent({
+    context,
+    ...drying,
+  });
+
+  const kernelResult = await executeKernel(event);
+
+  if (!kernelResult.accepted) {
+    return {
+      accepted: false,
+      kernel: kernelResult,
+      projection: null,
+      execution: null,
+    };
+  }
+
+  const executionResult = await executeOperation({
+    workflow,
+    event,
+    kernel: kernelResult,
+    lifecycle,
+    projection: null,
+    state: {
+      updated: true,
+      solarDryingAssigned: true,
+    },
+  });
+
+  return {
+    accepted: executionResult.accepted === true,
+    kernel: kernelResult,
+    projection: null,
+    execution: executionResult,
+  };
+
+}
+
+export async function assignEZone({
+  context = {},
+  eZone = {},
+  lifecycle = null,
+} = {}) {
+
+  const workflow =
+    "NEXFARM_EZONE_ASSIGNED_WORKFLOW";
+
+  const event = createEZoneAssignedEvent({
+    context,
+    ...eZone,
+  });
+
+  const kernelResult = await executeKernel(event);
+
+  if (!kernelResult.accepted) {
+    return {
+      accepted: false,
+      kernel: kernelResult,
+      projection: null,
+      execution: null,
+    };
+  }
+
+  const executionResult = await executeOperation({
+    workflow,
+    event,
+    kernel: kernelResult,
+    lifecycle,
+    projection: null,
+    state: {
+      updated: true,
+      eZoneAssigned: true,
     },
   });
 

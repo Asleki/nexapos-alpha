@@ -49,14 +49,17 @@ export function resolveIntakeWorkflowStatus(eventType) {
     BAG_CREATED:
       IntakeStatus.BAGGED,
 
+    QR_ASSIGNED:
+      IntakeStatus.QR_READY,
+
     RACK_ASSIGNED:
       IntakeStatus.STORED,
 
     SOLAR_DRYING_ASSIGNED:
-      IntakeStatus.STORED,
+      IntakeStatus.DRYING,
 
     EZONE_ASSIGNED:
-      IntakeStatus.STORED,
+      IntakeStatus.EZONE,
 
     INTAKE_COMPLETED:
       IntakeStatus.COMPLETED,

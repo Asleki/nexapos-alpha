@@ -48,10 +48,24 @@ export const IntakeTransition = Object.freeze({
 
   [IntakeStatus.PACKAGING_READY]: [
     IntakeStatus.BAGGED,
+    IntakeStatus.EZONE,
   ],
 
   [IntakeStatus.BAGGED]: [
+    IntakeStatus.QR_READY,
+  ],
+
+  [IntakeStatus.QR_READY]: [
     IntakeStatus.STORED,
+  ],
+
+  [IntakeStatus.DRYING]: [
+    IntakeStatus.MOISTURE_TESTED,
+    IntakeStatus.REJECTED,
+  ],
+
+  [IntakeStatus.EZONE]: [
+    IntakeStatus.QR_READY,
   ],
 
   [IntakeStatus.STORED]: [

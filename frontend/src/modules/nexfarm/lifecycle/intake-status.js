@@ -39,8 +39,17 @@ export const IntakeStatus = Object.freeze({
   BAGGED:
     "bagged",
 
+  QR_READY:
+    "qr_ready",
+
   STORED:
     "stored",
+
+  DRYING:
+    "drying",
+
+  EZONE:
+    "ezone",
 
   COMPLETED:
     "completed",
