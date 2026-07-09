@@ -8,25 +8,44 @@
  */
 
 export const IntakeStatus = Object.freeze({
-  INITIAL: "initial",
 
-  REGISTERED: "registered",
+  INITIAL:
+    "initial",
 
-  DELIVERY_STARTED: "delivery_started",
+  REGISTERED:
+    "registered",
 
-  INSPECTED: "inspected",
+  DELIVERY_STARTED:
+    "delivery_started",
 
-  MOISTURE_TESTED: "moisture_tested",
+  INSPECTED:
+    "inspected",
 
-  WEIGHED: "weighed",
+  MOISTURE_TESTED:
+    "moisture_tested",
 
-  PRICE_PREVIEWED: "price_previewed",
+  WEIGHED:
+    "weighed",
 
-  OFFER_ACCEPTED: "offer_accepted",
+  PRICE_PREVIEWED:
+    "price_previewed",
 
-  PACKAGING_READY: "packaging_ready",
+  OFFER_ACCEPTED:
+    "offer_accepted",
 
-  COMPLETED: "completed",
+  PACKAGING_READY:
+    "packaging_ready",
 
-  REJECTED: "rejected",
+  BAGGED:
+    "bagged",
+
+  STORED:
+    "stored",
+
+  COMPLETED:
+    "completed",
+
+  REJECTED:
+    "rejected",
+
 });

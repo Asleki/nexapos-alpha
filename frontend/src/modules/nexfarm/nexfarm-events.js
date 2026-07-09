@@ -124,6 +124,7 @@ export function createSupplierRegisteredEvent({
   nationalId,
   phone,
 } = {}) {
+
   return createEvent({
     type: NexFarmEventType.SUPPLIER_REGISTERED,
     context,
@@ -135,6 +136,7 @@ export function createSupplierRegisteredEvent({
       phone,
     },
   });
+
 }
 
 export function createGrainIntakeStartedEvent({
@@ -142,6 +144,7 @@ export function createGrainIntakeStartedEvent({
   intakeId = crypto.randomUUID(),
   receivedAt = new Date().toISOString(),
 } = {}) {
+
   return createEvent({
     type: NexFarmEventType.GRAIN_INTAKE_STARTED,
     context,
@@ -150,6 +153,7 @@ export function createGrainIntakeStartedEvent({
       receivedAt,
     },
   });
+
 }
 
 export function createGrainTypeSelectedEvent({
@@ -157,6 +161,7 @@ export function createGrainTypeSelectedEvent({
   intakeId,
   grainType,
 } = {}) {
+
   return createEvent({
     type: NexFarmEventType.GRAIN_TYPE_SELECTED,
     context,
@@ -165,6 +170,7 @@ export function createGrainTypeSelectedEvent({
       grainType,
     },
   });
+
 }
 
 export function createMoistureTestRecordedEvent({
@@ -172,6 +178,7 @@ export function createMoistureTestRecordedEvent({
   intakeId,
   moisturePercentage,
 } = {}) {
+
   return createEvent({
     type: NexFarmEventType.MOISTURE_TEST_RECORDED,
     context,
@@ -180,6 +187,7 @@ export function createMoistureTestRecordedEvent({
       moisturePercentage,
     },
   });
+
 }
 
 export function createWeightCapturedEvent({
@@ -187,6 +195,7 @@ export function createWeightCapturedEvent({
   intakeId,
   weightKg,
 } = {}) {
+
   return createEvent({
     type: NexFarmEventType.WEIGHT_CAPTURED,
     context,
@@ -195,6 +204,7 @@ export function createWeightCapturedEvent({
       weightKg,
     },
   });
+
 }
 
 export function createPricePreviewCreatedEvent({
@@ -208,6 +218,7 @@ export function createPricePreviewCreatedEvent({
   grossAmount,
   currency = "KES",
 } = {}) {
+
   return createEvent({
     type: NexFarmEventType.PRICE_PREVIEW_CREATED,
     context,
@@ -222,6 +233,7 @@ export function createPricePreviewCreatedEvent({
       currency,
     },
   });
+
 }
 
 export function createSupplierAcceptedOfferEvent({
@@ -236,6 +248,7 @@ export function createSupplierAcceptedOfferEvent({
   currency = "KES",
   acceptedAt = new Date().toISOString(),
 } = {}) {
+
   return createEvent({
     type: NexFarmEventType.SUPPLIER_ACCEPTED_OFFER,
     context,
@@ -251,4 +264,32 @@ export function createSupplierAcceptedOfferEvent({
       acceptedAt,
     },
   });
+
+}
+
+export function createPackagingSuggestedEvent({
+  context = {},
+  intakeId,
+  grainType,
+  weightKg,
+  suggestedBags = [],
+  totalPackagedKg,
+  eZoneKg,
+  suggestedAt = new Date().toISOString(),
+} = {}) {
+
+  return createEvent({
+    type: NexFarmEventType.PACKAGING_SUGGESTED,
+    context,
+    payload: {
+      intakeId,
+      grainType,
+      weightKg,
+      suggestedBags,
+      totalPackagedKg,
+      eZoneKg,
+      suggestedAt,
+    },
+  });
+
 }

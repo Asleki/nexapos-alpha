@@ -10,6 +10,7 @@
 import { IntakeStatus } from "./intake-status.js";
 
 export const IntakeTransition = Object.freeze({
+
   [IntakeStatus.INITIAL]: [
     IntakeStatus.REGISTERED,
     IntakeStatus.DELIVERY_STARTED,
@@ -46,20 +47,31 @@ export const IntakeTransition = Object.freeze({
   ],
 
   [IntakeStatus.PACKAGING_READY]: [
+    IntakeStatus.BAGGED,
+  ],
+
+  [IntakeStatus.BAGGED]: [
+    IntakeStatus.STORED,
+  ],
+
+  [IntakeStatus.STORED]: [
     IntakeStatus.COMPLETED,
   ],
 
   [IntakeStatus.COMPLETED]: [],
 
   [IntakeStatus.REJECTED]: [],
+
 });
 
 export function isValidIntakeTransition(
   currentStatus,
-  nextStatus
+  nextStatus,
 ) {
+
   const allowed =
     IntakeTransition[currentStatus] ?? [];
 
   return allowed.includes(nextStatus);
+
 }

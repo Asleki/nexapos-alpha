@@ -38,9 +38,14 @@ import {
   createWeightCapturedEvent,
   createPricePreviewCreatedEvent,
   createSupplierAcceptedOfferEvent,
+  createPackagingSuggestedEvent,
 } from "./nexfarm-events.js";
 
 import { executeOperation } from "./execution/execution-engine.js";
+
+import {
+  suggestPackaging,
+} from "./packaging/packaging-engine.js";
 
 import {
   NEXFARM_SUPPLIER_DIRECTORY_PROJECTION,
@@ -370,6 +375,76 @@ export async function acceptSupplierOffer({
     kernel: kernelResult,
     projection: null,
     execution: executionResult,
+  };
+
+}
+
+export async function suggestNexFarmPackaging({
+  context = {},
+  intake = {},
+  lifecycle = null,
+} = {}) {
+
+  const workflow =
+    "NEXFARM_PACKAGING_SUGGESTED_WORKFLOW";
+
+  const packagingResult =
+    suggestPackaging({
+      weightKg:
+        intake.weightKg,
+    });
+
+  if (!packagingResult.accepted) {
+    return {
+      accepted: false,
+      kernel: null,
+      projection: null,
+      execution: null,
+      packaging: packagingResult,
+    };
+  }
+
+  const event = createPackagingSuggestedEvent({
+    context,
+    ...intake,
+    suggestedBags:
+      packagingResult.suggestedBags,
+    totalPackagedKg:
+      packagingResult.totalPackagedKg,
+    eZoneKg:
+      packagingResult.eZoneKg,
+  });
+
+  const kernelResult = await executeKernel(event);
+
+  if (!kernelResult.accepted) {
+    return {
+      accepted: false,
+      kernel: kernelResult,
+      projection: null,
+      execution: null,
+      packaging: packagingResult,
+    };
+  }
+
+  const executionResult = await executeOperation({
+    workflow,
+    event,
+    kernel: kernelResult,
+    lifecycle,
+    projection: null,
+    state: {
+      updated: true,
+      packagingSuggested: true,
+    },
+  });
+
+  return {
+    accepted: executionResult.accepted === true,
+    kernel: kernelResult,
+    projection: null,
+    execution: executionResult,
+    packaging: packagingResult,
   };
 
 }

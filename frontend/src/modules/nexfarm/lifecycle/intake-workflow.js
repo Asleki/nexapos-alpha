@@ -46,6 +46,21 @@ export function resolveIntakeWorkflowStatus(eventType) {
     PACKAGING_SUGGESTED:
       IntakeStatus.PACKAGING_READY,
 
+    BAG_CREATED:
+      IntakeStatus.BAGGED,
+
+    RACK_ASSIGNED:
+      IntakeStatus.STORED,
+
+    SOLAR_DRYING_ASSIGNED:
+      IntakeStatus.STORED,
+
+    EZONE_ASSIGNED:
+      IntakeStatus.STORED,
+
+    INTAKE_COMPLETED:
+      IntakeStatus.COMPLETED,
+
   };
 
   return workflow[eventType] ?? null;
