@@ -293,3 +293,30 @@ export function createPackagingSuggestedEvent({
   });
 
 }
+
+export function createBagCreatedEvent({
+  context = {},
+  intakeId,
+  bagId = crypto.randomUUID(),
+  bagSequence,
+  grainType,
+  bagSizeKg,
+  actualWeightKg,
+  createdAt = new Date().toISOString(),
+} = {}) {
+
+  return createEvent({
+    type: NexFarmEventType.BAG_CREATED,
+    context,
+    payload: {
+      intakeId,
+      bagId,
+      bagSequence,
+      grainType,
+      bagSizeKg,
+      actualWeightKg,
+      createdAt,
+    },
+  });
+
+}

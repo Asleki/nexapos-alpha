@@ -39,6 +39,7 @@ import {
   createPricePreviewCreatedEvent,
   createSupplierAcceptedOfferEvent,
   createPackagingSuggestedEvent,
+  createBagCreatedEvent,
 } from "./nexfarm-events.js";
 
 import { executeOperation } from "./execution/execution-engine.js";
@@ -445,6 +446,52 @@ export async function suggestNexFarmPackaging({
     projection: null,
     execution: executionResult,
     packaging: packagingResult,
+  };
+
+}
+
+export async function createNexFarmBag({
+  context = {},
+  bag = {},
+  lifecycle = null,
+} = {}) {
+
+  const workflow =
+    "NEXFARM_BAG_CREATED_WORKFLOW";
+
+  const event = createBagCreatedEvent({
+    context,
+    ...bag,
+  });
+
+  const kernelResult = await executeKernel(event);
+
+  if (!kernelResult.accepted) {
+    return {
+      accepted: false,
+      kernel: kernelResult,
+      projection: null,
+      execution: null,
+    };
+  }
+
+  const executionResult = await executeOperation({
+    workflow,
+    event,
+    kernel: kernelResult,
+    lifecycle,
+    projection: null,
+    state: {
+      updated: true,
+      bagCreated: true,
+    },
+  });
+
+  return {
+    accepted: executionResult.accepted === true,
+    kernel: kernelResult,
+    projection: null,
+    execution: executionResult,
   };
 
 }
