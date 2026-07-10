@@ -33,6 +33,21 @@ export const IntakeStatus = Object.freeze({
   OFFER_ACCEPTED:
     "offer_accepted",
 
+  DRYING:
+    "drying",
+
+  DRYING_ASSESSED:
+    "drying_assessed",
+
+  RETURN_TO_DRYING:
+    "return_to_drying",
+
+  LOSS_REVIEW:
+    "loss_review",
+
+  GRAIN_LOST:
+    "grain_lost",
+
   PACKAGING_READY:
     "packaging_ready",
 
@@ -44,9 +59,6 @@ export const IntakeStatus = Object.freeze({
 
   STORED:
     "stored",
-
-  DRYING:
-    "drying",
 
   EZONE:
     "ezone",

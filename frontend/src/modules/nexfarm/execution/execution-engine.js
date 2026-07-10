@@ -84,7 +84,7 @@ export async function executeOperation({
     kernel,
 
     lifecycle:
-    integration.lifecycle,
+     integration.lifecycle,
 
     timeline,
 
