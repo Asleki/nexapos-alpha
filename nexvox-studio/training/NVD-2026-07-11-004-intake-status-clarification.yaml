@@ -1,0 +1,49 @@
+# ==============================================================================
+# NEXVOX STUDIO L2 DATA LAYER - ENGINEERING CONTINUITY RECORD
+# ==============================================================================
+meta:
+  recordId: "NVD-2026-07-11-004"
+  captureDate: "2026-07-11"
+  timestamp: "09:13:00"
+  contextType: "ARCHITECTURAL_CLARIFICATION"
+  status: "LOCKED_TRUTH"
+
+domain_context:
+  module: "NexFarm"
+  subSystem: "Lifecycle / Status Definitions"
+  intent: "Document that supplier registration is an optional state, not a mandatory prerequisite for grain intake."
+
+architectural_payload:
+  immutable_principles:
+    - principle: "Optional Supplier Relationship"
+      definition: "The REGISTERED status indicates a recurring supplier but must never block grain intake. Intake may begin directly via DELIVERY_STARTED."
+    - principle: "Vocabulary Isolation"
+      definition: "This file defines lifecycle vocabulary only. It must never execute business logic or validate workflow transitions."
+
+  cycle_one_impact:
+    functional_changes: "None."
+    status_names: "Unchanged. REGISTERED preserved for backward compatibility."
+    delegation: "Behavioral changes deferred to transition engine."
+
+  documentation_target: "intake-status.js"
+  status_schema_definition:
+    - INITIAL
+    - REGISTERED
+    - DELIVERY_STARTED
+    - INSPECTED
+    - MOISTURE_TESTED
+    - WEIGHED
+    - PRICE_PREVIEWED
+    - OFFER_ACCEPTED
+    - DRYING
+    - DRYING_ASSESSED
+    - RETURN_TO_DRYING
+    - LOSS_REVIEW
+    - GRAIN_LOST
+    - PACKAGING_READY
+    - BAGGED
+    - QR_READY
+    - STORED
+    - EZONE
+    - COMPLETED
+    - REJECTED

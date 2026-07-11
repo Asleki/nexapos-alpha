@@ -1,0 +1,35 @@
+schema_version: "1.0"
+governance:
+  owner: Nexa Ecosystem
+  human_control_required: true
+  automatic_governing_approval: false
+  automatic_production_changes: false
+
+sensitivity:
+  public:
+    retrieval: permitted
+  internal:
+    retrieval: authenticated_internal_only
+  confidential:
+    retrieval: role_restricted
+  restricted_personal:
+    retrieval: prohibited_for_general_studio
+  secret:
+    ingestion: prohibited
+
+conflict_policy:
+  detect_conflicts: true
+  silent_merge: false
+  ranking_order:
+    - approval_status
+    - authority_level
+    - version
+    - review_date
+    - source_specificity
+  require_human_resolution_for_governing_conflict: true
+
+retention:
+  preserve_historical_sources: true
+  preserve_deprecated_sources: true
+  delete_secrets_on_detection: true
+  preserve_source_hashes: true

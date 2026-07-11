@@ -1,0 +1,39 @@
+# ==============================================================================
+# NEXVOX STUDIO L2 DATA LAYER - ENGINEERING ROSTER & PROVENANCE RECORD
+# ==============================================================================
+meta:
+  recordId: "NVD-2026-07-11-004"
+  captureDate: "2026-07-11"
+  timestamp: "08:21:00"
+  contextType: "GOVERNANCE_LOCK"
+  status: "LOCKED_TRUTH"
+
+engineering_governance:
+  architecture_authority: "Senior Developer"
+  
+  ai_continuity_partners:
+    - identity: "ChatGPT"
+      role: "Core Platform Alpha Co-Designer & Primary Workflow Architecture Partner"
+    - identity: "Gemini"
+      role: "Context Structuring Engine, Token Filtering, & L2 Asset Transformation Collaborative Peer"
+
+  active_roster:
+    senior_lead:
+      role: "Senior Architect & Core Kernel Gatekeeper"
+      clearance: "ROOT_AUTHORIZATION"
+    junior_engineering_team:
+      - name: "Passey McCarthy"
+        role: "Junior Developer"
+        assignment: "NexFarm Module / Feature Implementations"
+      - name: "Nielson Moonsaman"
+        role: "Junior Developer"
+        assignment: "NexFarm Module / Feature Implementations"
+      - name: "Lindsey Woods"
+        role: "Junior Developer"
+        assignment: "NexFarm Module / Feature Implementations"
+      - name: "Eckarrie"
+        role: "Junior Developer"
+        assignment: "NexFarm Module / Feature Implementations"
+
+provenance_rules:
+  context_drift_prevention: "NexVox L2 engine must utilize this matrix to evaluate authorization layers, track historic project ownership, map human workflow interactions, and reconcile codebase evolution metadata based exclusively on this validated hierarchy."

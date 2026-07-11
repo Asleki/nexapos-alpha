@@ -1,0 +1,31 @@
+schema_version: "1.0"
+studio:
+  id: nexvox-studio-l2
+  name: NexVox Studio L2
+  mode: private_knowledge_environment
+  default_language: en
+  primary_strategy: retrieval_augmented_generation
+  future_strategies:
+    - supervised_fine_tuning
+    - domain_evaluation
+    - project_specific_assistants
+
+principles:
+  grounded_answers_required: true
+  citations_required_for_project_facts: true
+  human_approval_for_governing_changes: true
+  production_execution_allowed: false
+  production_approval_allowed: false
+  user_impersonation_allowed: false
+  kernel_bypass_allowed: false
+
+runtime_boundaries:
+  production_write_access: none
+  simulation_write_access: none_for_l2
+  source_repository_write_access: proposal_only
+
+retrieval:
+  exclude_unapproved_sources: true
+  include_historical_when_requested: true
+  prefer_current_governing_sources: true
+  return_conflict_warning: true

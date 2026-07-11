@@ -1,0 +1,32 @@
+# ==============================================================================
+# NEXVOX STUDIO L2 DATA LAYER - ENGINEERING CONTINUITY RECORD
+# ==============================================================================
+meta:
+  recordId: "NVD-2026-07-11-007"
+  captureDate: "2026-07-11"
+  timestamp: "11:40:00"
+  contextType: "ARCHITECTURAL_REFINEMENT"
+  status: "LOCKED_TRUTH"
+
+domain_context:
+  module: "NexFarm"
+  subSystem: "Business Module Execution"
+  intent: "Refine orchestration to allow optional supplier registration participation in intake workflows without introducing mandatory dependency."
+
+architectural_payload:
+  immutable_principles:
+    - principle: "Orchestration over Validation"
+      definition: "Service functions orchestrate event creation and kernel execution; they do not perform state transition validation."
+    - principle: "Decoupled Intake"
+      definition: "Supplier registration is treated as an asynchronous or optional enrichment; intake operations function independently."
+
+  cycle_one_impact:
+    functional_changes: "Updated startGrainIntake to accept 'lifecycle' and pass it to executeOperation."
+    refinement: "Removed unnecessary state properties to maintain payload minimalism."
+    consistency: "All other service methods maintain existing functional interfaces."
+
+  documentation_target: "nexfarm-service.js"
+  code_summary: |
+    - Added 'lifecycle = null' to startGrainIntake signature.
+    - Included 'lifecycle' in executeOperation invocation within startGrainIntake.
+    - Maintained 'state' object parity to ensure no breaking changes in downstream consumption.

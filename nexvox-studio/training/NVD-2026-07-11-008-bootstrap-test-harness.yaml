@@ -1,0 +1,47 @@
+# ==============================================================================
+# NEXVOX STUDIO L2 DATA LAYER - ENGINEERING CONTINUITY RECORD
+# ==============================================================================
+meta:
+  recordId: "NVD-2026-07-11-008"
+  captureDate: "2026-07-11"
+  timestamp: "12:15:00"
+  contextType: "TEMPORARY_TEST_HARNESS"
+  status: "LOCKED_TRUTH"
+
+domain_context:
+  module: "Application Bootstrap / NexFarm Integration"
+  subSystem: "Runtime Verification Harness"
+  intent: "Establish runtime validation rules for verifying optional supplier registration boundaries before performing clean production commits."
+
+architectural_payload:
+  test_harness_specification:
+    context_setup:
+      actorType: "employee"
+      businessUnitId: "NEXFARM"
+      estateId: "ESTATE-001"
+      trustedDeviceVerification: "registerTrustedDevice execution asserted before pipeline execution"
+
+    test_matrix:
+      - testCase: "TEST_A_UNREGISTERED_SELLER"
+        description: "Executes direct startGrainIntake with an uninitialized lifecycle parameter."
+        expectedTransition: "INITIAL -> DELIVERY_STARTED"
+        assertion: "accepted == true"
+
+      - testCase: "TEST_B_REGISTERED_SUPPLIER"
+        description: "Executes registerNexFarmSupplier followed by startGrainIntake utilizing the resolved lifecycle state."
+        expectedTransition: "INITIAL -> REGISTERED -> DELIVERY_STARTED"
+        assertion: "both operations accept cleanly"
+
+      - testCase: "TEST_C_REGISTRATION_SKIPPED"
+        description: "Regressive validation forcing a clean bypass scenario alongside active UUID runs."
+        expectedTransition: "INITIAL -> DELIVERY_STARTED"
+        assertion: "accepted == true"
+
+  post_execution_directives:
+    reversionTarget: "main.js"
+    commitWhiteList:
+      - "intake-status.js"
+      - "intake-workflow.js"
+      - "intake-transition.js"
+      - "nexfarm-service.js"
+    commitMessage: "refactor(nexfarm): make supplier registration optional for grain intake"

@@ -1,0 +1,50 @@
+schema_version: "1.0"
+corpus:
+  corpus_id: nexapos-alpha-1.0
+  name: NexaPOS Alpha 1.0 Approved Knowledge Corpus
+  repository: nexapos-alpha
+  status: active_development
+  default_sensitivity: internal
+
+scope:
+  include:
+    - docs/business/**/*.md
+    - docs/engineering/**/*.md
+    - docs/migration/**/*.md
+    - docs/handoff/**/*.md
+    - nees/**/*.md
+    - backend/contracts/**/*.md
+    - frontend/src/**/*.js
+  exclude:
+    - backups/**
+    - "**/.env*"
+    - "**/*secret*"
+    - "**/*credential*"
+    - "**/node_modules/**"
+
+locked_principles:
+  - business_modules_adapt_to_core
+  - kernel_never_adapts_to_individual_modules
+  - immutable_events
+  - derived_read_models
+  - offline_first_permanent
+  - simulation_production_separated
+  - unifry_reference_pattern
+  - nexvox_no_production_authority
+
+current_milestone:
+  module: nexfarm
+  workflow: grain_intake
+  event_sequence:
+    - GRAIN_INTAKE_STARTED
+    - GRAIN_TYPE_SELECTED
+    - MOISTURE_TEST_RECORDED
+    - WEIGHT_CAPTURED
+    - PRICE_PREVIEW_CREATED
+    - SUPPLIER_ACCEPTED_OFFER
+    - SUPPLIER_DECLINED_OFFER
+
+review:
+  code_sources_review_on_commit: true
+  continuity_sources_review_on_milestone: true
+  governing_sources_review_interval_days: 180

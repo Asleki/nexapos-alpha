@@ -1,0 +1,22 @@
+# ==============================================================================
+# NEXVOX STUDIO L2 DATA LAYER - ENGINEERING CONTINUITY RECORD
+# ==============================================================================
+meta:
+  recordId: "NVD-2026-07-11-012"
+  captureDate: "2026-07-11"
+  timestamp: "19:10:00"
+  contextType: "DIAGNOSTIC_INSTRUMENTATION"
+  status: "LOCKED_TRUTH"
+
+domain_context:
+  module: "Supplier Registration"
+  intent: "Decompose failed registration result to identify root cause layer."
+
+architectural_payload:
+  instrumentation_summary: "Deploying targeted console logging for supplierRegistration diagnostic fields."
+  
+  diagnostic_hypothesis:
+    scenario_A: "Projection failure (projectionProjected == false) indicates a mismatch in the Supplier Directory read-model schema."
+    scenario_B: "Execution failure (executionReason == 'INVALID_INTAKE_TRANSITION') indicates the lifecycle engine does not recognize the registration event as a valid start-point."
+
+  follow_up_action: "Post-log analysis will direct inspection to either nexfarm-projection.js (A) or execution-engine.js (B)."

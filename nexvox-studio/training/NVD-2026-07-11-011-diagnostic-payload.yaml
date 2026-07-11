@@ -1,0 +1,27 @@
+# ==============================================================================
+# NEXVOX STUDIO L2 DATA LAYER - ENGINEERING CONTINUITY RECORD
+# ==============================================================================
+meta:
+  recordId: "NVD-2026-07-11-011"
+  captureDate: "2026-07-11"
+  timestamp: "19:15:00"
+  contextType: "DIAGNOSTIC_INSTRUMENTATION"
+  status: "LOCKED_TRUTH"
+
+domain_context:
+  module: "Supplier Registration Service"
+  intent: "Pinpoint root cause of registration rejection by decomposing internal result objects."
+
+architectural_payload:
+  instrumentation_target: "registerNexFarmSupplier result object"
+  injected_logs:
+    - field: "projectionProjected"
+      intent: "Verify if read-model projection was successful."
+    - field: "executionReason"
+      intent: "Capture specific engine-level rejection reason (e.g., transition invalid)."
+    - field: "executionCurrentStatus"
+      intent: "Identify if the engine correctly resolves the initial state."
+
+  diagnostic_expected_outcomes:
+    outcome_A: "Projection failure (projectionProjected == false) -> Shift focus to nexfarm-projection.js."
+    outcome_B: "Transition failure (executionReason == 'INVALID_TRANSITION') -> Shift focus to execution-engine.js."

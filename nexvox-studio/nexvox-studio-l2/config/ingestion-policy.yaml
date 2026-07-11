@@ -1,0 +1,55 @@
+schema_version: "1.0"
+ingestion:
+  allowed_extensions:
+    - .md
+    - .yaml
+    - .yml
+    - .js
+    - .json
+    - .txt
+  default_action: reject_until_classified
+  require_source_id: true
+  require_status: true
+  require_sensitivity: true
+  require_version: true
+  require_content_hash: true
+  require_review_date_for_governing_sources: true
+
+status_rules:
+  approved:
+    index: true
+    retrieve_by_default: true
+  approved_historical:
+    index: true
+    retrieve_by_default: false
+  review_required:
+    index: false
+    retrieve_by_default: false
+  draft:
+    index: false
+    retrieve_by_default: false
+  deprecated:
+    index: true
+    retrieve_by_default: false
+  rejected:
+    index: false
+    retrieve_by_default: false
+  quarantined:
+    index: false
+    retrieve_by_default: false
+
+secret_detection:
+  enabled: true
+  reject_on_match: true
+  patterns:
+    - "PRIVATE KEY"
+    - "api_key"
+    - "access_token"
+    - "password="
+    - "client_secret"
+
+personal_data:
+  raw_personal_records_allowed: false
+  masked_examples_allowed: true
+  synthetic_records_allowed: true
+  production_exports_allowed: false

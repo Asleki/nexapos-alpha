@@ -166,6 +166,7 @@ export async function registerNexFarmSupplier({
 export async function startGrainIntake({
   context = {},
   intake = {},
+  lifecycle = null,
 } = {}) {
 
   const workflow =
@@ -193,6 +194,7 @@ export async function startGrainIntake({
     await executeOperation({
       workflow,
       event,
+      lifecycle,
       kernel: kernelResult,
       projection: null,
       state: {

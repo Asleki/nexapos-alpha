@@ -7,14 +7,41 @@
  * ==========================================================
  *
  * Responsibility:
- * Resolve the current intake workflow status
- * from immutable NexFarm business events.
+ * Resolve immutable NexFarm business events
+ * into lifecycle statuses.
+ *
+ * This resolver performs event-to-status mapping
+ * only. It does NOT validate whether a transition
+ * is allowed.
+ *
+ * IMPORTANT:
+ * Supplier registration is an optional supplier
+ * relationship workflow.
+ *
+ * Grain intake may begin:
+ *
+ * INITIAL
+ *      ↓
+ * GRAIN_INTAKE_STARTED
+ *
+ * or
+ *
+ * INITIAL
+ *      ↓
+ * SUPPLIER_REGISTERED
+ *      ↓
+ * GRAIN_INTAKE_STARTED
+ *
+ * Both paths are valid.
  *
  * Must Never:
  * - Execute business logic
- * - Validate events
+ * - Validate transitions
  * - Modify lifecycle state
  * - Publish events
+ * - Perform supplier lookup
+ * - Create Nexa IDs
+ * - Perform identity verification
  */
 
 import { IntakeStatus } from "./intake-status.js";
@@ -26,14 +53,22 @@ export function resolveIntakeWorkflowStatus(
   const workflow = {
 
     /**
-     * Supplier
+     * ==========================================
+     * Optional Supplier Relationship
+     * ==========================================
+     *
+     * Supplier registration remains supported
+     * but is NOT a mandatory entry point into
+     * the intake lifecycle.
      */
 
     SUPPLIER_REGISTERED:
       IntakeStatus.REGISTERED,
 
     /**
-     * Intake
+     * ==========================================
+     * Grain Intake
+     * ==========================================
      */
 
     GRAIN_INTAKE_STARTED:
@@ -58,7 +93,9 @@ export function resolveIntakeWorkflowStatus(
       IntakeStatus.WEIGHED,
 
     /**
+     * ==========================================
      * Commercial
+     * ==========================================
      */
 
     PRICE_PREVIEW_CREATED:
@@ -71,7 +108,13 @@ export function resolveIntakeWorkflowStatus(
       IntakeStatus.REJECTED,
 
     /**
-     * Internal Drying
+     * ==========================================
+     * Internal Drying & Quality Control
+     * ==========================================
+     *
+     * Once the commercial transaction has been
+     * completed, all remaining lifecycle events
+     * are internal NexFarm custody operations.
      */
 
     SOLAR_DRYING_ASSIGNED:
@@ -93,7 +136,9 @@ export function resolveIntakeWorkflowStatus(
       IntakeStatus.GRAIN_LOST,
 
     /**
-     * Packaging
+     * ==========================================
+     * Packaging & Storage
+     * ==========================================
      */
 
     PACKAGING_SUGGESTED:
@@ -112,7 +157,9 @@ export function resolveIntakeWorkflowStatus(
       IntakeStatus.STORED,
 
     /**
+     * ==========================================
      * Completion
+     * ==========================================
      */
 
     INTAKE_COMPLETED:

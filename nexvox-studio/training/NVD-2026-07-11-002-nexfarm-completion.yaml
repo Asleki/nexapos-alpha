@@ -1,0 +1,134 @@
+# ==============================================================================
+# NEXVOX STUDIO L2 DATA LAYER - ENGINEERING CONTINUITY RECORD
+# ==============================================================================
+meta:
+  recordId: "NVD-2026-07-11-002"
+  captureDate: "2026-07-11"
+  timestamp: "07:10:00"
+  contextType: "MILESTONE_PREVIEW"
+  status: "LOCKED_TRUTH"
+
+domain_context:
+  module: "NexFarm"
+  subSystem: "Storage, Lifecycle, Packaging, Security & Data Observability"
+  intent: "Establish the detailed execution breakdown, affected files, safety gates, and data-logging hooks required to finalize the NexFarm intake-to-rack pipeline while preserving structured telemetry for NexVox L1."
+
+architectural_payload:
+  immutable_boundaries:
+    - principle: "Optional Supplier Registration"
+      rule: "Supplier registration remains available, but grain intake must be capable of starting and completing natively without it."
+    - principle: "Post-Transaction Internal Isolation"
+      rule: "After the supplier transaction is complete, internal processing (drying, E-Zone, packaging, racks) must never reopen pricing, modify valuation, or mutate supplier payment structures."
+    - principle: "AI Execution Fencing"
+      rule: "NexVox L1 observes bag inventory data and triggers low-stock alerts. It possesses zero execution or purchase capability. Capital costs are generated exclusively upon Finance Module approval, which automatically triggers synthetic restocking."
+    - principle: "Kernel Preservation"
+      rule: "Business modules adapt strictly to the Core Platform. No changes are permitted to core event queues, kernels, or runtime engines."
+
+  execution_cycles:
+    cycle_1_optional_supplier_registration:
+      objective: "Decouple intake initialization from mandatory registration profiles."
+      affected_files:
+        - "frontend/src/modules/nexfarm/lifecycle/intake-status.js"
+        - "frontend/src/modules/nexfarm/lifecycle/intake-workflow.js"
+        - "frontend/src/modules/nexfarm/lifecycle/intake-transition.js"
+        - "frontend/src/modules/nexfarm/nexfarm-service.js"
+        - "frontend/src/main.js"
+      test_vectors:
+        - "Unregistered Seller -> GRAIN_INTAKE_STARTED -> ACCEPTED"
+        - "Registered Supplier -> SUPPLIER_REGISTERED -> GRAIN_INTAKE_STARTED -> ACCEPTED"
+
+    cycle_2_post_drying_custody:
+      objective: "Track structural telemetry, weight variables, and moisture levels throughout internal drying cycles."
+      affected_files:
+        - "frontend/src/modules/nexfarm/nexfarm-events.js"
+        - "frontend/src/modules/nexfarm/nexfarm-service.js"
+        - "frontend/src/modules/nexfarm/storage/drying-engine.js"
+        - "frontend/src/modules/nexfarm/lifecycle/intake-status.js"
+        - "frontend/src/modules/nexfarm/lifecycle/intake-workflow.js"
+        - "frontend/src/modules/nexfarm/lifecycle/intake-transition.js"
+        - "frontend/src/main.js"
+      new_files:
+        - "frontend/src/modules/nexfarm/storage/drying-projection.js"
+        - "frontend/src/modules/nexfarm/storage/drying-read-model.js"
+      security_gate: "Block rack admission if moisture is unsafe, return weights are unrecorded, or abnormal weight loss remains unresolved."
+
+    cycle_3_real_ezone_ledger:
+      objective: "Transition E-Zone from a flat destination status to a quantity-weighted bulk holding ledger."
+      affected_files:
+        - "frontend/src/modules/nexfarm/nexfarm-events.js"
+        - "frontend/src/modules/nexfarm/nexfarm-service.js"
+        - "frontend/src/modules/nexfarm/lifecycle/intake-status.js"
+        - "frontend/src/modules/nexfarm/lifecycle/intake-workflow.js"
+        - "frontend/src/modules/nexfarm/lifecycle/intake-transition.js"
+        - "frontend/src/main.js"
+      new_files:
+        - "frontend/src/modules/nexfarm/storage/ezone-engine.js"
+        - "frontend/src/modules/nexfarm/storage/ezone-projection.js"
+        - "frontend/src/modules/nexfarm/storage/ezone-read-model.js"
+      metrics_logic: "Average moisture calculation must be quantity-weighted, not a simple arithmetical average."
+
+    cycle_4_bag_stock_control:
+      objective: "Inject size-aware physical bag constraints into the packaging engine."
+      affected_files:
+        - "frontend/src/modules/nexfarm/packaging/packaging-engine.js"
+        - "frontend/src/modules/nexfarm/nexfarm-events.js"
+        - "frontend/src/modules/nexfarm/nexfarm-service.js"
+        - "frontend/src/main.js"
+      new_files:
+        - "frontend/src/modules/nexfarm/packaging/bag-stock-engine.js"
+        - "frontend/src/modules/nexfarm/packaging/bag-stock-projection.js"
+        - "frontend/src/modules/nexfarm/packaging/bag-stock-read-model.js"
+      audit_flow: "PACKAGING_SUGGESTED -> BAG_STOCK_RESERVED -> BAG_CREATED -> BAG_STOCK_CONSUMED"
+
+    cycle_5_low_stock_alerts_and_restock:
+      objective: "Implement advisory low-stock thresholds observed by NexVox L1, backed by Finance approval loops."
+      affected_files:
+        - "frontend/src/modules/nexfarm/nexfarm-events.js"
+        - "frontend/src/modules/nexfarm/nexfarm-service.js"
+        - "frontend/src/modules/nexfarm/packaging/bag-stock-engine.js"
+        - "frontend/src/modules/nexfarm/packaging/bag-stock-projection.js"
+        - "frontend/src/modules/nexfarm/packaging/bag-stock-read-model.js"
+        - "frontend/src/main.js"
+      future_contracts:
+        - "backend/contracts/bag-restock-request-contract.md"
+        - "backend/contracts/finance-approval-contract.md"
+        - "backend/contracts/inventory-receipt-contract.md"
+
+    cycle_6_qr_identity_and_verification:
+      objective: "Establish secure printable payloads paired with a fallback physical Bag ID architecture."
+      affected_files:
+        - "frontend/src/modules/nexfarm/storage/qr-engine.js"
+        - "frontend/src/modules/nexfarm/nexfarm-events.js"
+        - "frontend/src/modules/nexfarm/nexfarm-service.js"
+        - "frontend/src/main.js"
+      new_files:
+        - "frontend/src/modules/nexfarm/storage/label-print-contract.js"
+        - "frontend/src/modules/nexfarm/storage/bag-verification-engine.js"
+      privacy_rule: "QR payloads must exclude PII data (names, IDs, phones, financials) and resolve only tracking tokens."
+
+    cycle_7_rack_placement:
+      objective: "Enforce physical placement constraints (grain type match, capacity boundaries, lower-level heavy bag constraints)."
+      affected_files:
+        - "frontend/src/modules/nexfarm/storage/rack-engine.js"
+        - "frontend/src/modules/nexfarm/nexfarm-events.js"
+        - "frontend/src/modules/nexfarm/nexfarm-service.js"
+        - "frontend/src/main.js"
+      new_files:
+        - "frontend/src/modules/nexfarm/storage/rack-projection.js"
+        - "frontend/src/modules/nexfarm/storage/rack-read-model.js"
+        - "frontend/src/modules/nexfarm/storage/rack-admission-engine.js"
+
+    cycle_8_inventory_reconciliation:
+      objective: "Enforce an absolute mass-balance reconciliation gate to finalize the intake lifecycle."
+      affected_files:
+        - "frontend/src/modules/nexfarm/nexfarm-events.js"
+        - "frontend/src/modules/nexfarm/nexfarm-service.js"
+        - "frontend/src/modules/nexfarm/lifecycle/intake-status.js"
+        - "frontend/src/modules/nexfarm/lifecycle/intake-workflow.js"
+        - "frontend/src/modules/nexfarm/lifecycle/intake-transition.js"
+        - "frontend/src/main.js"
+      new_files:
+        - "frontend/src/modules/nexfarm/inventory/nexfarm-inventory-projection.js"
+        - "frontend/src/modules/nexfarm/inventory/nexfarm-inventory-read-model.js"
+        - "frontend/src/modules/nexfarm/inventory/inventory-acceptance-engine.js"
+      balancing_equation: "Rack_kg + EZone_kg + DryingReturn_kg + ApprovedLoss_kg == AcceptedInternalOwnership_kg"

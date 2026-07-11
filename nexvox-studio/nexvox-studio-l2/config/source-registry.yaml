@@ -1,0 +1,69 @@
+schema_version: "1.0"
+registry_id: nexvox-l2-source-registry
+sources:
+  - source_id: BOP-ROOT
+    name: Business Operations Blueprints
+    domain: business_operations
+    authority_level: governing
+    default_status: approved
+    training_use: allowed
+    patterns:
+      - "docs/business/**/*.md"
+
+  - source_id: NEES-ROOT
+    name: Nexa Execution Engineering Specification
+    domain: platform_architecture
+    authority_level: governing
+    default_status: approved
+    training_use: allowed
+    patterns:
+      - "nees/**/*.md"
+
+  - source_id: MIG-ROOT
+    name: Engineering Migration Records
+    domain: engineering_history
+    authority_level: historical
+    default_status: approved_historical
+    training_use: allowed
+    patterns:
+      - "docs/migration/**/*.md"
+
+  - source_id: HANDOFF-ROOT
+    name: Engineering Continuity Records
+    domain: current_continuity
+    authority_level: authoritative
+    default_status: approved
+    training_use: allowed
+    patterns:
+      - "docs/handoff/**/*.md"
+
+  - source_id: ENGINEERING-ROOT
+    name: Engineering Reference Documents
+    domain: module_engineering
+    authority_level: authoritative
+    default_status: approved
+    training_use: allowed
+    patterns:
+      - "docs/engineering/**/*.md"
+
+  - source_id: SOURCE-CODE
+    name: NexaPOS Alpha Source Code
+    domain: source_code
+    authority_level: implementation_evidence
+    default_status: approved
+    training_use: allowed
+    patterns:
+      - "frontend/src/**/*.js"
+      - "backend/**/*.md"
+    exclusions:
+      - "**/*.secret.*"
+      - "**/.env*"
+
+  - source_id: JOURNEY
+    name: Nexa Development Journey
+    domain: journey_and_provenance
+    authority_level: narrative
+    default_status: review_required
+    training_use: allowed_after_approval
+    patterns:
+      - "docs/journey/**/*.md"

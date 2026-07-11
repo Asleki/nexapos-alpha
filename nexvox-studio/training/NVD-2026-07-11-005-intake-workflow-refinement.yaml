@@ -1,0 +1,56 @@
+# ==============================================================================
+# NEXVOX STUDIO L2 DATA LAYER - ENGINEERING CONTINUITY RECORD
+# ==============================================================================
+meta:
+  recordId: "NVD-2026-07-11-005"
+  captureDate: "2026-07-11"
+  timestamp: "09:25:00"
+  contextType: "ARCHITECTURAL_REFINEMENT"
+  status: "LOCKED_TRUTH"
+
+domain_context:
+  module: "NexFarm"
+  subSystem: "Lifecycle / Event Resolution"
+  intent: "Maintain pure event-to-status mapping while decoupling optional supplier registration from mandatory intake pipeline flow."
+
+architectural_payload:
+  immutable_principles:
+    - principle: "Resolver Purity"
+      definition: "File must remain a pure dictionary of event mappings. It prohibits conditional logic or status validation."
+    - principle: "Decoupled Registration"
+      definition: "Supplier registration is optional; intake event sequences are valid regardless of registration status."
+
+  cycle_one_impact:
+    functional_changes: "None (Refinement only)."
+    operational_separation: "Strict boundary between supplier relationship events and intake operational custody."
+    delegation: "All transition validation logic is deferred to intake-transition.js."
+
+  documentation_target: "intake-workflow.js"
+  code_payload: |
+    export function resolveIntakeWorkflowStatus(eventType) {
+      const workflow = {
+        SUPPLIER_REGISTERED: "registered",
+        GRAIN_INTAKE_STARTED: "delivery_started",
+        GRAIN_DELIVERY_STARTED: "delivery_started",
+        GRAIN_TYPE_SELECTED: "inspected",
+        GRAIN_VISUALLY_INSPECTED: "inspected",
+        GRAIN_REJECTED: "rejected",
+        MOISTURE_TEST_RECORDED: "moisture_tested",
+        WEIGHT_CAPTURED: "weighed",
+        PRICE_PREVIEW_CREATED: "price_previewed",
+        SUPPLIER_ACCEPTED_OFFER: "offer_accepted",
+        SUPPLIER_DECLINED_OFFER: "rejected",
+        SOLAR_DRYING_ASSIGNED: "drying",
+        INTERNAL_DRYING_ASSESSMENT_RECORDED: "drying_assessed",
+        RETURN_TO_DRYING: "return_to_drying",
+        LOSS_REVIEW_REQUIRED: "loss_review",
+        INTERNAL_LOSS_REVIEW_REQUIRED: "loss_review",
+        INTERNAL_GRAIN_LOSS_RECORDED: "grain_lost",
+        PACKAGING_SUGGESTED: "packaging_ready",
+        BAG_CREATED: "bagged",
+        QR_ASSIGNED: "qr_ready",
+        RACK_ASSIGNED: "stored",
+        INTAKE_COMPLETED: "completed"
+      };
+      return workflow[eventType] ?? null;
+    }

@@ -1,0 +1,25 @@
+# ==============================================================================
+# NEXVOX STUDIO L2 DATA LAYER - ENGINEERING CONTINUITY RECORD
+# ==============================================================================
+meta:
+  recordId: "NVD-2026-07-11-015"
+  captureDate: "2026-07-11"
+  timestamp: "21:30:00"
+  contextType: "CYCLE_INITIATION"
+  status: "ACTIVE"
+
+domain_context:
+  module: "NexFarm"
+  subSystem: "Drying Custody Engine"
+  intent: "Define initial state shape for the Drying Read Model."
+
+architectural_payload:
+  deployment_plan:
+    - sequence: "1. Define Read Model Schema"
+    - sequence: "2. Implement Projection Logic"
+    - sequence: "3. Register in Bootstrap"
+    - sequence: "4. Instrument Test Harness"
+
+  security_controls:
+    guard_flags: ["packagingAllowed", "rackAssignmentAllowed"]
+    terminal_state: "closedAsLoss"

@@ -1,2 +1,3 @@
-frontend/src/modules/nexfarm/lifecycle/intake-status.js
-frontend/src/main.js
+
+
+5. frontend/src/main.js

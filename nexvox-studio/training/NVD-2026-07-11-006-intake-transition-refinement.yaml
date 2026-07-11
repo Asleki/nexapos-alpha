@@ -1,0 +1,55 @@
+# ==============================================================================
+# NEXVOX STUDIO L2 DATA LAYER - ENGINEERING CONTINUITY RECORD
+# ==============================================================================
+meta:
+  recordId: "NVD-2026-07-11-006"
+  captureDate: "2026-07-11"
+  timestamp: "09:44:00"
+  contextType: "ARCHITECTURAL_REFINEMENT"
+  status: "LOCKED_TRUTH"
+
+domain_context:
+  module: "NexFarm"
+  subSystem: "Lifecycle / Transition Validation"
+  intent: "Formalize the state machine transitions, enabling optional supplier registration while locking down terminal status boundaries."
+
+architectural_payload:
+  immutable_principles:
+    - principle: "Strict State Machine"
+      definition: "Transitions are defined as a formal whitelist. Any transition not explicitly mapped is rejected by the validation function."
+    - principle: "Non-Blocking Registration"
+      definition: "The transition from INITIAL to DELIVERY_STARTED is permitted independently of the REGISTERED path."
+
+  cycle_one_impact:
+    functional_changes: "Updated transition mapping to permit direct DELIVERY_STARTED entry."
+    validation_logic: "isValidIntakeTransition remains the gatekeeper for all status updates."
+    terminal_safety: "Terminal states explicitly sealed with empty arrays to prevent re-entry."
+
+  documentation_target: "intake-transition.js"
+  code_payload: |
+    import { IntakeStatus } from "./intake-status.js";
+    export const IntakeTransition = Object.freeze({
+      [IntakeStatus.INITIAL]: [IntakeStatus.REGISTERED, IntakeStatus.DELIVERY_STARTED],
+      [IntakeStatus.REGISTERED]: [IntakeStatus.DELIVERY_STARTED],
+      [IntakeStatus.DELIVERY_STARTED]: [IntakeStatus.INSPECTED, IntakeStatus.REJECTED],
+      [IntakeStatus.INSPECTED]: [IntakeStatus.MOISTURE_TESTED, IntakeStatus.REJECTED],
+      [IntakeStatus.MOISTURE_TESTED]: [IntakeStatus.WEIGHED],
+      [IntakeStatus.WEIGHED]: [IntakeStatus.PRICE_PREVIEWED, IntakeStatus.DRYING, IntakeStatus.DRYING_ASSESSED],
+      [IntakeStatus.PRICE_PREVIEWED]: [IntakeStatus.OFFER_ACCEPTED, IntakeStatus.REJECTED],
+      [IntakeStatus.OFFER_ACCEPTED]: [IntakeStatus.PACKAGING_READY, IntakeStatus.DRYING],
+      [IntakeStatus.DRYING]: [IntakeStatus.MOISTURE_TESTED, IntakeStatus.REJECTED, IntakeStatus.GRAIN_LOST],
+      [IntakeStatus.DRYING_ASSESSED]: [IntakeStatus.PACKAGING_READY, IntakeStatus.DRYING, IntakeStatus.RETURN_TO_DRYING, IntakeStatus.LOSS_REVIEW, IntakeStatus.GRAIN_LOST],
+      [IntakeStatus.RETURN_TO_DRYING]: [IntakeStatus.DRYING],
+      [IntakeStatus.LOSS_REVIEW]: [IntakeStatus.DRYING, IntakeStatus.PACKAGING_READY, IntakeStatus.GRAIN_LOST],
+      [IntakeStatus.PACKAGING_READY]: [IntakeStatus.BAGGED, IntakeStatus.EZONE],
+      [IntakeStatus.BAGGED]: [IntakeStatus.QR_READY],
+      [IntakeStatus.EZONE]: [IntakeStatus.PACKAGING_READY, IntakeStatus.COMPLETED, IntakeStatus.GRAIN_LOST],
+      [IntakeStatus.QR_READY]: [IntakeStatus.STORED],
+      [IntakeStatus.STORED]: [IntakeStatus.COMPLETED],
+      [IntakeStatus.COMPLETED]: [],
+      [IntakeStatus.REJECTED]: [],
+      [IntakeStatus.GRAIN_LOST]: []
+    });
+    export function isValidIntakeTransition(currentStatus, nextStatus) {
+      return (IntakeTransition[currentStatus] ?? []).includes(nextStatus);
+    }

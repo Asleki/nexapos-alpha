@@ -1,0 +1,53 @@
+# ==============================================================================
+# NEXVOX STUDIO L2 DATA LAYER - ENGINEERING CONTINUITY RECORD
+# ==============================================================================
+meta:
+  recordId: "NVD-2026-07-11-001"
+  captureDate: "2026-07-11"
+  timestamp: "04:47:00"
+  contextType: "MILESTONE_PREVIEW"
+  status: "LOCKED_TRUTH"
+
+domain_context:
+  module: "NexFarm"
+  subSystem: "Procurement, Finance, Sales"
+  intent: "Define the operational boundaries and progressive lifecycles of grain procurement, multi-delivery workflows, and distribution to prevent architectural bloating of the Alpha kernel."
+
+architectural_payload:
+  immutable_principles:
+    - principle: "Vertical Slice Engineering (NEES Compliance)"
+      definition: "Build one complete vertical lifecycle to completion before introducing edge-cases, scaling extensions, or complex real-world multi-step variants."
+    - principle: "Kernel Domain Separation"
+      definition: "Intake workflows govern how raw grain becomes legal corporate inventory. Settlement complexities (split payments, multi-deliveries, ledgers) belong strictly to the Finance Domain, consuming immutable events from the Intake Engine."
+
+  nexfarm_lifecycle_phases:
+    phase_1_procurement_alpha:
+      scope: "Core legal acquisition of grain inventory."
+      workflow_vector: "Supplier -> Intake -> Inspection -> Pricing -> Supplier Decision -> Payment -> Inventory Accepted -> Intake Completed."
+      completion_boundary: "Terminates the exact millisecond NexFarm legally owns the physical grain."
+      active_tasks:
+        - "Supplier Declined"
+        - "Payment Request"
+        - "Payment Approval / Declined"
+        - "Inventory Accepted"
+        - "Intake Completed"
+
+    phase_2_procurement_extensions:
+      scope: "Complex supplier relationship management and account settlement."
+      postponed_to: "Finance Module Integration"
+      capabilities:
+        - "Multi-Grain Delivery (e.g., Maize + Beans in a single visit)"
+        - "Split Deliveries (e.g., 3-tonne allocation arriving over 4 discrete truckloads)"
+        - "Consolidated & Partial Payments"
+        - "Supplier Ledger Accounting & Outstanding Balances"
+
+    phase_3_sales_distribution:
+      scope: "Downstream commercial trading and asset liquidation."
+      actor_type: "BUYER"
+      workflow_vector: "Inventory -> Buyer Order -> Price Quote -> Allocation -> Dispatch -> Delivery -> Invoice -> Payment -> Completed."
+
+  finance_module_integration:
+    responsibilities:
+      - "Supplier/Customer Accounts Receivable & Payable"
+      - "Payment batches and Settlement statements"
+    data_flow: "The Finance module acts as a downstream consumer of immutable NexFarm events, preventing NexFarm from duplicating core banking and balancing logic."

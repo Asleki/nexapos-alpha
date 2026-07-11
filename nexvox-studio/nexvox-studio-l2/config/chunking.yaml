@@ -1,0 +1,43 @@
+schema_version: "1.0"
+chunking:
+  markdown:
+    strategy: heading_aware
+    target_tokens: 700
+    minimum_tokens: 150
+    maximum_tokens: 1200
+    overlap_tokens: 120
+    preserve_front_matter: metadata_only
+    preserve_heading_path: true
+
+  source_code:
+    strategy: symbol_aware
+    preferred_units:
+      - exported_function
+      - class
+      - object_definition
+      - module_header
+    target_tokens: 450
+    maximum_tokens: 900
+    include_import_context: true
+
+  yaml:
+    strategy: top_level_key
+    target_tokens: 500
+    maximum_tokens: 1000
+
+metadata_per_chunk:
+  - source_id
+  - document_id
+  - repository
+  - file_path
+  - heading_path
+  - version
+  - status
+  - authority_level
+  - knowledge_domain
+  - business_units
+  - runtime_scope
+  - sensitivity
+  - content_hash
+  - source_commit
+  - ingested_at
