@@ -10,12 +10,48 @@
  * Execute NexFarm business operations through
  * the NexaPOS live operational pipeline.
  *
+ * Coordinate:
+ * - Immutable NexFarm event creation
+ * - Kernel execution
+ * - Lifecycle execution
+ * - Supplier-directory projection updates
+ * - Drying-custody projection updates
+ * - Packaging suggestions
+ * - Bag identity creation
+ * - QR preparation
+ * - Logical rack assignment
+ * - Internal drying, loss-review, and loss recording
+ *
+ * Drying-custody events are projected into a derived
+ * operational read model for:
+ * - Active drying batches
+ * - Drying-cycle history
+ * - Returned moisture and weight
+ * - Drying duration
+ * - Moisture and weight-loss observations
+ * - Storage-preparation readiness
+ * - Loss-review states
+ * - Internal grain-loss closure
+ * - Future NexVox AI L1 observation
+ *
+ * Architectural Boundaries:
+ * - Supplier registration remains optional.
+ * - Grain intake can begin without supplier registration.
+ * - Supplier pricing and acceptance happen only within
+ *   the commercial intake flow.
+ * - Post-acquisition drying is an internal NexFarm
+ *   custody, quality, safety, and loss-control process.
+ * - Drying must never reopen supplier pricing or payment.
+ * - NexVox AI may observe derived results only.
+ *
  * Depends On:
  * - nexfarm-events.js
  * - kernel-engine.js
  * - read-model-engine.js
  * - execution-engine.js
  * - nexfarm-projection.js
+ * - drying-projection.js
+ * - drying-read-model.js
  * - packaging-engine.js
  * - qr-engine.js
  * - rack-engine.js
@@ -24,16 +60,26 @@
  * Used By:
  * - NexFarm UI
  * - Temporary integration tests
+ * - Future NexFarm operational workflows
  *
  * Must Never:
- * - Validate events
+ * - Validate Kernel event schemas
  * - Execute security directly
- * - Store events directly
+ * - Store source events directly
  * - Synchronize events
+ * - Process supplier payments
+ * - Approve internal loss
+ * - Approve rack admission through AI
+ * - Let NexVox execute business operations
  */
 
-import { executeKernel } from "../../core/kernel-engine.js";
-import { updateReadModel } from "../../core/read-model-engine.js";
+import {
+  executeKernel,
+} from "../../core/kernel-engine.js";
+
+import {
+  updateReadModel,
+} from "../../core/read-model-engine.js";
 
 import {
   createSupplierRegisteredEvent,
@@ -80,6 +126,103 @@ import {
   NEXFARM_SUPPLIER_DIRECTORY_PROJECTION,
   NEXFARM_SUPPLIER_DIRECTORY_READ_MODEL,
 } from "./nexfarm-projection.js";
+
+import {
+  NEXFARM_DRYING_CUSTODY_PROJECTION,
+} from "./storage/drying-projection.js";
+
+import {
+  NEXFARM_DRYING_CUSTODY_READ_MODEL,
+  createInitialNexFarmDryingReadModel,
+} from "./storage/drying-read-model.js";
+
+/**
+ * ==========================================================
+ * Internal Service Helpers
+ * ==========================================================
+ */
+
+/**
+ * Return a normalized measurement-stage value.
+ */
+function normalizeMeasurementStage(
+  measurementStage,
+) {
+
+  return String(
+    measurementStage ?? "",
+  )
+    .trim()
+    .toLowerCase();
+
+}
+
+/**
+ * Determine whether a moisture or weight observation
+ * represents grain returning from solar drying.
+ */
+function isDryingReturnMeasurement(
+  measurementStage,
+) {
+
+  const normalizedStage =
+    normalizeMeasurementStage(
+      measurementStage,
+    );
+
+  return (
+    normalizedStage ===
+      "after_solar_drying" ||
+    normalizedStage ===
+      "returned_from_drying" ||
+    normalizedStage ===
+      "drying_return"
+  );
+
+}
+
+/**
+ * Project a drying-related event into the derived
+ * NexFarm Drying Custody Read Model.
+ *
+ * Events remain the source of truth. This helper only
+ * coordinates projection execution.
+ */
+function updateDryingCustodyReadModel(
+  event,
+) {
+
+  return updateReadModel({
+    projectionName:
+      NEXFARM_DRYING_CUSTODY_PROJECTION,
+
+    readModelName:
+      NEXFARM_DRYING_CUSTODY_READ_MODEL,
+
+    event,
+
+    initialState:
+      createInitialNexFarmDryingReadModel(),
+  });
+
+}
+
+/**
+ * Determine whether a downstream storage-preparation
+ * event explicitly belongs to a drying cycle.
+ */
+function hasDryingCycleReference(
+  payload = {},
+) {
+
+  return Boolean(
+    payload.sourceDryingCycleId ??
+    payload.dryingCycleId ??
+    payload.dryingCycleNumber ??
+    payload.dryingCycle,
+  );
+
+}
 
 /**
  * ==========================================================
@@ -133,8 +276,10 @@ export async function registerNexFarmSupplier({
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
-      projection: projectionResult,
+      kernel:
+        kernelResult,
+      projection:
+        projectionResult,
       state: {
         updated:
           projectionResult.projected === true,
@@ -194,12 +339,22 @@ export async function startGrainIntake({
     await executeOperation({
       workflow,
       event,
+      kernel:
+        kernelResult,
       lifecycle,
-      kernel: kernelResult,
       projection: null,
       state: {
         updated: true,
         intakeStarted: true,
+
+        supplierId:
+          event.payload?.supplierId ??
+          null,
+
+        temporarySupplierReference:
+          event.payload
+            ?.temporarySupplierReference ??
+          null,
       },
     });
 
@@ -250,12 +405,17 @@ export async function selectGrainType({
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
       projection: null,
       state: {
         updated: true,
         grainTypeSelected: true,
+
+        grainType:
+          event.payload?.grainType ??
+          null,
       },
     });
 
@@ -302,20 +462,54 @@ export async function recordMoistureTest({
     };
   }
 
+  const returnedFromDrying =
+    isDryingReturnMeasurement(
+      event.payload?.measurementStage,
+    );
+
+  const projectionResult =
+    returnedFromDrying
+      ? updateDryingCustodyReadModel(
+          event,
+        )
+      : null;
+
+  const projectionAccepted =
+    !returnedFromDrying ||
+    projectionResult?.projected === true;
+
   const executionResult =
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
-      projection: null,
+      projection:
+        projectionResult,
       state: {
-        updated: true,
-        moistureTestRecorded: true,
+        updated:
+          projectionAccepted,
+
+        moistureTestRecorded:
+          true,
+
+        moisturePercentage:
+          event.payload
+            ?.moisturePercentage ??
+          null,
 
         measurementStage:
-          event.payload?.measurementStage ??
+          event.payload
+            ?.measurementStage ??
           null,
+
+        dryingReturnMeasurement:
+          returnedFromDrying,
+
+        dryingCustodyUpdated:
+          projectionResult?.projected ===
+          true,
       },
     });
 
@@ -327,7 +521,7 @@ export async function recordMoistureTest({
       kernelResult,
 
     projection:
-      null,
+      projectionResult,
 
     execution:
       executionResult,
@@ -362,20 +556,53 @@ export async function captureWeight({
     };
   }
 
+  const returnedFromDrying =
+    isDryingReturnMeasurement(
+      event.payload?.measurementStage,
+    );
+
+  const projectionResult =
+    returnedFromDrying
+      ? updateDryingCustodyReadModel(
+          event,
+        )
+      : null;
+
+  const projectionAccepted =
+    !returnedFromDrying ||
+    projectionResult?.projected === true;
+
   const executionResult =
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
-      projection: null,
+      projection:
+        projectionResult,
       state: {
-        updated: true,
-        weightCaptured: true,
+        updated:
+          projectionAccepted,
+
+        weightCaptured:
+          true,
+
+        weightKg:
+          event.payload?.weightKg ??
+          null,
 
         measurementStage:
-          event.payload?.measurementStage ??
+          event.payload
+            ?.measurementStage ??
           null,
+
+        dryingReturnMeasurement:
+          returnedFromDrying,
+
+        dryingCustodyUpdated:
+          projectionResult?.projected ===
+          true,
       },
     });
 
@@ -387,7 +614,7 @@ export async function captureWeight({
       kernelResult,
 
     projection:
-      null,
+      projectionResult,
 
     execution:
       executionResult,
@@ -432,7 +659,8 @@ export async function createPricePreview({
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
       projection: null,
       state: {
@@ -488,7 +716,8 @@ export async function acceptSupplierOffer({
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
       projection: null,
       state: {
@@ -539,7 +768,9 @@ export async function suggestNexFarmPackaging({
   }
 
   const packagingResult =
-    suggestPackaging(packagingInput);
+    suggestPackaging(
+      packagingInput,
+    );
 
   if (!packagingResult.accepted) {
     return {
@@ -547,7 +778,8 @@ export async function suggestNexFarmPackaging({
       kernel: null,
       projection: null,
       execution: null,
-      packaging: packagingResult,
+      packaging:
+        packagingResult,
     };
   }
 
@@ -572,29 +804,62 @@ export async function suggestNexFarmPackaging({
   if (!kernelResult.accepted) {
     return {
       accepted: false,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       projection: null,
       execution: null,
-      packaging: packagingResult,
+      packaging:
+        packagingResult,
     };
   }
+
+  const dryingRelated =
+    hasDryingCycleReference(
+      event.payload,
+    );
+
+  const projectionResult =
+    dryingRelated
+      ? updateDryingCustodyReadModel(
+          event,
+        )
+      : null;
+
+  const projectionAccepted =
+    !dryingRelated ||
+    projectionResult?.projected === true;
 
   const executionResult =
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
-      projection: null,
+      projection:
+        projectionResult,
       state: {
-        updated: true,
-        packagingSuggested: true,
+        updated:
+          projectionAccepted,
+
+        packagingSuggested:
+          true,
 
         totalPackagedKg:
-          packagingResult.totalPackagedKg,
+          packagingResult
+            .totalPackagedKg,
 
         eZoneKg:
           packagingResult.eZoneKg,
+
+        sourceDryingCycleId:
+          event.payload
+            ?.sourceDryingCycleId ??
+          null,
+
+        dryingCustodyUpdated:
+          projectionResult?.projected ===
+          true,
       },
     });
 
@@ -606,7 +871,7 @@ export async function suggestNexFarmPackaging({
       kernelResult,
 
     projection:
-      null,
+      projectionResult,
 
     execution:
       executionResult,
@@ -638,22 +903,57 @@ export async function createNexFarmBag({
   if (!kernelResult.accepted) {
     return {
       accepted: false,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       projection: null,
       execution: null,
     };
   }
 
+  const dryingRelated =
+    hasDryingCycleReference(
+      event.payload,
+    );
+
+  const projectionResult =
+    dryingRelated
+      ? updateDryingCustodyReadModel(
+          event,
+        )
+      : null;
+
+  const projectionAccepted =
+    !dryingRelated ||
+    projectionResult?.projected === true;
+
   const executionResult =
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
-      projection: null,
+      projection:
+        projectionResult,
       state: {
-        updated: true,
-        bagCreated: true,
+        updated:
+          projectionAccepted,
+
+        bagCreated:
+          true,
+
+        bagId:
+          event.payload?.bagId ??
+          null,
+
+        sourceDryingCycleId:
+          event.payload
+            ?.sourceDryingCycleId ??
+          null,
+
+        dryingCustodyUpdated:
+          projectionResult?.projected ===
+          true,
       },
     });
 
@@ -665,7 +965,7 @@ export async function createNexFarmBag({
       kernelResult,
 
     projection:
-      null,
+      projectionResult,
 
     execution:
       executionResult,
@@ -720,7 +1020,8 @@ export async function assignQrToNexFarmBag({
       kernel: null,
       projection: null,
       execution: null,
-      qr: qrPayloadResult,
+      qr:
+        qrPayloadResult,
     };
   }
 
@@ -736,7 +1037,8 @@ export async function assignQrToNexFarmBag({
       kernel: null,
       projection: null,
       execution: null,
-      qr: qrValueResult,
+      qr:
+        qrValueResult,
     };
   }
 
@@ -755,7 +1057,8 @@ export async function assignQrToNexFarmBag({
       kernel: null,
       projection: null,
       execution: null,
-      qr: labelResult,
+      qr:
+        labelResult,
     };
   }
 
@@ -785,7 +1088,8 @@ export async function assignQrToNexFarmBag({
   if (!kernelResult.accepted) {
     return {
       accepted: false,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       projection: null,
       execution: null,
 
@@ -806,12 +1110,25 @@ export async function assignQrToNexFarmBag({
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
       projection: null,
       state: {
         updated: true,
         qrAssigned: true,
+
+        bagId:
+          event.payload?.bagId ??
+          null,
+
+        labelCode:
+          event.payload?.labelCode ??
+          null,
+
+        bagIdentityFallback:
+          event.payload?.bagId ??
+          null,
       },
     });
 
@@ -877,7 +1194,8 @@ export async function assignRackToNexFarmBag({
       kernel: null,
       projection: null,
       execution: null,
-      rack: rackResult,
+      rack:
+        rackResult,
     };
   }
 
@@ -887,7 +1205,8 @@ export async function assignRackToNexFarmBag({
       ...bag,
 
       rackSection:
-        rackResult.location.rackSection,
+        rackResult.location
+          .rackSection,
 
       row:
         rackResult.location.row,
@@ -896,7 +1215,8 @@ export async function assignRackToNexFarmBag({
         rackResult.location.column,
 
       locationCode:
-        rackResult.location.locationCode,
+        rackResult.location
+          .locationCode,
     });
 
   const kernelResult =
@@ -905,23 +1225,59 @@ export async function assignRackToNexFarmBag({
   if (!kernelResult.accepted) {
     return {
       accepted: false,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       projection: null,
       execution: null,
-      rack: rackResult,
+      rack:
+        rackResult,
     };
   }
+
+  const dryingRelated =
+    hasDryingCycleReference(
+      event.payload,
+    );
+
+  const projectionResult =
+    dryingRelated
+      ? updateDryingCustodyReadModel(
+          event,
+        )
+      : null;
+
+  const projectionAccepted =
+    !dryingRelated ||
+    projectionResult?.projected === true;
 
   const executionResult =
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
-      projection: null,
+      projection:
+        projectionResult,
       state: {
-        updated: true,
-        rackAssigned: true,
+        updated:
+          projectionAccepted,
+
+        rackAssigned:
+          true,
+
+        locationCode:
+          rackResult.location
+            .locationCode,
+
+        sourceDryingCycleId:
+          event.payload
+            ?.sourceDryingCycleId ??
+          null,
+
+        dryingCustodyUpdated:
+          projectionResult?.projected ===
+          true,
       },
     });
 
@@ -933,7 +1289,7 @@ export async function assignRackToNexFarmBag({
       kernelResult,
 
     projection:
-      null,
+      projectionResult,
 
     execution:
       executionResult,
@@ -971,26 +1327,69 @@ export async function assignSolarDrying({
   if (!kernelResult.accepted) {
     return {
       accepted: false,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       projection: null,
       execution: null,
     };
   }
 
+  const projectionResult =
+    updateDryingCustodyReadModel(
+      event,
+    );
+
   const executionResult =
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
-      projection: null,
+      projection:
+        projectionResult,
       state: {
-        updated: true,
-        solarDryingAssigned: true,
+        updated:
+          projectionResult.projected ===
+          true,
+
+        solarDryingAssigned:
+          true,
+
+        dryingCycleId:
+          event.payload
+            ?.dryingCycleId ??
+          null,
+
+        dryingCycleNumber:
+          event.payload
+            ?.dryingCycleNumber ??
+          event.payload?.dryingCycle ??
+          1,
 
         dryingCycle:
           event.payload?.dryingCycle ??
+          event.payload
+            ?.dryingCycleNumber ??
           1,
+
+        dryingZoneId:
+          event.payload?.dryingZoneId ??
+          null,
+
+        dryingStartedAt:
+          event.payload
+            ?.dryingStartedAt ??
+          null,
+
+        expectedReviewAt:
+          event.payload
+            ?.expectedReviewAt ??
+          null,
+
+        dryingCustodyUpdated:
+          projectionResult.projected ===
+          true,
       },
     });
 
@@ -1002,7 +1401,7 @@ export async function assignSolarDrying({
       kernelResult,
 
     projection:
-      null,
+      projectionResult,
 
     execution:
       executionResult,
@@ -1028,22 +1427,28 @@ export async function recordInternalDryingAssessment({
   const dryingResult =
     analyzeDryingResult({
       beforeDryingWeightKg:
-        drying.beforeDryingWeightKg,
+        drying.beforeDryingWeightKg ??
+        drying.weightAtEntryKg,
 
       afterDryingWeightKg:
-        drying.afterDryingWeightKg,
+        drying.afterDryingWeightKg ??
+        drying.weightAtReturnKg,
 
       moistureBefore:
-        drying.moistureBefore,
+        drying.moistureBefore ??
+        drying.moistureAtEntryPercent,
 
       moistureAfter:
-        drying.moistureAfter,
+        drying.moistureAfter ??
+        drying.moistureAtReturnPercent,
 
       dryingStartedAt:
-        drying.dryingStartedAt,
+        drying.dryingStartedAt ??
+        drying.enteredAt,
 
       dryingEndedAt:
-        drying.dryingEndedAt,
+        drying.dryingEndedAt ??
+        drying.returnedAt,
 
       acceptableLossPercentMin:
         drying.acceptableLossPercentMin ??
@@ -1064,8 +1469,10 @@ export async function recordInternalDryingAssessment({
       kernel: null,
       projection: null,
       execution: null,
-      drying: dryingResult,
-      assessmentDecision: null,
+      drying:
+        dryingResult,
+      assessmentDecision:
+        null,
     };
   }
 
@@ -1075,6 +1482,7 @@ export async function recordInternalDryingAssessment({
   const grainCondition =
     String(
       drying.grainCondition ??
+      drying.conditionStatus ??
       "acceptable",
     )
       .trim()
@@ -1128,33 +1536,64 @@ export async function recordInternalDryingAssessment({
       intakeId:
         drying.intakeId,
 
+      dryingCycleId:
+        drying.dryingCycleId ??
+        null,
+
+      dryingCycleNumber:
+        drying.dryingCycleNumber ??
+        drying.dryingCycle ??
+        1,
+
+      dryingCycle:
+        drying.dryingCycle ??
+        drying.dryingCycleNumber ??
+        1,
+
       grainType:
         drying.grainType,
 
       dryingZoneId:
         drying.dryingZoneId,
 
-      dryingCycle:
-        drying.dryingCycle ??
-        1,
+      weightAtEntryKg:
+        analysis.beforeDryingWeightKg,
 
       beforeDryingWeightKg:
         analysis.beforeDryingWeightKg,
 
+      weightAtReturnKg:
+        analysis.afterDryingWeightKg,
+
       afterDryingWeightKg:
         analysis.afterDryingWeightKg,
+
+      moistureAtEntryPercent:
+        analysis.moistureBefore,
 
       moistureBefore:
         analysis.moistureBefore,
 
+      moistureAtReturnPercent:
+        analysis.moistureAfter,
+
       moistureAfter:
         analysis.moistureAfter,
+
+      enteredAt:
+        analysis.dryingStartedAt,
 
       dryingStartedAt:
         analysis.dryingStartedAt,
 
+      returnedAt:
+        analysis.dryingEndedAt,
+
       dryingEndedAt:
         analysis.dryingEndedAt,
+
+      durationMinutes:
+        analysis.dryingDurationMinutes,
 
       dryingDurationMinutes:
         analysis.dryingDurationMinutes,
@@ -1176,6 +1615,9 @@ export async function recordInternalDryingAssessment({
 
       abnormalLoss:
         analysis.abnormalLoss,
+
+      conditionStatus:
+        grainCondition,
 
       grainCondition,
 
@@ -1200,25 +1642,40 @@ export async function recordInternalDryingAssessment({
   if (!kernelResult.accepted) {
     return {
       accepted: false,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       projection: null,
       execution: null,
-      drying: dryingResult,
+      drying:
+        dryingResult,
       assessmentDecision,
     };
   }
+
+  const projectionResult =
+    updateDryingCustodyReadModel(
+      event,
+    );
 
   const executionResult =
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
-      projection: null,
+      projection:
+        projectionResult,
       state: {
-        updated: true,
+        updated:
+          projectionResult.projected ===
+          true,
 
         internalDryingAssessmentRecorded:
+          true,
+
+        dryingCustodyUpdated:
+          projectionResult.projected ===
           true,
 
         assessmentDecision,
@@ -1250,6 +1707,18 @@ export async function recordInternalDryingAssessment({
         rackAssignmentBlocked:
           assessmentDecision !==
           "ready_for_storage_preparation",
+
+        weightLossKg:
+          analysis.weightLossKg,
+
+        weightLossPercent:
+          analysis.weightLossPercent,
+
+        moistureDropPercent:
+          analysis.moistureDropPercent,
+
+        dryingDurationMinutes:
+          analysis.dryingDurationMinutes,
       },
     });
 
@@ -1261,7 +1730,7 @@ export async function recordInternalDryingAssessment({
       kernelResult,
 
     projection:
-      null,
+      projectionResult,
 
     execution:
       executionResult,
@@ -1273,7 +1742,6 @@ export async function recordInternalDryingAssessment({
   };
 
 }
-
 /**
  * ==========================================================
  * Internal Loss Review
@@ -1301,28 +1769,48 @@ export async function requireInternalLossReview({
   if (!kernelResult.accepted) {
     return {
       accepted: false,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       projection: null,
       execution: null,
     };
   }
 
+  const projectionResult =
+    updateDryingCustodyReadModel(
+      event,
+    );
+
   const executionResult =
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
-      projection: null,
+      projection:
+        projectionResult,
       state: {
-        updated: true,
+        updated:
+          projectionResult.projected ===
+          true,
 
         internalLossReviewRequired:
           true,
 
+        dryingCustodyUpdated:
+          projectionResult.projected ===
+          true,
+
         reviewStatus:
-          event.payload?.reviewStatus ??
+          event.payload
+            ?.reviewStatus ??
           "pending",
+
+        reviewReason:
+          event.payload
+            ?.reviewReason ??
+          null,
 
         packagingBlocked:
           true,
@@ -1340,7 +1828,7 @@ export async function requireInternalLossReview({
       kernelResult,
 
     projection:
-      null,
+      projectionResult,
 
     execution:
       executionResult,
@@ -1375,23 +1863,37 @@ export async function recordInternalGrainLoss({
   if (!kernelResult.accepted) {
     return {
       accepted: false,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       projection: null,
       execution: null,
     };
   }
 
+  const projectionResult =
+    updateDryingCustodyReadModel(
+      event,
+    );
+
   const executionResult =
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
-      projection: null,
+      projection:
+        projectionResult,
       state: {
-        updated: true,
+        updated:
+          projectionResult.projected ===
+          true,
 
         internalGrainLossRecorded:
+          true,
+
+        dryingCustodyUpdated:
+          projectionResult.projected ===
           true,
 
         lossReason:
@@ -1399,11 +1901,13 @@ export async function recordInternalGrainLoss({
           null,
 
         lossQuantityKg:
-          event.payload?.lossQuantityKg ??
+          event.payload
+            ?.lossQuantityKg ??
           null,
 
         approvalStatus:
-          event.payload?.approvalStatus ??
+          event.payload
+            ?.approvalStatus ??
           "pending",
 
         packagingBlocked:
@@ -1425,7 +1929,7 @@ export async function recordInternalGrainLoss({
       kernelResult,
 
     projection:
-      null,
+      projectionResult,
 
     execution:
       executionResult,
@@ -1460,30 +1964,81 @@ export async function assignEZone({
   if (!kernelResult.accepted) {
     return {
       accepted: false,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       projection: null,
       execution: null,
     };
   }
 
+  const dryingRelated =
+    hasDryingCycleReference(
+      event.payload,
+    );
+
+  const projectionResult =
+    dryingRelated
+      ? updateDryingCustodyReadModel(
+          event,
+        )
+      : null;
+
+  const projectionAccepted =
+    !dryingRelated ||
+    projectionResult?.projected === true;
+
   const executionResult =
     await executeOperation({
       workflow,
       event,
-      kernel: kernelResult,
+      kernel:
+        kernelResult,
       lifecycle,
-      projection: null,
+      projection:
+        projectionResult,
       state: {
-        updated: true,
-        eZoneAssigned: true,
+        updated:
+          projectionAccepted,
+
+        eZoneAssigned:
+          true,
 
         eZoneKg:
           event.payload?.eZoneKg ??
           null,
 
-        sourceReason:
-          event.payload?.sourceReason ??
+        moisturePercentage:
+          event.payload
+            ?.moisturePercentage ??
           null,
+
+        eZoneLocationId:
+          event.payload
+            ?.eZoneLocationId ??
+          null,
+
+        sourceReason:
+          event.payload
+            ?.sourceReason ??
+          null,
+
+        sourceDryingCycleId:
+          event.payload
+            ?.sourceDryingCycleId ??
+          null,
+
+        assignedAt:
+          event.payload?.assignedAt ??
+          null,
+
+        expectedReviewAt:
+          event.payload
+            ?.expectedReviewAt ??
+          null,
+
+        dryingCustodyUpdated:
+          projectionResult?.projected ===
+          true,
       },
     });
 
@@ -1495,7 +2050,7 @@ export async function assignEZone({
       kernelResult,
 
     projection:
-      null,
+      projectionResult,
 
     execution:
       executionResult,
