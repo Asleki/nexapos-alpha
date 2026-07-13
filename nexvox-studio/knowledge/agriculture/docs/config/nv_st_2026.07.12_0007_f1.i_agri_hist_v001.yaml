@@ -1,0 +1,2437 @@
+schema:
+  name: nexvox_studio_l2_agricultural_history_nomadic_lifestyles
+  version: 1.0.0
+  format: yaml
+  encoding: utf-8
+
+document:
+  id: NVST-0006-F1-I
+  document_number: "0007"
+  identifier: f1.i
+  title: Nomadic Lifestyles
+  domain: agriculture
+  discipline: agricultural_history
+  series: agricultural_history_deep_dive
+  version: v001
+  created: "2026-07-13"
+  status: active
+  language: en
+  companion_markdown: nv_st_2026.07.12_0006_f1_agri_hist_v001.md
+  companion_section: AHF-012
+  companion_heading: "## AHF-012 Nomadic Lifestyles"
+
+scope:
+  purpose: >
+    Structure the historical knowledge contained in AHF-012 Nomadic Lifestyles,
+    including mobility, food acquisition, pastoralism, environmental adaptation,
+    transport, trade, social organization, governance, domestication,
+    resilience, political pressure, and relationships with settled communities.
+  included_topics:
+    - definition of nomadic lifestyles
+    - meaning and etymology of nomad
+    - nomadism and general mobility
+    - nomadism as a food-system strategy
+    - major types of nomadic systems
+    - mobile hunter-gatherer systems
+    - pastoral nomadism
+    - transhumance
+    - semi-nomadic systems
+    - seasonal mobility cycles
+    - seasonal calendars
+    - territorial knowledge
+    - water access
+    - pasture management
+    - herd composition
+    - animal selection
+    - nomadic plant management
+    - landscape burning
+    - nomadic food diversity
+    - food preservation
+    - portable storage
+    - temporary shelters
+    - portable technology
+    - human transport
+    - animal transport
+    - water transport
+    - nomadic trade
+    - exchange with settled farmers
+    - manure exchange
+    - nomadic labour organization
+    - household organization
+    - household division
+    - kinship networks
+    - social cooperation
+    - leadership
+    - governance
+    - conflict resolution
+    - nomadic warfare
+    - nomadic relationships with states
+    - route knowledge
+    - place names
+    - oral mapping
+    - navigation
+    - environmental observation
+    - knowledge transmission
+    - nomadic innovation
+    - nomadic identity
+    - ritual and spiritual relationships
+    - burial and homeland
+    - drought response
+    - herd splitting
+    - livestock as mobile wealth
+    - nomadic markets
+    - information exchange
+    - disease management
+    - environmental advantages
+    - environmental risks
+    - political marginalization
+    - sedentarization
+    - border formation
+    - land privatization
+    - nomadic resilience
+    - nomadic failure modes
+    - recovery strategies
+    - nomadism and sedentism
+    - nomadism and domestication
+    - nomadism and early villages
+    - contribution to agricultural civilization
+  excluded_topics:
+    - current national agricultural policy
+    - detailed country histories
+    - named historical rulers
+    - modern pastoral development programs
+    - modern veterinary policy
+    - modern border law
+    - detailed commodity histories
+    - industrial agriculture
+    - digital agriculture
+
+training_profile:
+  target_system: NexVox Studio L2
+  knowledge_role: structured_semantic_companion
+  markdown_role: human_readable_historical_explanation
+  yaml_role: machine_readable_nomadic_lifestyles_knowledge_graph
+  retrieval_enabled: true
+  embedding_enabled: true
+  knowledge_graph_enabled: true
+  fine_tuning_ready: false
+  section_level_chunking: true
+  subsection_level_chunking: true
+  stable_identifier_required: true
+  concept_duplication_forbidden: true
+  artificial_line_inflation_forbidden: true
+
+reasoning_rules:
+  - id: AHF-NOM-RULE-001
+    rule: >
+      Nomadic movement must be interpreted as an organized livelihood strategy
+      rather than random wandering.
+  - id: AHF-NOM-RULE-002
+    rule: >
+      Mobility, semi-sedentism, and permanent settlement exist on a continuum
+      and may coexist within one household or community.
+  - id: AHF-NOM-RULE-003
+    rule: >
+      Pastoral nomadism is an agricultural system because it manages
+      domesticated animals, productive landscapes, labour, and food outputs.
+  - id: AHF-NOM-RULE-004
+    rule: >
+      Nomadic territories may be represented by routes, water points,
+      seasonal grazing areas, customary rights, and social agreements rather
+      than permanently fenced boundaries.
+  - id: AHF-NOM-RULE-005
+    rule: >
+      Mobility may reduce some environmental risks while creating or
+      intensifying other risks.
+  - id: AHF-NOM-RULE-006
+    rule: >
+      Sedentarization must not automatically be interpreted as economic,
+      ecological, social, or cultural improvement.
+  - id: AHF-NOM-RULE-007
+    rule: >
+      Nomadic systems must be evaluated according to environmental fit,
+      livelihood security, resource access, mobility freedom, knowledge
+      continuity, and resilience.
+  - id: AHF-NOM-RULE-008
+    rule: >
+      Mobile and settled communities must not be treated as historically
+      isolated systems because they frequently exchanged goods, labour,
+      knowledge, animals, nutrients, and social relationships.
+  - id: AHF-NOM-RULE-009
+    rule: >
+      Political borders, land privatization, conflict, and water restrictions
+      may transform environmental variability into livelihood crisis by
+      reducing mobility options.
+  - id: AHF-NOM-RULE-010
+    rule: >
+      Similar forms of mobility may have different causes, institutions,
+      cultural meanings, and agricultural consequences.
+
+ontology:
+  root_concept:
+    id: AHF-012
+    name: Nomadic Lifestyles
+    type: historical_agricultural_system
+  parent_domain:
+    id: AHF-ROOT-001
+    name: Foundations of Agricultural Civilization
+  companion_document:
+    id: NVST-0006-F1
+    name: Foundations of Agricultural Civilization
+  child_concepts:
+    - AHF-012.00
+    - AHF-012.01
+    - AHF-012.02
+    - AHF-012.03
+    - AHF-012.04
+    - AHF-012.05
+    - AHF-012.06
+    - AHF-012.07
+    - AHF-012.08
+    - AHF-012.09
+    - AHF-012.10
+    - AHF-012.11
+    - AHF-012.12
+    - AHF-012.13
+    - AHF-012.14
+    - AHF-012.15
+    - AHF-012.16
+    - AHF-012.17
+    - AHF-012.18
+    - AHF-012.19
+    - AHF-012.20
+    - AHF-012.21
+    - AHF-012.22
+    - AHF-012.23
+    - AHF-012.24
+    - AHF-012.25
+    - AHF-012.26
+    - AHF-012.27
+    - AHF-012.28
+    - AHF-012.29
+    - AHF-012.30
+    - AHF-012.31
+    - AHF-012.32
+    - AHF-012.33
+    - AHF-012.34
+    - AHF-012.35
+    - AHF-012.36
+    - AHF-012.37
+    - AHF-012.38
+    - AHF-012.39
+    - AHF-012.40
+    - AHF-012.41
+    - AHF-012.42
+    - AHF-012.43
+    - AHF-012.44
+    - AHF-012.45
+    - AHF-012.46
+    - AHF-012.47
+    - AHF-012.48
+    - AHF-012.49
+    - AHF-012.50
+    - AHF-012.51
+    - AHF-012.52
+    - AHF-012.53
+    - AHF-012.54
+    - AHF-012.55
+    - AHF-012.56
+    - AHF-012.57
+    - AHF-012.58
+    - AHF-012.59
+    - AHF-012.60
+    - AHF-012.61
+    - AHF-012.62
+    - AHF-012.63
+    - AHF-012.64
+    - AHF-012.65
+    - AHF-012.66
+    - AHF-012.67
+
+knowledge_sections:
+
+  - section_id: AHF-012
+    title: Nomadic Lifestyles
+    markdown_heading: "## AHF-012 Nomadic Lifestyles"
+    purpose: >
+      Explain nomadic lifestyles as structured systems of mobility,
+      environmental adaptation, food acquisition, animal management,
+      trade, social organization, governance, and knowledge transmission.
+    concepts:
+
+      - concept_id: AHF-012.00
+        title: Definition of Nomadic Lifestyles
+        canonical_term: nomadic_lifestyle
+        definition: >
+          A nomadic lifestyle is a recurring system in which individuals,
+          households, animals, labour, productive activities, or entire
+          communities move between locations as part of normal livelihood,
+          food acquisition, environmental adaptation, and social organization.
+        defining_features:
+          - recurring movement
+          - environmental knowledge
+          - livelihood organization
+          - route knowledge
+          - destination knowledge
+          - social coordination
+          - territorial access
+        distinguishes_from:
+          - random wandering
+          - one-time migration
+          - emergency displacement
+          - tourism
+          - pilgrimage
+        relationships:
+          depends_on:
+            - resource distribution
+            - route access
+            - water access
+            - social agreements
+          influences:
+            - food access
+            - territorial organization
+            - household structure
+            - knowledge transmission
+        retrieval_tags:
+          - nomadic lifestyle
+          - mobile livelihood
+          - organized mobility
+          - mobile food system
+
+      - concept_id: AHF-012.01
+        title: Meaning and Etymology of Nomad
+        canonical_term: nomad_etymology
+        definition: >
+          The term nomad developed from an ancient Greek word associated with
+          movement for grazing, but its modern historical and anthropological
+          use includes several forms of repeated livelihood mobility.
+        related_terms:
+          - pastoralist
+          - migrant
+          - itinerant worker
+          - transhumant herder
+          - mobile forager
+          - semi-nomadic household
+        distinctions:
+          pastoralist: >
+            A person or community whose livelihood depends substantially on
+            managed livestock.
+          migrant: >
+            A person or group moving between locations, not necessarily through
+            a recurring nomadic livelihood system.
+          transhumant_herder: >
+            A herder following repeated seasonal movement between established
+            grazing zones.
+          itinerant_worker: >
+            A mobile worker whose movement is mainly connected to services,
+            trade, labour, or craft activity.
+        retrieval_tags:
+          - nomad meaning
+          - nomad etymology
+          - pastoralist
+          - transhumance
+          - mobile community
+
+      - concept_id: AHF-012.02
+        title: Nomadism and General Mobility
+        canonical_term: nomadism_and_mobility
+        definition: >
+          Mobility is the broader movement of people, animals, labour, or
+          activities between places, while nomadism is a recurring and
+          socially organized form of mobility connected to livelihood,
+          identity, territory, and environmental adaptation.
+        mobility_forms_not_automatically_nomadic:
+          - one-time migration
+          - emergency displacement
+          - military movement
+          - pilgrimage
+          - temporary wage labour
+          - relocation after disaster
+        nomadic_characteristics:
+          - repetition
+          - route knowledge
+          - livelihood purpose
+          - territorial relationships
+          - expected destinations
+          - environmental timing
+        retrieval_tags:
+          - mobility
+          - nomadism
+          - migration
+          - recurring movement
+
+      - concept_id: AHF-012.03
+        title: Nomadism as a Food-System Strategy
+        canonical_term: nomadic_food_system
+        definition: >
+          Nomadism can function as a complete food-system strategy in which
+          people move toward resources distributed across space and time rather
+          than concentrating all food production and survival activities around
+          one permanent settlement.
+        food_sources:
+          - gathering
+          - hunting
+          - fishing
+          - animal management
+          - temporary cultivation
+          - exchange
+          - gifts
+          - preservation
+        system_functions:
+          - access dispersed resources
+          - reduce dependence on one ecosystem
+          - respond to seasonal variability
+          - connect multiple production zones
+        retrieval_tags:
+          - nomadic food system
+          - mobile subsistence
+          - distributed resources
+          - food acquisition
+
+      - concept_id: AHF-012.04
+        title: Major Types of Nomadic Systems
+        canonical_term: nomadic_system_classification
+        definition: >
+          Nomadic systems can be classified according to their dominant
+          livelihood, movement pattern, transport mode, and relationship with
+          permanent settlement.
+        system_types:
+          - mobile hunter-gathering
+          - pastoral nomadism
+          - transhumance
+          - semi-nomadism
+          - riverine mobility
+          - maritime mobility
+          - trading nomadism
+          - craft mobility
+          - mixed mobile agriculture
+        classification_warning: >
+          Categories may overlap because one household may combine livestock,
+          gathering, fishing, trade, transport, temporary cultivation, and
+          specialist services.
+        retrieval_tags:
+          - nomadic classification
+          - mobile systems
+          - pastoralism
+          - mixed livelihood
+
+      - concept_id: AHF-012.05
+        title: Mobile Hunter-Gatherer Systems
+        canonical_term: mobile_hunter_gatherer_system
+        definition: >
+          Mobile hunter-gatherer systems organize movement around changing
+          availability of wild plants, animals, fish, insects, fungi, water,
+          and other environmental resources.
+        movement_drivers:
+          - animal migration
+          - fruiting seasons
+          - fish cycles
+          - rainfall
+          - water access
+          - ceremonial gatherings
+          - exchange opportunities
+        landscape_nodes:
+          - camps
+          - water sources
+          - hunting grounds
+          - fishing areas
+          - plant-gathering zones
+          - tool-material sites
+          - sacred places
+        retrieval_tags:
+          - hunter-gatherer mobility
+          - mobile foraging
+          - resource network
+          - seasonal movement
+
+      - concept_id: AHF-012.06
+        title: Pastoral Nomadism
+        canonical_term: pastoral_nomadism
+        definition: >
+          Pastoral nomadism is a mobile agricultural system based substantially
+          on domesticated animals whose movement provides access to seasonally
+          variable pasture and water.
+        animal_outputs:
+          - milk
+          - meat
+          - fibre
+          - hides
+          - manure
+          - transport
+          - exchange value
+          - stored wealth
+        agricultural_contributions:
+          - animal domestication
+          - selective breeding
+          - manure movement
+          - transport
+          - trade
+          - regional knowledge transfer
+        retrieval_tags:
+          - pastoral nomadism
+          - mobile pastoralism
+          - nomadic herding
+          - livestock agriculture
+
+      - concept_id: AHF-012.07
+        title: Transhumance
+        canonical_term: transhumance
+        definition: >
+          Transhumance is the repeated seasonal movement of livestock and
+          selected household members between established grazing zones.
+        common_movements:
+          - highland to lowland
+          - wet-season to dry-season pasture
+          - valley to plateau
+          - floodplain to upland
+          - cultivated land to open pasture
+        structural_characteristic: >
+          Some household members may remain settled while others travel with
+          livestock, creating one combined mobile and sedentary system.
+        retrieval_tags:
+          - transhumance
+          - seasonal herding
+          - seasonal livestock movement
+          - mobile-settled system
+
+      - concept_id: AHF-012.08
+        title: Semi-Nomadic Systems
+        canonical_term: semi_nomadism
+        definition: >
+          Semi-nomadic systems combine significant seasonal movement with a
+          permanent or semi-permanent residential, cultivation, storage, or
+          market base.
+        characteristics:
+          - permanent household base
+          - seasonal livestock movement
+          - temporary camps
+          - cultivation
+          - divided household labour
+          - return to permanent stores
+        relationship:
+          demonstrates: mobility_sedentism_continuum
+        retrieval_tags:
+          - semi-nomadism
+          - semi-sedentary
+          - mixed mobility
+          - seasonal movement
+
+      - concept_id: AHF-012.09
+        title: Seasonal Mobility Cycles
+        canonical_term: seasonal_mobility_cycle
+        definition: >
+          A seasonal mobility cycle is a recurring sequence of movement between
+          known locations according to environmental, economic, social, and
+          political conditions.
+        cycle_drivers:
+          - rainfall
+          - temperature
+          - river level
+          - pasture growth
+          - plant maturity
+          - animal movement
+          - disease
+          - market access
+        cycle_components:
+          - departure
+          - route
+          - temporary occupation
+          - resource use
+          - return
+          - emergency alternative
+        retrieval_tags:
+          - mobility cycle
+          - seasonal route
+          - migration calendar
+          - cyclical movement
+
+      - concept_id: AHF-012.10
+        title: Seasonal Calendars
+        canonical_term: nomadic_seasonal_calendar
+        definition: >
+          Nomadic seasonal calendars organize movement and livelihood decisions
+          through observation of climatic, astronomical, biological, and
+          hydrological indicators.
+        indicators:
+          - rainfall
+          - stars
+          - moon phases
+          - wind
+          - flowering
+          - insects
+          - soil
+          - animal behaviour
+          - water levels
+        decisions_supported:
+          - movement timing
+          - gathering
+          - hunting
+          - fishing
+          - herd reproduction
+          - pasture use
+          - market visits
+          - disease avoidance
+        retrieval_tags:
+          - seasonal calendar
+          - ecological calendar
+          - nomadic timing
+          - environmental prediction
+
+      - concept_id: AHF-012.11
+        title: Territorial Knowledge
+        canonical_term: nomadic_territorial_knowledge
+        definition: >
+          Nomadic territorial knowledge identifies customary routes, water
+          points, grazing areas, hunting zones, sacred places, refuge areas,
+          exchange locations, and the rights governing their use.
+        rights_sources:
+          - lineage
+          - clan membership
+          - historical use
+          - marriage
+          - reciprocity
+          - negotiated access
+        territorial_form: >
+          Territory is often relational, seasonal, and network-based rather than
+          continuously fenced or permanently occupied.
+        retrieval_tags:
+          - nomadic territory
+          - customary routes
+          - seasonal access
+          - territorial knowledge
+
+      - concept_id: AHF-012.12
+        title: Water Access
+        canonical_term: nomadic_water_access
+        definition: >
+          Water access is the ability of people and animals to reach sufficient,
+          safe, reliable, and seasonally appropriate water sources.
+        water_sources:
+          - rivers
+          - springs
+          - wells
+          - wetlands
+          - lakes
+          - temporary pools
+        effects:
+          - travel distance
+          - animal survival
+          - human health
+          - settlement duration
+          - conflict risk
+        constraint: >
+          Productive pasture may remain unusable when animals cannot reach
+          sufficient water.
+        retrieval_tags:
+          - water access
+          - pastoral water
+          - nomadic movement
+          - water security
+
+      - concept_id: AHF-012.13
+        title: Pasture Management
+        canonical_term: mobile_pasture_management
+        definition: >
+          Pasture management is the planning of where, when, and for how long
+          animals graze, including decisions about vegetation recovery.
+        variables:
+          - vegetation type
+          - pasture maturity
+          - water distance
+          - animal condition
+          - disease
+          - herd size
+          - competing users
+        degradation_drivers:
+          - route restriction
+          - drought
+          - political borders
+          - concentration near water
+          - excessive herd pressure
+        retrieval_tags:
+          - pasture management
+          - grazing
+          - rangeland
+          - vegetation recovery
+
+      - concept_id: AHF-012.14
+        title: Herd Composition
+        canonical_term: herd_composition
+        definition: >
+          Herd composition is the combination of animal species, age groups,
+          reproductive classes, and productive roles maintained by a pastoral
+          household.
+        variation_factors:
+          - feed requirements
+          - water requirements
+          - walking ability
+          - reproductive rate
+          - disease risk
+          - market value
+          - transport role
+        strategic_function: >
+          Mixed herds diversify food, wealth, transport, and environmental risk.
+        retrieval_tags:
+          - herd composition
+          - mixed herd
+          - pastoral risk
+          - livestock diversity
+
+      - concept_id: AHF-012.15
+        title: Animal Selection
+        canonical_term: pastoral_animal_selection
+        definition: >
+          Animal selection is the repeated human influence over which animals
+          reproduce, survive, remain in the herd, or are sold, exchanged, or
+          slaughtered.
+        selected_traits:
+          - fertility
+          - milk production
+          - walking ability
+          - drought tolerance
+          - temperament
+          - disease resistance
+          - maternal behaviour
+          - body size
+        forms:
+          - deliberate selection
+          - indirect survival selection
+          - market-driven selection
+          - culturally influenced selection
+        retrieval_tags:
+          - animal selection
+          - pastoral breeding
+          - domestication
+          - livestock traits
+
+      - concept_id: AHF-012.16
+        title: Nomadic Plant Management
+        canonical_term: nomadic_plant_management
+        definition: >
+          Nomadic plant management includes deliberate actions that protect,
+          distribute, transplant, regenerate, or regulate useful plants without
+          requiring permanent cultivated fields.
+        practices:
+          - protecting useful stands
+          - scattering seeds
+          - transplanting
+          - controlling fire
+          - regulating harvest
+          - revisiting productive areas
+          - carrying planting materials
+        significance: >
+          Repeated mobile plant management may create transitional systems
+          between gathering and settled cultivation.
+        retrieval_tags:
+          - plant management
+          - mobile cultivation
+          - seed dispersal
+          - resource management
+
+      - concept_id: AHF-012.17
+        title: Landscape Burning
+        canonical_term: nomadic_landscape_burning
+        definition: >
+          Landscape burning is the controlled use of fire to change vegetation,
+          animal movement, access, pests, or future plant growth.
+        intended_functions:
+          - clear dense vegetation
+          - encourage new growth
+          - attract animals
+          - reduce pests
+          - maintain open habitat
+        knowledge_requirements:
+          - wind
+          - moisture
+          - season
+          - vegetation type
+          - fire behaviour
+        retrieval_tags:
+          - controlled burning
+          - fire management
+          - landscape management
+          - ecological knowledge
+
+      - concept_id: AHF-012.18
+        title: Nomadic Food Diversity
+        canonical_term: nomadic_food_diversity
+        definition: >
+          Nomadic food diversity results from combining resources from several
+          ecological zones, livelihood activities, and exchange relationships.
+        food_sources:
+          - livestock products
+          - gathered plants
+          - hunted animals
+          - fish
+          - insects
+          - temporary cultivation
+          - trade
+          - gifts
+        risks:
+          - route closure
+          - drought
+          - market collapse
+          - conflict
+        retrieval_tags:
+          - nomadic diet
+          - food diversity
+          - mixed subsistence
+          - mobile food access
+
+      - concept_id: AHF-012.19
+        title: Food Preservation
+        canonical_term: nomadic_food_preservation
+        definition: >
+          Nomadic food preservation reduces spoilage and allows food to remain
+          usable during travel, seasonal shortage, exchange, and delayed
+          consumption.
+        methods:
+          - drying
+          - smoking
+          - fermentation
+          - cooling
+          - rendering
+          - sealing
+          - salting
+          - concentration
+        functions:
+          - support travel
+          - reduce waste
+          - bridge food gaps
+          - move food between zones
+        retrieval_tags:
+          - food preservation
+          - portable food
+          - drying
+          - fermentation
+
+      - concept_id: AHF-012.20
+        title: Portable Storage
+        canonical_term: portable_storage
+        definition: >
+          Portable storage protects food, seed, tools, medicines, and trade
+          goods while remaining compatible with repeated movement.
+        design_requirements:
+          - low weight
+          - sufficient capacity
+          - pest protection
+          - moisture resistance
+          - durability
+          - repairability
+        distinguishes_from:
+          - permanent granary
+          - fixed warehouse
+          - long-term settlement store
+        retrieval_tags:
+          - portable storage
+          - mobile container
+          - nomadic food storage
+          - transportable reserve
+
+      - concept_id: AHF-012.21
+        title: Temporary Shelters
+        canonical_term: nomadic_temporary_shelter
+        definition: >
+          Temporary shelters protect people, food, tools, and animals while
+          allowing rapid construction, dismantling, transport, or rebuilding.
+        design_factors:
+          - rainfall
+          - temperature
+          - wind
+          - local materials
+          - household size
+          - duration of occupation
+          - transport capacity
+        social_functions:
+          - household organization
+          - status expression
+          - ritual order
+          - gendered space
+          - animal protection
+        retrieval_tags:
+          - temporary shelter
+          - nomadic housing
+          - portable dwelling
+          - mobile architecture
+
+      - concept_id: AHF-012.22
+        title: Portable Technology
+        canonical_term: portable_nomadic_technology
+        definition: >
+          Portable technology is designed for movement through low weight,
+          durability, modularity, repairability, and multiple functions.
+        technology_categories:
+          - tools
+          - shelters
+          - containers
+          - ropes
+          - clothing
+          - animal equipment
+          - processing devices
+          - navigation aids
+        evaluation_rule: >
+          Mobile technology should be evaluated according to its movement,
+          repair, adaptation, and local-material requirements.
+        retrieval_tags:
+          - portable technology
+          - mobile engineering
+          - nomadic tools
+          - repairability
+
+      - concept_id: AHF-012.23
+        title: Human Transport
+        canonical_term: human_load_transport
+        definition: >
+          Human transport is the carrying of food, water, tools, shelter
+          materials, children, and other resources through bodily labour.
+        constraints:
+          - body strength
+          - terrain
+          - climate
+          - health
+          - age
+          - available energy
+        design_effects:
+          - lighter tools
+          - shared loads
+          - temporary storage
+          - local material use
+        retrieval_tags:
+          - human carrying
+          - load transport
+          - mobility capacity
+          - portable equipment
+
+      - concept_id: AHF-012.24
+        title: Animal Transport
+        canonical_term: nomadic_animal_transport
+        definition: >
+          Animal transport uses pack or riding animals to increase the distance,
+          speed, and carrying capacity of movement.
+        effects:
+          - larger shelters
+          - more water
+          - larger food reserves
+          - greater trade volume
+          - wider migration range
+          - stronger market connections
+        relationships:
+          strengthens:
+            - mobility
+            - trade
+            - regional exchange
+        retrieval_tags:
+          - pack animals
+          - riding animals
+          - pastoral transport
+          - trade mobility
+
+      - concept_id: AHF-012.25
+        title: Water Transport
+        canonical_term: nomadic_water_transport
+        definition: >
+          Water transport uses boats, canoes, rafts, or related vessels to
+          connect fishing grounds, wetlands, islands, settlements, markets, and
+          agricultural zones.
+        advantages:
+          - heavier load movement
+          - access to aquatic resources
+          - connection of distant zones
+          - lower resistance than land transport
+        retrieval_tags:
+          - water transport
+          - riverine mobility
+          - maritime mobility
+          - canoe transport
+
+      - concept_id: AHF-012.26
+        title: Nomadic Trade
+        canonical_term: nomadic_trade
+        definition: >
+          Nomadic trade is the movement and exchange of goods, animals,
+          materials, services, and information between ecological, social, and
+          political regions.
+        traded_items:
+          - animals
+          - food
+          - hides
+          - fibre
+          - salt
+          - tools
+          - medicines
+          - craft materials
+          - information
+        nomadic_advantages:
+          - route knowledge
+          - price knowledge
+          - political awareness
+          - market access
+        retrieval_tags:
+          - nomadic trade
+          - mobile traders
+          - regional exchange
+          - pastoral markets
+
+      - concept_id: AHF-012.27
+        title: Exchange with Settled Farmers
+        canonical_term: nomadic_settled_exchange
+        definition: >
+          Nomadic and settled communities exchange animals, manure, transport,
+          cultivated food, tools, fibre, labour, storage access, information,
+          and social relationships.
+        nomadic_contributions:
+          - animals
+          - manure
+          - transport
+          - fibre
+          - hides
+          - security
+          - distant trade links
+        settled_contributions:
+          - cultivated food
+          - tools
+          - crop residues
+          - permanent storage
+          - market access
+        interaction_forms:
+          - cooperation
+          - intermarriage
+          - barter
+          - labour exchange
+          - tribute
+          - competition
+          - conflict
+        retrieval_tags:
+          - pastoral farmer exchange
+          - nomadic settled relations
+          - agricultural exchange
+          - trade
+
+      - concept_id: AHF-012.28
+        title: Manure Exchange
+        canonical_term: pastoral_manure_exchange
+        definition: >
+          Manure exchange occurs when mobile livestock transfer nutrients from
+          grazing areas into camps, fields, settlements, or cultivated land.
+        soil_effects:
+          - increased nutrients
+          - improved fertility
+          - organic matter addition
+          - altered microbial activity
+        relationship:
+          connects:
+            - mobile pastoralism
+            - settled cultivation
+        retrieval_tags:
+          - manure exchange
+          - nutrient transfer
+          - pastoral agriculture
+          - soil fertility
+
+      - concept_id: AHF-012.29
+        title: Nomadic Labour Organization
+        canonical_term: nomadic_labour_organization
+        definition: >
+          Nomadic labour organization allocates herding, scouting, water
+          collection, shelter construction, food processing, childcare, trade,
+          defence, healing, and repair tasks among community members.
+        allocation_variables:
+          - age
+          - skill
+          - household position
+          - physical ability
+          - herd ownership
+          - season
+        constraints:
+          - labour shortage
+          - illness
+          - conflict
+          - long travel distances
+        retrieval_tags:
+          - nomadic labour
+          - pastoral work
+          - task organization
+          - mobile household
+
+      - concept_id: AHF-012.30
+        title: Household Organization
+        canonical_term: nomadic_household_organization
+        definition: >
+          The nomadic household is a productive and decision-making unit that
+          may include close relatives, extended kin, dependants, workers,
+          adopted members, and associated herders.
+        household_functions:
+          - food production
+          - herd management
+          - movement planning
+          - childcare
+          - trade
+          - storage
+          - knowledge transmission
+        retrieval_tags:
+          - nomadic household
+          - household production
+          - pastoral family
+          - mobile social unit
+
+      - concept_id: AHF-012.31
+        title: Household Division
+        canonical_term: nomadic_household_division
+        definition: >
+          Household division allows one social unit to operate in several
+          places or livelihood activities at the same time.
+        division_patterns:
+          - one group moves with animals
+          - one group maintains cultivation
+          - one group remains near markets
+          - one group protects stores
+          - one group cares for vulnerable members
+        risk_function: >
+          Household division reduces total dependence on one location,
+          resource, or activity.
+        retrieval_tags:
+          - household division
+          - herd mobility
+          - divided labour
+          - risk spreading
+
+      - concept_id: AHF-012.32
+        title: Kinship Networks
+        canonical_term: nomadic_kinship_network
+        definition: >
+          Kinship networks provide resource access, labour, food, animals,
+          information, shelter, alliances, and political support across
+          geographically distributed communities.
+        network_functions:
+          - emergency assistance
+          - grazing access
+          - water access
+          - inheritance
+          - compensation
+          - marriage
+          - territorial claims
+        retrieval_tags:
+          - kinship network
+          - pastoral kinship
+          - social support
+          - territorial access
+
+      - concept_id: AHF-012.33
+        title: Social Cooperation
+        canonical_term: nomadic_social_cooperation
+        definition: >
+          Social cooperation coordinates herd protection, movement planning,
+          water access, defence, shelter construction, exchange, and crisis
+          recovery.
+        cooperation_units:
+          - household
+          - lineage
+          - age group
+          - alliance
+          - temporary work group
+        tradeoff: >
+          Collective action reduces individual risk while also creating social
+          obligations and possible inequality.
+        retrieval_tags:
+          - social cooperation
+          - collective action
+          - nomadic labour
+          - shared risk
+
+      - concept_id: AHF-012.34
+        title: Leadership
+        canonical_term: nomadic_leadership
+        definition: >
+          Nomadic leadership may be situational and based on expertise,
+          reputation, lineage, wealth, age, spiritual status, or consensus.
+        leadership_domains:
+          - navigation
+          - animals
+          - water
+          - ritual
+          - healing
+          - trade
+          - conflict
+          - negotiation
+        retrieval_tags:
+          - nomadic leadership
+          - pastoral authority
+          - situational leadership
+          - elders
+
+      - concept_id: AHF-012.35
+        title: Governance
+        canonical_term: nomadic_governance
+        definition: >
+          Nomadic governance consists of rules, authorities, institutions, and
+          procedures governing movement, ownership, water, pasture, marriage,
+          trade, conflict, and territorial access.
+        governance_forms:
+          - elders
+          - household leaders
+          - lineage authorities
+          - councils
+          - ritual specialists
+        governance_functions:
+          - regulate access
+          - assign responsibility
+          - resolve disputes
+          - coordinate movement
+          - enforce compensation
+        retrieval_tags:
+          - nomadic governance
+          - pastoral institutions
+          - customary law
+          - resource governance
+
+      - concept_id: AHF-012.36
+        title: Conflict Resolution
+        canonical_term: nomadic_conflict_resolution
+        definition: >
+          Nomadic conflict resolution uses mediation, compensation, elders,
+          councils, oaths, reciprocal settlement, or separation to manage
+          disputes over resources and relationships.
+        conflict_causes:
+          - water
+          - pasture
+          - animals
+          - routes
+          - marriage
+          - theft
+          - broken agreements
+        agricultural_effect: >
+          Successful dispute resolution protects access to routes, water,
+          grazing, trade, and food resources.
+        retrieval_tags:
+          - conflict resolution
+          - pastoral disputes
+          - compensation
+          - resource conflict
+
+      - concept_id: AHF-012.37
+        title: Nomadic Warfare
+        canonical_term: nomadic_warfare
+        definition: >
+          Nomadic warfare involves conflict shaped by mobility, route knowledge,
+          animal transport, dispersed settlement, and flexible organization.
+        possible_advantages:
+          - rapid movement
+          - terrain knowledge
+          - transport capacity
+          - dispersed camps
+        livelihood_losses:
+          - herd loss
+          - route closure
+          - displacement
+          - water denial
+          - market disruption
+        retrieval_tags:
+          - nomadic warfare
+          - pastoral conflict
+          - route security
+          - herd loss
+
+      - concept_id: AHF-012.38
+        title: Nomadic Relationships with States
+        canonical_term: nomadic_state_relationship
+        definition: >
+          Nomadic relationships with states involve taxation, recruitment,
+          military service, transport, trade, border control, settlement
+          pressure, and regulation of land or grazing.
+        state_objectives:
+          - taxation
+          - border control
+          - recruitment
+          - grazing regulation
+          - permanent settlement
+          - land registration
+        nomadic_contributions:
+          - transport
+          - military service
+          - animals
+          - trade
+          - frontier knowledge
+          - diplomacy
+        retrieval_tags:
+          - nomads and states
+          - taxation
+          - border control
+          - political relations
+
+      - concept_id: AHF-012.39
+        title: Route Knowledge
+        canonical_term: nomadic_route_knowledge
+        definition: >
+          Route knowledge includes distance, direction, landmarks, water,
+          grazing, hazards, neighboring territories, permissions, and emergency
+          alternatives.
+        route_dimensions:
+          - physical
+          - environmental
+          - social
+          - political
+          - historical
+        risk: >
+          Loss of route knowledge may reduce mobility even when the physical
+          path remains open.
+        retrieval_tags:
+          - route knowledge
+          - migration route
+          - pastoral navigation
+          - territorial memory
+
+      - concept_id: AHF-012.40
+        title: Place Names
+        canonical_term: nomadic_place_names
+        definition: >
+          Place names preserve compressed knowledge about water, vegetation,
+          animals, soils, danger, ownership, ritual, seasonal use, or past
+          events.
+        knowledge_functions:
+          - environmental memory
+          - territorial memory
+          - navigation
+          - hazard identification
+          - historical record
+        risk: >
+          Language loss may weaken environmental and route knowledge.
+        retrieval_tags:
+          - place names
+          - landscape memory
+          - indigenous geography
+          - environmental language
+
+      - concept_id: AHF-012.41
+        title: Oral Mapping
+        canonical_term: oral_mapping
+        definition: >
+          Oral mapping communicates routes, landmarks, water points, distances,
+          hazards, territorial boundaries, and destination sequences without
+          requiring drawn maps.
+        transmission_forms:
+          - stories
+          - directions
+          - songs
+          - genealogies
+          - named landmarks
+          - practical travel
+        retrieval_tags:
+          - oral mapping
+          - route narrative
+          - landscape knowledge
+          - spatial memory
+
+      - concept_id: AHF-012.42
+        title: Navigation
+        canonical_term: nomadic_navigation
+        definition: >
+          Nomadic navigation uses astronomical, environmental, sensory, and
+          remembered indicators to move safely between locations.
+        navigation_signals:
+          - stars
+          - sun
+          - wind
+          - landforms
+          - rivers
+          - vegetation
+          - soil
+          - animal tracks
+          - sound
+          - smell
+        failure_risks:
+          - water shortage
+          - exposure
+          - livestock loss
+          - hostile territory
+        retrieval_tags:
+          - nomadic navigation
+          - stars
+          - route finding
+          - environmental signals
+
+      - concept_id: AHF-012.43
+        title: Environmental Observation
+        canonical_term: nomadic_environmental_observation
+        definition: >
+          Environmental observation is the continuous monitoring of rainfall,
+          water, vegetation, animals, insects, soil, wind, temperature, and
+          disease indicators.
+        decision_function: >
+          Early observation allows movement or herd decisions before resources
+          fail completely.
+        observed_variables:
+          - rainfall
+          - water level
+          - plant condition
+          - animal health
+          - insect activity
+          - wind
+          - temperature
+        retrieval_tags:
+          - environmental observation
+          - early warning
+          - nomadic decision-making
+          - ecological monitoring
+
+      - concept_id: AHF-012.44
+        title: Knowledge Transmission
+        canonical_term: nomadic_knowledge_transmission
+        definition: >
+          Nomadic knowledge is transmitted through participation, observation,
+          storytelling, demonstration, correction, and supervised responsibility.
+        knowledge_domains:
+          - routes
+          - animals
+          - plants
+          - weather
+          - water
+          - social rules
+          - territorial rights
+        learning_model: >
+          Practical participation connects environmental competence with
+          cultural identity.
+        retrieval_tags:
+          - nomadic knowledge
+          - intergenerational learning
+          - oral tradition
+          - practical teaching
+
+      - concept_id: AHF-012.45
+        title: Nomadic Innovation
+        canonical_term: nomadic_innovation
+        definition: >
+          Nomadic innovation creates or adapts technologies, institutions, and
+          practices for portability, repair, variable environments, animal
+          management, navigation, water access, and communication.
+        innovation_domains:
+          - shelter
+          - preservation
+          - transport
+          - navigation
+          - animal care
+          - water access
+          - communication
+        adoption_rule: >
+          Innovations must remain compatible with mobility, available materials,
+          labour, risk, and repair capacity.
+        retrieval_tags:
+          - nomadic innovation
+          - portable design
+          - mobile technology
+          - adaptation
+
+      - concept_id: AHF-012.46
+        title: Nomadic Identity
+        canonical_term: nomadic_identity
+        definition: >
+          Nomadic identity may connect livelihood, movement, animals, ancestry,
+          language, territory, clothing, values, and historical memory.
+        identity_components:
+          - mobility
+          - ancestry
+          - language
+          - animals
+          - territory
+          - cultural values
+          - historical memory
+        misconception: >
+          Mobile identity must not be interpreted as social incompleteness,
+          cultural backwardness, or automatic resistance to progress.
+        retrieval_tags:
+          - nomadic identity
+          - pastoral culture
+          - mobile community
+          - cultural continuity
+
+      - concept_id: AHF-012.47
+        title: Ritual and Spiritual Relationships
+        canonical_term: nomadic_spiritual_relationships
+        definition: >
+          Nomadic spiritual relationships connect people with animals,
+          ancestors, water, weather, stars, routes, sacred places, and seasonal
+          movement.
+        ritual_functions:
+          - movement timing
+          - animal reproduction
+          - resource access
+          - conflict resolution
+          - seasonal gathering
+          - environmental responsibility
+        retrieval_tags:
+          - nomadic ritual
+          - pastoral spirituality
+          - sacred landscape
+          - seasonal ceremony
+
+      - concept_id: AHF-012.48
+        title: Burial and Homeland
+        canonical_term: nomadic_burial_and_homeland
+        definition: >
+          Mobile communities may maintain durable attachment to ancestral
+          territories and burial places even when residence changes seasonally.
+        homeland_functions:
+          - identity
+          - lineage memory
+          - territorial claim
+          - sacred responsibility
+          - repeated return
+        reasoning_note: >
+          Mobility does not imply lack of homeland or weak attachment to place.
+        retrieval_tags:
+          - nomadic homeland
+          - burial landscape
+          - ancestral territory
+          - place attachment
+
+      - concept_id: AHF-012.49
+        title: Drought Response
+        canonical_term: nomadic_drought_response
+        definition: >
+          Nomadic drought response combines movement, herd management, trade,
+          social support, labour, emergency food, and temporary settlement.
+        strategies:
+          - early movement
+          - herd splitting
+          - animal sales
+          - route change
+          - distant water access
+          - kin support
+          - temporary labour
+          - emergency food
+        dependency: >
+          Mobility supports drought resilience only where alternative routes
+          and resources remain accessible.
+        retrieval_tags:
+          - drought response
+          - pastoral resilience
+          - emergency movement
+          - herd management
+
+      - concept_id: AHF-012.50
+        title: Herd Splitting
+        canonical_term: herd_splitting
+        definition: >
+          Herd splitting divides animals into separate management groups
+          according to species, age, health, reproductive condition, water need,
+          location, or market purpose.
+        benefits:
+          - risk distribution
+          - pasture matching
+          - disease separation
+          - breeding protection
+        costs:
+          - increased labour
+          - increased coordination
+          - divided household resources
+        retrieval_tags:
+          - herd splitting
+          - livestock management
+          - pastoral risk
+          - grazing strategy
+
+      - concept_id: AHF-012.51
+        title: Livestock as Mobile Wealth
+        canonical_term: livestock_mobile_wealth
+        definition: >
+          Livestock may function simultaneously as food, reproductive capital,
+          transport, exchange value, inheritance, emergency reserve, and social
+          status.
+        wealth_functions:
+          - food production
+          - reproduction
+          - emergency sale
+          - inheritance
+          - marriage payment
+          - transport
+        risks:
+          - disease
+          - drought
+          - theft
+          - conflict
+          - predation
+          - market failure
+        retrieval_tags:
+          - livestock wealth
+          - mobile asset
+          - pastoral economy
+          - herd value
+
+      - concept_id: AHF-012.52
+        title: Nomadic Markets
+        canonical_term: nomadic_market
+        definition: >
+          Nomadic markets are temporary, seasonal, or route-linked exchange
+          centers supporting goods, labour, services, information, diplomacy,
+          marriage, ritual, and dispute resolution.
+        exchange_categories:
+          - animals
+          - food
+          - tools
+          - textiles
+          - medicines
+          - labour
+          - information
+        social_functions:
+          - diplomacy
+          - marriage negotiation
+          - ritual
+          - conflict resolution
+        retrieval_tags:
+          - nomadic market
+          - pastoral market
+          - seasonal market
+          - trade center
+
+      - concept_id: AHF-012.53
+        title: Information Exchange
+        canonical_term: nomadic_information_exchange
+        definition: >
+          Mobile communities distribute information about rainfall, water,
+          pasture, disease, markets, prices, routes, conflict, laws, and
+          political change.
+        information_categories:
+          - environmental
+          - market
+          - health
+          - security
+          - legal
+          - political
+        agricultural_effect: >
+          Mobile information networks spread agricultural knowledge between
+          distant communities.
+        retrieval_tags:
+          - information exchange
+          - nomadic knowledge network
+          - market information
+          - environmental intelligence
+
+      - concept_id: AHF-012.54
+        title: Disease Management
+        canonical_term: nomadic_disease_management
+        definition: >
+          Nomadic disease management uses movement, avoidance, observation,
+          separation, and environmental knowledge to reduce human and animal
+          disease risk.
+        avoidance_targets:
+          - contaminated water
+          - infected herds
+          - seasonal disease zones
+          - wildlife concentrations
+          - unsafe pasture
+        mobility_tradeoff: >
+          Movement may reduce exposure to local disease while also spreading
+          pathogens between herds, wildlife, markets, and settlements.
+        retrieval_tags:
+          - disease management
+          - pastoral health
+          - herd disease
+          - mobility risk
+
+      - concept_id: AHF-012.55
+        title: Environmental Advantages
+        canonical_term: nomadic_environmental_advantages
+        definition: >
+          Nomadic mobility may allow pasture recovery, distribute resource use,
+          move nutrients, disperse seeds, reduce permanent concentration, and
+          use environments unsuitable for continuous cultivation.
+        advantages:
+          - pasture recovery
+          - distributed grazing
+          - nutrient movement
+          - seed dispersal
+          - ecological flexibility
+        dependency: >
+          Environmental benefits depend on sufficient territory, route access,
+          herd balance, and effective governance.
+        retrieval_tags:
+          - environmental advantages
+          - mobile grazing
+          - pasture recovery
+          - ecological adaptation
+
+      - concept_id: AHF-012.56
+        title: Environmental Risks
+        canonical_term: nomadic_environmental_risks
+        definition: >
+          Nomadic environmental risks include localized overgrazing, erosion,
+          water contamination, vegetation loss, wildlife competition, and
+          disease transmission.
+        intensifying_conditions:
+          - restricted movement
+          - herd concentration
+          - drought
+          - route closure
+          - weak governance
+          - water scarcity
+        reasoning_note: >
+          Nomadism must not be classified as inherently sustainable or
+          destructive without analyzing the actual system.
+        retrieval_tags:
+          - environmental risk
+          - overgrazing
+          - erosion
+          - rangeland pressure
+
+      - concept_id: AHF-012.57
+        title: Political Marginalization
+        canonical_term: nomadic_political_marginalization
+        definition: >
+          Political marginalization occurs when laws, administration, land
+          systems, taxation, education, policing, and services are designed
+          mainly around permanent settlement.
+        administrative_challenges:
+          - taxation
+          - censuses
+          - schooling
+          - policing
+          - land registration
+          - service delivery
+        effects:
+          - weak route recognition
+          - weak land rights
+          - forced settlement
+          - exclusion from services
+        retrieval_tags:
+          - political marginalization
+          - nomadic rights
+          - land recognition
+          - mobile populations
+
+      - concept_id: AHF-012.58
+        title: Sedentarization
+        canonical_term: sedentarization
+        definition: >
+          Sedentarization is the process through which mobile communities
+          become more permanently settled through voluntary choice,
+          environmental pressure, economic change, conflict, or political force.
+        drivers:
+          - cultivation
+          - markets
+          - services
+          - drought
+          - conflict
+          - route closure
+          - government policy
+          - land privatization
+        possible_benefits:
+          - storage
+          - schooling
+          - healthcare
+          - market access
+        possible_harms:
+          - pasture concentration
+          - unemployment
+          - disease concentration
+          - cultural disruption
+          - route knowledge loss
+        retrieval_tags:
+          - sedentarization
+          - permanent settlement
+          - pastoral transition
+          - forced settlement
+
+      - concept_id: AHF-012.59
+        title: Border Formation
+        canonical_term: borders_and_nomadic_routes
+        definition: >
+          Border formation divides territories into administrative units that
+          may interrupt historic migration routes, water access, pasture,
+          markets, and kinship networks.
+        effects:
+          - reduced drought flexibility
+          - resource concentration
+          - family separation
+          - market restriction
+          - conflict
+        relationship:
+          political_border:
+            may_fragment: mobility_route
+        retrieval_tags:
+          - borders
+          - route fragmentation
+          - migration restriction
+          - pastoral territory
+
+      - concept_id: AHF-012.60
+        title: Land Privatization
+        canonical_term: nomadic_land_privatization
+        definition: >
+          Land privatization converts shared, customary, negotiated, or
+          seasonal resource access into fixed ownership boundaries.
+        effects:
+          - route blockage
+          - reduced grazing access
+          - emergency pasture loss
+          - enclosure
+          - forced settlement
+          - unequal land control
+        reasoning_note: >
+          Land that appears unused during one season may be essential to a
+          mobile livelihood during another.
+        retrieval_tags:
+          - land privatization
+          - enclosure
+          - grazing access
+          - nomadic land rights
+
+      - concept_id: AHF-012.61
+        title: Nomadic Resilience
+        canonical_term: nomadic_resilience
+        definition: >
+          Nomadic resilience is the capacity to maintain or reorganize
+          livelihood, identity, knowledge, and food security under environmental,
+          social, economic, or political change.
+        resilience_factors:
+          - route diversity
+          - herd diversity
+          - household flexibility
+          - ecological knowledge
+          - kinship networks
+          - water access
+          - markets
+          - governance
+          - political recognition
+        failure_condition: >
+          Resilience declines when drought, disease, conflict, route closure,
+          and market collapse occur together.
+        retrieval_tags:
+          - nomadic resilience
+          - adaptive capacity
+          - pastoral recovery
+          - livelihood flexibility
+
+      - concept_id: AHF-012.62
+        title: Nomadic Failure Modes
+        canonical_term: nomadic_failure_modes
+        definition: >
+          Nomadic failure modes are breakdowns in water, routes, herds, markets,
+          security, knowledge, social networks, or political recognition that
+          prevent continued livelihood operation.
+        failure_modes:
+          - water loss
+          - route closure
+          - herd disease
+          - theft
+          - drought
+          - conflict
+          - market collapse
+          - forced settlement
+          - knowledge loss
+          - kinship fragmentation
+        feedback_effect: >
+          Loss of animals may reduce mobility, and reduced mobility may create
+          deeper economic dependence.
+        retrieval_tags:
+          - nomadic failure
+          - livelihood collapse
+          - route loss
+          - herd decline
+
+      - concept_id: AHF-012.63
+        title: Recovery Strategies
+        canonical_term: nomadic_recovery_strategies
+        definition: >
+          Recovery strategies rebuild food access, animals, labour, mobility,
+          social support, and income after livelihood loss.
+        strategies:
+          - animal loans
+          - herd rebuilding
+          - labour exchange
+          - kin support
+          - trade
+          - cultivation
+          - migration
+          - temporary settlement
+          - livelihood diversification
+        dependency: >
+          Recovery depends on social relationships as well as physical assets.
+        retrieval_tags:
+          - nomadic recovery
+          - herd rebuilding
+          - social support
+          - livelihood restoration
+
+      - concept_id: AHF-012.64
+        title: Nomadism and Sedentism
+        canonical_term: nomadism_sedentism_continuum
+        definition: >
+          Nomadism and sedentism form a reversible continuum ranging from high
+          mobility through seasonal movement and semi-nomadism to permanent
+          settlement.
+        continuum:
+          - high mobility
+          - seasonal mobility
+          - semi-nomadism
+          - semi-sedentism
+          - permanent settlement
+        change_drivers:
+          - climate
+          - resources
+          - cultivation
+          - markets
+          - conflict
+          - state policy
+        retrieval_tags:
+          - nomadism and sedentism
+          - mobility continuum
+          - settlement transition
+          - semi-nomadism
+
+      - concept_id: AHF-012.65
+        title: Nomadism and Domestication
+        canonical_term: nomadic_domestication
+        definition: >
+          Nomadic animal management contributed to domestication through
+          repeated control, movement, protection, feeding, breeding, and
+          selection of animal populations.
+        selected_capabilities:
+          - travel
+          - tolerance of humans
+          - group control
+          - reproduction under management
+          - survival in variable environments
+        historical_effect:
+          - domesticated animal diffusion
+          - breed development
+          - expanded pastoral geography
+        retrieval_tags:
+          - nomadism and domestication
+          - pastoral breeding
+          - animal diffusion
+          - managed herds
+
+      - concept_id: AHF-012.66
+        title: Nomadism and Early Villages
+        canonical_term: nomadic_village_interaction
+        definition: >
+          Nomadic communities and early villages interacted through trade,
+          intermarriage, transport, seasonal labour, grazing, manure, ritual,
+          information exchange, cooperation, and conflict.
+        village_contributions:
+          - storage
+          - cultivated food
+          - permanent markets
+          - tools
+          - infrastructure
+        nomadic_contributions:
+          - animals
+          - transport
+          - fibre
+          - hides
+          - manure
+          - distant knowledge
+        retrieval_tags:
+          - nomads and villages
+          - pastoral farmer relations
+          - early trade
+          - manure exchange
+
+      - concept_id: AHF-012.67
+        title: Contribution to Agricultural Civilization
+        canonical_term: nomadic_contribution_to_agriculture
+        definition: >
+          Nomadic lifestyles contributed to agricultural civilization through
+          animal domestication, plant management, environmental observation,
+          seasonal calendars, transport, trade, risk management, and knowledge
+          transmission.
+        major_contributions:
+          - animal domestication
+          - plant management
+          - ecological observation
+          - seasonal calendars
+          - transport
+          - trade
+          - risk management
+          - knowledge transfer
+        core_conclusion: >
+          Agricultural evolution emerged through interaction among mobile and
+          settled communities rather than through settled cultivation alone.
+        retrieval_tags:
+          - agricultural civilization
+          - nomadic contribution
+          - agricultural evolution
+          - mobile-settled interaction
+
+global_entities:
+
+  - entity_id: AHF-NOM-ENT-001
+    name: Nomadic Community
+    entity_type: mobile_social_system
+    attributes:
+      - mobility pattern
+      - household structure
+      - livelihood
+      - territorial access
+      - route knowledge
+      - environmental knowledge
+      - governance
+      - trade relationships
+
+  - entity_id: AHF-NOM-ENT-002
+    name: Mobility Route
+    entity_type: spatial_social_network
+    attributes:
+      - origin
+      - destination
+      - seasonal timing
+      - water points
+      - grazing zones
+      - hazards
+      - permissions
+      - emergency alternatives
+
+  - entity_id: AHF-NOM-ENT-003
+    name: Pastoral Herd
+    entity_type: managed_biological_asset
+    attributes:
+      - species composition
+      - herd size
+      - reproductive status
+      - health
+      - water requirement
+      - mobility capacity
+      - exchange value
+
+  - entity_id: AHF-NOM-ENT-004
+    name: Seasonal Resource Zone
+    entity_type: ecological_area
+    attributes:
+      - season
+      - water
+      - pasture
+      - wild foods
+      - disease risk
+      - access rules
+      - carrying capacity
+
+  - entity_id: AHF-NOM-ENT-005
+    name: Nomadic Household
+    entity_type: productive_social_unit
+    attributes:
+      - members
+      - labour capacity
+      - animals
+      - tools
+      - food reserves
+      - kinship network
+      - mobility options
+
+  - entity_id: AHF-NOM-ENT-006
+    name: Water Point
+    entity_type: critical_resource
+    attributes:
+      - type
+      - reliability
+      - quality
+      - seasonality
+      - capacity
+      - access rights
+      - conflict risk
+
+  - entity_id: AHF-NOM-ENT-007
+    name: Nomadic Market
+    entity_type: mobile_or_seasonal_exchange_center
+    attributes:
+      - location
+      - season
+      - goods
+      - participants
+      - information
+      - social functions
+      - route connections
+
+global_relationships:
+
+  - relationship_id: AHF-NOM-EDGE-001
+    source: Seasonal Resource Variation
+    relation: influences
+    target: Nomadic Mobility
+
+  - relationship_id: AHF-NOM-EDGE-002
+    source: Nomadic Mobility
+    relation: enables_access_to
+    target: Dispersed Resources
+
+  - relationship_id: AHF-NOM-EDGE-003
+    source: Route Knowledge
+    relation: reduces
+    target: Movement Risk
+
+  - relationship_id: AHF-NOM-EDGE-004
+    source: Water Access
+    relation: constrains
+    target: Mobility Duration
+
+  - relationship_id: AHF-NOM-EDGE-005
+    source: Pastoral Herd
+    relation: converts
+    target: Dispersed Vegetation
+    output: Food, Fibre, Transport, Manure, and Wealth
+
+  - relationship_id: AHF-NOM-EDGE-006
+    source: Nomadic Community
+    relation: exchanges_with
+    target: Settled Farming Community
+
+  - relationship_id: AHF-NOM-EDGE-007
+    source: Livestock Movement
+    relation: transfers
+    target: Nutrients Across Landscapes
+
+  - relationship_id: AHF-NOM-EDGE-008
+    source: Political Border
+    relation: may_fragment
+    target: Mobility Route
+
+  - relationship_id: AHF-NOM-EDGE-009
+    source: Route Fragmentation
+    relation: increases
+    target: Resource Concentration
+
+  - relationship_id: AHF-NOM-EDGE-010
+    source: Sedentarization
+    relation: changes
+    target: Nomadic Livelihood Structure
+
+  - relationship_id: AHF-NOM-EDGE-011
+    source: Seasonal Calendar
+    relation: guides
+    target: Movement Timing
+
+  - relationship_id: AHF-NOM-EDGE-012
+    source: Kinship Network
+    relation: supports
+    target: Mobility and Recovery
+
+  - relationship_id: AHF-NOM-EDGE-013
+    source: Herd Diversity
+    relation: reduces
+    target: Livelihood Risk
+
+  - relationship_id: AHF-NOM-EDGE-014
+    source: Market Access
+    relation: supports
+    target: Food and Herd Recovery
+
+  - relationship_id: AHF-NOM-EDGE-015
+    source: Land Privatization
+    relation: may_reduce
+    target: Seasonal Access
+
+evidence_taxonomy:
+
+  - evidence_id: AHF-NOM-EVD-001
+    name: Mobility Route Evidence
+    description: >
+      Paths, camps, water points, repeated occupation patterns, animal movement,
+      transport traces, and landscape-use evidence used to reconstruct mobile
+      livelihood systems.
+
+  - evidence_id: AHF-NOM-EVD-002
+    name: Pastoral Evidence
+    description: >
+      Herd age profiles, animal remains, dung deposits, corrals, pathology,
+      genetic evidence, and settlement relationships used to reconstruct
+      pastoral management.
+
+  - evidence_id: AHF-NOM-EVD-003
+    name: Oral Landscape Evidence
+    description: >
+      Place names, route narratives, genealogies, songs, customary rights,
+      seasonal calendars, and remembered environmental events used to interpret
+      mobile territorial systems.
+
+  - evidence_id: AHF-NOM-EVD-004
+    name: Portable Technology Evidence
+    description: >
+      Shelters, containers, tools, ropes, transport equipment, animal gear, and
+      repair traces used to reconstruct mobile engineering systems.
+
+  - evidence_id: AHF-NOM-EVD-005
+    name: Water-Access Evidence
+    description: >
+      Wells, springs, watering places, camps, paths, sediment, animal remains,
+      and territorial patterns used to study water-dependent movement.
+
+  - evidence_id: AHF-NOM-EVD-006
+    name: Manure and Dung Evidence
+    description: >
+      Dung deposits, nutrient concentrations, plant remains, insects, and soil
+      change used to identify livestock presence and nutrient movement.
+
+  - evidence_id: AHF-NOM-EVD-007
+    name: Exchange-Network Evidence
+    description: >
+      Non-local materials, animal movement, tools, containers, market sites,
+      linguistic evidence, and route patterns used to reconstruct exchange.
+
+misconceptions:
+
+  - misconception_id: AHF-NOM-MIS-001
+    claim: Nomadic communities move without plans.
+    correction: >
+      Nomadic movement is commonly organized through routes, seasonal
+      calendars, water knowledge, territorial agreements, and environmental
+      observation.
+
+  - misconception_id: AHF-NOM-MIS-002
+    claim: Nomadic societies have no agriculture.
+    correction: >
+      Pastoral nomadism is an agricultural system, and mobile communities may
+      also manage plants, animals, soils, fire, trade, and temporary cultivation.
+
+  - misconception_id: AHF-NOM-MIS-003
+    claim: Nomadic communities have no territory.
+    correction: >
+      Nomadic territories may consist of seasonal routes, water points,
+      grazing zones, customary rights, sacred places, and negotiated access.
+
+  - misconception_id: AHF-NOM-MIS-004
+    claim: Mobility automatically means poverty.
+    correction: >
+      Mobility may be a deliberate strategy for using dispersed resources,
+      managing risk, maintaining herds, and connecting markets.
+
+  - misconception_id: AHF-NOM-MIS-005
+    claim: Portable technology is inferior.
+    correction: >
+      Portable technologies are optimized for low weight, repairability,
+      movement, adaptable use, and local material availability.
+
+  - misconception_id: AHF-NOM-MIS-006
+    claim: All nomadic communities are pastoralists.
+    correction: >
+      Nomadic livelihoods may include hunting, gathering, fishing, trade,
+      craft services, transport, temporary cultivation, and pastoralism.
+
+  - misconception_id: AHF-NOM-MIS-007
+    claim: Nomadic systems always cause environmental degradation.
+    correction: >
+      Environmental outcomes depend on mobility freedom, herd size, governance,
+      rainfall, water access, route availability, and resource concentration.
+
+  - misconception_id: AHF-NOM-MIS-008
+    claim: Sedentarization always improves livelihoods.
+    correction: >
+      Permanent settlement may improve access to services while also causing
+      pasture concentration, route loss, unemployment, disease concentration,
+      and cultural disruption.
+
+cross_references:
+
+  internal_sections:
+    AHF-012:
+      related:
+        - AHF-001
+        - AHF-002
+        - AHF-003
+        - AHF-004
+        - AHF-005
+        - AHF-006
+        - AHF-007
+        - AHF-008
+        - AHF-009
+        - AHF-010
+        - AHF-011
+
+  related_relationships:
+    - source: AHF-012.02
+      relation: expands
+      target: AHF-005.01
+
+    - source: AHF-012.06
+      relation: expands
+      target: AHF-007.02
+
+    - source: AHF-012.07
+      relation: connects
+      target: AHF-006.03
+
+    - source: AHF-012.09
+      relation: expands
+      target: AHF-003.03
+
+    - source: AHF-012.10
+      relation: expands
+      target: AHF-010.01
+
+    - source: AHF-012.16
+      relation: expands
+      target: AHF-005.05
+
+    - source: AHF-012.27
+      relation: connects
+      target: AHF-008.05
+
+    - source: AHF-012.44
+      relation: expands
+      target: AHF-010
+
+    - source: AHF-012.64
+      relation: connects
+      target: AHF-006
+
+    - source: AHF-012.65
+      relation: expands
+      target: AHF-007
+
+    - source: AHF-012.66
+      relation: connects
+      target: AHF-008
+
+retrieval_configuration:
+
+  high_priority_queries:
+    - what is a nomadic lifestyle
+    - meaning of nomad
+    - difference between nomadism and migration
+    - nomadism as a food system
+    - types of nomadic systems
+    - pastoral nomadism and agriculture
+    - meaning of transhumance
+    - semi-nomadic livelihoods
+    - nomadic seasonal calendars
+    - nomadic territorial knowledge
+    - nomadic water access
+    - nomadic pasture management
+    - herd composition in pastoral systems
+    - animal selection by pastoralists
+    - nomadic plant management
+    - nomadic food preservation
+    - portable storage
+    - nomadic transport systems
+    - nomadic trade
+    - exchange between nomads and farmers
+    - manure exchange
+    - nomadic labour organization
+    - nomadic household organization
+    - nomadic kinship networks
+    - nomadic governance
+    - nomadic conflict resolution
+    - nomads and states
+    - nomadic route knowledge
+    - oral mapping
+    - nomadic navigation
+    - nomadic environmental observation
+    - nomadic knowledge transmission
+    - nomadic identity
+    - nomadic drought response
+    - livestock as mobile wealth
+    - nomadic disease management
+    - environmental effects of nomadism
+    - political marginalization of nomads
+    - effects of sedentarization
+    - borders and nomadic routes
+    - land privatization and pastoralism
+    - nomadic resilience
+    - nomadic failure modes
+    - nomadism and sedentism
+    - nomadism and domestication
+    - nomadic contribution to agricultural civilization
+
+  query_expansions:
+
+    nomadism:
+      aliases:
+        - nomadic lifestyle
+        - mobile livelihood
+        - mobile food system
+        - migratory livelihood system
+        - recurring livelihood mobility
+
+    pastoral_nomadism:
+      aliases:
+        - mobile pastoralism
+        - nomadic herding
+        - migratory livestock system
+        - mobile livestock production
+
+    transhumance:
+      aliases:
+        - seasonal livestock movement
+        - seasonal pastoral migration
+        - cyclical grazing movement
+        - seasonal herd mobility
+
+    semi_nomadism:
+      aliases:
+        - semi-nomadic lifestyle
+        - semi-sedentary pastoralism
+        - mixed mobile and settled livelihood
+
+    sedentarization:
+      aliases:
+        - settlement of nomadic communities
+        - transition to permanent settlement
+        - reduced nomadic mobility
+        - pastoral settlement transition
+
+    nomadic_territory:
+      aliases:
+        - seasonal territory
+        - mobility network
+        - customary grazing route
+        - pastoral territorial system
+
+    nomadic_resilience:
+      aliases:
+        - pastoral adaptive capacity
+        - mobile livelihood resilience
+        - drought mobility strategy
+        - herd recovery capacity
+
+  answer_requirements:
+    - distinguish nomadism from general migration
+    - distinguish pastoralism from all other nomadic systems
+    - identify environmental and social context
+    - avoid representing mobility as random wandering
+    - avoid treating permanent settlement as automatic progress
+    - distinguish benefits from risks
+    - explain relationships with settled agriculture
+    - identify evidence limitations
+    - state when conclusions vary by region and period
+    - connect mobility, water, pasture, trade, knowledge, and governance
+
+quality_controls:
+
+  concept_rules:
+    each_concept_must_have_unique_meaning: true
+    duplicate_concept_text_forbidden: true
+    renamed_duplicate_concepts_forbidden: true
+    artificial_concept_numbering_forbidden: true
+    concept_order_must_match_markdown: true
+
+  synchronization_rules:
+    markdown_yaml_pair_required: true
+    stable_ids_required: true
+    companion_markdown_required: true
+    companion_section_required: true
+    yaml_may_add_semantic_detail: true
+    yaml_must_not_contradict_markdown: true
+    mapped_range:
+      start: AHF-012.00
+      end: AHF-012.67
+
+  knowledge_rules:
+    placeholders_allowed: false
+    unsourced_statistics_allowed: false
+    fabricated_claims_allowed: false
+    overgeneralization_allowed: false
+    uncertainty_disclosure_required: true
+    historical_context_required: true
+    mobile_settled_relationships_required: true
+
+version_history:
+
+  - version: v001
+    date: "2026-07-13"
+    changes:
+      - created Roman-numeral YAML companion f1.i
+      - mapped AHF-012 Nomadic Lifestyles
+      - mapped concepts AHF-012.00 through AHF-012.67
+      - added nomadic community, mobility route, pastoral herd, seasonal resource zone, household, water point, and market entities
+      - added mobility, route, water, herd, trade, nutrient, border, sedentarization, kinship, market, and land relationships
+      - added mobility, pastoral, oral landscape, portable technology, water, manure, and exchange evidence categories
+      - added nomadic misconceptions and corrections
+      - added retrieval queries and semantic aliases
+      - synchronized this YAML companion with the growing f1 Markdown document

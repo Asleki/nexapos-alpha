@@ -1,0 +1,7887 @@
+schema:
+  name: nexvox_studio_l2_agricultural_history_foundation
+  version: 1.1.0
+  encoding: utf-8
+document:
+  document_id: NVST-0001-A
+  document_number: 1
+  series_identifier: a
+  filename: nv_st_2026.07.12_0001_a_agri_hist_v001.md
+  companion: nv_st_2026.07.12_0001_a_agri_hist_v001.yaml
+  domain: agriculture
+  series: agricultural_history
+  title: Agricultural History Foundation — Volume A
+  version: v001
+  created: '2026-07-12'
+  status: living
+  scope_rule: general_multi_context_no_named_crop_no_named_country
+  minimum_line_rule:
+    markdown_minimum: 1500
+    yaml_minimum: 1500
+pairing_and_sync:
+  markdown_primary_role: human_readable_knowledge
+  yaml_primary_role: machine_readable_structure_and_semantics
+  sync_required: true
+  placeholder_sync_required: true
+  rule: Every real section and every reserved placeholder in Markdown must have a corresponding YAML representation.
+  when_markdown_expands:
+  - update section_registry
+  - update expansion_registry if a slot is filled
+  - add or update definitions, entities, metrics, rules, risks, or relationships
+  - update source and uncertainty metadata
+  - update version history
+  when_yaml_expands:
+  - ensure corresponding Markdown knowledge exists or is added
+  - preserve identical document identity and version
+  - preserve section order and stable identifiers
+source_governance:
+  allowed_sources:
+  - user_supplied_material
+  - approved_nexa_documents
+  - approved_field_records
+  - verified_external_research
+  - recognized_reference_works
+  - approved_expert_input
+  provenance_required: true
+  date_required_when_time_sensitive: true
+  uncertainty_required_when_incomplete: true
+  filler_only_content_forbidden: true
+section_registry:
+- section_id: AH-001
+  number: 1
+  title: Definitions
+  status: active
+  markdown_heading: '# 1. Definitions'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-002
+  number: 2
+  title: Explanations
+  status: active
+  markdown_heading: '# 2. Explanations'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-003
+  number: 3
+  title: Historical Context
+  status: active
+  markdown_heading: '# 3. Historical Context'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-004
+  number: 4
+  title: Principles
+  status: active
+  markdown_heading: '# 4. Principles'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-005
+  number: 5
+  title: Metrics and KPIs
+  status: active
+  markdown_heading: '# 5. Metrics and KPIs'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-006
+  number: 6
+  title: Data Model and Entities
+  status: active
+  markdown_heading: '# 6. Data Model and Entities'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-007
+  number: 7
+  title: Workflows and Value Chain
+  status: active
+  markdown_heading: '# 7. Workflows and Value Chain'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-008
+  number: 8
+  title: Examples
+  status: active
+  markdown_heading: '# 8. Examples'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-009
+  number: 9
+  title: Procedures
+  status: active
+  markdown_heading: '# 9. Procedures'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-010
+  number: 10
+  title: Decision Trees and Logic Rules
+  status: active
+  markdown_heading: '# 10. Decision Trees and Logic Rules'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-011
+  number: 11
+  title: Capacity and Constraint Models
+  status: active
+  markdown_heading: '# 11. Capacity and Constraint Models'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-012
+  number: 12
+  title: Risks
+  status: active
+  markdown_heading: '# 12. Risks'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-013
+  number: 13
+  title: Failure Modes and Loss Points
+  status: active
+  markdown_heading: '# 13. Failure Modes and Loss Points'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-014
+  number: 14
+  title: Exceptions
+  status: active
+  markdown_heading: '# 14. Exceptions'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-015
+  number: 15
+  title: Standards and Compliance
+  status: active
+  markdown_heading: '# 15. Standards and Compliance'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-016
+  number: 16
+  title: Tools, Equipment and Infrastructure
+  status: active
+  markdown_heading: '# 16. Tools, Equipment and Infrastructure'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-017
+  number: 17
+  title: Relationships
+  status: active
+  markdown_heading: '# 17. Relationships'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-018
+  number: 18
+  title: Frameworks
+  status: active
+  markdown_heading: '# 18. Frameworks'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-019
+  number: 19
+  title: Assumptions
+  status: active
+  markdown_heading: '# 19. Assumptions'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-020
+  number: 20
+  title: Constraints
+  status: active
+  markdown_heading: '# 20. Constraints'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-021
+  number: 21
+  title: Interdependencies
+  status: active
+  markdown_heading: '# 21. Interdependencies'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-022
+  number: 22
+  title: Classification Systems
+  status: active
+  markdown_heading: '# 22. Classification Systems'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-023
+  number: 23
+  title: Evaluation Criteria
+  status: active
+  markdown_heading: '# 23. Evaluation Criteria'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-024
+  number: 24
+  title: Evolution and Change Factors
+  status: active
+  markdown_heading: '# 24. Evolution and Change Factors'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-025
+  number: 25
+  title: Detailed Knowledge Articles
+  status: active
+  markdown_heading: '# 25. Detailed Knowledge Articles'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-026
+  number: 26
+  title: References and Related Documents
+  status: active
+  markdown_heading: '# 26. References and Related Documents'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-027
+  number: 27
+  title: Periodization
+  status: active
+  markdown_heading: '# 27. Periodization'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-028
+  number: 28
+  title: Geographic Variation
+  status: active
+  markdown_heading: '# 28. Geographic Variation'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-029
+  number: 29
+  title: Knowledge Transmission
+  status: active
+  markdown_heading: '# 29. Knowledge Transmission'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-030
+  number: 30
+  title: Socioeconomic Impact
+  status: active
+  markdown_heading: '# 30. Socioeconomic Impact'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-031
+  number: 31
+  title: Historiography
+  status: active
+  markdown_heading: '# 31. Historiography'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-032
+  number: 32
+  title: Sources of Historical Evidence
+  status: active
+  markdown_heading: '# 32. Sources of Historical Evidence'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-033
+  number: 33
+  title: Historical Uncertainty
+  status: active
+  markdown_heading: '# 33. Historical Uncertainty'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-034
+  number: 34
+  title: Terminology Evolution
+  status: active
+  markdown_heading: '# 34. Terminology Evolution'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-035
+  number: 35
+  title: Comparative Historical Analysis
+  status: active
+  markdown_heading: '# 35. Comparative Historical Analysis'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-036
+  number: 36
+  title: Historical Knowledge Graph
+  status: active
+  markdown_heading: '# 36. Historical Knowledge Graph'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+- section_id: AH-037
+  number: 37
+  title: Expansion Registry
+  status: active
+  markdown_heading: '# 37. Expansion Registry'
+  sync_required: true
+  content_type: knowledge_section
+  placeholder_policy:
+    allowed: true
+    must_have_companion_yaml: true
+    must_be_replaced_or_expanded_with_verified_content: true
+definitions:
+- id: AH-DEF-001
+  code: agricultural_history
+  term: Agricultural history
+  definition: The study of how human societies organized food production, land use, labour, exchange, technology, storage,
+    governance, and ecological management across time.
+  status: active
+- id: AH-DEF-002
+  code: agrarian_system
+  term: Agrarian system
+  definition: A historically specific arrangement of land, labour, tools, knowledge, rights, obligations, production, and
+    exchange.
+  status: active
+- id: AH-DEF-003
+  code: subsistence
+  term: Subsistence
+  definition: The production and acquisition of food and essential materials primarily to support the producing household
+    or community.
+  status: active
+- id: AH-DEF-004
+  code: surplus
+  term: Surplus
+  definition: Output remaining after immediate consumption, seed retention, feed needs, losses, and obligations have been
+    met.
+  status: active
+- id: AH-DEF-005
+  code: intensification
+  term: Intensification
+  definition: An increase in output or labour input per unit of land, time, water, or other resource.
+  status: active
+- id: AH-DEF-006
+  code: extensification
+  term: Extensification
+  definition: An increase in production mainly by expanding the area or number of resources under use.
+  status: active
+- id: AH-DEF-007
+  code: domestication
+  term: Domestication
+  definition: A long-term process in which human selection and management alter the traits, reproduction, behaviour, or distribution
+    of living organisms.
+  status: active
+- id: AH-DEF-008
+  code: sedentism
+  term: Sedentism
+  definition: A pattern of living in one place for longer periods rather than moving continuously.
+  status: active
+- id: AH-DEF-009
+  code: land_tenure
+  term: Land tenure
+  definition: The rules and institutions governing access to, use of, control over, transfer of, and inheritance of land.
+  status: active
+- id: AH-DEF-010
+  code: agrarian_transition
+  term: Agrarian transition
+  definition: A major change in how land, labour, technology, ownership, markets, and production are organized.
+  status: active
+- id: AH-DEF-011
+  code: food_system
+  term: Food system
+  definition: The connected historical arrangement of production, storage, movement, processing, exchange, consumption, governance,
+    and waste.
+  status: active
+- id: AH-DEF-012
+  code: historical_productivity
+  term: Historical productivity
+  definition: The relationship between output and the land, labour, animals, water, capital, energy, or time used in a given
+    era.
+  status: active
+metrics_and_kpis:
+- id: AH-KPI-001
+  code: output_per_area
+  name: Output per area
+  definition: Measures harvested output relative to cultivated land.
+  historical_caution: Interpret using the units, records, goals, and evidence quality of the relevant era.
+- id: AH-KPI-002
+  code: output_per_worker
+  name: Output per worker
+  definition: Measures labour productivity within a historical system.
+  historical_caution: Interpret using the units, records, goals, and evidence quality of the relevant era.
+- id: AH-KPI-003
+  code: seed_return_ratio
+  name: Seed return ratio
+  definition: Compares harvested output with seed retained for planting.
+  historical_caution: Interpret using the units, records, goals, and evidence quality of the relevant era.
+- id: AH-KPI-004
+  code: surplus_ratio
+  name: Surplus ratio
+  definition: Measures output remaining after local consumption, seed, feed, and unavoidable losses.
+  historical_caution: Interpret using the units, records, goals, and evidence quality of the relevant era.
+- id: AH-KPI-005
+  code: loss_rate
+  name: Loss rate
+  definition: Estimates the share lost during harvesting, transport, storage, processing, taxation, or conflict.
+  historical_caution: Interpret using the units, records, goals, and evidence quality of the relevant era.
+- id: AH-KPI-006
+  code: storage_duration
+  name: Storage duration
+  definition: Indicates how long food remained usable under contemporary methods.
+  historical_caution: Interpret using the units, records, goals, and evidence quality of the relevant era.
+- id: AH-KPI-007
+  code: transport_radius
+  name: Transport radius
+  definition: Represents the practical distance over which goods could be moved economically.
+  historical_caution: Interpret using the units, records, goals, and evidence quality of the relevant era.
+- id: AH-KPI-008
+  code: land_use_intensity
+  name: Land-use intensity
+  definition: Describes frequency and intensity of cultivation relative to fallow or recovery.
+  historical_caution: Interpret using the units, records, goals, and evidence quality of the relevant era.
+- id: AH-KPI-009
+  code: labour_peak_ratio
+  name: Labour peak ratio
+  definition: Compares peak seasonal labour demand with average labour availability.
+  historical_caution: Interpret using the units, records, goals, and evidence quality of the relevant era.
+- id: AH-KPI-010
+  code: marketed_share
+  name: Marketed share
+  definition: Estimates the portion of output entering exchange rather than direct use.
+  historical_caution: Interpret using the units, records, goals, and evidence quality of the relevant era.
+- id: AH-KPI-011
+  code: tax_extraction_rate
+  name: Tax extraction rate
+  definition: Estimates the share transferred to rulers, institutions, landlords, or authorities.
+  historical_caution: Interpret using the units, records, goals, and evidence quality of the relevant era.
+- id: AH-KPI-012
+  code: risk_exposure_index
+  name: Risk exposure index
+  definition: Combines dependence on climate, weak storage, conflict, and market volatility.
+  historical_caution: Interpret using the units, records, goals, and evidence quality of the relevant era.
+entities:
+- id: AH-ENT-001
+  name: Household
+  attributes:
+  - members
+  - labour_capacity
+  - land_access
+  - livestock_access
+  - storage
+  - obligations
+  - consumption_needs
+  status: active
+  historical_variability: true
+- id: AH-ENT-002
+  name: Community
+  attributes:
+  - territory
+  - population
+  - institutions
+  - shared_resources
+  - conflict_rules
+  - exchange_networks
+  status: active
+  historical_variability: true
+- id: AH-ENT-003
+  name: Farmer
+  attributes:
+  - status
+  - skills
+  - rights
+  - obligations
+  - tools
+  - labour_access
+  - market_access
+  status: active
+  historical_variability: true
+- id: AH-ENT-004
+  name: Landholding
+  attributes:
+  - size
+  - tenure
+  - soil_condition
+  - water_access
+  - boundaries
+  - inheritance_rules
+  status: active
+  historical_variability: true
+- id: AH-ENT-005
+  name: Field
+  attributes:
+  - location
+  - area
+  - use_history
+  - labour_requirement
+  - water_regime
+  - productivity
+  status: active
+  historical_variability: true
+- id: AH-ENT-006
+  name: Pasture
+  attributes:
+  - seasonality
+  - carrying_capacity
+  - access_rules
+  - water_points
+  - mobility_links
+  status: active
+  historical_variability: true
+- id: AH-ENT-007
+  name: StorageFacility
+  attributes:
+  - capacity
+  - ownership
+  - construction
+  - security
+  - ventilation
+  - loss_profile
+  status: active
+  historical_variability: true
+- id: AH-ENT-008
+  name: Market
+  attributes:
+  - frequency
+  - location
+  - participants
+  - measurement_rules
+  - credit_practices
+  - taxation
+  status: active
+  historical_variability: true
+- id: AH-ENT-009
+  name: StateInstitution
+  attributes:
+  - authority
+  - tax_role
+  - water_control
+  - storage_role
+  - labour_demands
+  - recordkeeping
+  status: active
+  historical_variability: true
+- id: AH-ENT-010
+  name: ReligiousInstitution
+  attributes:
+  - land_control
+  - ritual_role
+  - redistribution
+  - labour_role
+  - knowledge_preservation
+  status: active
+  historical_variability: true
+- id: AH-ENT-011
+  name: Trader
+  attributes:
+  - routes
+  - capital
+  - transport
+  - risk
+  - measurement
+  - credit
+  status: active
+  historical_variability: true
+- id: AH-ENT-012
+  name: ToolSystem
+  attributes:
+  - material
+  - energy_source
+  - maintenance
+  - skill_requirement
+  - throughput
+  - ownership
+  status: active
+  historical_variability: true
+- id: AH-ENT-013
+  name: KnowledgeTradition
+  attributes:
+  - transmission_method
+  - custodians
+  - scope
+  - adaptation
+  - loss_risk
+  status: active
+  historical_variability: true
+classification_systems:
+  mobility:
+  - mobile
+  - seasonally_mobile
+  - semi_sedentary
+  - sedentary
+  market_orientation:
+  - subsistence_oriented
+  - mixed
+  - market_oriented
+  - commercial
+  land_control:
+  - communal
+  - household
+  - estate
+  - institutional
+  - state
+  labour_form:
+  - family
+  - reciprocal
+  - communal
+  - dependent
+  - hired
+  - coerced
+  energy_source:
+  - human
+  - animal
+  - water
+  - wind
+  - biomass
+  - fossil
+  - electric
+  - digital
+  water_regime:
+  - rain_dependent
+  - flood_dependent
+  - irrigated
+  - mixed
+  scale:
+  - household
+  - village
+  - estate
+  - regional
+  - industrial
+training:
+  level: NexVox Studio L2
+  retrieval_enabled: true
+  embedding_enabled: true
+  knowledge_graph_enabled: true
+  fine_tuning_enabled: false
+  chunking:
+    primary_unit: section
+    secondary_unit: subsection
+    preserve_heading_context: true
+    recommended_tokens: 700
+    max_tokens: 1200
+    overlap_tokens: 120
+  reasoning_rules:
+  - do not assume one universal path of agricultural development
+  - distinguish sequence from causation
+  - state uncertainty
+  - compare multiple evidence types
+  - avoid treating later systems as automatically superior
+  - respect geographic and institutional variation
+quality:
+  minimum_markdown_lines: 1500
+  minimum_yaml_lines: 1500
+  substantive_content_required: true
+  placeholders_allowed: true
+  placeholders_must_be_companion_mapped: true
+  placeholder_filler_for_line_count_forbidden: true
+  companion_sync_required: true
+  named_country_excluded: true
+  named_crop_excluded: true
+expansion_registry:
+- slot_id: AH-EXP-001
+  markdown_heading: '## 37.001 Reserved Expansion Slot 001'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-002
+  markdown_heading: '## 37.002 Reserved Expansion Slot 002'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-003
+  markdown_heading: '## 37.003 Reserved Expansion Slot 003'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-004
+  markdown_heading: '## 37.004 Reserved Expansion Slot 004'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-005
+  markdown_heading: '## 37.005 Reserved Expansion Slot 005'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-006
+  markdown_heading: '## 37.006 Reserved Expansion Slot 006'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-007
+  markdown_heading: '## 37.007 Reserved Expansion Slot 007'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-008
+  markdown_heading: '## 37.008 Reserved Expansion Slot 008'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-009
+  markdown_heading: '## 37.009 Reserved Expansion Slot 009'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-010
+  markdown_heading: '## 37.010 Reserved Expansion Slot 010'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-011
+  markdown_heading: '## 37.011 Reserved Expansion Slot 011'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-012
+  markdown_heading: '## 37.012 Reserved Expansion Slot 012'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-013
+  markdown_heading: '## 37.013 Reserved Expansion Slot 013'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-014
+  markdown_heading: '## 37.014 Reserved Expansion Slot 014'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-015
+  markdown_heading: '## 37.015 Reserved Expansion Slot 015'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-016
+  markdown_heading: '## 37.016 Reserved Expansion Slot 016'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-017
+  markdown_heading: '## 37.017 Reserved Expansion Slot 017'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-018
+  markdown_heading: '## 37.018 Reserved Expansion Slot 018'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-019
+  markdown_heading: '## 37.019 Reserved Expansion Slot 019'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-020
+  markdown_heading: '## 37.020 Reserved Expansion Slot 020'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-021
+  markdown_heading: '## 37.021 Reserved Expansion Slot 021'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-022
+  markdown_heading: '## 37.022 Reserved Expansion Slot 022'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-023
+  markdown_heading: '## 37.023 Reserved Expansion Slot 023'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-024
+  markdown_heading: '## 37.024 Reserved Expansion Slot 024'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-025
+  markdown_heading: '## 37.025 Reserved Expansion Slot 025'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-026
+  markdown_heading: '## 37.026 Reserved Expansion Slot 026'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-027
+  markdown_heading: '## 37.027 Reserved Expansion Slot 027'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-028
+  markdown_heading: '## 37.028 Reserved Expansion Slot 028'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-029
+  markdown_heading: '## 37.029 Reserved Expansion Slot 029'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-030
+  markdown_heading: '## 37.030 Reserved Expansion Slot 030'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-031
+  markdown_heading: '## 37.031 Reserved Expansion Slot 031'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-032
+  markdown_heading: '## 37.032 Reserved Expansion Slot 032'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-033
+  markdown_heading: '## 37.033 Reserved Expansion Slot 033'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-034
+  markdown_heading: '## 37.034 Reserved Expansion Slot 034'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-035
+  markdown_heading: '## 37.035 Reserved Expansion Slot 035'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-036
+  markdown_heading: '## 37.036 Reserved Expansion Slot 036'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-037
+  markdown_heading: '## 37.037 Reserved Expansion Slot 037'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-038
+  markdown_heading: '## 37.038 Reserved Expansion Slot 038'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-039
+  markdown_heading: '## 37.039 Reserved Expansion Slot 039'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-040
+  markdown_heading: '## 37.040 Reserved Expansion Slot 040'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-041
+  markdown_heading: '## 37.041 Reserved Expansion Slot 041'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-042
+  markdown_heading: '## 37.042 Reserved Expansion Slot 042'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-043
+  markdown_heading: '## 37.043 Reserved Expansion Slot 043'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-044
+  markdown_heading: '## 37.044 Reserved Expansion Slot 044'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-045
+  markdown_heading: '## 37.045 Reserved Expansion Slot 045'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-046
+  markdown_heading: '## 37.046 Reserved Expansion Slot 046'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-047
+  markdown_heading: '## 37.047 Reserved Expansion Slot 047'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-048
+  markdown_heading: '## 37.048 Reserved Expansion Slot 048'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-049
+  markdown_heading: '## 37.049 Reserved Expansion Slot 049'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-050
+  markdown_heading: '## 37.050 Reserved Expansion Slot 050'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-051
+  markdown_heading: '## 37.051 Reserved Expansion Slot 051'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-052
+  markdown_heading: '## 37.052 Reserved Expansion Slot 052'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-053
+  markdown_heading: '## 37.053 Reserved Expansion Slot 053'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-054
+  markdown_heading: '## 37.054 Reserved Expansion Slot 054'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-055
+  markdown_heading: '## 37.055 Reserved Expansion Slot 055'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-056
+  markdown_heading: '## 37.056 Reserved Expansion Slot 056'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-057
+  markdown_heading: '## 37.057 Reserved Expansion Slot 057'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-058
+  markdown_heading: '## 37.058 Reserved Expansion Slot 058'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-059
+  markdown_heading: '## 37.059 Reserved Expansion Slot 059'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-060
+  markdown_heading: '## 37.060 Reserved Expansion Slot 060'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-061
+  markdown_heading: '## 37.061 Reserved Expansion Slot 061'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-062
+  markdown_heading: '## 37.062 Reserved Expansion Slot 062'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-063
+  markdown_heading: '## 37.063 Reserved Expansion Slot 063'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-064
+  markdown_heading: '## 37.064 Reserved Expansion Slot 064'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-065
+  markdown_heading: '## 37.065 Reserved Expansion Slot 065'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-066
+  markdown_heading: '## 37.066 Reserved Expansion Slot 066'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-067
+  markdown_heading: '## 37.067 Reserved Expansion Slot 067'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-068
+  markdown_heading: '## 37.068 Reserved Expansion Slot 068'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-069
+  markdown_heading: '## 37.069 Reserved Expansion Slot 069'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-070
+  markdown_heading: '## 37.070 Reserved Expansion Slot 070'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-071
+  markdown_heading: '## 37.071 Reserved Expansion Slot 071'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-072
+  markdown_heading: '## 37.072 Reserved Expansion Slot 072'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-073
+  markdown_heading: '## 37.073 Reserved Expansion Slot 073'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-074
+  markdown_heading: '## 37.074 Reserved Expansion Slot 074'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-075
+  markdown_heading: '## 37.075 Reserved Expansion Slot 075'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-076
+  markdown_heading: '## 37.076 Reserved Expansion Slot 076'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-077
+  markdown_heading: '## 37.077 Reserved Expansion Slot 077'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-078
+  markdown_heading: '## 37.078 Reserved Expansion Slot 078'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-079
+  markdown_heading: '## 37.079 Reserved Expansion Slot 079'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-080
+  markdown_heading: '## 37.080 Reserved Expansion Slot 080'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-081
+  markdown_heading: '## 37.081 Reserved Expansion Slot 081'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-082
+  markdown_heading: '## 37.082 Reserved Expansion Slot 082'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-083
+  markdown_heading: '## 37.083 Reserved Expansion Slot 083'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-084
+  markdown_heading: '## 37.084 Reserved Expansion Slot 084'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-085
+  markdown_heading: '## 37.085 Reserved Expansion Slot 085'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-086
+  markdown_heading: '## 37.086 Reserved Expansion Slot 086'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-087
+  markdown_heading: '## 37.087 Reserved Expansion Slot 087'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-088
+  markdown_heading: '## 37.088 Reserved Expansion Slot 088'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-089
+  markdown_heading: '## 37.089 Reserved Expansion Slot 089'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-090
+  markdown_heading: '## 37.090 Reserved Expansion Slot 090'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-091
+  markdown_heading: '## 37.091 Reserved Expansion Slot 091'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-092
+  markdown_heading: '## 37.092 Reserved Expansion Slot 092'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-093
+  markdown_heading: '## 37.093 Reserved Expansion Slot 093'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-094
+  markdown_heading: '## 37.094 Reserved Expansion Slot 094'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-095
+  markdown_heading: '## 37.095 Reserved Expansion Slot 095'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-096
+  markdown_heading: '## 37.096 Reserved Expansion Slot 096'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-097
+  markdown_heading: '## 37.097 Reserved Expansion Slot 097'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-098
+  markdown_heading: '## 37.098 Reserved Expansion Slot 098'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-099
+  markdown_heading: '## 37.099 Reserved Expansion Slot 099'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-100
+  markdown_heading: '## 37.100 Reserved Expansion Slot 100'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-101
+  markdown_heading: '## 37.101 Reserved Expansion Slot 101'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-102
+  markdown_heading: '## 37.102 Reserved Expansion Slot 102'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-103
+  markdown_heading: '## 37.103 Reserved Expansion Slot 103'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-104
+  markdown_heading: '## 37.104 Reserved Expansion Slot 104'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-105
+  markdown_heading: '## 37.105 Reserved Expansion Slot 105'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-106
+  markdown_heading: '## 37.106 Reserved Expansion Slot 106'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-107
+  markdown_heading: '## 37.107 Reserved Expansion Slot 107'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-108
+  markdown_heading: '## 37.108 Reserved Expansion Slot 108'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-109
+  markdown_heading: '## 37.109 Reserved Expansion Slot 109'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-110
+  markdown_heading: '## 37.110 Reserved Expansion Slot 110'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-111
+  markdown_heading: '## 37.111 Reserved Expansion Slot 111'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-112
+  markdown_heading: '## 37.112 Reserved Expansion Slot 112'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-113
+  markdown_heading: '## 37.113 Reserved Expansion Slot 113'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-114
+  markdown_heading: '## 37.114 Reserved Expansion Slot 114'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-115
+  markdown_heading: '## 37.115 Reserved Expansion Slot 115'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-116
+  markdown_heading: '## 37.116 Reserved Expansion Slot 116'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-117
+  markdown_heading: '## 37.117 Reserved Expansion Slot 117'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-118
+  markdown_heading: '## 37.118 Reserved Expansion Slot 118'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-119
+  markdown_heading: '## 37.119 Reserved Expansion Slot 119'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+- slot_id: AH-EXP-120
+  markdown_heading: '## 37.120 Reserved Expansion Slot 120'
+  status: reserved
+  purpose: Reserve a synchronized location for future verified Agricultural History knowledge.
+  companion_requirement: Any Markdown content added under this slot must be mirrored in this YAML record.
+  allowed_content_types:
+  - definition
+  - explanation
+  - historical_context
+  - principle
+  - metric
+  - entity
+  - workflow
+  - procedure
+  - decision_rule
+  - capacity_model
+  - risk
+  - failure_mode
+  - exception
+  - standard
+  - tool_or_infrastructure
+  - relationship
+  - framework
+  - assumption
+  - constraint
+  - interdependency
+  - classification
+  - evaluation_criteria
+  - change_factor
+  - detailed_article
+  - reference
+  required_fields_when_filled:
+  - title
+  - scope
+  - summary
+  - content_type
+  - evidence
+  - relationships
+  - uncertainty
+  - source_or_provenance
+  - markdown_anchor
+  - yaml_update
+  source_policy:
+    may_come_from:
+    - user_supplied_material
+    - approved_project_documents
+    - verified_research
+    - approved_field_notes
+    - approved_expert_input
+    must_not_come_from:
+    - fabricated_claims
+    - fake_statistics
+    - padding_only
+    - unsourced_current_rules
+  current_content: null
+  current_evidence: []
+  current_relationships: []
+  current_uncertainty: not_applicable_until_filled
+  version_introduced: v001
+version_history:
+- version: v001
+  date: '2026-07-12'
+  summary: Agricultural History Foundation created with synchronized substantive sections and companion expansion placeholders.

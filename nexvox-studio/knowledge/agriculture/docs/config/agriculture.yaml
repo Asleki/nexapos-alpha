@@ -1,0 +1,3453 @@
+schema:
+  name: nexvox_studio_l2_domain_foundation
+  version: 1.0.0
+  encoding: utf-8
+document:
+  document_id: NVST-AGR-ROOT-0000
+  title: Agriculture Domain Foundation
+  domain: agriculture
+  document_type: root_domain_foundation
+  status: living
+  classification: internal
+  version: 0.2.0
+  created: '2026-07-12'
+  repository_path_markdown: nexapos-alpha/nexvox-studio/knowledge/agriculture/docs/content/agriculture.md
+  repository_path_yaml: nexapos-alpha/nexvox-studio/knowledge/agriculture/docs/config/agriculture.yaml
+  pair_key: agriculture
+  synchronization_required: true
+purpose:
+  primary: Provide the shared Agriculture language, ontology, rules, workflows, metrics, risks, and expansion map used by
+    NexVox Studio L2.
+  uses:
+  - retrieval
+  - knowledge graph construction
+  - query routing
+  - cross-domain reasoning
+  - specialist document inheritance
+  - future evaluation
+  not_final_authority_for:
+  - current law
+  - current prices
+  - local recommendations
+  - commodity-specific procedures
+  - approved NexFarm SOPs
+assumptions:
+- Agriculture operates under finite resources.
+- Biological systems contain uncertainty.
+- Measurements require units, method, time, and context.
+- Local evidence can override generic guidance.
+- Production and simulation data remain separate.
+definitions:
+- id: DEF-001
+  term: Agriculture
+  definition: The organized production, management, transformation, movement, exchange, and stewardship of biological resources
+    for food, feed, fibre, fuel, raw materials, livelihoods, and ecosystem services.
+  status: active
+- id: DEF-002
+  term: Agricultural system
+  definition: A connected set of biological, physical, economic, social, technological, and institutional components used
+    to produce agricultural outcomes.
+  status: active
+- id: DEF-003
+  term: Farm
+  definition: A managed production unit where land, water, labour, capital, knowledge, and biological resources are combined.
+  status: active
+- id: DEF-004
+  term: Agribusiness
+  definition: The commercial system surrounding agricultural inputs, production, processing, logistics, finance, marketing,
+    and services.
+  status: active
+- id: DEF-005
+  term: Crop
+  definition: A plant intentionally grown for food, feed, fibre, fuel, medicine, seed, ornament, industrial use, or ecological
+    function.
+  status: active
+- id: DEF-006
+  term: Livestock
+  definition: Domesticated animals managed for food, income, labour, breeding, fibre, manure, security, or other productive
+    purposes.
+  status: active
+- id: DEF-007
+  term: Aquaculture
+  definition: The managed production of fish, shellfish, aquatic plants, or other aquatic organisms.
+  status: active
+- id: DEF-008
+  term: Agroforestry
+  definition: The deliberate integration of trees with crops, livestock, or both.
+  status: active
+- id: DEF-009
+  term: Soil
+  definition: A dynamic natural body composed of minerals, organic matter, water, air, and living organisms that supports
+    plant growth and ecological processes.
+  status: active
+- id: DEF-010
+  term: Soil fertility
+  definition: The capacity of soil to supply nutrients in forms and quantities that support plant growth.
+  status: active
+- id: DEF-011
+  term: Soil health
+  definition: The continued ability of soil to function as a living ecosystem that supports plants, animals, water regulation,
+    and nutrient cycling.
+  status: active
+- id: DEF-012
+  term: Yield
+  definition: The quantity of useful output produced per unit area, animal, plant, time, or production cycle.
+  status: active
+- id: DEF-013
+  term: Productivity
+  definition: The amount of output obtained relative to the resources used.
+  status: active
+- id: DEF-014
+  term: Efficiency
+  definition: The degree to which inputs are converted into useful outputs with minimal waste.
+  status: active
+- id: DEF-015
+  term: Resilience
+  definition: The ability of a system to absorb disturbance, adapt, and continue functioning.
+  status: active
+- id: DEF-016
+  term: Sustainability
+  definition: The ability to maintain environmental, economic, and social performance over time without undermining future
+    capacity.
+  status: active
+- id: DEF-017
+  term: Food security
+  definition: A condition in which people have reliable access to sufficient, safe, nutritious, and acceptable food.
+  status: active
+- id: DEF-018
+  term: Value chain
+  definition: The connected sequence of activities that moves a product from inputs and production to processing, distribution,
+    sale, use, and waste recovery.
+  status: active
+- id: DEF-019
+  term: Supply chain
+  definition: The network that moves materials, products, information, and money between suppliers, producers, processors,
+    distributors, and customers.
+  status: active
+- id: DEF-020
+  term: Post-harvest management
+  definition: All handling, transformation, protection, storage, and movement after harvest or collection and before final
+    use.
+  status: active
+- id: DEF-021
+  term: Traceability
+  definition: The ability to follow the identity, origin, movement, transformation, and status of a product, batch, or asset.
+  status: active
+- id: DEF-022
+  term: Batch
+  definition: A defined quantity grouped for handling, storage, processing, sale, testing, or traceability.
+  status: active
+- id: DEF-023
+  term: Lot
+  definition: A defined group of products sharing relevant origin, quality, timing, or handling characteristics.
+  status: active
+- id: DEF-024
+  term: Input
+  definition: A resource consumed or used in production, such as seed, feed, fertilizer, labour, water, fuel, machinery, or
+    information.
+  status: active
+- id: DEF-025
+  term: Output
+  definition: A useful result of an agricultural process, including products, by-products, services, data, or ecosystem benefits.
+  status: active
+- id: DEF-026
+  term: By-product
+  definition: A secondary output generated alongside the main product.
+  status: active
+- id: DEF-027
+  term: Waste
+  definition: Material, energy, time, capacity, or value that is discarded, lost, degraded, or left unused.
+  status: active
+- id: DEF-028
+  term: Loss
+  definition: A reduction in quantity, quality, nutritional value, safety, economic value, or operational usefulness.
+  status: active
+- id: DEF-029
+  term: Risk
+  definition: The possibility that an uncertain event or condition will cause harm or reduce expected performance.
+  status: active
+- id: DEF-030
+  term: Hazard
+  definition: A source or condition capable of causing harm.
+  status: active
+- id: DEF-031
+  term: Constraint
+  definition: A condition that limits feasible choices, capacity, performance, or timing.
+  status: active
+- id: DEF-032
+  term: Capacity
+  definition: The maximum sustainable amount of work, production, storage, processing, or movement possible under defined
+    conditions.
+  status: active
+- id: DEF-033
+  term: Throughput
+  definition: The quantity processed through a system per unit time.
+  status: active
+- id: DEF-034
+  term: Utilization
+  definition: The proportion of available capacity that is actually used.
+  status: active
+- id: DEF-035
+  term: Bottleneck
+  definition: The resource or process step that limits overall system throughput.
+  status: active
+- id: DEF-036
+  term: Inventory
+  definition: Inputs, work in progress, harvested products, livestock, packaging, spare parts, or finished goods held for
+    future use or sale.
+  status: active
+- id: DEF-037
+  term: Stock rotation
+  definition: The rule used to determine the order in which inventory is issued, sold, processed, or consumed.
+  status: active
+- id: DEF-038
+  term: Procurement
+  definition: The organized acquisition of produce, inputs, equipment, materials, or services.
+  status: active
+- id: DEF-039
+  term: Aggregation
+  definition: The combination of smaller quantities from multiple sources into larger commercial volumes.
+  status: active
+- id: DEF-040
+  term: Grading
+  definition: The classification of products according to defined quality characteristics.
+  status: active
+- id: DEF-041
+  term: Sorting
+  definition: The separation of products by size, quality, defect, variety, maturity, contamination, or intended use.
+  status: active
+- id: DEF-042
+  term: Inspection
+  definition: The systematic examination of products, animals, facilities, records, or processes.
+  status: active
+- id: DEF-043
+  term: Quality assurance
+  definition: A planned system designed to prevent defects and maintain standards.
+  status: active
+- id: DEF-044
+  term: Quality control
+  definition: Measurement, testing, and inspection used to verify whether requirements are met.
+  status: active
+- id: DEF-045
+  term: Moisture content
+  definition: The proportion of water contained in a material, expressed using a defined basis.
+  status: active
+- id: DEF-046
+  term: Drying
+  definition: The controlled reduction of moisture to improve stability, safety, or processing suitability.
+  status: active
+- id: DEF-047
+  term: Irrigation
+  definition: The controlled application of water to soil or crops.
+  status: active
+- id: DEF-048
+  term: Drainage
+  definition: The removal or control of excess water from land, soil, or facilities.
+  status: active
+- id: DEF-049
+  term: Evapotranspiration
+  definition: The combined loss of water through evaporation and plant transpiration.
+  status: active
+- id: DEF-050
+  term: Agro-ecological zone
+  definition: An area with broadly similar climate, soils, elevation, growing period, and production potential.
+  status: active
+- id: DEF-051
+  term: Microclimate
+  definition: Localized climatic conditions within a small area such as a field, greenhouse, canopy, or storage structure.
+  status: active
+- id: DEF-052
+  term: Crop rotation
+  definition: The planned sequence of different crops over time on the same land.
+  status: active
+- id: DEF-053
+  term: Intercropping
+  definition: The cultivation of two or more crops together in the same field during the same period.
+  status: active
+- id: DEF-054
+  term: Mixed farming
+  definition: The integration of crop and livestock enterprises within one farming system.
+  status: active
+- id: DEF-055
+  term: Integrated pest management
+  definition: A coordinated strategy using monitoring, prevention, biological, cultural, mechanical, and chemical controls.
+  status: active
+- id: DEF-056
+  term: Biosecurity
+  definition: Practices that prevent the introduction and spread of pests or diseases.
+  status: active
+- id: DEF-057
+  term: Mechanization
+  definition: The use of tools, machines, equipment, and power systems to improve agricultural operations.
+  status: active
+- id: DEF-058
+  term: Precision agriculture
+  definition: The use of location-specific data, sensing, and control to manage variation within fields or production systems.
+  status: active
+- id: DEF-059
+  term: Digital agriculture
+  definition: The use of digital tools, data, connectivity, analytics, and automation in agricultural decision-making and
+    operations.
+  status: active
+- id: DEF-060
+  term: Extension
+  definition: The delivery of practical, technical, business, and regulatory knowledge to farmers and agricultural enterprises.
+  status: active
+- id: DEF-061
+  term: Cooperative
+  definition: A member-owned organization formed to achieve shared economic or service objectives.
+  status: active
+- id: DEF-062
+  term: Farm-gate price
+  definition: The price received by a producer at or near the point where produce leaves the farm.
+  status: active
+- id: DEF-063
+  term: Gross margin
+  definition: Enterprise revenue minus variable costs.
+  status: active
+- id: DEF-064
+  term: Break-even point
+  definition: The output, price, or sales level at which total revenue equals total cost.
+  status: active
+- id: DEF-065
+  term: Working capital
+  definition: Funds used to support short-term operating needs.
+  status: active
+- id: DEF-066
+  term: Capital expenditure
+  definition: Spending used to acquire or improve long-term assets.
+  status: active
+- id: DEF-067
+  term: Food system
+  definition: The connected network of production, processing, distribution, consumption, governance, and waste management.
+  status: active
+- id: DEF-068
+  term: One Health
+  definition: An approach recognizing the interdependence of human, animal, and environmental health.
+  status: active
+principles:
+- id: PRI-001
+  name: Biological reality first
+  description: Agricultural plans must respect living systems, growth cycles, animal welfare, ecology, and physical limits.
+  status: active
+- id: PRI-002
+  name: Context matters
+  description: A practice that works in one climate, soil, market, or scale may fail in another.
+  status: active
+- id: PRI-003
+  name: Measure before deciding
+  description: Decisions should use observations, records, tests, and explicit assumptions.
+  status: active
+- id: PRI-004
+  name: Protect the production base
+  description: Soil, water, biodiversity, labour capacity, and infrastructure must not be consumed faster than they can recover.
+  status: active
+- id: PRI-005
+  name: Quality cannot be inspected in at the end
+  description: Quality must be built through inputs, process control, hygiene, timing, and traceability.
+  status: active
+- id: PRI-006
+  name: Loss prevention is a production activity
+  description: Avoided loss creates value just as additional production does.
+  status: active
+- id: PRI-007
+  name: Safety overrides speed
+  description: Unsafe work, contaminated food, and uncontrolled hazards are unacceptable even when they increase short-term
+    output.
+  status: active
+- id: PRI-008
+  name: Traceability supports accountability
+  description: Products, inputs, actions, and decisions should be attributable to time, place, batch, and responsible actor.
+  status: active
+- id: PRI-009
+  name: Constraints must be explicit
+  description: Land, water, labour, storage, finance, time, and transport limits should be modeled before commitments are
+    made.
+  status: active
+- id: PRI-010
+  name: Local evidence outranks generic advice
+  description: Specific, verified local information should take precedence over broad recommendations.
+  status: active
+- id: PRI-011
+  name: Diversification reduces concentrated risk
+  description: Multiple enterprises, markets, and practices can reduce dependence on one uncertain source.
+  status: active
+- id: PRI-012
+  name: Feedback improves systems
+  description: Actual results should update future plans, budgets, and operating rules.
+  status: active
+- id: PRI-013
+  name: No recommendation without assumptions
+  description: Advice should state the conditions under which it is expected to work.
+  status: active
+- id: PRI-014
+  name: Production and market planning are connected
+  description: Producing without considering demand, timing, quality, logistics, and price can destroy value.
+  status: active
+- id: PRI-015
+  name: Waste should be treated as a resource question
+  description: Residues and by-products should be evaluated for reuse, recovery, recycling, energy, or soil benefit.
+  status: active
+- id: PRI-016
+  name: Long-term capacity matters
+  description: Short-term gains should not undermine future production or financial viability.
+  status: active
+metrics:
+- id: KPI-001
+  code: yield_per_area
+  name: Yield per area
+  unit: kg/ha or t/ha
+  definition: Harvested output divided by cultivated area.
+  direction: context_dependent
+- id: KPI-002
+  code: yield_per_animal
+  name: Yield per animal
+  unit: kg, litres, eggs, or offspring per animal
+  definition: Useful output per animal over a defined period.
+  direction: context_dependent
+- id: KPI-003
+  code: survival_rate
+  name: Survival rate
+  unit: '%'
+  definition: Animals or plants surviving divided by the initial population.
+  direction: context_dependent
+- id: KPI-004
+  code: germination_rate
+  name: Germination rate
+  unit: '%'
+  definition: Seeds germinated divided by seeds tested or planted.
+  direction: context_dependent
+- id: KPI-005
+  code: plant_population
+  name: Plant population
+  unit: plants/ha
+  definition: Number of established plants per unit area.
+  direction: context_dependent
+- id: KPI-006
+  code: feed_conversion_ratio
+  name: Feed conversion ratio
+  unit: feed/output
+  definition: Feed consumed divided by useful animal output.
+  direction: context_dependent
+- id: KPI-007
+  code: water_use_efficiency
+  name: Water-use efficiency
+  unit: kg/m3
+  definition: Useful output per unit of water consumed.
+  direction: context_dependent
+- id: KPI-008
+  code: nutrient_use_efficiency
+  name: Nutrient-use efficiency
+  unit: kg output/kg nutrient
+  definition: Useful output relative to nutrient input.
+  direction: context_dependent
+- id: KPI-009
+  code: labour_productivity
+  name: Labour productivity
+  unit: output/labour-hour
+  definition: Useful output divided by labour time.
+  direction: context_dependent
+- id: KPI-010
+  code: machine_utilization
+  name: Machine utilization
+  unit: '%'
+  definition: Actual productive machine time divided by available time.
+  direction: context_dependent
+- id: KPI-011
+  code: capacity_utilization
+  name: Capacity utilization
+  unit: '%'
+  definition: Actual throughput divided by rated sustainable capacity.
+  direction: context_dependent
+- id: KPI-012
+  code: storage_loss_rate
+  name: Storage loss rate
+  unit: '%'
+  definition: Quantity or value lost during storage divided by quantity received.
+  direction: context_dependent
+- id: KPI-013
+  code: post_harvest_loss_rate
+  name: Post-harvest loss rate
+  unit: '%'
+  definition: Loss after harvest divided by gross harvested quantity.
+  direction: context_dependent
+- id: KPI-014
+  code: rejection_rate
+  name: Rejection rate
+  unit: '%'
+  definition: Rejected quantity or lots divided by inspected quantity or lots.
+  direction: context_dependent
+- id: KPI-015
+  code: downtime
+  name: Downtime
+  unit: hours
+  definition: Time during which equipment or a process is unavailable.
+  direction: context_dependent
+- id: KPI-016
+  code: on_time_completion
+  name: On-time completion
+  unit: '%'
+  definition: Activities completed by deadline divided by planned activities.
+  direction: context_dependent
+- id: KPI-017
+  code: gross_margin
+  name: Gross margin
+  unit: currency
+  definition: Revenue minus variable costs.
+  direction: context_dependent
+- id: KPI-018
+  code: gross_margin_per_area
+  name: Gross margin per area
+  unit: currency/ha
+  definition: Gross margin divided by area.
+  direction: context_dependent
+- id: KPI-019
+  code: break_even_yield
+  name: Break-even yield
+  unit: kg/ha
+  definition: Yield needed to cover total cost at a defined price.
+  direction: context_dependent
+- id: KPI-020
+  code: inventory_turnover
+  name: Inventory turnover
+  unit: turns/period
+  definition: Cost or volume issued divided by average inventory.
+  direction: context_dependent
+- id: KPI-021
+  code: order_fill_rate
+  name: Order fill rate
+  unit: '%'
+  definition: Orders fulfilled completely divided by total orders.
+  direction: context_dependent
+- id: KPI-022
+  code: traceability_completeness
+  name: Traceability completeness
+  unit: '%'
+  definition: Records with complete required traceability fields divided by total records.
+  direction: context_dependent
+- id: KPI-023
+  code: quality_compliance_rate
+  name: Quality compliance rate
+  unit: '%'
+  definition: Lots meeting defined quality requirements divided by lots tested.
+  direction: context_dependent
+- id: KPI-024
+  code: incident_rate
+  name: Safety incident rate
+  unit: incidents/worker-hours
+  definition: Recorded incidents relative to labour exposure.
+  direction: context_dependent
+- id: KPI-025
+  code: disease_incidence
+  name: Disease incidence
+  unit: '%'
+  definition: Affected plants or animals divided by population at risk.
+  direction: context_dependent
+- id: KPI-026
+  code: pest_pressure_index
+  name: Pest pressure index
+  unit: index
+  definition: Composite measure of pest presence, severity, and spread.
+  direction: context_dependent
+- id: KPI-027
+  code: soil_organic_matter
+  name: Soil organic matter
+  unit: '%'
+  definition: Measured organic matter proportion in soil.
+  direction: context_dependent
+- id: KPI-028
+  code: soil_ph
+  name: Soil pH
+  unit: pH
+  definition: Measure of acidity or alkalinity.
+  direction: context_dependent
+- id: KPI-029
+  code: moisture_content
+  name: Moisture content
+  unit: '%'
+  definition: Water proportion in a material using a stated basis.
+  direction: context_dependent
+- id: KPI-030
+  code: forecast_accuracy
+  name: Forecast accuracy
+  unit: '%'
+  definition: Degree to which forecast values match actual outcomes.
+  direction: context_dependent
+- id: KPI-031
+  code: price_variance
+  name: Price variance
+  unit: '%'
+  definition: Difference between expected and actual price relative to expected price.
+  direction: context_dependent
+entities:
+- id: ENT-001
+  name: Farm
+  attributes:
+  - farm_id
+  - name
+  - location
+  - area
+  - ownership_type
+  - production_system
+  - manager
+  - status
+  relationships: []
+  status: active
+- id: ENT-002
+  name: Field
+  attributes:
+  - field_id
+  - farm_id
+  - area
+  - soil_type
+  - slope
+  - irrigation_status
+  - current_crop
+  - history
+  relationships: []
+  status: active
+- id: ENT-003
+  name: Plot
+  attributes:
+  - plot_id
+  - field_id
+  - area
+  - treatment
+  - crop
+  - replication
+  - coordinates
+  relationships: []
+  status: active
+- id: ENT-004
+  name: Crop
+  attributes:
+  - crop_id
+  - common_name
+  - scientific_name
+  - variety
+  - growth_duration
+  - intended_use
+  relationships: []
+  status: active
+- id: ENT-005
+  name: SeedLot
+  attributes:
+  - seed_lot_id
+  - crop_id
+  - supplier
+  - certification_status
+  - germination_rate
+  - treatment
+  - expiry
+  relationships: []
+  status: active
+- id: ENT-006
+  name: LivestockGroup
+  attributes:
+  - group_id
+  - species
+  - breed
+  - head_count
+  - age_class
+  - production_purpose
+  - health_status
+  relationships: []
+  status: active
+- id: ENT-007
+  name: Animal
+  attributes:
+  - animal_id
+  - species
+  - breed
+  - sex
+  - birth_date
+  - parentage
+  - health_status
+  - location
+  relationships: []
+  status: active
+- id: ENT-008
+  name: Input
+  attributes:
+  - input_id
+  - type
+  - name
+  - supplier
+  - batch
+  - quantity
+  - unit
+  - expiry
+  - storage_requirement
+  relationships: []
+  status: active
+- id: ENT-009
+  name: Supplier
+  attributes:
+  - supplier_id
+  - name
+  - category
+  - contacts
+  - location
+  - approval_status
+  - performance_rating
+  relationships: []
+  status: active
+- id: ENT-010
+  name: Worker
+  attributes:
+  - worker_id
+  - role
+  - skills
+  - training_status
+  - availability
+  - safety_status
+  relationships: []
+  status: active
+- id: ENT-011
+  name: Equipment
+  attributes:
+  - equipment_id
+  - type
+  - capacity
+  - condition
+  - location
+  - maintenance_schedule
+  - owner
+  relationships: []
+  status: active
+- id: ENT-012
+  name: Facility
+  attributes:
+  - facility_id
+  - type
+  - capacity
+  - location
+  - condition
+  - controls
+  - status
+  relationships: []
+  status: active
+- id: ENT-013
+  name: StorageLocation
+  attributes:
+  - storage_id
+  - facility_id
+  - capacity
+  - environment
+  - product_rules
+  - occupancy
+  relationships: []
+  status: active
+- id: ENT-014
+  name: Batch
+  attributes:
+  - batch_id
+  - product
+  - origin
+  - quantity
+  - quality_grade
+  - moisture
+  - status
+  - location
+  relationships: []
+  status: active
+- id: ENT-015
+  name: Transaction
+  attributes:
+  - transaction_id
+  - type
+  - date
+  - counterparty
+  - amount
+  - currency
+  - status
+  - reference
+  relationships: []
+  status: active
+- id: ENT-016
+  name: WorkOrder
+  attributes:
+  - work_order_id
+  - operation
+  - location
+  - planned_start
+  - planned_end
+  - assigned_resources
+  - status
+  relationships: []
+  status: active
+- id: ENT-017
+  name: Observation
+  attributes:
+  - observation_id
+  - subject
+  - metric
+  - value
+  - unit
+  - time
+  - location
+  - observer
+  - method
+  relationships: []
+  status: active
+- id: ENT-018
+  name: WeatherRecord
+  attributes:
+  - record_id
+  - location
+  - time
+  - rainfall
+  - temperature
+  - humidity
+  - wind
+  - solar_radiation
+  relationships: []
+  status: active
+- id: ENT-019
+  name: SoilSample
+  attributes:
+  - sample_id
+  - field_id
+  - depth
+  - date
+  - ph
+  - organic_matter
+  - nutrients
+  - laboratory
+  relationships: []
+  status: active
+- id: ENT-020
+  name: QualityTest
+  attributes:
+  - test_id
+  - batch_id
+  - parameter
+  - method
+  - result
+  - unit
+  - threshold
+  - decision
+  relationships: []
+  status: active
+- id: ENT-021
+  name: RiskRecord
+  attributes:
+  - risk_id
+  - category
+  - cause
+  - likelihood
+  - impact
+  - controls
+  - owner
+  - status
+  relationships: []
+  status: active
+- id: ENT-022
+  name: Incident
+  attributes:
+  - incident_id
+  - type
+  - date
+  - location
+  - severity
+  - cause
+  - response
+  - closure_status
+  relationships: []
+  status: active
+- id: ENT-023
+  name: Market
+  attributes:
+  - market_id
+  - name
+  - location
+  - buyer_types
+  - products
+  - price_basis
+  - access_conditions
+  relationships: []
+  status: active
+- id: ENT-024
+  name: Contract
+  attributes:
+  - contract_id
+  - parties
+  - product
+  - quantity
+  - quality
+  - price_rule
+  - delivery
+  - payment_terms
+  relationships: []
+  status: active
+- id: ENT-025
+  name: KnowledgeRecord
+  attributes:
+  - record_id
+  - title
+  - domain
+  - scope
+  - authority
+  - version
+  - evidence
+  - relationships
+  relationships: []
+  status: active
+workflows:
+- id: WF-001
+  name: season_planning
+  steps:
+  - sequence: 1
+    action: Define objectives
+  - sequence: 2
+    action: Review historical performance
+  - sequence: 3
+    action: Assess land, water, labour, finance, and market constraints
+  - sequence: 4
+    action: Select enterprises
+  - sequence: 5
+    action: Build budgets
+  - sequence: 6
+    action: Create calendar
+  - sequence: 7
+    action: Approve plan
+  - sequence: 8
+    action: Monitor and revise
+  status: active
+- id: WF-002
+  name: land_preparation
+  steps:
+  - sequence: 1
+    action: Inspect field
+  - sequence: 2
+    action: Assess soil moisture and compaction
+  - sequence: 3
+    action: Select method
+  - sequence: 4
+    action: Allocate machinery and labour
+  - sequence: 5
+    action: Perform operation
+  - sequence: 6
+    action: Verify seedbed condition
+  - sequence: 7
+    action: Record completion
+  status: active
+- id: WF-003
+  name: input_procurement
+  steps:
+  - sequence: 1
+    action: Define specification
+  - sequence: 2
+    action: Estimate requirement
+  - sequence: 3
+    action: Verify budget
+  - sequence: 4
+    action: Evaluate suppliers
+  - sequence: 5
+    action: Place order
+  - sequence: 6
+    action: Receive and inspect
+  - sequence: 7
+    action: Record batch and quantity
+  - sequence: 8
+    action: Store correctly
+  status: active
+- id: WF-004
+  name: planting
+  steps:
+  - sequence: 1
+    action: Confirm field readiness
+  - sequence: 2
+    action: Confirm seed quality
+  - sequence: 3
+    action: Calibrate planter or tools
+  - sequence: 4
+    action: Plant at approved depth and spacing
+  - sequence: 5
+    action: Record date and lot
+  - sequence: 6
+    action: Inspect emergence
+  status: active
+- id: WF-005
+  name: crop_monitoring
+  steps:
+  - sequence: 1
+    action: Schedule field visit
+  - sequence: 2
+    action: Observe crop condition
+  - sequence: 3
+    action: Measure key indicators
+  - sequence: 4
+    action: Identify pests, disease, weeds, and stress
+  - sequence: 5
+    action: Record evidence
+  - sequence: 6
+    action: Escalate if thresholds are exceeded
+  status: active
+- id: WF-006
+  name: harvest
+  steps:
+  - sequence: 1
+    action: Confirm maturity
+  - sequence: 2
+    action: Check weather and equipment
+  - sequence: 3
+    action: Plan labour and transport
+  - sequence: 4
+    action: Harvest
+  - sequence: 5
+    action: Measure gross quantity
+  - sequence: 6
+    action: Separate damaged material
+  - sequence: 7
+    action: Transfer to post-harvest handling
+  status: active
+- id: WF-007
+  name: post_harvest
+  steps:
+  - sequence: 1
+    action: Receive harvested product
+  - sequence: 2
+    action: Clean
+  - sequence: 3
+    action: Sort
+  - sequence: 4
+    action: Grade
+  - sequence: 5
+    action: Test moisture and quality
+  - sequence: 6
+    action: Dry or cool if required
+  - sequence: 7
+    action: Package
+  - sequence: 8
+    action: Assign batch identity
+  - sequence: 9
+    action: Move to storage
+  status: active
+- id: WF-008
+  name: storage
+  steps:
+  - sequence: 1
+    action: Inspect storage
+  - sequence: 2
+    action: Verify capacity
+  - sequence: 3
+    action: Confirm product compatibility
+  - sequence: 4
+    action: Receive and count
+  - sequence: 5
+    action: Assign location
+  - sequence: 6
+    action: Monitor environment
+  - sequence: 7
+    action: Rotate stock
+  - sequence: 8
+    action: Record losses
+  - sequence: 9
+    action: Dispatch
+  status: active
+- id: WF-009
+  name: livestock_health
+  steps:
+  - sequence: 1
+    action: Observe animals
+  - sequence: 2
+    action: Identify abnormal signs
+  - sequence: 3
+    action: Isolate if required
+  - sequence: 4
+    action: Consult qualified personnel
+  - sequence: 5
+    action: Treat according to approved protocol
+  - sequence: 6
+    action: Record treatment
+  - sequence: 7
+    action: Monitor outcome
+  status: active
+- id: WF-010
+  name: market_sale
+  steps:
+  - sequence: 1
+    action: Confirm available inventory
+  - sequence: 2
+    action: Verify quality
+  - sequence: 3
+    action: Review price and buyer terms
+  - sequence: 4
+    action: Approve sale
+  - sequence: 5
+    action: Prepare dispatch
+  - sequence: 6
+    action: Transfer custody
+  - sequence: 7
+    action: Issue records
+  - sequence: 8
+    action: Reconcile payment
+  status: active
+- id: WF-011
+  name: risk_review
+  steps:
+  - sequence: 1
+    action: Identify risks
+  - sequence: 2
+    action: Estimate likelihood and impact
+  - sequence: 3
+    action: Review controls
+  - sequence: 4
+    action: Assign owner
+  - sequence: 5
+    action: Set trigger thresholds
+  - sequence: 6
+    action: Prepare response
+  - sequence: 7
+    action: Monitor status
+  status: active
+decision_rules:
+- id: RULE-001
+  name: planting_readiness
+  logic: IF soil moisture is adequate AND seed quality is approved AND forecast risk is acceptable THEN planting may proceed
+    ELSE delay or revise plan.
+  status: active
+- id: RULE-002
+  name: irrigation_trigger
+  logic: IF measured or estimated soil water falls below the crop threshold AND water is available THEN irrigate within system
+    limits.
+  status: active
+- id: RULE-003
+  name: pest_control
+  logic: IF monitored pest pressure exceeds the economic threshold THEN apply the least disruptive effective control allowed
+    by policy.
+  status: active
+- id: RULE-004
+  name: harvest_timing
+  logic: IF maturity criteria are met AND weather and handling capacity are suitable THEN harvest.
+  status: active
+- id: RULE-005
+  name: drying_required
+  logic: IF measured moisture exceeds the approved storage threshold THEN drying is required before long-term storage.
+  status: active
+- id: RULE-006
+  name: storage_acceptance
+  logic: IF quality, moisture, packaging, identity, and capacity requirements are met THEN accept into storage ELSE divert,
+    rework, quarantine, or reject.
+  status: active
+- id: RULE-007
+  name: sale_approval
+  logic: IF inventory is available AND quality is verified AND price and payment terms are acceptable THEN approve sale.
+  status: active
+- id: RULE-008
+  name: equipment_use
+  logic: IF equipment is serviceable AND operator is trained AND safety controls are present THEN operation may begin.
+  status: active
+- id: RULE-009
+  name: biosecurity_response
+  logic: IF a suspected contagious disease is observed THEN isolate affected stock and escalate before movement.
+  status: active
+- id: RULE-010
+  name: capacity_expansion
+  logic: IF sustained utilization exceeds the approved threshold AND service level or safety is deteriorating THEN evaluate
+    expansion or process redesign.
+  status: active
+risks:
+- id: RISK-001
+  category: weather
+  description: Drought, excessive rainfall, frost, heat, wind, storms, or unpredictable seasons.
+  default_status: open
+- id: RISK-002
+  category: biological
+  description: Pests, diseases, weeds, invasive species, and contamination.
+  default_status: open
+- id: RISK-003
+  category: soil
+  description: Erosion, compaction, acidity, salinity, nutrient imbalance, and organic matter decline.
+  default_status: open
+- id: RISK-004
+  category: water
+  description: Scarcity, contamination, poor distribution, waterlogging, and conflict over access.
+  default_status: open
+- id: RISK-005
+  category: input
+  description: Counterfeit, expired, unsuitable, delayed, or unaffordable inputs.
+  default_status: open
+- id: RISK-006
+  category: market
+  description: Price collapse, weak demand, buyer default, market closure, and quality rejection.
+  default_status: open
+- id: RISK-007
+  category: financial
+  description: Cash-flow shortage, debt stress, interest changes, fraud, and uninsured loss.
+  default_status: open
+- id: RISK-008
+  category: operational
+  description: Late work, poor supervision, weak records, inadequate labour, and process failure.
+  default_status: open
+- id: RISK-009
+  category: equipment
+  description: Breakdown, unsafe use, poor maintenance, fuel shortage, and unavailable spare parts.
+  default_status: open
+- id: RISK-010
+  category: storage
+  description: Moisture migration, insects, rodents, mould, theft, fire, and poor stock rotation.
+  default_status: open
+- id: RISK-011
+  category: logistics
+  description: Road failure, vehicle shortage, delay, product damage, and fuel cost.
+  default_status: open
+- id: RISK-012
+  category: regulatory
+  description: Non-compliance, permit failure, prohibited inputs, and changing legal requirements.
+  default_status: open
+- id: RISK-013
+  category: reputational
+  description: Unsafe product, unfair dealing, delayed payment, and misleading claims.
+  default_status: open
+- id: RISK-014
+  category: data
+  description: Missing records, incorrect measurements, duplication, loss, unauthorized access, and incompatible formats.
+  default_status: open
+- id: RISK-015
+  category: human
+  description: Injury, illness, labour conflict, skill gaps, and fatigue.
+  default_status: open
+failure_modes:
+- id: FM-001
+  name: wrong_enterprise_selection
+  description: Enterprise chosen without matching climate, soil, capital, labour, or market conditions.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-002
+  name: late_planting
+  description: Planting occurs outside the suitable window, reducing yield and increasing risk.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-003
+  name: poor_seed_quality
+  description: Seed has low viability, contamination, incorrect variety, or weak vigor.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-004
+  name: incorrect_input_rate
+  description: Inputs are under-applied, over-applied, or applied at the wrong time.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-005
+  name: missed_pest_threshold
+  description: Pest control is delayed because monitoring or escalation fails.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-006
+  name: harvest_delay
+  description: Mature product remains exposed to weather, shattering, pests, or theft.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-007
+  name: inadequate_drying
+  description: Product enters storage above a safe moisture condition.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-008
+  name: mixed_quality_lots
+  description: Different qualities or identities are combined, reducing traceability and price.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-009
+  name: storage_overcapacity
+  description: Storage exceeds safe loading, blocking airflow, inspection, access, or structural limits.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-010
+  name: weak_reconciliation
+  description: Physical quantities, records, payments, and dispatches do not match.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-011
+  name: equipment_breakdown
+  description: Critical operations stop because preventive maintenance was not performed.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-012
+  name: cashflow_gap
+  description: Inputs or labour cannot be paid when required.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-013
+  name: buyer_default
+  description: Buyer receives goods but delays or fails to pay.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-014
+  name: record_loss
+  description: Operational evidence is missing, corrupted, or inaccessible.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+- id: FM-015
+  name: unsafe_work
+  description: A task proceeds without adequate controls, training, or protective equipment.
+  controls:
+  - prevention
+  - monitoring
+  - escalation
+  - recovery
+  - learning
+classifications:
+  farming_scale:
+  - micro
+  - smallholder
+  - emerging_commercial
+  - medium_commercial
+  - large_commercial
+  - plantation_or_ranch
+  commercial_orientation:
+  - subsistence
+  - semi_commercial
+  - commercial
+  - industrial
+  water_system:
+  - rainfed
+  - supplementary_irrigation
+  - fully_irrigated
+  - wetland_or_flood_based
+  production_system:
+  - crop
+  - livestock
+  - mixed
+  - aquaculture
+  - agroforestry
+  - integrated
+  market_formality:
+  - informal
+  - semi_formal
+  - formal
+  - contracted
+  evidence_level:
+  - observation
+  - operational_record
+  - expert_judgment
+  - industry_reference
+  - academic_source
+  - official_standard
+  risk_level:
+  - low
+  - moderate
+  - high
+  - critical
+  quality_status:
+  - accepted
+  - conditional
+  - rework
+  - quarantine
+  - rejected
+  inventory_status:
+  - available
+  - reserved
+  - in_transit
+  - quarantined
+  - damaged
+  - expired
+  - consumed
+  - sold
+frameworks:
+- id: FRM-001
+  name: systems_framework
+  components:
+  - Inputs
+  - Processes
+  - Outputs
+  - Outcomes
+  - Feedback
+  - External environment
+- id: FRM-002
+  name: triple_bottom_line
+  components:
+  - Environmental performance
+  - Economic performance
+  - Social performance
+- id: FRM-003
+  name: risk_cycle
+  components:
+  - Identify
+  - Assess
+  - Control
+  - Monitor
+  - Respond
+  - Learn
+- id: FRM-004
+  name: quality_cycle
+  components:
+  - Define requirements
+  - Prevent defects
+  - Measure performance
+  - Correct deviations
+  - Improve process
+- id: FRM-005
+  name: capacity_model
+  components:
+  - Demand
+  - Rated capacity
+  - Effective capacity
+  - Utilization
+  - Bottleneck
+  - Expansion trigger
+- id: FRM-006
+  name: value_chain_lens
+  components:
+  - Input supply
+  - Production
+  - Aggregation
+  - Storage
+  - Processing
+  - Distribution
+  - Retail
+  - Consumption
+  - Waste recovery
+- id: FRM-007
+  name: decision_quality
+  components:
+  - Evidence
+  - Assumptions
+  - Constraints
+  - Alternatives
+  - Risks
+  - Expected outcomes
+  - Review
+examples:
+- id: EX-001
+  title: Smallholder maize
+  description: A two-hectare farm coordinates seed, fertilizer, labour, rainfall, harvest timing, drying, bagging, and sale.
+    A late planting decision affects yield, cash flow, and storage timing.
+- id: EX-002
+  title: Mixed crop-livestock farm
+  description: Crop residues feed animals, manure returns nutrients to fields, and enterprise diversity reduces dependence
+    on one income source.
+- id: EX-003
+  title: Irrigated vegetable enterprise
+  description: Production depends on water reliability, pump capacity, crop scheduling, labour, cold chain, and rapid market
+    access.
+- id: EX-004
+  title: Grain aggregation centre
+  description: Many small deliveries are weighed, tested, graded, identified, combined under controlled rules, stored, and
+    dispatched.
+- id: EX-005
+  title: Poultry unit
+  description: Feed conversion, mortality, temperature, biosecurity, stocking density, and market timing determine performance.
+- id: EX-006
+  title: Warehouse bottleneck
+  description: Receiving capacity exceeds drying capacity, causing queues and moisture risk even though total storage space
+    is available.
+- id: EX-007
+  title: Price shock
+  description: A farm with one buyer and one crop suffers more than a diversified farm with storage and multiple market channels.
+- id: EX-008
+  title: Data failure
+  description: Missing batch identity prevents traceability and makes quality complaints difficult to investigate.
+relationships:
+- source: agriculture
+  target: soil_and_crop
+  description: Soil physical, chemical, and biological condition affects rooting, nutrient supply, water availability, and
+    crop performance.
+- source: agriculture
+  target: water_and_energy
+  description: Irrigation capacity depends on water source, energy, pumping, distribution, and maintenance.
+- source: agriculture
+  target: yield_and_market
+  description: Higher yield does not guarantee profit if price, quality, logistics, or demand are weak.
+- source: agriculture
+  target: quality_and_storage
+  description: Storage preserves quality only when incoming product, moisture, hygiene, structure, and monitoring are controlled.
+- source: agriculture
+  target: labour_and_timing
+  description: Insufficient labour can delay time-sensitive operations and reduce output.
+- source: agriculture
+  target: finance_and_inputs
+  description: Cash-flow timing determines whether inputs and labour are available when biologically needed.
+- source: agriculture
+  target: data_and_decisions
+  description: Poor records weaken forecasting, traceability, accountability, and learning.
+- source: agriculture
+  target: infrastructure_and_market_access
+  description: Roads, storage, communications, and transport affect losses, price, and buyer reach.
+- source: agriculture
+  target: climate_and_risk
+  description: Climate changes production windows, water demand, pest pressure, and expected variability.
+- source: agriculture
+  target: policy_and_incentives
+  description: Rules, taxes, subsidies, standards, and permits influence enterprise choice and competitiveness.
+section_registry:
+- heading: Document Purpose
+  anchor: document-purpose
+  status: active
+- heading: Table of Contents
+  anchor: table-of-contents
+  status: active
+- heading: 1. Domain Identity and Scope
+  anchor: 1.-domain-identity-and-scope
+  status: active
+- heading: 2. Assumptions and Boundaries
+  anchor: 2.-assumptions-and-boundaries
+  status: active
+- heading: 3. Core Definitions
+  anchor: 3.-core-definitions
+  status: active
+- heading: 4. Explanations of Core Mechanics
+  anchor: 4.-explanations-of-core-mechanics
+  status: active
+- heading: 5. Historical Context
+  anchor: 5.-historical-context
+  status: active
+- heading: 6. Foundational Principles
+  anchor: 6.-foundational-principles
+  status: active
+- heading: 7. Classification Systems
+  anchor: 7.-classification-systems
+  status: active
+- heading: 8. Data Model and Entities
+  anchor: 8.-data-model-and-entities
+  status: active
+- heading: 9. Relationships and Interdependencies
+  anchor: 9.-relationships-and-interdependencies
+  status: active
+- heading: 10. Workflows and Value Chain
+  anchor: 10.-workflows-and-value-chain
+  status: active
+- heading: 11. Procedures
+  anchor: 11.-procedures
+  status: active
+- heading: 12. Decision Trees and Logic Rules
+  anchor: 12.-decision-trees-and-logic-rules
+  status: active
+- heading: 13. Metrics and KPIs
+  anchor: 13.-metrics-and-kpis
+  status: active
+- heading: 14. Capacity and Constraint Models
+  anchor: 14.-capacity-and-constraint-models
+  status: active
+- heading: 15. Risks
+  anchor: 15.-risks
+  status: active
+- heading: 16. Failure Modes and Loss Points
+  anchor: 16.-failure-modes-and-loss-points
+  status: active
+- heading: 17. Exceptions and Edge Cases
+  anchor: 17.-exceptions-and-edge-cases
+  status: active
+- heading: 18. Standards and Compliance
+  anchor: 18.-standards-and-compliance
+  status: active
+- heading: 19. Tools, Equipment, and Infrastructure
+  anchor: 19.-tools,-equipment,-and-infrastructure
+  status: active
+- heading: 20. Frameworks
+  anchor: 20.-frameworks
+  status: active
+- heading: 21. Evaluation Criteria
+  anchor: 21.-evaluation-criteria
+  status: active
+- heading: 22. Evolution and Change Factors
+  anchor: 22.-evolution-and-change-factors
+  status: active
+- heading: 23. Detailed Knowledge Articles
+  anchor: 23.-detailed-knowledge-articles
+  status: active
+- heading: 24. Examples and Scenarios
+  anchor: 24.-examples-and-scenarios
+  status: active
+- heading: 25. References and Related Documents
+  anchor: 25.-references-and-related-documents
+  status: active
+- heading: 26. Future Expansion Registry
+  anchor: 26.-future-expansion-registry
+  status: active
+- heading: 27. Change History
+  anchor: 27.-change-history
+  status: active
+- heading: Appendix A — Expansion Slots
+  anchor: appendix-a--expansion-slots
+  status: active
+training:
+  level: NexVox Studio L2
+  retrieval_enabled: true
+  embedding_enabled: true
+  knowledge_graph_enabled: true
+  fine_tuning_enabled: false
+  chunking:
+    primary_unit: heading
+    preserve_heading_context: true
+    recommended_tokens: 700
+    maximum_tokens: 1200
+    overlap_tokens: 120
+  answering_rules:
+  - Prefer specialist approved records over this root overview.
+  - State uncertainty.
+  - Distinguish facts, estimates, recommendations, approvals, and simulations.
+  - Do not treat overview content as current law or local operating instruction.
+quality_rules:
+  minimum_markdown_lines: 1500
+  paired_yaml_required: true
+  version_match_required: true
+  section_sync_required: true
+  time_sensitive_content_must_be_dated: true
+  uncertainty_must_be_explicit: true
+  related_records_required: true
+future_expansion:
+- slot: 1
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 2
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 3
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 4
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 5
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 6
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 7
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 8
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 9
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 10
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 11
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 12
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 13
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 14
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 15
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 16
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 17
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 18
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 19
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 20
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 21
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 22
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 23
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 24
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 25
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 26
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 27
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 28
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 29
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 30
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 31
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 32
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 33
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 34
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 35
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 36
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 37
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 38
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 39
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 40
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 41
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 42
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 43
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 44
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 45
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 46
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 47
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 48
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 49
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 50
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 51
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 52
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 53
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 54
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 55
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 56
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 57
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 58
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 59
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 60
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 61
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 62
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 63
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 64
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 65
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 66
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 67
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 68
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 69
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 70
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 71
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 72
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 73
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 74
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 75
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 76
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 77
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 78
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 79
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 80
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 81
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 82
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 83
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 84
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 85
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 86
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 87
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 88
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 89
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 90
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 91
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 92
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 93
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 94
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 95
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 96
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 97
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 98
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 99
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 100
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 101
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 102
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 103
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 104
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 105
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 106
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 107
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 108
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 109
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 110
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 111
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 112
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 113
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 114
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 115
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 116
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 117
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 118
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 119
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 120
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 121
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 122
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 123
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 124
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 125
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 126
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 127
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 128
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 129
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 130
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 131
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 132
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 133
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 134
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 135
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 136
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 137
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 138
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 139
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 140
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 141
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 142
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 143
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 144
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 145
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 146
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 147
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 148
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 149
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 150
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 151
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 152
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 153
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 154
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 155
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 156
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 157
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 158
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 159
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 160
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 161
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 162
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 163
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 164
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 165
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 166
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 167
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 168
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 169
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 170
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 171
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 172
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 173
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 174
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 175
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 176
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 177
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 178
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 179
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+- slot: 180
+  status: reserved
+  required_fields:
+  - definition
+  - explanation
+  - evidence
+  - relationships
+  - metrics
+  - risks
+  - exceptions
+validation:
+  markdown_filename: agriculture.md
+  yaml_filename: agriculture.yaml
+  version: 0.2.0
+  expected_minimum_markdown_lines: 1500
+  ready_for_nexvox_studio_l2: true

@@ -1,0 +1,755 @@
+schema:
+  name: nexvox_studio_l2_agricultural_history_foundation
+  version: 1.0.0
+document:
+  document_id: NVST-0001-A
+  filename: nv_st_2026.07.12_0001_a_agri_hist_v001.md
+  companion: nv_st_2026.07.12_0001_a_agri_hist_v001.yaml
+  domain: agriculture
+  series: agricultural_history
+  title: Agricultural History Foundation — Volume A
+  version: v001
+  created: '2026-07-12'
+  status: living
+  document_count: 1
+  identifier: a
+  scope_rule: general_multi_context_no_named_crop_no_named_country
+purpose:
+- teach recurring patterns in agricultural history
+- support periodization and historical reasoning
+- define historical entities, metrics, workflows, risks, and frameworks
+- serve as root context for later specialized history files
+definitions:
+- id: AH-DEF-001
+  term: Agricultural history
+  definition: The study of how human societies organized food production, land use, labour, exchange, technology, storage,
+    governance, and ecological management across time.
+- id: AH-DEF-002
+  term: Agrarian system
+  definition: A historically specific arrangement of land, labour, tools, knowledge, rights, obligations, production, and
+    exchange.
+- id: AH-DEF-003
+  term: Subsistence
+  definition: The production and acquisition of food and essential materials primarily to support the producing household
+    or community.
+- id: AH-DEF-004
+  term: Surplus
+  definition: Output remaining after immediate consumption, seed retention, feed needs, losses, and required obligations have
+    been met.
+- id: AH-DEF-005
+  term: Intensification
+  definition: An increase in output or labour input per unit of land, time, water, or other resource.
+- id: AH-DEF-006
+  term: Extensification
+  definition: An increase in production mainly by expanding the area or number of resources under use.
+- id: AH-DEF-007
+  term: Domestication
+  definition: A long-term process in which human selection and management alter the traits, reproduction, behaviour, or distribution
+    of living organisms.
+- id: AH-DEF-008
+  term: Sedentism
+  definition: A pattern of living in one place for longer periods rather than moving continuously.
+- id: AH-DEF-009
+  term: Land tenure
+  definition: The rules and institutions governing access to, use of, control over, transfer of, and inheritance of land.
+- id: AH-DEF-010
+  term: Agrarian transition
+  definition: A major change in how land, labour, technology, ownership, markets, and production are organized.
+- id: AH-DEF-011
+  term: Food system
+  definition: The connected historical arrangement of production, storage, movement, processing, exchange, consumption, governance,
+    and waste.
+- id: AH-DEF-012
+  term: Historical productivity
+  definition: The relationship between output and the land, labour, animals, water, capital, energy, or time used in a given
+    era.
+explanations:
+- id: AH-EXP-001
+  title: How agriculture began
+  explanation: Agriculture did not appear as a single invention. It emerged gradually through repeated observation, selective
+    gathering, landscape management, controlled burning, protection of useful species, seasonal scheduling, and experimentation
+    with reproduction.
+- id: AH-EXP-002
+  title: Why agriculture spread
+  explanation: Agriculture spread because it could support larger and more predictable food supplies under some conditions,
+    but the process was uneven and often combined migration, exchange, imitation, coercion, adaptation, and local innovation.
+- id: AH-EXP-003
+  title: Why systems changed
+  explanation: Agricultural systems changed when population, climate, tools, institutions, trade, taxation, war, labour relations,
+    and knowledge altered the balance between existing practices and available alternatives.
+- id: AH-EXP-004
+  title: Why agriculture became political
+  explanation: Control of land, water, storage, transport, and surplus created opportunities for authority, taxation, redistribution,
+    social hierarchy, and conflict.
+- id: AH-EXP-005
+  title: Why storage mattered
+  explanation: Storage converted seasonal production into year-round food security, supported larger settlements, enabled
+    trade, and created new risks involving spoilage, theft, control, and inequality.
+- id: AH-EXP-006
+  title: Why labour organization changed
+  explanation: As operations became larger or more specialized, households, communal groups, dependent labour, hired labour,
+    bonded labour, and institutional labour were organized differently to meet seasonal peaks.
+historical_context:
+- id: AH-CTX-001
+  title: Environmental background
+  context: Long-term shifts in temperature, rainfall, vegetation, water availability, and animal distribution changed the
+    reliability of gathered and hunted resources.
+- id: AH-CTX-002
+  title: Social background
+  context: Population growth, kinship structures, conflict, exchange, mobility, and ritual shaped how food was produced and
+    distributed.
+- id: AH-CTX-003
+  title: Economic background
+  context: The emergence of surplus and exchange increased the importance of measurement, storage, transport, contracts, debt,
+    and market institutions.
+- id: AH-CTX-004
+  title: Technological background
+  context: Changes in cutting, digging, grinding, water control, animal power, transport, metallurgy, energy, and information
+    systems altered what was technically possible.
+- id: AH-CTX-005
+  title: Institutional background
+  context: Rules governing land, labour, inheritance, taxation, storage, and trade influenced who could produce, who controlled
+    surplus, and who bore risk.
+principles:
+- id: AH-PRI-001
+  name: Historical systems are context-bound
+  description: No agricultural system can be understood outside its climate, ecology, social order, technology, and institutions.
+- id: AH-PRI-002
+  name: Change is rarely linear
+  description: Agricultural development includes adoption, rejection, hybridization, decline, recovery, and repeated reinvention.
+- id: AH-PRI-003
+  name: Productivity is multidimensional
+  description: Historical success may refer to yield, labour saving, resilience, storage, taxation, social stability, or market
+    access.
+- id: AH-PRI-004
+  name: Surplus creates power
+  description: Control over stored food, land, labour, and transport often increased political and social authority.
+- id: AH-PRI-005
+  name: Knowledge is cumulative and fragile
+  description: Techniques can accumulate over generations, but can also disappear through displacement, conflict, ecological
+    change, or institutional collapse.
+- id: AH-PRI-006
+  name: Innovation has trade-offs
+  description: New tools and systems may increase output while also increasing dependence, inequality, ecological pressure,
+    or vulnerability.
+- id: AH-PRI-007
+  name: Local adaptation matters
+  description: Imported practices are reshaped by local soils, water, labour, culture, and risk.
+- id: AH-PRI-008
+  name: Evidence is incomplete
+  description: Agricultural history must often reconstruct systems from partial physical, written, oral, ecological, and economic
+    evidence.
+metrics:
+- id: AH-KPI-001
+  code: output_per_area
+  name: Output per area
+  definition: Measures harvested output relative to cultivated land.
+- id: AH-KPI-002
+  code: output_per_worker
+  name: Output per worker
+  definition: Measures labour productivity within a historical system.
+- id: AH-KPI-003
+  code: seed_return_ratio
+  name: Seed return ratio
+  definition: Compares harvested output with seed retained for planting.
+- id: AH-KPI-004
+  code: surplus_ratio
+  name: Surplus ratio
+  definition: Measures output remaining after local consumption, seed, feed, and unavoidable losses.
+- id: AH-KPI-005
+  code: loss_rate
+  name: Loss rate
+  definition: Estimates the share lost during harvesting, transport, storage, processing, taxation, or conflict.
+- id: AH-KPI-006
+  code: storage_duration
+  name: Storage duration
+  definition: Indicates how long food remained usable under contemporary methods.
+- id: AH-KPI-007
+  code: transport_radius
+  name: Transport radius
+  definition: Represents the practical distance over which goods could be moved economically.
+- id: AH-KPI-008
+  code: land_use_intensity
+  name: Land-use intensity
+  definition: Describes frequency and intensity of cultivation relative to fallow or recovery.
+- id: AH-KPI-009
+  code: labour_peak_ratio
+  name: Labour peak ratio
+  definition: Compares peak seasonal labour demand with average labour availability.
+- id: AH-KPI-010
+  code: market_share
+  name: Marketed share
+  definition: Estimates the portion of output entering exchange rather than direct use.
+- id: AH-KPI-011
+  code: tax_extraction_rate
+  name: Tax extraction rate
+  definition: Estimates the share transferred to rulers, institutions, landlords, or other authorities.
+- id: AH-KPI-012
+  code: risk_exposure_index
+  name: Risk exposure index
+  definition: Combines dependence on climate, a narrow food base, weak storage, conflict, and market volatility.
+entities:
+- id: AH-ENT-001
+  name: Household
+  attributes:
+  - members
+  - labour_capacity
+  - land_access
+  - livestock_access
+  - storage
+  - obligations
+  - consumption_needs
+- id: AH-ENT-002
+  name: Community
+  attributes:
+  - territory
+  - population
+  - institutions
+  - shared_resources
+  - conflict_rules
+  - exchange_networks
+- id: AH-ENT-003
+  name: Farmer
+  attributes:
+  - status
+  - skills
+  - rights
+  - obligations
+  - tools
+  - labour_access
+  - market_access
+- id: AH-ENT-004
+  name: Landholding
+  attributes:
+  - size
+  - tenure
+  - soil_condition
+  - water_access
+  - boundaries
+  - inheritance_rules
+- id: AH-ENT-005
+  name: Field
+  attributes:
+  - location
+  - area
+  - use_history
+  - labour_requirement
+  - water_regime
+  - productivity
+- id: AH-ENT-006
+  name: Pasture
+  attributes:
+  - seasonality
+  - carrying_capacity
+  - access_rules
+  - water_points
+  - mobility_links
+- id: AH-ENT-007
+  name: StorageFacility
+  attributes:
+  - capacity
+  - ownership
+  - construction
+  - security
+  - ventilation
+  - loss_profile
+- id: AH-ENT-008
+  name: Market
+  attributes:
+  - frequency
+  - location
+  - participants
+  - measurement_rules
+  - credit_practices
+  - taxation
+- id: AH-ENT-009
+  name: StateInstitution
+  attributes:
+  - authority
+  - tax_role
+  - water_control
+  - storage_role
+  - labour_demands
+  - recordkeeping
+- id: AH-ENT-010
+  name: ReligiousInstitution
+  attributes:
+  - land_control
+  - ritual_role
+  - redistribution
+  - labour_role
+  - knowledge_preservation
+- id: AH-ENT-011
+  name: Trader
+  attributes:
+  - routes
+  - capital
+  - transport
+  - risk
+  - measurement
+  - credit
+- id: AH-ENT-012
+  name: ToolSystem
+  attributes:
+  - material
+  - energy_source
+  - maintenance
+  - skill_requirement
+  - throughput
+  - ownership
+- id: AH-ENT-013
+  name: KnowledgeTradition
+  attributes:
+  - transmission_method
+  - custodians
+  - scope
+  - adaptation
+  - loss_risk
+workflows:
+- id: AH-WF-001
+  name: Seasonal planning
+  steps:
+  - sequence: 1
+    action: Observe seasonal indicators
+  - sequence: 2
+    action: Estimate labour and food needs
+  - sequence: 3
+    action: Select land and activities
+  - sequence: 4
+    action: Coordinate household and communal work
+  - sequence: 5
+    action: Retain seed or breeding stock
+  - sequence: 6
+    action: Prepare tools and storage
+- id: AH-WF-002
+  name: Cultivation cycle
+  steps:
+  - sequence: 1
+    action: Clear or prepare land
+  - sequence: 2
+    action: Sow or transplant
+  - sequence: 3
+    action: Protect and maintain
+  - sequence: 4
+    action: Manage water where possible
+  - sequence: 5
+    action: Harvest
+  - sequence: 6
+    action: Process
+  - sequence: 7
+    action: Store or exchange
+- id: AH-WF-003
+  name: Storage cycle
+  steps:
+  - sequence: 1
+    action: Prepare facility
+  - sequence: 2
+    action: Dry or condition product
+  - sequence: 3
+    action: Clean and sort
+  - sequence: 4
+    action: Load and secure
+  - sequence: 5
+    action: Inspect periodically
+  - sequence: 6
+    action: Control pests
+  - sequence: 7
+    action: Withdraw by need or obligation
+- id: AH-WF-004
+  name: Exchange cycle
+  steps:
+  - sequence: 1
+    action: Assess surplus
+  - sequence: 2
+    action: Select market or partner
+  - sequence: 3
+    action: Transport goods
+  - sequence: 4
+    action: Measure quantity
+  - sequence: 5
+    action: Negotiate value
+  - sequence: 6
+    action: Settle obligations
+  - sequence: 7
+    action: Return with goods, credit, or claims
+- id: AH-WF-005
+  name: Tax and redistribution
+  steps:
+  - sequence: 1
+    action: Assess household or land obligation
+  - sequence: 2
+    action: Measure expected contribution
+  - sequence: 3
+    action: Collect product or labour
+  - sequence: 4
+    action: Record or acknowledge receipt
+  - sequence: 5
+    action: Store or redistribute
+  - sequence: 6
+    action: Enforce shortfall rules
+decision_rules:
+- id: AH-RULE-001
+  name: Sowing timing
+  logic: IF seasonal indicators and soil moisture appear favourable AND seed is available THEN sow; ELSE delay, reduce area,
+    or shift activity.
+- id: AH-RULE-002
+  name: Land expansion
+  logic: IF household labour and tools exceed current land demand AND new land is accessible THEN expand; ELSE intensify or
+    maintain area.
+- id: AH-RULE-003
+  name: Storage allocation
+  logic: IF expected shortage risk is high THEN retain more surplus in storage; ELSE exchange a larger share.
+- id: AH-RULE-004
+  name: Market participation
+  logic: IF transport cost and risk are lower than expected exchange gain THEN enter market; ELSE consume, store, or exchange
+    locally.
+- id: AH-RULE-005
+  name: Mobility decision
+  logic: IF pasture or gathered resources decline below household needs THEN move people, animals, or activity to another
+    zone.
+- id: AH-RULE-006
+  name: Risk spreading
+  logic: IF one activity is highly exposed to weather or conflict THEN diversify timing, location, foods, or exchange partners.
+- id: AH-RULE-007
+  name: Labour coordination
+  logic: IF peak labour exceeds household capacity THEN mobilize reciprocal labour, dependent labour, hired labour, or communal
+    work.
+risks:
+- id: AH-RISK-001
+  name: Climate variability
+  description: Shifts in rainfall, temperature, storms, drought, flood, and season length could reduce output or destroy stored
+    food.
+- id: AH-RISK-002
+  name: Conflict
+  description: War, raiding, displacement, and political instability could interrupt production and seize land, labour, animals,
+    or stores.
+- id: AH-RISK-003
+  name: Disease
+  description: Human, animal, and plant disease could reduce labour, survival, reproduction, and food supply.
+- id: AH-RISK-004
+  name: Storage failure
+  description: Moisture, insects, rodents, fire, theft, and structural collapse could destroy seasonal reserves.
+- id: AH-RISK-005
+  name: Institutional extraction
+  description: Excessive taxation, rent, tribute, or labour obligations could reduce household resilience.
+- id: AH-RISK-006
+  name: Market dependency
+  description: Dependence on distant buyers or essential imports could expose producers to price and transport disruption.
+- id: AH-RISK-007
+  name: Knowledge loss
+  description: Displacement, death of specialists, language loss, or institutional collapse could erase accumulated techniques.
+- id: AH-RISK-008
+  name: Soil decline
+  description: Repeated use without recovery could reduce fertility, structure, and long-term output.
+- id: AH-RISK-009
+  name: Water failure
+  description: Loss of water access or infrastructure could sharply reduce production.
+- id: AH-RISK-010
+  name: Measurement abuse
+  description: Unfair units or manipulated standards could transfer value away from producers.
+failure_modes:
+- id: AH-FM-001
+  name: Overexpansion
+  description: Land or herd expansion exceeds labour, water, soil, storage, or transport capacity.
+- id: AH-FM-002
+  name: Single-source dependence
+  description: A society relies too heavily on one food, one season, one water source, or one route.
+- id: AH-FM-003
+  name: Storage concentration
+  description: Centralized stores increase efficiency but create a single point of political, military, or environmental failure.
+- id: AH-FM-004
+  name: Rigid institutions
+  description: Rules fail to adapt to changing climate, population, labour, or markets.
+- id: AH-FM-005
+  name: Unsustainable extraction
+  description: Tax, rent, or tribute removes the reserves needed for seed, recovery, and household survival.
+- id: AH-FM-006
+  name: Technology mismatch
+  description: A tool or practice is adopted without the skills, maintenance, materials, or environment required.
+- id: AH-FM-007
+  name: Ecological overshoot
+  description: Cultivation, grazing, or clearing exceeds the recovery capacity of land and water.
+- id: AH-FM-008
+  name: Broken knowledge transmission
+  description: Skills are not passed to the next generation or are displaced by externally imposed systems.
+frameworks:
+- id: AH-FRM-001
+  name: Subsistence-to-market framework
+  components:
+  - household use
+  - local exchange
+  - regional market
+  - commercial specialization
+  - industrial coordination
+- id: AH-FRM-002
+  name: Land-labour-capital framework
+  components:
+  - land availability
+  - labour supply
+  - tool and capital access
+  - institutional rules
+  - output incentives
+- id: AH-FRM-003
+  name: Risk-resilience framework
+  components:
+  - hazards
+  - exposure
+  - vulnerability
+  - reserves
+  - diversification
+  - recovery capacity
+- id: AH-FRM-004
+  name: Surplus-power framework
+  components:
+  - production
+  - storage
+  - control
+  - taxation
+  - redistribution
+  - authority
+- id: AH-FRM-005
+  name: Technology-institution framework
+  components:
+  - tool capability
+  - ownership
+  - skills
+  - maintenance
+  - rules
+  - distributional effects
+- id: AH-FRM-006
+  name: Ecological adaptation framework
+  components:
+  - climate
+  - water
+  - soil
+  - biodiversity
+  - mobility
+  - local knowledge
+periodization:
+- id: AH-PER-001
+  name: Pre-agricultural food systems
+  description: Predominantly gathering, hunting, fishing, mobility, and ecosystem knowledge before systematic cultivation
+    and herding.
+  dates_required: false
+- id: AH-PER-002
+  name: Early cultivation and management
+  description: Increasing intervention in plant growth, animal movement, water access, and landscape composition.
+  dates_required: false
+- id: AH-PER-003
+  name: Settled agrarian communities
+  description: Longer-term settlement, storage, communal labour, fixed fields, and stronger territorial claims.
+  dates_required: false
+- id: AH-PER-004
+  name: Early state agriculture
+  description: Taxation, irrigation administration, recordkeeping, granaries, and organized labour under political institutions.
+  dates_required: false
+- id: AH-PER-005
+  name: Classical agrarian systems
+  description: Expanded land management, estates, tenancy, trade, animal power, and written agricultural knowledge.
+  dates_required: false
+- id: AH-PER-006
+  name: Medieval and regional agrarian orders
+  description: Highly varied combinations of communal rights, estates, customary obligations, markets, and local technology.
+  dates_required: false
+- id: AH-PER-007
+  name: Early commercial transformation
+  description: Growing market orientation, land consolidation, specialized regions, finance, and long-distance trade.
+  dates_required: false
+- id: AH-PER-008
+  name: Industrial transformation
+  description: Mechanization, fossil energy, chemical inputs, transport networks, and factory-linked processing.
+  dates_required: false
+- id: AH-PER-009
+  name: Scientific intensification
+  description: Formal research, improved breeding, standardized inputs, extension, and measurement-based management.
+  dates_required: false
+- id: AH-PER-010
+  name: Digital and automated agriculture
+  description: Sensors, software, remote observation, analytics, automation, and data-driven coordination.
+  dates_required: false
+evidence_types:
+- id: AH-EVD-001
+  name: Archaeological remains
+  description: Structures, tools, storage facilities, field systems, animal remains, plant remains, and settlement patterns.
+- id: AH-EVD-002
+  name: Paleoenvironmental evidence
+  description: Sediments, pollen, charcoal, soils, and other indicators of past environments.
+- id: AH-EVD-003
+  name: Written records
+  description: Accounts, contracts, tax lists, legal codes, manuals, estate records, and administrative documents.
+- id: AH-EVD-004
+  name: Oral traditions
+  description: Narratives, practices, songs, genealogies, and customary knowledge transmitted across generations.
+- id: AH-EVD-005
+  name: Material culture
+  description: Tools, containers, transport devices, architecture, and processing equipment.
+- id: AH-EVD-006
+  name: Bioarchaeological evidence
+  description: Human and animal remains indicating diet, labour, disease, mobility, and stress.
+- id: AH-EVD-007
+  name: Landscape evidence
+  description: Terraces, canals, boundaries, roads, abandoned fields, and long-term land modification.
+- id: AH-EVD-008
+  name: Linguistic evidence
+  description: Vocabulary, loanwords, classifications, and naming systems that reveal knowledge transmission.
+historiography:
+- id: AH-HIS-001
+  approach: Progress narrative
+  description: Interprets history as movement from simple to advanced systems, but risks undervaluing resilience and local
+    adaptation.
+- id: AH-HIS-002
+  approach: Materialist interpretation
+  description: Emphasizes land, labour, surplus, technology, class, and political economy.
+- id: AH-HIS-003
+  approach: Environmental interpretation
+  description: Focuses on climate, ecology, water, disease, and resource limits.
+- id: AH-HIS-004
+  approach: Institutional interpretation
+  description: Explains change through property, governance, taxation, law, markets, and organizations.
+- id: AH-HIS-005
+  approach: Cultural interpretation
+  description: Examines belief, ritual, identity, gender, status, and meaning.
+- id: AH-HIS-006
+  approach: Technological interpretation
+  description: Highlights tools, energy, infrastructure, measurement, and information.
+- id: AH-HIS-007
+  approach: World-systems interpretation
+  description: Studies how regions become connected through trade, extraction, dependency, and unequal exchange.
+- id: AH-HIS-008
+  approach: Local and indigenous interpretation
+  description: Centers local knowledge, adaptation, continuity, and non-linear development.
+knowledge_graph:
+- id: AH-EDGE-001
+  source: climate
+  relationship: influences
+  target: water availability
+- id: AH-EDGE-002
+  source: water availability
+  relationship: influences
+  target: settlement
+- id: AH-EDGE-003
+  source: settlement
+  relationship: influences
+  target: storage
+- id: AH-EDGE-004
+  source: storage
+  relationship: influences
+  target: surplus
+- id: AH-EDGE-005
+  source: surplus
+  relationship: influences
+  target: specialization
+- id: AH-EDGE-006
+  source: specialization
+  relationship: influences
+  target: trade
+- id: AH-EDGE-007
+  source: trade
+  relationship: influences
+  target: knowledge transmission
+- id: AH-EDGE-008
+  source: land tenure
+  relationship: influences
+  target: labour relations
+- id: AH-EDGE-009
+  source: technology
+  relationship: influences
+  target: capacity
+- id: AH-EDGE-010
+  source: capacity
+  relationship: influences
+  target: market reach
+- id: AH-EDGE-011
+  source: taxation
+  relationship: influences
+  target: household resilience
+- id: AH-EDGE-012
+  source: conflict
+  relationship: influences
+  target: migration
+- id: AH-EDGE-013
+  source: migration
+  relationship: influences
+  target: knowledge diffusion
+training:
+  level: NexVox Studio L2
+  retrieval_enabled: true
+  embedding_enabled: true
+  knowledge_graph_enabled: true
+  fine_tuning_enabled: false
+  chunking:
+    primary_unit: section
+    preserve_heading_context: true
+    recommended_tokens: 700
+    max_tokens: 1200
+    overlap_tokens: 120
+  reasoning_rules:
+  - do not assume one universal path of agricultural development
+  - distinguish sequence from causation
+  - state uncertainty
+  - compare multiple evidence types
+  - avoid treating later systems as automatically superior
+quality:
+  minimum_markdown_lines: 1200
+  placeholder_content_forbidden: true
+  companion_sync_required: true
+  named_country_excluded: true
+  named_crop_excluded: true
+  reserved_slot_padding_forbidden: true
+  minimum_information_density_required: true
+  user_review_required_before_finalization: true
+source_governance:
+  allowed_sources:
+  - user_supplied_markdown
+  - user_supplied_yaml
+  - approved_project_documents
+  - approved_field_notes
+  - approved_operational_records
+  - official_publications
+  - peer_reviewed_research
+  - recognized_reference_works
+  - approved_expert_input
+  disallowed_sources:
+  - invented_placeholder_content
+  - unsourced_claims
+  - fabricated_statistics
+  - unverified_current_rules
+  - generic_filler_written_only_to_increase_line_count
+  provenance_required: true
+  source_date_required_when_time_sensitive: true
+  jurisdiction_required_when_location_specific: true
+  confidence_required_when_uncertain: true
+expansion_policy:
+  method: append_verified_knowledge_only
+  future_content_origin:
+  - material provided directly by the user
+  - approved existing Nexa documents
+  - verified external research when explicitly requested
+  - approved corrections and additions
+  - new domain records created from reviewed source material
+  markdown_yaml_sync:
+    required: true
+    rule: Every substantive Markdown addition must create or update the corresponding YAML concept, entity, relationship,
+      metric, rule, source, or section record.
+    no_empty_slots: true
+    no_preallocated_fake_sections: true
+    section_ids_added_only_when_content_exists: true
+  review_rule: New content remains provisional until reviewed and accepted by the user.
+  versioning_rule: Increment the version only when an accepted revision is saved.
+content_alignment:
+  markdown_is_primary_narrative: true
+  yaml_is_primary_structure: true
+  must_match_on:
+  - document identity
+  - version
+  - section titles
+  - section order
+  - defined terms
+  - entities
+  - metrics
+  - decision rules
+  - risks
+  - relationships
+  - sources
+  - uncertainty
+  mismatch_handling: Flag the mismatch and do not ingest until reconciled.

@@ -1,0 +1,5279 @@
+schema:
+  name: nexvox_studio_l2_agricultural_history_transition_volume
+  version: 1.0.0
+  encoding: utf-8
+document:
+  document_id: NVST-0002-B
+  document_number: 2
+  identifier: b
+  filename: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+  companion: nv_st_2026.07.12_0002_b_agri_hist_v001.yaml
+  title: Origins and Early Agrarian Transition — Volume B
+  domain: agriculture
+  series: agricultural_history
+  version: v001
+  created: '2026-07-12'
+  status: living
+  minimum_line_rule:
+    markdown: 2000
+    yaml: 2000
+  scope:
+    level: general_multi_context
+    focus: origins_and_early_agrarian_transition
+    named_crops: false
+    named_countries: false
+pairing:
+  sync_required: true
+  markdown_role: human_readable_knowledge
+  yaml_role: machine_readable_semantics
+  version_match_required: true
+  section_match_required: true
+  expansion_rule: When Markdown expands, related YAML definitions, entities, metrics, rules, relationships,
+    evidence, and version history must also expand.
+definitions:
+- id: B-DEF-001
+  term: Pre-agricultural food system
+  definition: A system in which communities obtain food mainly through gathering, hunting, fishing, scavenging,
+    exchange, and environmental management without sustained dependence on cultivated fields or managed
+    breeding populations.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-002
+  term: Foraging
+  definition: The organized search, collection, capture, and processing of wild biological resources.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-003
+  term: Broad-spectrum subsistence
+  definition: A strategy that draws food from many species, habitats, seasons, and acquisition methods
+    rather than depending heavily on a narrow set of resources.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-004
+  term: Resource intensification
+  definition: An increase in labour, skill, technology, or management applied to a resource in order to
+    obtain more reliable or larger returns.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-005
+  term: Landscape management
+  definition: Deliberate modification of vegetation, water, fire regimes, access routes, or animal movement
+    to improve useful resources.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-006
+  term: Niche construction
+  definition: The process by which organisms, including humans, alter environments in ways that change
+    future selection pressures and resource conditions.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-007
+  term: Cultivation
+  definition: Intentional actions that assist the growth of useful plants, including clearing, sowing,
+    transplanting, watering, protecting, and harvesting.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-008
+  term: Domestication process
+  definition: A long-term relationship in which repeated human selection and management alter the traits,
+    reproduction, distribution, or behaviour of living organisms.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-009
+  term: Management without domestication
+  definition: Human control over access, timing, protection, movement, or reproduction that has not yet
+    produced stable domesticated traits.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-010
+  term: Sedentism
+  definition: A tendency toward longer or permanent residence in one locality.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-011
+  term: Semi-sedentism
+  definition: A settlement pattern in which a community occupies a primary location for a substantial
+    part of the year while retaining seasonal movement.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-012
+  term: Storage economy
+  definition: A food system in which stored reserves become central to survival, exchange, planning, power,
+    and risk management.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-013
+  term: Surplus
+  definition: Output remaining after immediate consumption, seed needs, feed needs, social obligations,
+    and expected losses.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-014
+  term: Delayed-return system
+  definition: A system where labour invested now produces benefits after a significant interval, requiring
+    planning, ownership expectations, and future-oriented coordination.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-015
+  term: Immediate-return system
+  definition: A system where labour generally produces benefits quickly and where long-term claims over
+    productive assets are limited.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-016
+  term: Seasonality
+  definition: Predictable variation in resources, weather, labour demand, disease, and mobility across
+    the annual cycle.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-017
+  term: Aggregation site
+  definition: A location where people repeatedly gather for food processing, exchange, ritual, storage,
+    or seasonal resource use.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-018
+  term: Territoriality
+  definition: The defence, regulation, or recognition of access to land, water, food resources, or settlement
+    areas.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-019
+  term: Property claim
+  definition: A socially recognized claim over access, use, transfer, exclusion, or inheritance.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-020
+  term: Risk pooling
+  definition: The sharing of food, labour, storage, information, or reciprocal obligations to reduce exposure
+    to individual shocks.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-021
+  term: Reciprocal labour
+  definition: Work exchanged between households or groups through social obligation rather than immediate
+    wage payment.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-022
+  term: Cultivation package
+  definition: A connected set of practices involving planting material, land preparation, timing, tools,
+    labour, storage, and knowledge.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-023
+  term: Domestication syndrome
+  definition: A recurring group of traits that become more common under sustained human selection and
+    management.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-024
+  term: Path dependence
+  definition: A condition in which earlier choices shape later options, costs, institutions, and expectations.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-025
+  term: Agrarian threshold
+  definition: The point at which cultivated or managed production becomes important enough to reorganize
+    settlement, labour, storage, or social institutions.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-026
+  term: Food production commitment
+  definition: The degree to which a community depends on planned biological production rather than mainly
+    obtaining wild resources.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-027
+  term: Mixed subsistence
+  definition: A livelihood that combines cultivation or herding with gathering, hunting, fishing, exchange,
+    or other activities.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-028
+  term: Buffer stock
+  definition: Reserve food held to protect against shortage, delay, conflict, crop failure, or seasonal
+    gaps.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-029
+  term: Carrying capacity
+  definition: The population or activity level that an environment can sustain under defined practices
+    and conditions.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-030
+  term: Effective carrying capacity
+  definition: The carrying capacity created by actual technology, mobility, storage, exchange, and social
+    organization.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-031
+  term: Settlement permanence
+  definition: The degree to which structures, fields, storage, burial, infrastructure, and social claims
+    bind a community to a place.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-032
+  term: Labour calendar
+  definition: The seasonal schedule of tasks, labour peaks, maintenance, harvesting, processing, and storage.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-033
+  term: Resource patch
+  definition: A spatially concentrated area of useful plants, animals, water, fuel, or materials.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-034
+  term: Patch reliability
+  definition: The predictability of a resource patch across time.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-035
+  term: Selection pressure
+  definition: A condition that makes some traits more likely to persist or reproduce than others.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-036
+  term: Cultural selection
+  definition: Human preference and decision-making that favour particular traits, practices, locations,
+    or organisms.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-037
+  term: Ecological feedback
+  definition: A response in which human actions alter environmental conditions that then influence future
+    human choices.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-038
+  term: Social storage
+  definition: Reliance on relationships, obligations, alliances, and reputation as a reserve that can
+    be called upon during need.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-039
+  term: Material storage
+  definition: Physical preservation of food, seed, feed, tools, or raw materials for later use.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DEF-040
+  term: Agrarian lock-in
+  definition: A condition in which population, institutions, land modification, and stored investment
+    make withdrawal from farming increasingly costly.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - definitions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+principles:
+- id: B-PRI-001
+  name: No single origin principle
+  description: Agriculture emerged through multiple pathways rather than one universal event.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-002
+  name: Continuum principle
+  description: Foraging, management, cultivation, and domestication form overlapping stages rather than
+    sharp categories.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-003
+  name: Risk-first principle
+  description: Early production choices often sought reliability and control, not simply maximum output.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-004
+  name: Seasonality principle
+  description: Seasonal scarcity and abundance strongly shaped storage, mobility, labour, and experimentation.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-005
+  name: Investment principle
+  description: Delayed-return production required greater planning, protection, property expectations,
+    and coordination.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-006
+  name: Feedback principle
+  description: Human management changed environments, which changed future incentives and resource distributions.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-007
+  name: Population-pressure caution
+  description: Population growth can encourage intensification, but is not sufficient as a single explanation.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-008
+  name: Local opportunity principle
+  description: Agriculture was more likely where useful species, water, soils, climate, and social knowledge
+    aligned.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-009
+  name: Mixed-strategy principle
+  description: Cultivation commonly coexisted with gathering, hunting, fishing, and exchange.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-010
+  name: Institution-building principle
+  description: Storage, fields, herds, and irrigation created needs for rules, rights, labour coordination,
+    and dispute resolution.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-011
+  name: Trade-off principle
+  description: Greater food control could increase labour burden, disease exposure, inequality, and ecological
+    pressure.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-012
+  name: Evidence plurality principle
+  description: Origins must be reconstructed from multiple evidence types rather than one artifact or
+    indicator.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-013
+  name: Non-linearity principle
+  description: Communities could adopt, reduce, abandon, or later restore cultivation.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-014
+  name: Knowledge accumulation principle
+  description: Repeated observation across generations turned environmental familiarity into increasingly
+    deliberate management.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PRI-015
+  name: Scale-dependence principle
+  description: A practice effective at household scale may produce different effects at settlement or
+    regional scale.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - principles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+metrics:
+- id: B-KPI-001
+  code: wild_food_share
+  name: Wild food share
+  unit: '% of diet'
+  definition: Estimated share of food obtained from unmanaged or lightly managed wild resources.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-002
+  code: cultivated_food_share
+  name: Cultivated food share
+  unit: '% of diet'
+  definition: Estimated share derived from intentionally cultivated resources.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-003
+  code: managed_resource_share
+  name: Managed resource share
+  unit: '%'
+  definition: Share obtained from resources subject to protection, burning, pruning, watering, corralling,
+    or other management.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-004
+  code: settlement_occupancy
+  name: Settlement occupancy
+  unit: months/year
+  definition: Length of annual occupation at a primary settlement.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-005
+  code: mobility_frequency
+  name: Mobility frequency
+  unit: moves/year
+  definition: Number of major residential movements during an annual cycle.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-006
+  code: storage_capacity_per_person
+  name: Storage capacity per person
+  unit: volume/person
+  definition: Estimated reserve capacity relative to population.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-007
+  code: storage_reliance
+  name: Storage reliance
+  unit: days or months
+  definition: Length of time normal subsistence depends on stored food.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-008
+  code: labour_days_per_output
+  name: Labour requirement
+  unit: labour-days/unit output
+  definition: Labour invested relative to useful food obtained.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-009
+  code: seasonal_labour_peak
+  name: Seasonal labour peak
+  unit: workers or labour-hours
+  definition: Maximum labour demand during critical operations.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-010
+  code: harvest_concentration
+  name: Harvest concentration
+  unit: '% in peak period'
+  definition: Share of annual output collected within the busiest harvest window.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-011
+  code: resource_diversity
+  name: Resource diversity
+  unit: count or index
+  definition: Number and distribution of major food sources used.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-012
+  code: diet_breadth
+  name: Diet breadth
+  unit: count or index
+  definition: Range of food categories regularly consumed.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-013
+  code: failure_covariance
+  name: Failure covariance
+  unit: index
+  definition: Degree to which different food sources fail at the same time.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-014
+  code: seed_retention_rate
+  name: Seed retention rate
+  unit: '%'
+  definition: Share of harvest intentionally held for future planting.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-015
+  code: replanting_success
+  name: Replanting success
+  unit: '%'
+  definition: Share of planted material producing useful stands or populations.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-016
+  code: selection_intensity
+  name: Selection intensity
+  unit: index
+  definition: Strength and consistency of human preference for chosen traits.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-017
+  code: processing_time
+  name: Processing time
+  unit: labour-hours/unit
+  definition: Time required to make food edible, storable, or transportable.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-018
+  code: transport_cost
+  name: Transport cost
+  unit: labour or energy/unit-distance
+  definition: Effort required to move food, tools, or planting material.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-019
+  code: surplus_stability
+  name: Surplus stability
+  unit: variance or index
+  definition: Consistency of surplus across seasons or years.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-020
+  code: food_gap_duration
+  name: Food gap duration
+  unit: days
+  definition: Length of predictable shortage between reserve depletion and new supply.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-021
+  code: settlement_density
+  name: Settlement density
+  unit: sites/area
+  definition: Number of occupied settlements within a defined landscape.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-022
+  code: field_investment
+  name: Field investment
+  unit: labour-days/area
+  definition: Labour invested in clearing, soil preparation, fencing, water control, or improvement.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-023
+  code: storage_loss
+  name: Storage loss
+  unit: '%'
+  definition: Share lost to moisture, pests, rodents, theft, spoilage, or handling.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-024
+  code: dependency_ratio
+  name: Production dependency ratio
+  unit: '%'
+  definition: Share of total food needs that must be met by planned production.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-KPI-025
+  code: recovery_time
+  name: Recovery time
+  unit: seasons
+  definition: Time needed to restore food security after a major shock.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - metrics
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+entities:
+- id: B-ENT-001
+  name: MobileBand
+  attributes:
+  - group_id
+  - population
+  - seasonal_route
+  - resource_schedule
+  - alliances
+  - mobility_frequency
+  - risk_strategy
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-002
+  name: Household
+  attributes:
+  - household_id
+  - members
+  - labour_capacity
+  - consumption_needs
+  - storage_access
+  - knowledge_roles
+  - obligations
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-003
+  name: AggregationSite
+  attributes:
+  - site_id
+  - location
+  - occupancy_pattern
+  - processing_features
+  - storage_features
+  - exchange_role
+  - ritual_role
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-004
+  name: SeasonalCamp
+  attributes:
+  - camp_id
+  - season
+  - resource_focus
+  - water_access
+  - shelter_type
+  - expected_duration
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-005
+  name: PermanentSettlement
+  attributes:
+  - settlement_id
+  - population
+  - structures
+  - storage_capacity
+  - fields
+  - water_system
+  - governance
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-006
+  name: ResourcePatch
+  attributes:
+  - patch_id
+  - resource_type
+  - seasonality
+  - reliability
+  - access_rules
+  - management_history
+  - distance
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-007
+  name: ManagedLandscape
+  attributes:
+  - landscape_id
+  - fire_regime
+  - vegetation_management
+  - water_modification
+  - mobility_routes
+  - rights
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-008
+  name: CultivationArea
+  attributes:
+  - area_id
+  - soil
+  - water
+  - preparation_method
+  - planting_schedule
+  - protection
+  - harvest_history
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-009
+  name: SeedReserve
+  attributes:
+  - reserve_id
+  - source
+  - selection_criteria
+  - quantity
+  - storage_method
+  - viability
+  - custodian
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-010
+  name: StorageFacility
+  attributes:
+  - facility_id
+  - construction
+  - capacity
+  - ownership
+  - security
+  - ventilation
+  - pest_controls
+  - loss_rate
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-011
+  name: ToolKit
+  attributes:
+  - toolkit_id
+  - materials
+  - tool_types
+  - maintenance
+  - skill_requirement
+  - transportability
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-012
+  name: LabourGroup
+  attributes:
+  - group_id
+  - membership
+  - task
+  - duration
+  - reciprocity_rule
+  - coordination_method
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-013
+  name: KnowledgeCustodian
+  attributes:
+  - actor_id
+  - knowledge_scope
+  - transmission_method
+  - authority
+  - apprentices
+  - loss_risk
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-014
+  name: ExchangeNetwork
+  attributes:
+  - network_id
+  - partners
+  - routes
+  - goods
+  - frequency
+  - trust_rules
+  - risk
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-015
+  name: RitualInstitution
+  attributes:
+  - institution_id
+  - calendar_role
+  - food_rules
+  - land_rules
+  - redistribution_role
+  - authority
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-016
+  name: ResourceManager
+  attributes:
+  - actor_id
+  - managed_resource
+  - rights
+  - duties
+  - monitoring
+  - sanctions
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-017
+  name: DomesticationPopulation
+  attributes:
+  - population_id
+  - species_group
+  - managed_traits
+  - reproduction_control
+  - selection_history
+  - mobility
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-018
+  name: FoodBatch
+  attributes:
+  - batch_id
+  - source
+  - collection_or_harvest_date
+  - processing
+  - storage_location
+  - owner
+  - status
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-019
+  name: EvidenceRecord
+  attributes:
+  - evidence_id
+  - type
+  - context
+  - date_range
+  - interpretation
+  - confidence
+  - limitations
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENT-020
+  name: TransitionPhase
+  attributes:
+  - phase_id
+  - wild_share
+  - managed_share
+  - cultivated_share
+  - mobility
+  - storage
+  - institutions
+  status: active
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - entities
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+workflows:
+- id: B-WF-001
+  name: Wild-resource scheduling
+  steps:
+  - sequence: 1
+    action: Map seasonal resource availability
+  - sequence: 2
+    action: Estimate travel and collection effort
+  - sequence: 3
+    action: Coordinate group movement
+  - sequence: 4
+    action: Harvest within social access rules
+  - sequence: 5
+    action: Process food
+  - sequence: 6
+    action: Consume, exchange, or store
+  - sequence: 7
+    action: Update knowledge for later seasons
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - workflows
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-WF-002
+  name: Landscape burning
+  steps:
+  - sequence: 1
+    action: Select target area
+  - sequence: 2
+    action: Assess season and wind
+  - sequence: 3
+    action: Define intended ecological effect
+  - sequence: 4
+    action: Coordinate labour and safety
+  - sequence: 5
+    action: Apply controlled fire
+  - sequence: 6
+    action: Observe regrowth and animal response
+  - sequence: 7
+    action: Adjust future timing
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - workflows
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-WF-003
+  name: Early cultivation
+  steps:
+  - sequence: 1
+    action: Select useful resource patch
+  - sequence: 2
+    action: Clear competing vegetation
+  - sequence: 3
+    action: Prepare soil lightly
+  - sequence: 4
+    action: Sow or transplant selected material
+  - sequence: 5
+    action: Protect from disturbance
+  - sequence: 6
+    action: Water where feasible
+  - sequence: 7
+    action: Harvest
+  - sequence: 8
+    action: Retain preferred planting material
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - workflows
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-WF-004
+  name: Seed selection
+  steps:
+  - sequence: 1
+    action: Observe useful variation
+  - sequence: 2
+    action: Select preferred specimens
+  - sequence: 3
+    action: Separate planting material
+  - sequence: 4
+    action: Protect identity during processing
+  - sequence: 5
+    action: Store under suitable conditions
+  - sequence: 6
+    action: Replant
+  - sequence: 7
+    action: Compare outcomes
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - workflows
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-WF-005
+  name: Settlement extension
+  steps:
+  - sequence: 1
+    action: Assess local resource reliability
+  - sequence: 2
+    action: Increase seasonal occupation
+  - sequence: 3
+    action: Build durable storage
+  - sequence: 4
+    action: Invest in structures and fields
+  - sequence: 5
+    action: Formalize access rules
+  - sequence: 6
+    action: Coordinate waste and water
+  - sequence: 7
+    action: Review crowding and disease
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - workflows
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-WF-006
+  name: Storage establishment
+  steps:
+  - sequence: 1
+    action: Estimate seasonal food gap
+  - sequence: 2
+    action: Choose storage form
+  - sequence: 3
+    action: Select dry and secure location
+  - sequence: 4
+    action: Prepare and dry food
+  - sequence: 5
+    action: Load and seal
+  - sequence: 6
+    action: Inspect periodically
+  - sequence: 7
+    action: Allocate withdrawals
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - workflows
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-WF-007
+  name: Risk pooling
+  steps:
+  - sequence: 1
+    action: Identify households with surplus and deficit
+  - sequence: 2
+    action: Confirm reciprocal obligations
+  - sequence: 3
+    action: Transfer food or labour
+  - sequence: 4
+    action: Record social debt or expectation
+  - sequence: 5
+    action: Support recovery
+  - sequence: 6
+    action: Rebalance obligations later
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - workflows
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-WF-008
+  name: Food-production commitment
+  steps:
+  - sequence: 1
+    action: Compare wild-resource reliability with cultivation potential
+  - sequence: 2
+    action: Estimate labour and delay
+  - sequence: 3
+    action: Assess storage and land rights
+  - sequence: 4
+    action: Allocate trial area
+  - sequence: 5
+    action: Observe results
+  - sequence: 6
+    action: Increase, maintain, or reduce commitment
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - workflows
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-WF-009
+  name: Domestication feedback
+  steps:
+  - sequence: 1
+    action: Select desirable traits
+  - sequence: 2
+    action: Control access or reproduction
+  - sequence: 3
+    action: Protect selected population
+  - sequence: 4
+    action: Use retained offspring or seed
+  - sequence: 5
+    action: Observe trait frequency
+  - sequence: 6
+    action: Repeat over generations
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - workflows
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-WF-010
+  name: Early surplus exchange
+  steps:
+  - sequence: 1
+    action: Estimate household reserve needs
+  - sequence: 2
+    action: Identify safe surplus
+  - sequence: 3
+    action: Select exchange partner
+  - sequence: 4
+    action: Agree measurement
+  - sequence: 5
+    action: Transfer goods
+  - sequence: 6
+    action: Receive value or obligation
+  - sequence: 7
+    action: Update alliance or market knowledge
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - workflows
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+decision_rules:
+- id: B-RULE-001
+  name: Adopt cultivation
+  logic: IF a useful resource is predictable enough to manage AND labour is available AND delayed benefits
+    exceed opportunity cost THEN begin or expand cultivation.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-002
+  name: Maintain mixed strategy
+  logic: IF cultivated output remains uncertain OR wild resources remain abundant THEN retain a mixed
+    subsistence portfolio.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-003
+  name: Increase sedentism
+  logic: IF local food, water, storage, and social security support longer occupation THEN extend settlement
+    duration.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-004
+  name: Return to mobility
+  logic: IF local resources decline OR conflict rises OR disease pressure increases THEN restore seasonal
+    movement or relocate.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-005
+  name: Store surplus
+  logic: IF production or collection is seasonal AND future shortage is expected THEN allocate labour
+    to preservation and storage.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-006
+  name: Reduce storage concentration
+  logic: IF centralized reserves create excessive theft, spoilage, or political risk THEN distribute stores
+    across households or locations.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-007
+  name: Select planting material
+  logic: IF a specimen shows preferred traits AND remains viable THEN retain it separately for future
+    reproduction.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-008
+  name: Expand field area
+  logic: IF labour, water, seed, protection, and storage exceed current needs THEN increase cultivated
+    area.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-009
+  name: Intensify existing area
+  logic: IF land expansion is constrained BUT labour and management can increase output THEN intensify
+    current plots.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-010
+  name: Abandon trial
+  logic: IF repeated cultivation returns remain below wild-resource alternatives after learning effects
+    are considered THEN reduce or abandon the trial.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-011
+  name: Formalize access
+  logic: IF investment in fields or storage increases conflict over use THEN create stronger access, inheritance,
+    or exclusion rules.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-012
+  name: Coordinate communal labour
+  logic: IF a task exceeds household capacity AND benefits are shared THEN mobilize reciprocal or collective
+    labour.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-013
+  name: Diversify timing
+  logic: IF one harvest window creates high failure risk THEN stagger planting, collection, or storage
+    strategies.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-014
+  name: Protect seed reserve
+  logic: IF food shortage threatens planting material THEN separate and socially protect seed reserves
+    from consumption.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RULE-015
+  name: Exchange for resilience
+  logic: IF another group has uncorrelated resources or seasons THEN strengthen exchange ties to reduce
+    shared risk.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - decision_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+capacity_models:
+- id: B-CAP-001
+  name: Foraging radius model
+  description: Daily acquisition is limited by walking speed, carrying capacity, terrain, resource density,
+    and daylight.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - capacity_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-CAP-002
+  name: Storage capacity model
+  description: Effective storage equals physical volume adjusted for moisture control, pest exposure,
+    access, security, and loss rate.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - capacity_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-CAP-003
+  name: Labour bottleneck model
+  description: Effective cultivated area is constrained by the highest seasonal labour peak rather than
+    average annual labour.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - capacity_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-CAP-004
+  name: Water reliability model
+  description: Cultivation capacity depends on water timing, storage, soil retention, access conflict,
+    and delivery effort.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - capacity_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-CAP-005
+  name: Seed reserve model
+  description: Next-cycle capacity depends on retained quantity, viability, identity, protection, and
+    suitability.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - capacity_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-CAP-006
+  name: Settlement support model
+  description: Settlement size is constrained by food radius, water, sanitation, storage, disease, fuel,
+    and conflict.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - capacity_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-CAP-007
+  name: Mobility-storage trade-off
+  description: Greater mobility reduces ability to maintain heavy infrastructure; greater storage increases
+    commitment to place.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - capacity_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-CAP-008
+  name: Knowledge capacity model
+  description: Management complexity is constrained by observation, memory, transmission, specialization,
+    and coordination.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - capacity_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-CAP-009
+  name: Transport-energy model
+  description: The value of moving food declines as distance, bulk, spoilage, and terrain increase.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - capacity_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-CAP-010
+  name: Risk-buffer model
+  description: Required reserve increases with variability, failure covariance, recovery time, and weakness
+    of exchange networks.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - capacity_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+risks:
+- id: B-RISK-001
+  name: Climate instability
+  description: Rapid or repeated changes in temperature, rainfall, seasonality, flood, drought, or storm
+    patterns.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-002
+  name: Resource depletion
+  description: Overharvesting, overhunting, repeated burning, or excessive grazing reduces future availability.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-003
+  name: Settlement disease
+  description: Higher density and waste accumulation increase exposure to infectious disease and parasites.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-004
+  name: Storage loss
+  description: Moisture, pests, rodents, mould, theft, fire, or structural failure destroy reserves.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-005
+  name: Labour overload
+  description: Cultivation adds tasks to existing gathering, hunting, fishing, child care, processing,
+    and social duties.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-006
+  name: Seed loss
+  description: Planting material is consumed, spoiled, mixed, stolen, or loses viability.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-007
+  name: Conflict over access
+  description: Fields, water, storage, or managed patches create disputes over rights and exclusion.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-008
+  name: Selection error
+  description: Preferred visible traits are selected even when they reduce resilience or future performance.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-009
+  name: Ecological simplification
+  description: Dependence on fewer resources increases vulnerability to shared failure.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-010
+  name: Social inequality
+  description: Control of fields, stores, animals, or labour becomes concentrated.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-011
+  name: Path dependence
+  description: Earlier investments make continued cultivation necessary even when returns decline.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-012
+  name: Knowledge interruption
+  description: Migration, mortality, conflict, or social disruption breaks transmission.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-013
+  name: Nutritional narrowing
+  description: Increased staple dependence reduces dietary diversity.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-014
+  name: Exchange breakdown
+  description: Loss of allies or routes removes an important buffer against local shortage.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-RISK-015
+  name: Predation and raiding
+  description: Stored surplus attracts theft, conflict, or political extraction.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - risks
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+failure_modes:
+- id: B-FM-001
+  name: Premature sedentism
+  description: Settlement becomes more permanent before local food, sanitation, water, or storage can
+    support it.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-002
+  name: Overcommitment to cultivation
+  description: Labour moves away from diverse wild resources before production becomes reliable.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-003
+  name: Seed reserve consumption
+  description: Short-term hunger destroys the next production cycle.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-004
+  name: Storage without preservation
+  description: Food is stored before adequate drying, cleaning, or protection.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-005
+  name: Property conflict
+  description: Investment rises faster than shared rules for access and inheritance.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-006
+  name: Labour-calendar collision
+  description: Planting, harvesting, gathering, hunting, and social obligations peak at the same time.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-007
+  name: Resource-patch degradation
+  description: Management repeatedly favours immediate yield over regeneration.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-008
+  name: Domestication bottleneck
+  description: A narrow selected population loses diversity and resilience.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-009
+  name: Water-control failure
+  description: Simple irrigation or drainage creates erosion, salinity, waterlogging, or conflict.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-010
+  name: Centralized reserve capture
+  description: Authorities or raiders seize stores, leaving households exposed.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-011
+  name: Knowledge monopoly
+  description: Critical techniques become concentrated in too few custodians.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-012
+  name: Rigid seasonal assumptions
+  description: Traditional timing fails under changing climate but institutions resist adjustment.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-013
+  name: Transport overload
+  description: Bulk production exceeds carrying, road, animal, or vessel capacity.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-014
+  name: Waste concentration
+  description: Permanent settlement creates sanitation and pest problems.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-FM-015
+  name: False surplus
+  description: Output appears abundant but obligations, seed needs, losses, and food gaps are underestimated.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - failure_modes
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+evidence_types:
+- id: B-EVD-001
+  name: Macro-botanical remains
+  description: Visible seeds, fruits, wood, fibres, and plant fragments recovered from archaeological
+    contexts.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-002
+  name: Micro-botanical remains
+  description: Pollen, phytoliths, starch grains, and microscopic residues used to infer plants and processing.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-003
+  name: Faunal remains
+  description: Animal bones, teeth, shells, and other remains used to study hunting, management, diet,
+    and domestication.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-004
+  name: Settlement pattern
+  description: Distribution, duration, density, and organization of occupation sites.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-005
+  name: Storage structures
+  description: Pits, bins, containers, granaries, rooms, and sealing systems indicating delayed consumption.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-006
+  name: Grinding and processing tools
+  description: Wear, residues, and tool forms indicating repeated processing.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-007
+  name: Landscape modification
+  description: Terraces, canals, field boundaries, burning signatures, paths, and soil changes.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-008
+  name: Human remains
+  description: Diet, disease, workload, mobility, trauma, and demographic indicators.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-009
+  name: Isotopic evidence
+  description: Chemical signatures used to infer diet, movement, environment, and animal management.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-010
+  name: Ancient genetic evidence
+  description: Genetic patterns indicating population change, selection, movement, and relationships.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-011
+  name: Use-wear evidence
+  description: Microscopic wear on tools indicating cutting, digging, harvesting, hide work, or processing.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-012
+  name: Residue evidence
+  description: Chemical or microscopic traces showing substances processed or stored.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-013
+  name: Ethnographic analogy
+  description: Careful comparison with documented practices, used cautiously rather than as direct proof.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-014
+  name: Experimental archaeology
+  description: Reconstruction and testing of tools, storage, cultivation, and processing methods.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVD-015
+  name: Paleoenvironmental records
+  description: Sediment, charcoal, pollen, and climate indicators reconstructing environmental conditions.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evidence_types
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+historiography:
+- id: B-HIS-001
+  name: Single-revolution model
+  description: Treats agriculture as a rapid transformation; useful for broad comparison but often hides
+    long transitional phases.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - historiography
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-HIS-002
+  name: Gradualist model
+  description: Emphasizes cumulative management, experimentation, and mixed subsistence over long periods.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - historiography
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-HIS-003
+  name: Population-pressure model
+  description: Explains change partly through rising demand, while requiring evidence that alternatives
+    were insufficient.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - historiography
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-HIS-004
+  name: Climate-opportunity model
+  description: Emphasizes environmental stabilization or change that altered resource predictability.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - historiography
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-HIS-005
+  name: Risk-management model
+  description: Views cultivation and storage as strategies for reducing uncertainty rather than maximizing
+    average output.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - historiography
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-HIS-006
+  name: Feasting and social-competition model
+  description: Emphasizes prestige, ritual, alliance-building, and demand for surplus.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - historiography
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-HIS-007
+  name: Niche-construction model
+  description: Focuses on reciprocal change between human management and evolving environments.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - historiography
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-HIS-008
+  name: Political-economy model
+  description: Examines labour, property, surplus control, hierarchy, and institutional power.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - historiography
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-HIS-009
+  name: Multi-pathway model
+  description: Rejects a single global sequence and emphasizes different combinations of ecology, culture,
+    exchange, and demography.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - historiography
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-HIS-010
+  name: Co-evolutionary model
+  description: Explains domestication as mutual change among humans, organisms, institutions, and landscapes.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - historiography
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+knowledge_articles:
+- id: B-ART-001
+  title: From observation to management
+  summary: Repeated seasonal observation enabled people to predict where resources would appear, which
+    conditions favoured them, and how disturbance could improve access. Management began before full cultivation
+    through selective harvesting, protection, transplanting, pruning, burning, corralling, and water manipulation.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - knowledge_articles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ART-002
+  title: Why delayed returns changed society
+  summary: Cultivation required labour before harvest. This delay increased the importance of planning,
+    trust, property expectations, storage, conflict resolution, and protection of future benefits.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - knowledge_articles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ART-003
+  title: Why storage changed time
+  summary: Storage linked one season to another. It allowed communities to plan beyond immediate consumption,
+    support vulnerable members, conduct exchange, survive seasonal gaps, and invest in longer-term activities.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - knowledge_articles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ART-004
+  title: The labour paradox
+  summary: Food production could support more people while requiring more repetitive and seasonally concentrated
+    labour. Increased output did not automatically mean reduced work.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - knowledge_articles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ART-005
+  title: The mobility-sedentism continuum
+  summary: Communities could maintain permanent structures while still moving seasonally. Sedentism was
+    not always complete, immediate, or irreversible.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - knowledge_articles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ART-006
+  title: The social meaning of fields
+  summary: Fields represented labour already invested. As investment increased, claims over access, inheritance,
+    exclusion, and compensation became more important.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - knowledge_articles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ART-007
+  title: The ecology of selection
+  summary: Human preference altered which organisms survived and reproduced. At the same time, selected
+    organisms changed human diets, labour, settlement, and future choices.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - knowledge_articles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ART-008
+  title: The danger of narrow dependence
+  summary: Production could create reliable bulk food while reducing ecological and dietary diversity.
+    Systems therefore balanced control against concentration risk.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - knowledge_articles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ART-009
+  title: Agrarian lock-in
+  summary: Once population, fields, storage, property, and institutions depended on production, returning
+    to earlier mobility could become difficult even when farming produced new costs.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - knowledge_articles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ART-010
+  title: Multiple transitions, not one
+  summary: Different communities entered cultivation through different combinations of plant management,
+    animal management, storage, fishing intensity, exchange, water control, and settlement.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - knowledge_articles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ART-011
+  title: Surplus and authority
+  summary: Stored surplus could be shared for resilience, exchanged for value, used in ritual, or controlled
+    by emerging authorities. The social effect depended on ownership and access rules.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - knowledge_articles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ART-012
+  title: Knowledge as infrastructure
+  summary: Seasonal calendars, soil knowledge, seed selection, tool skills, food processing, and storage
+    knowledge were as important as physical structures.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - knowledge_articles
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+classifications:
+  transition_phase:
+  - wild_resource_dominant
+  - managed_resource
+  - cultivation_experiment
+  - mixed_production
+  - domestication_intensification
+  - settlement_investment
+  - agrarian_dependence
+  settlement_pattern:
+  - mobile
+  - seasonally_mobile
+  - semi_sedentary
+  - sedentary
+  resource_control:
+  - open_access
+  - customary_access
+  - household_claim
+  - communal_management
+  - institutional_control
+  return_structure:
+  - immediate_return
+  - mixed_return
+  - delayed_return
+  storage_control:
+  - household
+  - distributed_community
+  - central_community
+  - institutional
+  - elite
+  production_commitment:
+  - experimental
+  - supplementary
+  - regular
+  - primary
+  - dependent
+relationships:
+- id: B-EDGE-001
+  source: seasonality
+  relationship: influences
+  target: storage
+- id: B-EDGE-002
+  source: storage
+  relationship: influences
+  target: sedentism
+- id: B-EDGE-003
+  source: sedentism
+  relationship: influences
+  target: disease exposure
+- id: B-EDGE-004
+  source: cultivation
+  relationship: influences
+  target: delayed return
+- id: B-EDGE-005
+  source: delayed return
+  relationship: influences
+  target: property claim
+- id: B-EDGE-006
+  source: property claim
+  relationship: influences
+  target: territoriality
+- id: B-EDGE-007
+  source: seed retention
+  relationship: influences
+  target: cultural selection
+- id: B-EDGE-008
+  source: cultural selection
+  relationship: influences
+  target: domestication
+- id: B-EDGE-009
+  source: population density
+  relationship: influences
+  target: intensification
+- id: B-EDGE-010
+  source: intensification
+  relationship: influences
+  target: labour burden
+- id: B-EDGE-011
+  source: surplus
+  relationship: influences
+  target: exchange
+- id: B-EDGE-012
+  source: surplus
+  relationship: influences
+  target: authority
+- id: B-EDGE-013
+  source: mobility
+  relationship: influences
+  target: risk spreading
+- id: B-EDGE-014
+  source: trade
+  relationship: influences
+  target: resilience
+- id: B-EDGE-015
+  source: ecological simplification
+  relationship: influences
+  target: systemic risk
+- id: B-EDGE-016
+  source: knowledge transmission
+  relationship: influences
+  target: production continuity
+section_registry:
+- id: B-SEC-001
+  number: 1
+  title: Scope and Boundaries
+  markdown_heading: '# 1. Scope and Boundaries'
+  status: active
+  sync_required: true
+- id: B-SEC-002
+  number: 2
+  title: Definitions
+  markdown_heading: '# 2. Definitions'
+  status: active
+  sync_required: true
+- id: B-SEC-003
+  number: 3
+  title: Core Explanations
+  markdown_heading: '# 3. Core Explanations'
+  status: active
+  sync_required: true
+- id: B-SEC-004
+  number: 4
+  title: Historical Context
+  markdown_heading: '# 4. Historical Context'
+  status: active
+  sync_required: true
+- id: B-SEC-005
+  number: 5
+  title: Transition Principles
+  markdown_heading: '# 5. Transition Principles'
+  status: active
+  sync_required: true
+- id: B-SEC-006
+  number: 6
+  title: Periodization Without Fixed Dates
+  markdown_heading: '# 6. Periodization Without Fixed Dates'
+  status: active
+  sync_required: true
+- id: B-SEC-007
+  number: 7
+  title: Environmental Conditions
+  markdown_heading: '# 7. Environmental Conditions'
+  status: active
+  sync_required: true
+- id: B-SEC-008
+  number: 8
+  title: Seasonality and Resource Scheduling
+  markdown_heading: '# 8. Seasonality and Resource Scheduling'
+  status: active
+  sync_required: true
+- id: B-SEC-009
+  number: 9
+  title: Broad-Spectrum Subsistence
+  markdown_heading: '# 9. Broad-Spectrum Subsistence'
+  status: active
+  sync_required: true
+- id: B-SEC-010
+  number: 10
+  title: Landscape Management
+  markdown_heading: '# 10. Landscape Management'
+  status: active
+  sync_required: true
+- id: B-SEC-011
+  number: 11
+  title: Cultivation Before Domestication
+  markdown_heading: '# 11. Cultivation Before Domestication'
+  status: active
+  sync_required: true
+- id: B-SEC-012
+  number: 12
+  title: Domestication Processes
+  markdown_heading: '# 12. Domestication Processes'
+  status: active
+  sync_required: true
+- id: B-SEC-013
+  number: 13
+  title: Sedentism and Settlement
+  markdown_heading: '# 13. Sedentism and Settlement'
+  status: active
+  sync_required: true
+- id: B-SEC-014
+  number: 14
+  title: Storage and Delayed Returns
+  markdown_heading: '# 14. Storage and Delayed Returns'
+  status: active
+  sync_required: true
+- id: B-SEC-015
+  number: 15
+  title: Labour Organization
+  markdown_heading: '# 15. Labour Organization'
+  status: active
+  sync_required: true
+- id: B-SEC-016
+  number: 16
+  title: Property, Access, and Territoriality
+  markdown_heading: '# 16. Property, Access, and Territoriality'
+  status: active
+  sync_required: true
+- id: B-SEC-017
+  number: 17
+  title: Surplus and Exchange
+  markdown_heading: '# 17. Surplus and Exchange'
+  status: active
+  sync_required: true
+- id: B-SEC-018
+  number: 18
+  title: Population and Carrying Capacity
+  markdown_heading: '# 18. Population and Carrying Capacity'
+  status: active
+  sync_required: true
+- id: B-SEC-019
+  number: 19
+  title: Technology and Tools
+  markdown_heading: '# 19. Technology and Tools'
+  status: active
+  sync_required: true
+- id: B-SEC-020
+  number: 20
+  title: Data Model and Entities
+  markdown_heading: '# 20. Data Model and Entities'
+  status: active
+  sync_required: true
+- id: B-SEC-021
+  number: 21
+  title: Metrics and KPIs
+  markdown_heading: '# 21. Metrics and KPIs'
+  status: active
+  sync_required: true
+- id: B-SEC-022
+  number: 22
+  title: Workflows
+  markdown_heading: '# 22. Workflows'
+  status: active
+  sync_required: true
+- id: B-SEC-023
+  number: 23
+  title: Procedures
+  markdown_heading: '# 23. Procedures'
+  status: active
+  sync_required: true
+- id: B-SEC-024
+  number: 24
+  title: Decision Trees and Logic Rules
+  markdown_heading: '# 24. Decision Trees and Logic Rules'
+  status: active
+  sync_required: true
+- id: B-SEC-025
+  number: 25
+  title: Capacity and Constraint Models
+  markdown_heading: '# 25. Capacity and Constraint Models'
+  status: active
+  sync_required: true
+- id: B-SEC-026
+  number: 26
+  title: Risks
+  markdown_heading: '# 26. Risks'
+  status: active
+  sync_required: true
+- id: B-SEC-027
+  number: 27
+  title: Failure Modes and Loss Points
+  markdown_heading: '# 27. Failure Modes and Loss Points'
+  status: active
+  sync_required: true
+- id: B-SEC-028
+  number: 28
+  title: Exceptions and Alternative Pathways
+  markdown_heading: '# 28. Exceptions and Alternative Pathways'
+  status: active
+  sync_required: true
+- id: B-SEC-029
+  number: 29
+  title: Standards and Governance
+  markdown_heading: '# 29. Standards and Governance'
+  status: active
+  sync_required: true
+- id: B-SEC-030
+  number: 30
+  title: Relationships and Interdependencies
+  markdown_heading: '# 30. Relationships and Interdependencies'
+  status: active
+  sync_required: true
+- id: B-SEC-031
+  number: 31
+  title: Frameworks
+  markdown_heading: '# 31. Frameworks'
+  status: active
+  sync_required: true
+- id: B-SEC-032
+  number: 32
+  title: Evidence and Historical Method
+  markdown_heading: '# 32. Evidence and Historical Method'
+  status: active
+  sync_required: true
+- id: B-SEC-033
+  number: 33
+  title: Historical Uncertainty
+  markdown_heading: '# 33. Historical Uncertainty'
+  status: active
+  sync_required: true
+- id: B-SEC-034
+  number: 34
+  title: Historiography
+  markdown_heading: '# 34. Historiography'
+  status: active
+  sync_required: true
+- id: B-SEC-035
+  number: 35
+  title: Detailed Knowledge Articles
+  markdown_heading: '# 35. Detailed Knowledge Articles'
+  status: active
+  sync_required: true
+- id: B-SEC-036
+  number: 36
+  title: Comparative Examples
+  markdown_heading: '# 36. Comparative Examples'
+  status: active
+  sync_required: true
+- id: B-SEC-037
+  number: 37
+  title: Evaluation Criteria
+  markdown_heading: '# 37. Evaluation Criteria'
+  status: active
+  sync_required: true
+- id: B-SEC-038
+  number: 38
+  title: Knowledge Graph
+  markdown_heading: '# 38. Knowledge Graph'
+  status: active
+  sync_required: true
+- id: B-SEC-039
+  number: 39
+  title: References and Related Documents
+  markdown_heading: '# 39. References and Related Documents'
+  status: active
+  sync_required: true
+- id: B-SEC-040
+  number: 40
+  title: Future Expansion Guidance
+  markdown_heading: '# 40. Future Expansion Guidance'
+  status: active
+  sync_required: true
+- id: B-SEC-041
+  number: 41
+  title: Change History
+  markdown_heading: '# 41. Change History'
+  status: active
+  sync_required: true
+training:
+  level: NexVox Studio L2
+  retrieval_enabled: true
+  embedding_enabled: true
+  knowledge_graph_enabled: true
+  fine_tuning_enabled: false
+  chunking:
+    primary_unit: section
+    secondary_unit: subsection
+    preserve_heading_context: true
+    recommended_tokens: 700
+    maximum_tokens: 1200
+    overlap_tokens: 120
+  reasoning_rules:
+  - do not treat agriculture as a single invention
+  - distinguish management from cultivation and domestication
+  - allow mixed and reversible pathways
+  - separate sequence from causation
+  - state evidence limits
+  - avoid assuming sedentism always follows cultivation
+  - evaluate labour, risk, nutrition, and power as well as output
+quality:
+  minimum_markdown_lines: 2000
+  minimum_yaml_lines: 2000
+  substantive_content_required: true
+  placeholder_count_should_remain_low: true
+  companion_sync_required: true
+  source_provenance_required_for_future_additions: true
+  named_crop_excluded: true
+  named_country_excluded: true
+source_governance:
+  allowed_sources:
+  - user_supplied_material
+  - approved_project_documents
+  - peer_reviewed_research
+  - official_or_recognized_reference_works
+  - approved_field_notes
+  - approved_expert_input
+  uncertainty_required: true
+  fabricated_statistics_forbidden: true
+  padding_only_content_forbidden: true
+version_history:
+- version: v001
+  date: '2026-07-12'
+  summary: Initial substantive creation of Volume B.
+evaluation_criteria:
+- id: B-EVAL-001
+  name: Food reliability
+  question: How well does the transition perform on food reliability?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-002
+  name: Diet diversity
+  question: How well does the transition perform on diet diversity?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-003
+  name: Labour burden
+  question: How well does the transition perform on labour burden?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-004
+  name: Storage security
+  question: How well does the transition perform on storage security?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-005
+  name: Mobility flexibility
+  question: How well does the transition perform on mobility flexibility?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-006
+  name: Ecological sustainability
+  question: How well does the transition perform on ecological sustainability?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-007
+  name: Seed security
+  question: How well does the transition perform on seed security?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-008
+  name: Water reliability
+  question: How well does the transition perform on water reliability?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-009
+  name: Conflict intensity
+  question: How well does the transition perform on conflict intensity?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-010
+  name: Institutional fairness
+  question: How well does the transition perform on institutional fairness?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-011
+  name: Recovery capacity
+  question: How well does the transition perform on recovery capacity?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-012
+  name: Knowledge continuity
+  question: How well does the transition perform on knowledge continuity?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-013
+  name: Population support
+  question: How well does the transition perform on population support?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-014
+  name: Surplus stability
+  question: How well does the transition perform on surplus stability?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EVAL-015
+  name: Reversibility
+  question: How well does the transition perform on reversibility?
+  output_type: qualitative_or_quantitative
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - evaluation_criteria
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+comparative_examples:
+- id: B-EX-001
+  title: Managed wild landscape
+  description: A community increases useful resources through fire, selective protection, and seasonal
+    rules without depending on planted fields.
+  purpose: illustrate_non_linear_transition_pattern
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - comparative_examples
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EX-002
+  title: Seasonal cultivation experiment
+  description: A mobile community plants a small area near a recurring camp while retaining broad wild-resource
+    use.
+  purpose: illustrate_non_linear_transition_pattern
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - comparative_examples
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EX-003
+  title: Storage-led sedentism
+  description: A community occupies one place longer because concentrated seasonal resources can be stored.
+  purpose: illustrate_non_linear_transition_pattern
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - comparative_examples
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EX-004
+  title: Labour-limited transition
+  description: Cultivation remains small because planting and harvest conflict with other essential tasks.
+  purpose: illustrate_non_linear_transition_pattern
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - comparative_examples
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EX-005
+  title: Water-enabled intensification
+  description: Simple water control increases reliability and encourages stronger land claims.
+  purpose: illustrate_non_linear_transition_pattern
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - comparative_examples
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EX-006
+  title: Trade-buffered community
+  description: A community maintains lower local production because exchange reduces shortage risk.
+  purpose: illustrate_non_linear_transition_pattern
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - comparative_examples
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EX-007
+  title: Risk-driven diversification
+  description: Repeated climate shocks encourage staggered planting, wider food use, and distributed stores.
+  purpose: illustrate_non_linear_transition_pattern
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - comparative_examples
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EX-008
+  title: Failed agrarian commitment
+  description: Production expands, soil and labour costs rise, and the community returns to greater mobility.
+  purpose: illustrate_non_linear_transition_pattern
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - comparative_examples
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+environmental_conditions:
+- id: B-ENV-001
+  name: Resource abundance
+  description: Abundant wild resources can reduce pressure to cultivate, but may also support sedentism
+    and experimentation.
+  historical_variability: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - environmental_conditions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENV-002
+  name: Resource predictability
+  description: Predictable seasonal resources make scheduling and repeated management easier.
+  historical_variability: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - environmental_conditions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENV-003
+  name: Patch concentration
+  description: Concentrated resources reduce search cost and can support aggregation sites.
+  historical_variability: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - environmental_conditions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENV-004
+  name: Water reliability
+  description: Reliable water supports longer occupation, processing, animals, and cultivation.
+  historical_variability: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - environmental_conditions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENV-005
+  name: Soil workability
+  description: Soils influence labour needs, drainage, water retention, and response to disturbance.
+  historical_variability: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - environmental_conditions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENV-006
+  name: Disturbance ecology
+  description: Fire, flood, grazing, and clearing can increase some useful resources while reducing others.
+  historical_variability: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - environmental_conditions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENV-007
+  name: Climate variability
+  description: High variability can encourage diversification, mobility, storage, or stronger control.
+  historical_variability: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - environmental_conditions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-ENV-008
+  name: Ecotonal opportunity
+  description: Boundaries between ecosystems can provide diverse resources and experimentation opportunities.
+  historical_variability: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - environmental_conditions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+periodization:
+- id: B-PER-001
+  phase: Predominantly wild-resource phase
+  description: Food comes mainly from gathering, hunting, fishing, and exchange, though environments may
+    already be managed.
+  fixed_dates_required: false
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - periodization
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PER-002
+  phase: Resource-management phase
+  description: Communities deliberately alter landscapes, access, timing, or resource abundance.
+  fixed_dates_required: false
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - periodization
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PER-003
+  phase: Cultivation-experiment phase
+  description: Small-scale sowing, transplanting, watering, protection, or tending supplements wild foods.
+  fixed_dates_required: false
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - periodization
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PER-004
+  phase: Mixed-production phase
+  description: Cultivation or animal management becomes regular but remains combined with substantial
+    wild-resource use.
+  fixed_dates_required: false
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - periodization
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PER-005
+  phase: Domestication-intensification phase
+  description: Human selection increasingly shapes managed populations and production commitments.
+  fixed_dates_required: false
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - periodization
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PER-006
+  phase: Settlement-investment phase
+  description: Storage, fields, structures, and institutions increase attachment to place.
+  fixed_dates_required: false
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - periodization
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-PER-007
+  phase: Agrarian-dependence phase
+  description: Food production becomes central enough that population and institutions depend on it.
+  fixed_dates_required: false
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - periodization
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+exceptions:
+- id: B-EXC-001
+  description: Some communities became sedentary before depending heavily on cultivation.
+  meaning: dominant_transition_pattern_not_universal
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - exceptions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EXC-002
+  description: Some communities cultivated while remaining highly mobile.
+  meaning: dominant_transition_pattern_not_universal
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - exceptions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EXC-003
+  description: Some communities intensified fishing, gathering, or storage without moving toward farming.
+  meaning: dominant_transition_pattern_not_universal
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - exceptions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EXC-004
+  description: Some managed organisms for long periods without clear domestication.
+  meaning: dominant_transition_pattern_not_universal
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - exceptions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EXC-005
+  description: Some adopted production and later abandoned it.
+  meaning: dominant_transition_pattern_not_universal
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - exceptions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EXC-006
+  description: Some increased surplus through trade rather than local intensification.
+  meaning: dominant_transition_pattern_not_universal
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - exceptions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EXC-007
+  description: Some maintained common access despite long-term field investment.
+  meaning: dominant_transition_pattern_not_universal
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - exceptions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EXC-008
+  description: Some relied on social storage more than material storage.
+  meaning: dominant_transition_pattern_not_universal
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - exceptions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EXC-009
+  description: Some production systems developed without strong hierarchy.
+  meaning: dominant_transition_pattern_not_universal
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - exceptions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-EXC-010
+  description: Some high-output systems remained seasonal and dispersed.
+  meaning: dominant_transition_pattern_not_universal
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - exceptions
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+governance_rules:
+- id: B-GOV-001
+  name: Access rules
+  description: Define who may gather, cultivate, graze, water, harvest, or exclude.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - governance_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-GOV-002
+  name: Seed rules
+  description: Protect planting material, identity, and custodianship.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - governance_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-GOV-003
+  name: Harvest rules
+  description: Control timing, method, intensity, and reserved areas.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - governance_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-GOV-004
+  name: Storage rules
+  description: Define ownership, inspection, withdrawal, emergency use, and loss.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - governance_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-GOV-005
+  name: Labour rules
+  description: Define reciprocal work, communal obligations, compensation, and sanctions.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - governance_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-GOV-006
+  name: Measurement rules
+  description: Support fair exchange and obligation assessment.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - governance_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-GOV-007
+  name: Conflict rules
+  description: Define mediation, compensation, exclusion, or retaliation.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - governance_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-GOV-008
+  name: Inheritance rules
+  description: Transfer long-term fields, stores, tools, animals, and knowledge.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - governance_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+labour_models:
+- id: B-LAB-001
+  name: Household labour
+  description: Production commonly begins through household allocation and task specialization.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - labour_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-LAB-002
+  name: Reciprocal labour
+  description: Households exchange work during peak demand.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - labour_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-LAB-003
+  name: Communal labour
+  description: Shared infrastructure or fields require coordinated group work.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - labour_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-LAB-004
+  name: Task specialization
+  description: Seed selection, water control, storage construction, ritual timing, or tool making may
+    become specialized.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - labour_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-LAB-005
+  name: Gender and age organization
+  description: Tasks may be allocated by age, gender, skill, status, or mobility.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - labour_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-LAB-006
+  name: Labour coercion risk
+  description: Control of land and surplus can produce dependent or coerced labour.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - labour_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-LAB-007
+  name: Peak demand
+  description: Planting and harvest often create short periods when delay causes major loss.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - labour_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-LAB-008
+  name: Maintenance burden
+  description: Fields, fences, water systems, storage, and tools create continuing obligations.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - labour_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+storage_models:
+- id: B-STOR-001
+  name: Preservation prerequisite
+  description: Food must often be dried, cleaned, sealed, cooled, fermented, or otherwise stabilized.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - storage_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-STOR-002
+  name: Capacity planning
+  description: Reserve size depends on population, food gaps, risk, seed needs, and expected loss.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - storage_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-STOR-003
+  name: Ownership
+  description: Storage raises questions about household, communal, institutional, or elite control.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - storage_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-STOR-004
+  name: Security
+  description: Stores attract pests, theft, conflict, and political extraction.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - storage_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-STOR-005
+  name: Rotation
+  description: Older stock must be consumed before unacceptable quality loss.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - storage_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-STOR-006
+  name: Seed separation
+  description: Planting reserves require protection from consumption and mixing.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - storage_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-STOR-007
+  name: Information
+  description: Stored quantity, age, quality, ownership, and obligation must be remembered or recorded.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - storage_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-STOR-008
+  name: Release rules
+  description: Communities need rules for ordinary use, emergency use, redistribution, and repayment.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - storage_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+domestication_models:
+- id: B-DOM-001
+  name: Unconscious selection
+  description: Routine harvesting and replanting can alter traits without explicit breeding goals.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - domestication_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DOM-002
+  name: Conscious selection
+  description: People deliberately choose size, taste, ease of harvest, behaviour, timing, or storage
+    traits.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - domestication_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DOM-003
+  name: Reproductive control
+  description: Human influence over mating, seed retention, movement, or isolation increases selection.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - domestication_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DOM-004
+  name: Protection from natural pressures
+  description: Managed populations may survive under traits that would be disadvantaged in the wild.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - domestication_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DOM-005
+  name: Population bottlenecks
+  description: Repeated use of limited breeding material reduces diversity.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - domestication_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DOM-006
+  name: Co-evolution
+  description: Human institutions and managed organisms change in response to each other.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - domestication_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DOM-007
+  name: Domestication lag
+  description: Cultivation or management may persist for long periods before clear domesticated traits
+    appear.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - domestication_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-DOM-008
+  name: Reversal and escape
+  description: Managed populations can return to less controlled conditions or mix with wild populations.
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - domestication_models
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+uncertainty_rules:
+- id: B-UNC-001
+  description: Management may leave weak physical evidence.
+  must_be_disclosed: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - uncertainty_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-UNC-002
+  description: Domesticated traits can appear gradually and unevenly.
+  must_be_disclosed: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - uncertainty_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-UNC-003
+  description: Different evidence types may date different aspects of the same transition.
+  must_be_disclosed: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - uncertainty_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-UNC-004
+  description: Preservation favours some materials and environments.
+  must_be_disclosed: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - uncertainty_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-UNC-005
+  description: Settlement remains do not directly reveal full annual mobility.
+  must_be_disclosed: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - uncertainty_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-UNC-006
+  description: Storage structures do not prove equal access to stored food.
+  must_be_disclosed: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - uncertainty_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-UNC-007
+  description: Tool form does not always reveal actual use.
+  must_be_disclosed: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - uncertainty_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-UNC-008
+  description: Similar traits can arise through different selection processes.
+  must_be_disclosed: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - uncertainty_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-UNC-009
+  description: Population estimates are often ranges rather than counts.
+  must_be_disclosed: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - uncertainty_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
+- id: B-UNC-010
+  description: Modern categories can oversimplify mixed historical systems.
+  must_be_disclosed: true
+  domain: agriculture
+  series: agricultural_history
+  document_id: NVST-0002-B
+  status: active
+  retrieval_tags:
+  - agricultural_history
+  - early_agrarian_transition
+  - uncertainty_rules
+  relationships: []
+  source_status: foundation_synthesis
+  uncertainty: context_dependent
+  companion_markdown: nv_st_2026.07.12_0002_b_agri_hist_v001.md
