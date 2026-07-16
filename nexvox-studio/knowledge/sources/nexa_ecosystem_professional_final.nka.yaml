@@ -1,0 +1,612 @@
+nexa_knowledge_asset:
+  schema:
+    name: nexa_knowledge_asset_manifest
+    short_name: NKA
+    schema_version: 1.0.0
+    serialization: YAML 1.2
+    profile: nexvox_studio_l2_rag_rich
+    status: active
+    created_at: '2026-07-15T06:57:26.810109+00:00'
+    language: en
+  asset_identity:
+    asset_id: NKA-NEL-VOL1-NEXAPOS-ALPHA-001
+    asset_family_id: NKA-NEL-VOL1
+    canonical_title: Nexa Ecosystem — NexaPOS Alpha 1.0 Engineering & Architecture Manual
+    short_title: Nexa Ecosystem Professional Manual
+    edition: Unified Professional Edition
+    document_version: '1.0'
+    publication_date: '2026-07-15'
+    document_type: engineering_architecture_manual
+    knowledge_asset_type: authoritative_internal_reference
+    library:
+      name: Nexa Engineering Library
+      abbreviation: NEL
+      volume: I
+    owner:
+      organization: Nexa Kenya Limited
+      division: NexTech Division
+      project: NexaPOS Alpha 1.0
+      stewardship_role: Nexa Engineering and NexVox Studio Knowledge Governance
+    classification: internal_confidential
+    lifecycle_status: active_engineering_draft
+  source_document:
+    filename: nexa_ecosystem_professional_final.pdf
+    mime_type: application/pdf
+    page_count: 1036
+    file_size_bytes: 5037917
+    file_size_megabytes: 4.805
+    searchable_text: true
+    ocr_required: false
+    pdf_metadata:
+      title: Nexa Ecosystem - NexaPOS Alpha 1.0 Engineering & Architecture Manual
+      author: Nexa Kenya Limited - NexTech Division
+      subject: Refined unified professional engineering handbook optimized for human reading and RAG ingestion
+      creator: ''
+      producer: ''
+    integrity:
+      algorithm: sha256
+      checksum: 3f98b5dc399d4b743a91c3d6b7cfa380e3be86d316931e345282f4141ebf94f8
+      verification_required_before_ingestion: true
+      checksum_scope: entire_pdf_binary
+    source_lineage:
+    - title: Nexa Ecosystem
+      source_type: google_doc
+      role: primary architecture and ecosystem source
+    - title: Nexa 02
+      source_type: google_doc
+      role: finance, ledger and transaction-mapping source
+    - title: Nexa 04
+      source_type: google_doc
+      role: administration, employee and device-management source
+    - title: Nexa 05
+      source_type: google_doc
+      role: future roadmap, standards and appendices source
+    - title: NEES — Nexa Execution Engineering Spec
+      source_type: google_doc
+      role: build-phase execution specification
+  purpose:
+    primary: Preserve and retrieve the long-term engineering, operational, strategic and architectural memory of the Nexa
+      ecosystem.
+    future_use_cases:
+    - Reconstruct a NexFarm estate layout when expanding to a new location.
+    - Explain the original CEO or founder vision years after it was documented.
+    - Compare historical plans with later architecture and operational reality.
+    - Help NexVox Studio L2 answer grounded questions from the manual.
+    - Support NexVox Studio L2 in writing future manuals, specifications, policies and training material.
+    - Provide controlled rules and context to NexVox Simulation Agent L3.
+    - Give NexVox Observer L1 stable terminology for operational analytics.
+    - Train future employees, engineers, managers and partners.
+    - Preserve institutional knowledge when human memory or personnel changes.
+    non_goals:
+    - Authorize live operational actions.
+    - Replace newer approved policies or manuals.
+    - Treat roadmap statements as already implemented.
+    - Allow NexVox L2 or L3 to approve transactions, payments, staffing or configuration changes.
+  authority_model:
+    default_authority: architectural
+    classes:
+      normative: Mandatory rule, law, prohibition, invariant or approved control.
+      architectural: Accepted design intent or structural model.
+      operational: Describes business or estate operations.
+      implementation_current: Represents the currently intended Alpha implementation.
+      planned: Approved or proposed but not yet implemented.
+      future_concept: Long-term possibility or exploratory direction.
+      example: Illustrative scenario; not automatically binding.
+      simulation_only: Applies exclusively to Simulation Runtime Mode.
+      historical: Preserved to explain earlier thinking or evolution.
+      deprecated: Retained for audit but no longer current.
+      unverified: Requires human confirmation before operational reliance.
+    precedence_rules:
+    - A newer approved asset supersedes an older asset only when an explicit supersedes relationship exists.
+    - Normative rules outrank descriptive examples.
+    - Current implementation statements outrank planned and future statements for present-state questions.
+    - Simulation-only statements must never be interpreted as production behavior.
+    - Historical vision remains retrievable even when later strategy changes.
+  temporal_knowledge:
+    valid_from: '2026-07-15'
+    valid_until: null
+    supersedes: []
+    superseded_by: []
+    historical_preservation: true
+    time_aware_answering:
+      enabled: true
+      requirements:
+      - State the relevant date or version when answering historical questions.
+      - Distinguish what was envisioned, approved and implemented.
+      - Retrieve earlier assets for questions about past intent.
+      - Prefer the latest approved asset for current-state questions.
+  nexvox_usage:
+    primary_consumer: nexvox_studio_l2
+    secondary_consumers:
+    - nexvox_observer_l1
+    - nexvox_simulation_agent_l3
+    - authorized_human_users
+    l1_observer:
+      permitted:
+      - Use terminology and architecture context to interpret operational data.
+      - Generate explanations, KPIs, alerts and recommendations.
+      prohibited:
+      - Approve or execute transactions.
+      - Modify inventory, prices, employee records or configuration.
+    l2_studio:
+      permitted:
+      - semantic_search
+      - grounded_question_answering
+      - knowledge_graph_generation
+      - concept_linking
+      - summarization
+      - curriculum_generation
+      - engineering_explanation
+      - document_drafting
+      - revision_note_generation
+      - knowledge_distillation
+      - historical_vision_retrieval
+      - cross_document_comparison
+      document_writing_controls:
+      - Cite source assets and versions used.
+      - Separate copied facts from model inference.
+      - Preserve current, planned, future, historical and simulation labels.
+      - Do not silently invent architecture, policy or CEO intent.
+      - Mark unresolved conflicts and request human review.
+      - Generate drafts only unless an authorized human approves publication.
+      prohibited:
+      - Operate NexaPOS.
+      - Approve workflows.
+      - Execute transactions.
+      - Grant itself operational authority.
+    l3_simulation_agent:
+      permitted:
+      - Use documented rules to generate synthetic scenarios.
+      - Test workflows, capacity, synchronization, failures and expansion plans.
+      required_runtime_mode: simulation
+      prohibited:
+      - Access production systems.
+      - Impersonate real employees.
+      - Send payments.
+      - Approve workflows.
+      - Alter production data.
+      - Convert synthetic events into live events.
+  ingestion:
+    pipeline: nexvox_studio_l2_rag
+    extractor:
+      preferred_method: native_pdf_text_extraction
+      fallback_method: layout_aware_pdf_parser
+      ocr:
+        enabled: false
+        use_only_when: a page or figure has no extractable text and contains essential information
+    structure_detection:
+      recognize:
+      - part
+      - chapter
+      - section
+      - subsection
+      - NT standard
+      - NEES specification
+      - business module
+      - appendix
+      - table
+      - callout
+      - workflow
+      - formula
+      - code block
+      - diagram caption
+      - glossary entry
+      - technology profile
+      heading_hierarchy_required: true
+      preserve_page_boundaries: true
+      preserve_table_headers: true
+      preserve_workflow_order: true
+    chunking:
+      strategy: heading_aware_semantic
+      default:
+        target_tokens: 900
+        minimum_tokens: 350
+        maximum_tokens: 1200
+        overlap_tokens: 125
+      boundary_rules:
+      - Never cross Part boundaries.
+      - Prefer not to cross Chapter boundaries.
+      - Do not combine unrelated business modules.
+      - Do not combine production and simulation content unless explicitly comparing them.
+      - Do not split normative rules from exceptions or prohibitions.
+      - Keep short definitions as independent precision chunks.
+      special_chunk_types:
+        definition:
+          target_tokens: 180
+          include:
+          - term
+          - definition
+          - scope
+          - aliases
+          - related_concepts
+        engineering_rule:
+          target_tokens: 300
+          authority_class: normative
+          require_exact_citation: true
+        workflow:
+          target_tokens: 600
+          preserve_step_order: true
+          include_roles_and_events: true
+        table:
+          keep_intact_when_tokens_below: 1400
+          split_by:
+          - row_group
+          - module
+          - lifecycle_phase
+          - status_category
+          repeat_headers_in_every_chunk: true
+        diagram:
+          create_textual_companion: true
+          include:
+          - caption
+          - page
+          - entities
+          - relationships
+          - flow_direction
+          - textual_interpretation
+    chunk_metadata_template:
+      document_id: NKA-NEL-VOL1-NEXAPOS-ALPHA-001
+      document_version: '1.0'
+      chunk_id: generated
+      page_start: generated
+      page_end: generated
+      part_id: detected
+      chapter_id: detected
+      section_id: detected
+      heading_path: detected
+      content_type: classified
+      authority_class: classified
+      implementation_status: classified
+      runtime_mode: classified
+      business_unit: classified
+      estate_scope: classified
+      technology: classified
+      nexa_module: classified
+      nees_layer: classified
+      ai_layer: classified
+      entities: extracted
+      concepts: extracted
+      keywords: extracted
+      relationships: extracted
+      source_text_hash: generated_sha256
+      citation_label: generated
+  implementation_status_vocabulary:
+    allowed_values:
+    - current_alpha
+    - approved_not_implemented
+    - planned_beta
+    - future_architecture
+    - simulation_only
+    - historical
+    - deprecated
+    - unknown
+    default: unknown
+    classification_examples:
+      Google Apps Script: current_alpha
+      Google Sheets: current_alpha
+      IndexedDB: current_alpha
+      Service Workers: current_alpha
+      Vercel: approved_not_implemented
+      Supabase: planned_beta
+      Google Cloud: future_architecture
+      NexaOS: future_architecture
+      NexVox Simulation Events: simulation_only
+  retrieval_profiles:
+    precise_engineering_lookup:
+      prioritize:
+      - normative
+      - implementation_current
+      - field_table
+      - NEES specification
+      require_section_id: true
+      citation_required: true
+    concept_explanation:
+      prioritize:
+      - definition
+      - architectural rationale
+      - workflow
+      - related diagram
+      include_why_and_how: true
+    workflow_reconstruction:
+      prioritize:
+      - ordered workflow
+      - responsible actor
+      - event types
+      - hardware
+      - statuses
+      - validation rules
+      preserve_sequence: true
+    estate_expansion:
+      prioritize:
+      - estate layout
+      - NexFarm operations
+      - infrastructure
+      - security
+      - utilities
+      - staffing
+      - storage
+      - rack capacity
+      - solar drying
+      - opening and closing SOPs
+      answer_mode: checklist_plus_rationale
+      include_historical_blueprint: true
+      flag_local_adaptation_required: true
+    vision_and_history:
+      prioritize:
+      - vision statements
+      - mission
+      - CEO or founder intent
+      - future roadmap
+      - strategic objectives
+      - historical decisions
+      - revision history
+      answer_mode: timeline_with_citations
+      preserve_original_date_context: true
+    document_generation:
+      prioritize:
+      - approved terminology
+      - current architecture
+      - normative rules
+      - style and numbering conventions
+      - related historical decisions
+      output_status: draft
+      human_review_required: true
+      cite_every_source_asset: true
+    comparison:
+      prioritize:
+      - comparison table
+      - responsibility boundary
+      - inputs
+      - outputs
+      - prohibitions
+    training_material_generation:
+      allowed_outputs:
+      - lesson
+      - study guide
+      - quiz
+      - flashcards
+      - concept map
+      - revision notes
+      - technical summary
+      grounding_required: true
+  taxonomy:
+    ecosystem:
+    - nexa_kenya_limited
+    - nextech_division
+    - nexa_estate
+    - business_unit
+    - nexa_engineering_library
+    platform:
+    - nexapos_alpha
+    - nexa_live
+    - nexa_id
+    - nees
+    - system_kernel
+    - event_queue
+    - read_model
+    architecture:
+    - offline_first
+    - event_sourcing
+    - immutable_events
+    - idempotency
+    - synchronization
+    - conflict_resolution
+    - runtime_modes
+    - auditability
+    - modularity
+    - interoperability
+    business_modules:
+    - unifry
+    - nexfarm
+    - nexasmart
+    - finance
+    - human_resources
+    - administration
+    nexfarm:
+    - grain_intake
+    - moisture_testing
+    - solar_drying
+    - packaging
+    - bag_stock
+    - rack_configuration
+    - rack_capacity
+    - e_zone
+    - storage
+    - dispatch
+    - estate_expansion
+    infrastructure:
+    - pwa
+    - html
+    - css
+    - javascript
+    - indexeddb
+    - service_worker
+    - google_apps_script
+    - google_sheets
+    - github
+    - vercel
+    - supabase
+    - google_cloud
+    - namecheap
+    - solar_power
+    - networking
+    - backup
+    - disaster_recovery
+    artificial_intelligence:
+    - nexvox_observer_l1
+    - nexvox_studio_l2
+    - nexvox_simulation_agent_l3
+    - knowledge_graph
+    - embeddings
+    - semantic_index
+    - knowledge_distillation
+    - rag
+    - synthetic_events
+    strategy_and_vision:
+    - founder_vision
+    - ceo_vision
+    - mission
+    - long_term_roadmap
+    - future_expansion
+    - historical_intent
+    - organizational_memory
+  entities:
+    organizations:
+    - Nexa Kenya Limited
+    - NexTech Division
+    platforms_and_systems:
+    - NexaPOS Alpha 1.0
+    - nexa.live
+    - Nexa ID
+    - NEES
+    - Nexa Engineering Library
+    - NexVox AI
+    - NexVox Observer L1
+    - NexVox Studio L2
+    - NexVox Simulation Agent L3
+    business_units:
+    - UniFry
+    - NexFarm
+    - NexaSmart
+    - Finance
+    - Human Resources
+    - Administration
+    technologies:
+    - Progressive Web App
+    - HTML5
+    - CSS3
+    - JavaScript
+    - IndexedDB
+    - Service Workers
+    - Google Apps Script
+    - Google Sheets
+    - GitHub
+    - Vercel
+    - Supabase
+    - Google Cloud
+    - Namecheap
+  knowledge_graph_seed:
+    relationships:
+    - subject: NexaPOS Alpha 1.0
+      predicate: belongs_to
+      object: Nexa Ecosystem
+    - subject: NexaPOS Alpha 1.0
+      predicate: uses_architecture
+      object: offline_first
+    - subject: NexaPOS Alpha 1.0
+      predicate: records
+      object: immutable_events
+    - subject: read_model
+      predicate: derived_from
+      object: immutable_events
+    - subject: NexVox Observer L1
+      predicate: consumes
+      object: read_model
+    - subject: NexVox Studio L2
+      predicate: learns_from
+      object: engineering_documentation
+    - subject: NexVox Simulation Agent L3
+      predicate: produces
+      object: synthetic_events
+    - subject: synthetic_events
+      predicate: restricted_to
+      object: simulation_runtime_mode
+    - subject: NexFarm
+      predicate: operates_within
+      object: Nexa Estate
+    - subject: Nexa Engineering Library
+      predicate: preserves
+      object: organizational_memory
+  citation_policy:
+    required: true
+    preferred_format: '{title}, v{document_version}, {part}, {section_id}, pp. {page_start}-{page_end}'
+    minimum_fields:
+    - document_id
+    - document_version
+    - page_start
+    - page_end
+    - heading_path
+    rules:
+    - Cite normative rules precisely.
+    - Distinguish source statements from inference.
+    - Say when the asset is silent or ambiguous.
+    - Do not infer deployment status from roadmap language.
+    - Preserve prohibitions and exceptions.
+    - Use historical citations for historical-vision questions.
+  security:
+    classification: internal_confidential
+    allowed_consumers:
+    - nexvox_studio_l2_private
+    - authorized_nexa_engineering_users
+    - authorized_nexa_management_users
+    public_release_allowed: false
+    external_model_training_allowed: false
+    production_action_authority: none
+    secret_handling:
+      exclude_from_index:
+      - passwords
+      - API keys
+      - service-role keys
+      - private encryption keys
+      - session tokens
+      - personal identity numbers
+      - unmasked phone numbers
+      - private employee records
+      redaction_required: true
+  quality_control:
+    pre_ingestion_checks:
+    - Verify SHA-256 checksum.
+    - Verify PDF page count.
+    - Confirm searchable text exists.
+    - Confirm headings and page numbers are extractable.
+    - Detect duplicate paragraphs.
+    - Detect malformed tables.
+    - Detect missing section identifiers.
+    - Detect unlabelled future or simulation claims.
+    post_chunking_checks:
+    - No empty chunks.
+    - No chunk spans unrelated chapters.
+    - Table headers preserved.
+    - Workflow order preserved.
+    - Page references attached.
+    - Duplicate chunks suppressed.
+    - Current, future, historical and simulation content separated.
+    - Every chunk has a source-text hash.
+    human_review_required_for:
+    - CEO or founder vision interpretation
+    - policy publication
+    - architecture changes
+    - legal or regulatory claims
+    - financial rules
+    - security rules
+    - live operational instructions
+  versioning:
+    manifest_version: 1.0.0
+    document_version: '1.0'
+    reindex_on:
+    - source_checksum_change
+    - document_version_change
+    - manifest_schema_change
+    - taxonomy_change
+    - authority_change
+    update_workflow:
+    - Calculate new PDF checksum.
+    - Compare with stored checksum.
+    - Identify changed sections.
+    - Invalidate affected chunks and embeddings.
+    - Preserve superseded chunks for audit.
+    - Reindex changed content.
+    - Run quality-control validation.
+    - Require human approval before activating the new index.
+  future_asset_package:
+    package_name: Nexa Knowledge Asset
+    recommended_components:
+    - document.pdf
+    - manifest.yaml
+    - taxonomy.yaml
+    - entities.yaml
+    - timeline.yaml
+    - citations.json
+    - checksum.sha256
+    - embeddings/
+    current_companion_scope: single rich YAML manifest containing all core metadata and policies

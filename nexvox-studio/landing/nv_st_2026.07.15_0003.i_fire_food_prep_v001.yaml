@@ -1,0 +1,231 @@
+nexvox_studio_training_asset:
+  schema:
+    name: nexvox_studio_training_manifest
+    schema_version: 1.0.0
+    profile: agriculture_history_chapter
+    serialization: YAML 1.2
+    language: en
+  identity:
+    asset_id: NV-ST-TR-AGRI-HIST-0003-I
+    family_id: NV-ST-TR-AGRI-HIST-0003
+    document_number: '0003'
+    chapter: i
+    series_code: agri_hist
+    title: Fire and Food Preparation
+    version_label: v001
+    semantic_version: 1.0.0
+    created_date: 2026.07.15
+    filename: nv_st_2026.07.15_0003.i_fire_food_prep_v001.md
+    companion_filename: nv_st_2026.07.15_0003.i_fire_food_prep_v001.yaml
+    status: active_training_asset
+    primary_layer: NexVox Studio L2
+    runtime_authority: knowledge_only
+  integrity:
+    algorithm: sha256
+    content_checksum: 85fbea2b06a0d7d5e111e654363326e471bfbc4c31da0fb894d9b39b873bcf6a
+    checksum_scope: entire_markdown_file
+    verify_before_ingestion: true
+  lineage:
+    previous_asset: NV-ST-TR-AGRI-HIST-0002-A
+    next_chapter: NV-ST-TR-AGRI-HIST-0003-II
+    next_title: Environmental Adaptation
+    family_relationship: chapter_1_of_2
+  scope:
+    included:
+    - natural fire
+    - fire control
+    - fire maintenance
+    - fire production
+    - fuel knowledge
+    - hearth engineering
+    - direct cooking
+    - indirect cooking
+    - cutting
+    - pounding
+    - grinding
+    - soaking
+    - leaching
+    - drying
+    - smoking
+    - fermentation
+    - protein denaturation
+    - starch gelatinization
+    - food safety
+    - detoxification
+    - food preservation
+    - fire ecology
+    - mobility
+    - settlement
+    - cooking hypothesis
+    - archaeological evidence
+    excluded:
+    - full environmental adaptation chapter
+    - agricultural domestication in detail
+    - modern industrial food processing
+    - modern wildfire suppression operations
+  training_design:
+    difficulty: foundational_to_intermediate
+    target_audiences:
+    - NexVox Studio L2
+    - agriculture-history learners
+    - future NexFarm trainees
+    learning_objectives:
+    - Distinguish fire use, fire control, maintenance, and ignition.
+    - Explain hearth and fuel systems.
+    - Describe major food-preparation techniques.
+    - Explain effects of heat on proteins, starches, microbes, and toxins.
+    - Evaluate archaeological evidence for ancient fire.
+    - Assess the cooking hypothesis critically.
+    - Connect fire and processing to storage, mobility, settlement, and agriculture.
+  epistemology:
+    evidence_classes:
+    - direct_archaeological_evidence
+    - strong_inference
+    - moderate_inference
+    - weak_inference
+    - hypothesis
+    - speculation
+    mandatory_rules:
+    - Do not equate burned material with intentional cooking.
+    - Do not equate fire use with fire production.
+    - Do not assign one global date to the beginning of cooking.
+    - Present the cooking hypothesis as debated.
+    - Do not claim cooking improves every nutrient.
+    - Do not claim heat removes every toxin.
+    - Verify precise dates against current peer-reviewed literature.
+  taxonomy:
+    domain: agriculture
+    subdomain: agriculture_history
+    primary_topic: fire_and_food_preparation
+    concepts:
+    - combustion
+    - hearth
+    - fuel
+    - tinder
+    - kindling
+    - embers
+    - roasting
+    - grilling
+    - earth_oven
+    - stone_boiling
+    - drying
+    - smoking
+    - fermentation
+    - leaching
+    - starch_gelatinization
+    - protein_denaturation
+    - food_safety
+    - storage
+    - mobility
+    - settlement
+    - landscape_burning
+    - cooking_hypothesis
+  knowledge_graph:
+    relationships:
+    - subject: natural_fire
+      predicate: creates
+      object: burned_landscape
+    - subject: fire_maintenance
+      predicate: enables
+      object: repeated_hearth_use
+    - subject: hearth
+      predicate: supports
+      object: cooking
+    - subject: hearth
+      predicate: supports
+      object: warmth
+    - subject: hearth
+      predicate: supports
+      object: craft
+    - subject: cooking
+      predicate: changes
+      object: digestibility
+    - subject: cooking
+      predicate: changes
+      object: food_safety
+    - subject: drying
+      predicate: supports
+      object: storage
+    - subject: smoking
+      predicate: supports
+      object: preservation
+    - subject: storage
+      predicate: reduces
+      object: seasonal_food_risk
+    - subject: food_preparation
+      predicate: precedes
+      object: agricultural_cuisine
+  retrieval:
+    strategy: heading_aware_semantic
+    chunking:
+      target_tokens: 750
+      minimum_tokens: 250
+      maximum_tokens: 1050
+      overlap_tokens: 90
+      preserve_tables: true
+      preserve_diagrams: true
+      preserve_question_groups: true
+    metadata_per_chunk:
+    - asset_id
+    - family_id
+    - chapter
+    - section_number
+    - section_title
+    - concepts
+    - evidence_class
+    - source_hash
+    profiles:
+      fire_history:
+      - Fire Before Human Control
+      - From Observation to Maintenance
+      - Producing Fire
+      cooking_science:
+      - Cooking Proteins
+      - Cooking Starches
+      - Cooking Plant Fibers and Cell Walls
+      preservation:
+      - Drying
+      - Smoking
+      - Roasting as Preservation
+      - Fermentation and Fire
+      archaeology:
+      - Archaeological Evidence for Ancient Fire
+      - Wonderwerk Cave
+      - Gesher Benot Ya'aqov and Early Cooking Evidence
+      agriculture_transition:
+      - From Wild Seeds to Grain Foods
+      - Fire, Food Storage, and Seasonality
+      - Chapter Summary
+  assessment:
+    question_types:
+    - recall
+    - understanding
+    - analysis
+    - application
+    - evidence_evaluation
+    success_conditions:
+    - Learner distinguishes fire use from ignition.
+    - Learner explains multiple cooking methods.
+    - Learner evaluates preservation benefits and risks.
+    - Learner identifies archaeological uncertainty.
+    - Learner links food preparation to later agriculture.
+  sources:
+    preferred:
+    - peer-reviewed archaeology
+    - primary excavation reports
+    - official research institutions
+    - food science reviews
+    - Indigenous and traditional fire scholarship
+    key_references:
+    - Berna et al. 2012, PNAS, Wonderwerk Cave
+    - Zohar et al. 2022, Nature Ecology & Evolution
+    - Wrangham 2009, Catching Fire
+    - Aiello and Wheeler 1995, Current Anthropology
+    - Roebroeks and Villa 2011, PNAS
+  versioning:
+    version: 1.0.0
+    status: initial_release
+    change_log:
+    - version: 1.0.0
+      date: 2026.07.15
+      change: Created real chapter on fire and food preparation; no placeholders or duplicated template sections.

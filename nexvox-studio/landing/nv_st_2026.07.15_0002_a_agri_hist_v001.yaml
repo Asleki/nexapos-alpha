@@ -1,0 +1,411 @@
+nexvox_studio_training_asset:
+  schema:
+    name: nexvox_studio_training_manifest
+    schema_version: 1.0.0
+    profile: agriculture_history_rich_training
+    serialization: YAML 1.2
+    language: en
+    status: active
+  identity:
+    asset_id: NV-ST-TR-AGRI-HIST-0002-A
+    document_number: '0002'
+    series_part: a
+    series_code: agri_hist
+    series_name: Agriculture History
+    title: Seasonal Migration and Primitive Tools
+    short_title: Migration and Early Tools
+    version_label: v001
+    semantic_version: 1.0.0
+    created_date: 2026.07.15
+    filename: nv_st_2026.07.15_0002_a_agri_hist_v001.md
+    companion_filename: nv_st_2026.07.15_0002_a_agri_hist_v001.yaml
+    content_path: /nexvox-studio/training/agriculture/docs/content/nv_st_2026.07.15_0002_a_agri_hist_v001.md
+    config_path: /nexvox-studio/training/agriculture/docs/config/nv_st_2026.07.15_0002_a_agri_hist_v001.yaml
+    primary_layer: NexVox Studio L2
+    runtime_authority: knowledge_only
+    publication_status: active_training_asset
+  integrity:
+    algorithm: sha256
+    content_checksum: ade963aafac63923ead64d1a42369abdeae309db35ff36a04050c8d88867681e
+    checksum_scope: entire_markdown_file
+    verify_before_ingestion: true
+  lineage:
+    previous_asset:
+      asset_id: NV-ST-TR-AGRI-HIST-0001-A
+      title: Early Plant Gathering and Early Animal Hunting
+      relationship: continues
+    future_assets:
+    - title: Early Plant Cultivation and Environmental Management
+      relationship: prepares_for
+    - title: Animal Management and Early Domestication
+      relationship: prepares_for
+    - title: Origins of Agriculture
+      relationship: prepares_for
+  scope:
+    included:
+    - seasonal migration
+    - residential mobility
+    - logistical mobility
+    - nomadism
+    - semi-sedentism
+    - rainfall cycles
+    - water access
+    - plant seasonality
+    - animal migration
+    - navigation
+    - memory landscapes
+    - temporary camps
+    - raw-material mobility
+    - stone tools
+    - Oldowan
+    - Acheulean
+    - prepared-core technologies
+    - wooden tools
+    - bone and antler tools
+    - plant-fiber tools
+    - fire technology
+    - hafting
+    - composite tools
+    - tool maintenance
+    - primitive engineering
+    - mobility-technology feedback
+    - transition toward agriculture
+    excluded:
+    - full domestication history
+    - regional agricultural origins in detail
+    - historical state agriculture
+    - modern industrial tool systems
+    - full metallurgy history
+    temporal_scope:
+      start: early hominin mobility and tool use
+      end: pre-agricultural and early cultivation transitions
+      precision: broad_non_linear
+  training_design:
+    difficulty: foundational_to_intermediate
+    estimated_reading_minutes: 90
+    estimated_study_minutes: 180
+    target_audiences:
+    - NexVox Studio L2
+    - agriculture-history students
+    - Nexa employees
+    - future NexFarm trainees
+    prerequisites:
+    - NV-ST-TR-AGRI-HIST-0001-A
+    - basic understanding of foraging
+    - basic understanding of ecology
+    learning_objectives:
+    - Define and compare major mobility types.
+    - Explain environmental and social drivers of seasonal movement.
+    - Describe navigation and memory landscapes.
+    - Identify archaeological evidence for mobility.
+    - Explain stone fracture and core-flake technologies.
+    - Distinguish major early tool traditions.
+    - Describe organic and composite technologies.
+    - Explain fire as technology.
+    - Connect mobility and tools to later agriculture.
+    - Recognize preservation bias and dating uncertainty.
+  authority_and_epistemology:
+    default_authority: educational_synthesis
+    evidence_classes:
+      direct_archaeological_evidence: Recovered tools, features, residues, and materials.
+      indirect_scientific_evidence: Isotopes, wear, distribution, and seasonality indicators.
+      ethnographic_analogy: Comparison with recent societies; useful but not proof.
+      experimental_archaeology: Reconstruction used to test feasibility.
+      inference: Reasoned interpretation.
+      speculation: Possibility requiring explicit labeling.
+    mandatory_reasoning_rules:
+    - Do not describe mobility as aimless wandering.
+    - Do not treat all hunter-gatherers as equally mobile.
+    - Do not assume one universal seasonal round.
+    - Do not treat stone tools as the whole toolkit.
+    - Do not infer function from shape alone.
+    - Do not present technological change as a single linear ladder.
+    - Verify precise dates against current scholarly sources.
+    - Identify preservation bias.
+  structure:
+    parts:
+    - id: part_i
+      title: Seasonal Migration
+      sections: 4-25
+    - id: part_ii
+      title: Primitive Tools
+      sections: 26-69
+    - id: part_iii
+      title: Integrated Analysis
+      sections: 70-83
+    content_types:
+    - definition
+    - explanation
+    - comparison
+    - timeline
+    - knowledge_graph
+    - review_question
+    - training_rule
+    - citation_guidance
+    - cross_asset_link
+  taxonomy:
+    domain: agriculture
+    subdomain: agriculture_history
+    primary_topics:
+    - seasonal_migration
+    - primitive_tools
+    mobility:
+    - seasonal_migration
+    - residential_mobility
+    - logistical_mobility
+    - nomadism
+    - semi_sedentism
+    - rainfall
+    - water
+    - plant_seasonality
+    - animal_migration
+    - navigation
+    - memory_landscape
+    - temporary_camp
+    - seasonal_base_camp
+    - aggregation
+    - dispersal
+    - raw_material_mobility
+    stone_technology:
+    - core
+    - flake
+    - knapping
+    - retouch
+    - Oldowan
+    - Acheulean
+    - prepared_core
+    - Levallois
+    - hand_axe
+    - cleaver
+    - scraper
+    - point
+    - burin
+    - grinding
+    - polishing
+    organic_technology:
+    - wooden_spear
+    - digging_stick
+    - club
+    - bone_tool
+    - antler_tool
+    - needle
+    - harpoon
+    - fish_hook
+    - cordage
+    - basket
+    - net
+    - hide
+    - shell_tool
+    engineering:
+    - hafting
+    - composite_tool
+    - adhesive
+    - leverage
+    - wedge
+    - percussion
+    - abrasion
+    - friction
+    - tension
+    - compression
+    - projectile_motion
+    - maintenance
+    - repair
+    - recycling
+    transition_concepts:
+    - storage
+    - settlement
+    - cultivation
+    - plant_management
+    - animal_management
+    - agriculture
+  knowledge_graph:
+    relationships:
+    - subject: seasonal_change
+      predicate: influences
+      object: resource_distribution
+    - subject: resource_distribution
+      predicate: influences
+      object: seasonal_migration
+    - subject: seasonal_migration
+      predicate: requires
+      object: navigation_knowledge
+    - subject: seasonal_migration
+      predicate: provides_access_to
+      object: raw_materials
+    - subject: raw_materials
+      predicate: support
+      object: tool_manufacture
+    - subject: tool_manufacture
+      predicate: improves
+      object: foraging
+    - subject: tool_manufacture
+      predicate: improves
+      object: shelter
+    - subject: tool_manufacture
+      predicate: improves
+      object: storage
+    - subject: storage
+      predicate: can_reduce
+      object: movement_frequency
+    - subject: digging_stick
+      predicate: precedes
+      object: cultivation_tool
+    - subject: grinding_stone
+      predicate: supports
+      object: plant_processing
+    - subject: plant_fiber
+      predicate: enables
+      object: basket
+    - subject: plant_fiber
+      predicate: enables
+      object: net
+    - subject: hafting
+      predicate: creates
+      object: composite_tool
+    - subject: primitive_tools
+      predicate: contribute_to
+      object: agricultural_tool_systems
+  retrieval:
+    strategy: heading_aware_semantic
+    chunking:
+      target_tokens: 800
+      minimum_tokens: 250
+      maximum_tokens: 1150
+      overlap_tokens: 100
+      never_cross_part_boundaries: true
+      preserve_tables: true
+      preserve_diagrams: true
+      preserve_knowledge_graph_blocks: true
+      preserve_question_groups: true
+    metadata_per_chunk:
+    - asset_id
+    - series_code
+    - document_number
+    - series_part
+    - semantic_version
+    - part_id
+    - section_number
+    - section_title
+    - content_type
+    - concepts
+    - evidence_class
+    - keywords
+    - relationships
+    - source_hash
+    profiles:
+      mobility_explanation:
+        prioritize:
+        - environmental drivers
+        - rainfall cycles
+        - water
+        - plant seasonality
+        - animal migration
+      navigation_explanation:
+        prioritize:
+        - navigation without maps
+        - memory landscapes
+        - social networks
+      tool_definition:
+        prioritize:
+        - key definitions
+        - tool-specific sections
+        - comparative table
+      technology_sequence:
+        prioritize:
+        - Oldowan
+        - Acheulean
+        - Middle Paleolithic
+        - Upper Paleolithic
+        - timeline framework
+      agriculture_transition:
+        prioritize:
+        - tools and the transition to agriculture
+        - mobility-technology feedback loop
+        - knowledge graph
+      assessment_generation:
+        prioritize:
+        - review questions
+        - common misconceptions
+        - summary
+  embedding:
+    enabled: true
+    priority: high
+    recommended_units:
+    - definition
+    - major section
+    - comparison table
+    - timeline
+    - knowledge graph edge
+    - review question
+    exclude:
+    - formatting separators
+    - duplicated front matter
+  question_generation:
+    enabled: true
+    types:
+    - definition
+    - comparison
+    - cause_and_effect
+    - evidence_evaluation
+    - timeline
+    - misconception_correction
+    - knowledge_graph_traversal
+    - applied_design
+    difficulty_levels:
+    - recall
+    - understanding
+    - application
+    - analysis
+    prohibited:
+    - unsupported exact-date questions
+    - questions that assume linear progress
+    - questions that treat all mobility as nomadism
+    - questions that treat organic tools as absent
+  assessment:
+    core_topics:
+    - seasonal migration
+    - residential versus logistical mobility
+    - navigation
+    - water and rainfall
+    - Oldowan
+    - Acheulean
+    - hafting
+    - organic tools
+    - fire technology
+    - preservation bias
+    - mobility-technology feedback
+    - transition to agriculture
+    success_conditions:
+    - Learner distinguishes mobility types.
+    - Learner explains planned seasonal movement.
+    - Learner identifies preservation bias.
+    - Learner distinguishes core, flake, retouch, and hafting.
+    - Learner explains why stone tools are only part of the toolkit.
+    - Learner links tools and mobility to later agriculture without oversimplification.
+  citations:
+    preferred_asset_citation: NV-ST-TR-AGRI-HIST-0002-A, version 1.0.0, section {section_number} — {section_title}.
+    external_source_policy:
+      required_for_factual_publication: true
+      prefer:
+      - peer-reviewed archaeology
+      - official museums
+      - official research institutes
+      - primary excavation reports
+      - scholarly reviews
+      avoid_as_primary_authority:
+      - unsourced blogs
+      - social media
+      - commercial pseudoarchaeology
+      - uncited popular summaries
+  versioning:
+    version: 1.0.0
+    status: initial_release
+    change_log:
+    - version: 1.0.0
+      date: 2026.07.15
+      change: Created second agriculture-history training asset covering seasonal migration and primitive tools.
+    reindex_on:
+    - content_checksum_change
+    - schema_change
+    - taxonomy_change
+    - version_change

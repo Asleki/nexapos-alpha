@@ -760,6 +760,36 @@ export async function suggestNexFarmPackaging({
   const packagingInput = {
     weightKg:
       intake.weightKg,
+
+    grainType:
+      intake.grainType,
+
+    sourceType:
+      intake.sourceType ??
+      "intake",
+
+    sourceReferences:
+      intake.sourceReferences ??
+      [],
+
+    bagSizes:
+      intake.bagSizes,
+
+    bagStockSnapshot:
+      intake.bagStockSnapshot,
+
+    rackCapacitySnapshot:
+      intake.rackCapacitySnapshot,
+
+    eZoneSectionAvailable:
+      intake.eZoneSectionAvailable ??
+      true,
+
+    rules:
+      intake.packagingRules,
+
+    createdAt:
+      intake.createdAt,
   };
 
   if (Array.isArray(intake.bagSizes)) {
