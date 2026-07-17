@@ -1,0 +1,2203 @@
+schema:
+  name: nexvox_studio_l2_agricultural_history_foundation
+  version: 1.0.0
+  format: yaml
+  encoding: utf-8
+
+document:
+  id: NVST-0006-F1
+  document_number: "0006"
+  identifier: f1
+  title: Foundations of Agricultural Civilization
+  domain: agriculture
+  discipline: agricultural_history
+  series: agricultural_history_deep_dive
+  version: v001
+  created: "2026-07-12"
+  status: active
+  language: en
+  companion_markdown: nv_st_2026.07.12_0006_f1_agri_hist_v001.md
+
+scope:
+  purpose: >
+    Introduce the historical transition from food gathering to agriculture
+    through environmental, biological, social, cultural, technological,
+    economic, archaeological, and systems perspectives.
+  included_topics:
+    - agricultural evolution overview
+    - reasons agriculture emerged
+    - human evolution and food
+    - climate transitions
+    - hunter-gatherer systems
+    - sedentism
+    - domestication concepts
+    - early villages
+    - early food systems
+    - knowledge transmission
+    - evolution frameworks
+  excluded_topics:
+    - detailed country histories
+    - named historical rulers
+    - deep commodity histories
+    - modern agricultural policy
+    - detailed modern farming systems
+    - industrial agriculture
+    - digital agriculture
+
+training_profile:
+  target_system: NexVox Studio L2
+  knowledge_role: foundational_training_asset
+  markdown_role: human_readable_explanation
+  yaml_role: machine_readable_semantic_companion
+  retrieval_enabled: true
+  embedding_enabled: true
+  knowledge_graph_enabled: true
+  fine_tuning_ready: false
+  section_level_chunking: true
+  subsection_level_chunking: true
+  stable_identifier_required: true
+  concept_duplication_forbidden: true
+  artificial_line_inflation_forbidden: true
+
+reasoning_rules:
+  - id: AHF-RULE-001
+    rule: >
+      Agriculture must be treated as a gradual and regionally variable
+      transition rather than one sudden invention.
+  - id: AHF-RULE-002
+    rule: >
+      Food gathering, environmental management, cultivation, domestication,
+      storage, and sedentism may overlap rather than occur in one fixed order.
+  - id: AHF-RULE-003
+    rule: >
+      Similar historical outcomes may emerge from different environmental,
+      demographic, social, and cultural conditions.
+  - id: AHF-RULE-004
+    rule: >
+      Increased food production must not automatically be interpreted as
+      improved health, equality, freedom, or ecological sustainability.
+  - id: AHF-RULE-005
+    rule: >
+      Archaeological absence must not automatically be interpreted as proof
+      that a practice, institution, or form of knowledge did not exist.
+  - id: AHF-RULE-006
+    rule: >
+      Hunter-gatherer societies must not be represented as ignorant,
+      disorganized, primitive, or environmentally passive.
+  - id: AHF-RULE-007
+    rule: >
+      Domestication must be distinguished from cultivation, management,
+      taming, protection, and harvesting.
+  - id: AHF-RULE-008
+    rule: >
+      Climate change may create pressures and opportunities, but it does not
+      independently explain the emergence of agriculture.
+  - id: AHF-RULE-009
+    rule: >
+      Population growth may be a cause, consequence, or feedback effect of
+      agricultural development depending on context.
+  - id: AHF-RULE-010
+    rule: >
+      Every explanation should consider environment, knowledge, labour,
+      social organization, risk, and long-term feedback.
+
+ontology:
+  root_concept:
+    id: AHF-ROOT-001
+    name: Foundations of Agricultural Civilization
+    type: knowledge_domain
+  parent_domain:
+    id: AGR-HIST
+    name: Agricultural History
+  child_sections:
+    - AHF-001
+    - AHF-002
+    - AHF-003
+    - AHF-004
+    - AHF-005
+    - AHF-006
+    - AHF-007
+    - AHF-008
+    - AHF-009
+    - AHF-010
+    - AHF-011
+
+knowledge_sections:
+
+  - section_id: AHF-001
+    title: Agricultural Evolution Overview
+    markdown_heading: "## AHF-001 Agricultural Evolution Overview"
+    purpose: >
+      Define agricultural evolution and establish the transition from food
+      gathering to increasingly deliberate food production.
+    concepts:
+
+      - concept_id: AHF-001.01
+        title: What agricultural evolution means
+        canonical_term: agricultural_evolution
+        definition: >
+          Agricultural evolution is the long-term transformation of human food
+          systems from predominant reliance on wild-resource acquisition toward
+          increasingly deliberate management, cultivation, domestication,
+          storage, settlement, and institutional coordination.
+        distinguishes_from:
+          - sudden invention
+          - one-time discovery
+          - purely technological change
+          - universal linear progression
+        core_components:
+          - environmental observation
+          - resource management
+          - cultivation
+          - domestication
+          - storage
+          - labour reorganization
+          - settlement change
+          - institutional development
+        relationships:
+          influenced_by:
+            - climate variation
+            - resource distribution
+            - population dynamics
+            - accumulated knowledge
+            - social cooperation
+          influences:
+            - settlement permanence
+            - labour calendars
+            - land claims
+            - food storage
+            - population growth
+        inference: >
+          If communities increasingly control the location, timing,
+          reproduction, protection, and storage of food resources, then their
+          food system is moving further along an agricultural transition.
+        evidence_types:
+          - archaeological
+          - ecological
+          - anthropological
+          - genetic
+          - palaeoclimatic
+        retrieval_tags:
+          - agricultural evolution
+          - origins of agriculture
+          - food gathering
+          - food production
+          - agrarian transition
+
+      - concept_id: AHF-001.02
+        title: Why agriculture is viewed as a gradual transition
+        canonical_term: gradual_agricultural_transition
+        definition: >
+          Agricultural development is viewed as gradual because communities
+          often managed landscapes, protected useful organisms, stored food,
+          returned seasonally to favored locations, and experimented with
+          cultivation before becoming dependent on farming.
+        transition_stages:
+          - observation of resource cycles
+          - selective gathering
+          - resource protection
+          - landscape modification
+          - experimental cultivation
+          - repeated seed or animal selection
+          - increased storage
+          - partial production dependence
+          - full agrarian dependence
+        misconceptions:
+          - agriculture began on one exact day
+          - cultivation immediately caused permanent settlement
+          - domestication happened before management
+          - all societies followed the same sequence
+        relationships:
+          precedes:
+            - full domestication
+            - permanent villages
+            - institutional land tenure
+          overlaps_with:
+            - hunting
+            - gathering
+            - fishing
+            - seasonal mobility
+        reasoning_note: >
+          A society can cultivate without being fully agricultural and can be
+          sedentary without depending primarily on cultivated food.
+        retrieval_tags:
+          - gradual transition
+          - mixed subsistence
+          - early cultivation
+          - management before domestication
+
+      - concept_id: AHF-001.03
+        title: Independent emergence in multiple regions
+        canonical_term: multiple_independent_origins
+        definition: >
+          Agriculture emerged independently in several world regions because
+          different communities developed local solutions to food security,
+          environmental variability, population needs, and resource management.
+        core_claims:
+          - there was no single universal inventor
+          - different biological resources were available in different regions
+          - local knowledge shaped regional pathways
+          - diffusion and independent innovation could occur together
+        causal_factors:
+          - environmental opportunity
+          - resource predictability
+          - local species suitability
+          - settlement patterns
+          - population pressure
+          - intergenerational learning
+        implications:
+          - agricultural history is polycentric
+          - regional timelines differ
+          - domestication traits differ
+          - institutions develop under local conditions
+        misconceptions:
+          - all agriculture spread from one origin
+          - similar practices always prove direct contact
+          - independent origins followed identical paths
+        evidence_types:
+          - archaeobotanical
+          - zooarchaeological
+          - genetic
+          - settlement archaeology
+          - comparative anthropology
+        retrieval_tags:
+          - independent origins
+          - polycentric agriculture
+          - multiple pathways
+          - regional development
+
+      - concept_id: AHF-001.04
+        title: Interaction between environment, knowledge, and human adaptation
+        canonical_term: human_environment_knowledge_feedback
+        definition: >
+          Agricultural evolution depended on feedback between environmental
+          conditions, human observation, learned practices, and repeated
+          adaptation.
+        feedback_chain:
+          - environmental condition changes
+          - humans observe resource response
+          - communities modify behaviour
+          - management alters the environment
+          - altered environment changes future opportunities
+          - knowledge is updated and transmitted
+        environmental_variables:
+          - rainfall
+          - temperature
+          - water availability
+          - soil properties
+          - vegetation
+          - animal movement
+          - disturbance regimes
+        knowledge_variables:
+          - seasonal memory
+          - species identification
+          - safe processing
+          - storage knowledge
+          - location memory
+          - timing knowledge
+        inference: >
+          Agricultural systems become more stable when knowledge can detect,
+          interpret, and respond to environmental change.
+        related_concepts:
+          - niche construction
+          - ecological feedback
+          - cultural adaptation
+          - resilience
+        retrieval_tags:
+          - adaptation
+          - environmental knowledge
+          - ecological feedback
+          - human-environment interaction
+
+      - concept_id: AHF-001.05
+        title: Universal characteristics of early agricultural change
+        canonical_term: recurring_early_agricultural_patterns
+        definition: >
+          Although agricultural transitions differed, many displayed recurring
+          features such as increased planning, delayed returns, food storage,
+          labour scheduling, selective management, and stronger attachment to
+          place.
+        recurring_patterns:
+          - greater future planning
+          - delayed return on labour
+          - storage investment
+          - seasonal labour peaks
+          - intensified landscape management
+          - selective reproduction
+          - increased territorial claims
+          - stronger food-distribution rules
+          - greater dependence on inherited knowledge
+        non_universal_elements:
+          - exact sequence
+          - speed of change
+          - level of sedentism
+          - scale of cultivation
+          - form of governance
+          - degree of inequality
+        evaluation_warning: >
+          Recurring patterns must not be mistaken for identical historical
+          experiences.
+        retrieval_tags:
+          - early agricultural characteristics
+          - recurring patterns
+          - agricultural transition
+          - delayed returns
+
+  - section_id: AHF-002
+    title: Why Agriculture Emerged
+    markdown_heading: "## AHF-002 Why Agriculture Emerged"
+    purpose: >
+      Organize the principal explanations used to understand why communities
+      increased their commitment to food production.
+    concepts:
+
+      - concept_id: AHF-002.01
+        title: Population dynamics
+        canonical_term: population_dynamics
+        definition: >
+          Population dynamics describes how changes in population size,
+          density, age structure, mobility, and distribution affected food
+          demand, labour supply, settlement, and resource pressure.
+        possible_roles:
+          cause:
+            - rising food demand
+            - declining per-person wild-resource access
+            - pressure to intensify land use
+          consequence:
+            - more predictable food supplies
+            - increased fertility under sedentary conditions
+            - larger permanent settlements
+          feedback:
+            - production supports growth
+            - growth creates demand for more production
+        limitations:
+          - population growth does not always cause farming
+          - low-density societies may also cultivate
+          - population estimates are often uncertain
+        related_concepts:
+          - carrying capacity
+          - labour availability
+          - settlement density
+          - food demand
+        retrieval_tags:
+          - population pressure
+          - demographic transition
+          - carrying capacity
+          - agricultural origins
+
+      - concept_id: AHF-002.02
+        title: Environmental opportunity
+        canonical_term: environmental_opportunity
+        definition: >
+          Environmental opportunity refers to conditions that make management,
+          cultivation, storage, or settlement comparatively practical.
+        enabling_conditions:
+          - predictable seasonal cycles
+          - workable soils
+          - accessible water
+          - concentrated useful species
+          - manageable disturbance
+          - favorable storage conditions
+          - landscape diversity
+        constraints:
+          - extreme climatic instability
+          - limited water
+          - poor storage conditions
+          - high transport cost
+          - unsuitable local species
+        inference: >
+          Favorable environments create opportunities, but knowledge, labour,
+          institutions, and social choice determine whether those opportunities
+          become agricultural systems.
+        retrieval_tags:
+          - environmental opportunity
+          - agricultural suitability
+          - ecological conditions
+          - production potential
+
+      - concept_id: AHF-002.03
+        title: Food security
+        canonical_term: early_food_security
+        definition: >
+          Food security in early societies meant maintaining sufficient,
+          accessible, safe, and socially distributable food across seasonal and
+          unexpected shortages.
+        dimensions:
+          availability:
+            - food exists
+          access:
+            - households can obtain it
+          stability:
+            - supply persists across time
+          utilization:
+            - food can be safely processed and consumed
+        agricultural_connections:
+          - cultivation may increase predictability
+          - storage may bridge seasonal gaps
+          - diversification may reduce failure risk
+          - exchange may buffer local scarcity
+        tradeoffs:
+          - increased dependence on fewer resources
+          - greater labour burden
+          - risk of storage failure
+          - stronger exposure to conflict over land
+        misconception: >
+          Farming did not automatically provide better food security than
+          hunting and gathering.
+        retrieval_tags:
+          - food security
+          - seasonal shortage
+          - storage
+          - resilience
+
+      - concept_id: AHF-002.04
+        title: Knowledge accumulation
+        canonical_term: cumulative_ecological_knowledge
+        definition: >
+          Knowledge accumulation is the multigenerational process through which
+          communities retained and refined information about seasons, species,
+          landscapes, processing, storage, and reproduction.
+        knowledge_sources:
+          - observation
+          - experimentation
+          - accident
+          - failure
+          - oral teaching
+          - imitation
+          - migration
+          - exchange
+        cumulative_effects:
+          - better timing
+          - improved selection
+          - safer processing
+          - stronger storage
+          - improved site choice
+          - greater prediction
+        dependency: >
+          Agricultural production requires more than biological resources; it
+          requires dependable knowledge about how to manage them.
+        retrieval_tags:
+          - accumulated knowledge
+          - ecological memory
+          - experimentation
+          - agricultural learning
+
+      - concept_id: AHF-002.05
+        title: Risk reduction
+        canonical_term: agricultural_risk_reduction
+        definition: >
+          Risk reduction refers to efforts to reduce the probability or impact
+          of hunger, resource failure, seasonal gaps, and unpredictable
+          environmental change.
+        risk_strategies:
+          - diversification
+          - storage
+          - mobility
+          - exchange
+          - cultivation
+          - staggered timing
+          - distributed settlement
+          - social sharing
+        agricultural_role: >
+          Early cultivation may have been adopted as one component of a broader
+          risk-management portfolio rather than as a complete replacement for
+          wild-resource acquisition.
+        failure_warning: >
+          Agriculture can reduce some risks while creating others, including
+          crop failure, labour concentration, storage loss, and conflict over
+          land.
+        retrieval_tags:
+          - risk management
+          - resilience
+          - food shortage
+          - diversification
+
+      - concept_id: AHF-002.06
+        title: Scientific theories
+        canonical_term: theories_of_agricultural_origins
+        definition: >
+          Scientific theories of agricultural origins propose different causal
+          combinations involving climate, population, social competition,
+          environmental management, risk, settlement, and knowledge.
+        theory_families:
+          - climate opportunity theory
+          - population pressure theory
+          - resource stress theory
+          - social competition theory
+          - feasting theory
+          - sedentism theory
+          - niche construction theory
+          - co-evolution theory
+          - multicausal systems theory
+        consensus_position: >
+          No single theory explains every agricultural transition. Current
+          interpretation generally favors multicausal and regionally specific
+          explanations.
+        evaluation_questions:
+          - what evidence supports the theory
+          - what evidence contradicts it
+          - which regions does it explain
+          - which variables are treated as causes
+          - which variables may instead be consequences
+        retrieval_tags:
+          - origin theories
+          - agricultural emergence
+          - multicausal explanation
+          - scientific debate
+
+  - section_id: AHF-003
+    title: Human Evolution and Food
+    markdown_heading: "## AHF-003 Human Evolution and Food"
+    purpose: >
+      Explain the biological, behavioural, social, and ecological foundations
+      of human food acquisition before agriculture.
+    concepts:
+
+      - concept_id: AHF-003.01
+        title: Early diets
+        canonical_term: early_human_diets
+        definition: >
+          Early human diets were diverse and changed according to habitat,
+          season, technology, social organization, and available plants and
+          animals.
+        diet_sources:
+          - gathered plant foods
+          - animal tissues
+          - fish and aquatic foods
+          - insects
+          - fungi
+          - roots and underground foods
+          - fruits
+          - seeds
+          - scavenged resources
+        key_characteristics:
+          - ecological variability
+          - seasonal variation
+          - opportunism
+          - processing knowledge
+          - sharing
+        agricultural_relevance: >
+          Experience identifying, processing, selecting, and revisiting useful
+          species created knowledge later used in management and cultivation.
+        retrieval_tags:
+          - early human diet
+          - food diversity
+          - foraging
+          - nutrition
+
+      - concept_id: AHF-003.02
+        title: Foraging strategies
+        canonical_term: foraging_strategy
+        definition: >
+          A foraging strategy is a planned or learned method for locating,
+          acquiring, processing, transporting, sharing, and storing wild foods.
+        strategy_types:
+          - opportunistic gathering
+          - seasonal scheduling
+          - targeted hunting
+          - fishing
+          - patch revisitation
+          - cooperative acquisition
+          - resource caching
+          - exchange
+        decision_variables:
+          - expected energy return
+          - travel distance
+          - danger
+          - season
+          - group size
+          - processing cost
+          - storage life
+        agricultural_connection: >
+          Repeated visitation and management of reliable resource patches could
+          gradually develop into cultivation or controlled production.
+        retrieval_tags:
+          - foraging strategy
+          - resource acquisition
+          - food scheduling
+          - patch use
+
+      - concept_id: AHF-003.03
+        title: Seasonality
+        canonical_term: food_seasonality
+        definition: >
+          Seasonality is the predictable variation of weather, food resources,
+          labour requirements, water, animal movement, and disease across the
+          annual cycle.
+        effects:
+          - creates periods of abundance
+          - creates food gaps
+          - influences mobility
+          - determines processing schedules
+          - affects storage requirements
+          - shapes social gatherings
+        knowledge_requirements:
+          - seasonal calendars
+          - weather observation
+          - plant-stage recognition
+          - animal-movement memory
+          - water-source knowledge
+        agricultural_relevance: >
+          Agriculture depends on anticipating seasonal windows for planting,
+          maintenance, harvest, storage, and movement.
+        retrieval_tags:
+          - seasonality
+          - annual cycle
+          - food gap
+          - seasonal calendar
+
+      - concept_id: AHF-003.04
+        title: Cooperation
+        canonical_term: subsistence_cooperation
+        definition: >
+          Cooperation includes coordinated hunting, gathering, childcare,
+          food sharing, defence, processing, teaching, and risk pooling.
+        cooperation_forms:
+          - household cooperation
+          - kin-based sharing
+          - reciprocal labour
+          - communal acquisition
+          - collective defence
+          - intergroup exchange
+        agricultural_relevance:
+          - supports labour-intensive tasks
+          - spreads failure risk
+          - enables shared storage
+          - preserves knowledge
+          - coordinates seasonal work
+        social_tradeoff: >
+          Cooperation can improve resilience while also creating obligations,
+          authority, exclusion, and unequal access.
+        retrieval_tags:
+          - cooperation
+          - food sharing
+          - reciprocal labour
+          - collective action
+
+      - concept_id: AHF-003.05
+        title: Energy requirements
+        canonical_term: human_energy_budget
+        definition: >
+          Human energy requirements include the biological energy needed for
+          survival, movement, growth, reproduction, temperature regulation,
+          work, and recovery.
+        energy_inputs:
+          - carbohydrates
+          - fats
+          - proteins
+          - micronutrient-supported metabolism
+        energy_costs:
+          - travel
+          - carrying
+          - digging
+          - hunting
+          - processing
+          - shelter construction
+          - childcare
+          - cultivation
+        agricultural_tradeoff: >
+          Agriculture may increase total food energy while increasing labour
+          intensity and reducing dietary diversity.
+        retrieval_tags:
+          - energy budget
+          - labour cost
+          - diet
+          - productivity
+
+  - section_id: AHF-004
+    title: Climate Transitions
+    markdown_heading: "## AHF-004 Climate Transitions"
+    purpose: >
+      Explain how post-glacial environmental change altered food resources,
+      mobility, settlement, and opportunities for management.
+    concepts:
+
+      - concept_id: AHF-004.01
+        title: End of glacial conditions
+        canonical_term: post_glacial_transition
+        definition: >
+          The end of major glacial conditions involved warming, ice retreat,
+          sea-level change, altered rainfall, and the redistribution of plants,
+          animals, rivers, and habitable landscapes.
+        consequences:
+          - new vegetation zones
+          - changing coastlines
+          - altered migration routes
+          - expanding or shrinking resource areas
+          - new water systems
+          - changing settlement opportunities
+        agricultural_relevance: >
+          Environmental transformation changed which resources were predictable
+          enough for repeated management and long-term settlement.
+        caution: >
+          Post-glacial warming did not automatically or uniformly produce
+          agriculture.
+        retrieval_tags:
+          - post-glacial transition
+          - climate warming
+          - environmental change
+          - agricultural origins
+
+      - concept_id: AHF-004.02
+        title: Rainfall variability
+        canonical_term: rainfall_variability
+        definition: >
+          Rainfall variability describes changes in timing, quantity,
+          distribution, duration, and reliability of precipitation.
+        effects:
+          - resource uncertainty
+          - water-source change
+          - vegetation change
+          - mobility pressure
+          - flood and drought risk
+          - storage demand
+        agricultural_implications:
+          - affects planting opportunity
+          - influences settlement location
+          - shapes crop and landscape choice
+          - increases value of water management
+        retrieval_tags:
+          - rainfall variability
+          - drought
+          - precipitation
+          - water risk
+
+      - concept_id: AHF-004.03
+        title: Vegetation shifts
+        canonical_term: post_glacial_vegetation_change
+        definition: >
+          Vegetation shifts occur when climate, fire, grazing, water, and human
+          disturbance change the distribution and density of plant communities.
+        consequences:
+          - changing edible-plant availability
+          - changing animal habitats
+          - new fuel and shelter materials
+          - altered fire behaviour
+          - new management opportunities
+        agricultural_connection: >
+          Communities may increase management when useful species become
+          concentrated, predictable, or responsive to human disturbance.
+        retrieval_tags:
+          - vegetation change
+          - plant distribution
+          - habitat shift
+          - landscape management
+
+      - concept_id: AHF-004.04
+        title: Water availability
+        canonical_term: early_water_availability
+        definition: >
+          Water availability includes the location, timing, reliability,
+          quality, and accessibility of rivers, lakes, wetlands, springs,
+          rainfall, and groundwater.
+        human_effects:
+          - determines settlement viability
+          - affects mobility
+          - influences health
+          - shapes resource concentration
+          - supports processing and storage
+        agricultural_effects:
+          - constrains cultivation
+          - influences soil moisture
+          - supports animals
+          - encourages water-control systems
+        retrieval_tags:
+          - water availability
+          - settlement
+          - rivers
+          - wetlands
+
+      - concept_id: AHF-004.05
+        title: Environmental stability
+        canonical_term: relative_environmental_stability
+        definition: >
+          Environmental stability is the relative predictability of seasonal,
+          climatic, hydrological, and ecological conditions over time.
+        potential_benefits:
+          - supports planning
+          - increases settlement confidence
+          - improves resource prediction
+          - supports repeated cultivation experiments
+        limitations:
+          - stable conditions may still be resource-poor
+          - local shocks can remain severe
+          - predictability differs by scale
+        agricultural_relevance: >
+          Relative predictability can support delayed-return activities because
+          communities can more confidently invest labour before receiving food.
+        retrieval_tags:
+          - environmental stability
+          - predictability
+          - delayed return
+          - planning
+
+  - section_id: AHF-005
+    title: Hunter-Gatherers
+    markdown_heading: "## AHF-005 Hunter-Gatherers"
+    purpose: >
+      Represent hunter-gatherer societies as knowledgeable, adaptive, socially
+      organized food-system managers rather than passive predecessors.
+    concepts:
+
+      - concept_id: AHF-005.01
+        title: Mobility
+        canonical_term: hunter_gatherer_mobility
+        definition: >
+          Mobility is the planned movement of individuals, households, or
+          communities between resource zones, camps, water sources, and social
+          partners.
+        forms:
+          - daily movement
+          - seasonal migration
+          - residential mobility
+          - logistical mobility
+          - emergency relocation
+        benefits:
+          - follows food availability
+          - reduces local depletion
+          - spreads risk
+          - maintains exchange networks
+        costs:
+          - limits heavy infrastructure
+          - increases transport demands
+          - complicates long-term storage
+        agricultural_connection: >
+          Reduced mobility may increase investment in storage, structures,
+          land modification, and cultivation.
+        retrieval_tags:
+          - mobility
+          - seasonal migration
+          - camps
+          - resource movement
+
+      - concept_id: AHF-005.02
+        title: Technology
+        canonical_term: hunter_gatherer_technology
+        definition: >
+          Hunter-gatherer technology includes tools, containers, fire use,
+          hunting systems, fishing equipment, shelters, clothing, processing
+          methods, and transport knowledge.
+        functions:
+          - acquire food
+          - process food
+          - preserve food
+          - carry food
+          - create shelter
+          - modify landscapes
+        agricultural_legacy:
+          - digging technologies
+          - cutting tools
+          - grinding tools
+          - containers
+          - fire management
+          - storage methods
+        misconception: >
+          Mobile societies did not lack technology; their technologies were
+          often optimized for portability, repairability, and local materials.
+        retrieval_tags:
+          - hunter-gatherer technology
+          - tools
+          - processing
+          - fire management
+
+      - concept_id: AHF-005.03
+        title: Knowledge
+        canonical_term: hunter_gatherer_ecological_knowledge
+        definition: >
+          Hunter-gatherer knowledge includes detailed understanding of species,
+          seasons, landscapes, weather, water, animal behaviour, processing,
+          toxicity, medicine, and social access rules.
+        knowledge_categories:
+          - species identification
+          - seasonal timing
+          - habitat knowledge
+          - tracking
+          - weather interpretation
+          - food processing
+          - medicinal knowledge
+          - navigation
+        agricultural_relevance: >
+          Agriculture developed from existing systems of ecological knowledge,
+          not from ignorance of biological processes.
+        retrieval_tags:
+          - ecological knowledge
+          - hunter-gatherer knowledge
+          - seasonal knowledge
+          - navigation
+
+      - concept_id: AHF-005.04
+        title: Social organization
+        canonical_term: hunter_gatherer_social_organization
+        definition: >
+          Hunter-gatherer social organization includes kinship, cooperation,
+          mobility groups, sharing rules, authority, marriage, conflict
+          resolution, and intergroup alliances.
+        characteristics:
+          - flexible group composition
+          - reciprocal sharing
+          - kinship networks
+          - distributed knowledge
+          - negotiated access
+        variation_warning: >
+          Hunter-gatherer societies differed greatly and should not be treated
+          as one uniform social type.
+        agricultural_connection: >
+          Existing cooperation, leadership, and sharing institutions could be
+          adapted to labour coordination, storage, and settlement governance.
+        retrieval_tags:
+          - social organization
+          - kinship
+          - food sharing
+          - cooperation
+
+      - concept_id: AHF-005.05
+        title: Resource management
+        canonical_term: pre_agricultural_resource_management
+        definition: >
+          Resource management includes deliberate actions intended to increase,
+          protect, renew, concentrate, or regulate useful wild resources.
+        practices:
+          - controlled burning
+          - selective harvesting
+          - protection of useful plants
+          - transplanting
+          - water modification
+          - seasonal access rules
+          - restraint during reproduction
+        importance: >
+          Resource management demonstrates that the boundary between foraging
+          and farming was often gradual and permeable.
+        retrieval_tags:
+          - resource management
+          - landscape management
+          - controlled burning
+          - selective harvesting
+
+  - section_id: AHF-006
+    title: Sedentism
+    markdown_heading: "## AHF-006 Sedentism"
+    purpose: >
+      Explain the causes and consequences of longer-term settlement before and
+      during agricultural transition.
+    concepts:
+
+      - concept_id: AHF-006.01
+        title: Semi-permanent camps
+        canonical_term: semi_permanent_settlement
+        definition: >
+          Semi-permanent camps are repeatedly or seasonally occupied locations
+          containing durable features, storage, shelters, processing areas, or
+          social significance.
+        enabling_conditions:
+          - predictable resources
+          - reliable water
+          - storage opportunities
+          - strategic location
+          - seasonal aggregation
+        significance: >
+          Semi-permanent occupation can increase knowledge of local ecosystems
+          and encourage repeated cultivation experiments.
+        retrieval_tags:
+          - semi-permanent camp
+          - seasonal settlement
+          - aggregation site
+          - sedentism
+
+      - concept_id: AHF-006.02
+        title: Storage
+        canonical_term: pre_agricultural_storage
+        definition: >
+          Storage is the preservation and protection of food, seed, tools, raw
+          materials, or other resources for future use.
+        functions:
+          - bridge seasonal gaps
+          - reduce immediate consumption pressure
+          - support larger groups
+          - protect planting material
+          - enable exchange
+        risks:
+          - spoilage
+          - pests
+          - theft
+          - fire
+          - unequal control
+        settlement_effect: >
+          Heavy stores and storage facilities increase attachment to place and
+          reduce the practicality of continuous movement.
+        retrieval_tags:
+          - storage
+          - food reserve
+          - sedentism
+          - seasonal gap
+
+      - concept_id: AHF-006.03
+        title: Settlement
+        canonical_term: permanent_settlement
+        definition: >
+          Settlement is the organized occupation of a place through shelters,
+          storage, activity areas, social institutions, and recognized access
+          rights.
+        components:
+          - dwellings
+          - storage
+          - waste areas
+          - water access
+          - pathways
+          - shared spaces
+          - boundaries
+        agricultural_feedback: >
+          Settlement can encourage cultivation, while cultivation can increase
+          settlement permanence.
+        retrieval_tags:
+          - settlement
+          - permanent village
+          - place attachment
+          - agricultural feedback
+
+      - concept_id: AHF-006.04
+        title: Ownership
+        canonical_term: emerging_property_claims
+        definition: >
+          Ownership in early settlements refers to socially recognized claims
+          over access, use, inheritance, transfer, control, or exclusion.
+        claim_objects:
+          - dwellings
+          - stores
+          - tools
+          - cultivated areas
+          - water access
+          - planting material
+        transition_effect: >
+          Delayed-return labour increases the importance of knowing who will
+          control future harvests and stored reserves.
+        caution: >
+          Ownership could be household, lineage, communal, ritual, or flexible;
+          it should not automatically be interpreted as modern private property.
+        retrieval_tags:
+          - ownership
+          - property
+          - land rights
+          - delayed return
+
+      - concept_id: AHF-006.05
+        title: Community formation
+        canonical_term: early_village_community
+        definition: >
+          Community formation is the development of durable social relationships,
+          shared institutions, responsibilities, identity, and governance among
+          people occupying or repeatedly using the same place.
+        community_functions:
+          - coordinate labour
+          - regulate access
+          - manage storage
+          - resolve disputes
+          - transmit knowledge
+          - organize defence
+        agricultural_effect: >
+          Stable communities can coordinate production tasks that exceed the
+          capacity of individual households.
+        retrieval_tags:
+          - community formation
+          - village
+          - collective labour
+          - governance
+
+  - section_id: AHF-007
+    title: Domestication Concepts
+    markdown_heading: "## AHF-007 Domestication Concepts"
+    purpose: >
+      Distinguish domestication from management, taming, cultivation, and
+      simple human use.
+    concepts:
+
+      - concept_id: AHF-007.01
+        title: Definition
+        canonical_term: domestication
+        definition: >
+          Domestication is a long-term evolutionary process in which sustained
+          human management and selection alter the biological traits,
+          reproduction, behaviour, distribution, or dependence of a population.
+        distinguishes_from:
+          cultivation: >
+            Cultivation assists growth but does not necessarily create inherited
+            biological change.
+          taming: >
+            Taming changes the behaviour of an individual but not necessarily
+            the genetics of a population.
+          management: >
+            Management may regulate access or abundance without creating
+            domesticated traits.
+        retrieval_tags:
+          - domestication
+          - cultivation
+          - taming
+          - biological change
+
+      - concept_id: AHF-007.02
+        title: Co-evolution
+        canonical_term: human_domesticate_coevolution
+        definition: >
+          Co-evolution describes reciprocal change in which humans alter managed
+          populations while those populations alter human diet, settlement,
+          labour, institutions, and behaviour.
+        human_effects_on_organisms:
+          - selection
+          - protection
+          - reproductive control
+          - relocation
+          - feeding
+        organism_effects_on_humans:
+          - increased settlement
+          - dietary dependence
+          - new labour duties
+          - new diseases
+          - new forms of wealth
+        retrieval_tags:
+          - co-evolution
+          - human-organism relationship
+          - domestication
+          - reciprocal change
+
+      - concept_id: AHF-007.03
+        title: Selection
+        canonical_term: human_selection
+        definition: >
+          Selection is the process through which some traits become more common
+          because humans preferentially preserve, reproduce, protect, harvest,
+          or tolerate particular organisms.
+        forms:
+          conscious:
+            - deliberate preference
+            - purposeful breeding
+            - seed choice
+          unconscious:
+            - harvest method
+            - storage survival
+            - proximity to settlement
+            - repeated replanting
+        selected_traits:
+          - size
+          - taste
+          - timing
+          - behaviour
+          - ease of harvest
+          - storage quality
+        retrieval_tags:
+          - selection
+          - artificial selection
+          - seed choice
+          - domestication traits
+
+      - concept_id: AHF-007.04
+        title: Behavioural change
+        canonical_term: domestication_behavioral_change
+        definition: >
+          Behavioural change refers to inherited or learned alterations in
+          fear, aggression, social tolerance, movement, feeding, reproduction,
+          or dependence associated with human management.
+        mechanisms:
+          - selective breeding
+          - habituation
+          - controlled movement
+          - feeding
+          - protection
+          - social isolation
+        distinction: >
+          Learned tameness in one animal is not the same as inherited
+          domestication across a population.
+        retrieval_tags:
+          - behavioural change
+          - taming
+          - domestication
+          - animal management
+
+      - concept_id: AHF-007.05
+        title: Landscape modification
+        canonical_term: domestication_landscape_modification
+        definition: >
+          Landscape modification is the deliberate or cumulative alteration of
+          vegetation, water, soils, fire, animal movement, and access in ways
+          that favor managed resources.
+        modification_types:
+          - clearing
+          - burning
+          - water diversion
+          - soil disturbance
+          - fencing
+          - transplanting
+          - grazing control
+        feedback: >
+          Modified landscapes make some resources more abundant and thereby
+          increase future human dependence on continued management.
+        retrieval_tags:
+          - landscape modification
+          - niche construction
+          - fire management
+          - environmental change
+
+  - section_id: AHF-008
+    title: Early Villages
+    markdown_heading: "## AHF-008 Early Villages"
+    purpose: >
+      Define the material, demographic, labour, political, and economic
+      features of early village life.
+    concepts:
+
+      - concept_id: AHF-008.01
+        title: Housing
+        canonical_term: early_village_housing
+        definition: >
+          Early village housing consisted of built spaces used for shelter,
+          storage, food preparation, sleeping, social activity, protection,
+          and identity.
+        influences:
+          - local building materials
+          - climate
+          - household structure
+          - mobility
+          - security
+          - available labour
+        agricultural_relevance: >
+          Durable housing indicates increased investment in place and can
+          support storage, processing, and household production.
+        retrieval_tags:
+          - early housing
+          - village settlement
+          - dwellings
+          - place investment
+
+      - concept_id: AHF-008.02
+        title: Population
+        canonical_term: early_village_population
+        definition: >
+          Early village population includes the number, density, age structure,
+          household composition, health, and movement of people living in a
+          settlement.
+        effects_of_growth:
+          - greater labour supply
+          - increased food demand
+          - greater disease transmission
+          - higher waste concentration
+          - stronger governance needs
+        agricultural_feedback: >
+          More production can support population growth, while population growth
+          can increase pressure for intensified production.
+        retrieval_tags:
+          - village population
+          - demographic growth
+          - settlement density
+          - food demand
+
+      - concept_id: AHF-008.03
+        title: Labour
+        canonical_term: early_village_labour
+        definition: >
+          Early village labour includes household, reciprocal, communal,
+          specialized, dependent, and seasonal work used to maintain settlement
+          and food systems.
+        labour_categories:
+          - land preparation
+          - resource acquisition
+          - construction
+          - storage
+          - processing
+          - water collection
+          - childcare
+          - defence
+        key_constraint: >
+          Agricultural labour often produces seasonal peaks that require
+          coordination beyond one individual.
+        retrieval_tags:
+          - labour
+          - village work
+          - seasonal labour
+          - communal labour
+
+      - concept_id: AHF-008.04
+        title: Governance
+        canonical_term: early_village_governance
+        definition: >
+          Early village governance includes the rules, roles, authorities, and
+          decision processes used to manage shared resources, disputes, labour,
+          storage, access, and security.
+        governance_forms:
+          - household authority
+          - elder councils
+          - lineage leadership
+          - ritual authority
+          - communal assembly
+        responsibilities:
+          - settle disputes
+          - coordinate labour
+          - regulate access
+          - protect stores
+          - organize defence
+        retrieval_tags:
+          - village governance
+          - leadership
+          - communal rules
+          - dispute resolution
+
+      - concept_id: AHF-008.05
+        title: Exchange
+        canonical_term: early_village_exchange
+        definition: >
+          Early village exchange is the transfer of food, materials, labour,
+          tools, information, obligations, or social value within and between
+          communities.
+        forms:
+          - reciprocal sharing
+          - barter
+          - gift exchange
+          - marriage exchange
+          - labour exchange
+          - regional trade
+        functions:
+          - acquire unavailable resources
+          - reduce local risk
+          - create alliances
+          - transmit knowledge
+          - support specialization
+        retrieval_tags:
+          - exchange
+          - barter
+          - reciprocity
+          - village trade
+
+  - section_id: AHF-009
+    title: Early Food Systems
+    markdown_heading: "## AHF-009 Early Food Systems"
+    purpose: >
+      Model food as a connected system involving acquisition, production,
+      preservation, distribution, consumption, and recovery from shocks.
+    concepts:
+
+      - concept_id: AHF-009.01
+        title: Production
+        canonical_term: early_food_production
+        definition: >
+          Early food production includes cultivation, animal management,
+          landscape management, gathering, fishing, hunting, and mixed
+          strategies used to obtain food.
+        key_features:
+          - mixed subsistence
+          - delayed returns
+          - seasonal scheduling
+          - labour coordination
+          - resource management
+        retrieval_tags:
+          - food production
+          - mixed subsistence
+          - cultivation
+          - resource acquisition
+
+      - concept_id: AHF-009.02
+        title: Storage
+        canonical_term: early_food_storage
+        definition: >
+          Early food storage is the controlled preservation and protection of
+          food for later consumption, exchange, planting, feeding, ritual, or
+          emergency use.
+        storage_requirements:
+          - preservation
+          - suitable container or structure
+          - pest control
+          - ownership rules
+          - withdrawal rules
+          - quality monitoring
+        system_effects:
+          - increases resilience
+          - supports sedentism
+          - enables surplus
+          - creates theft risk
+          - may support inequality
+        retrieval_tags:
+          - food storage
+          - reserves
+          - seed storage
+          - surplus
+
+      - concept_id: AHF-009.03
+        title: Distribution
+        canonical_term: early_food_distribution
+        definition: >
+          Food distribution is the process through which food moves between
+          producers, households, dependants, leaders, workers, visitors,
+          exchange partners, and storage institutions.
+        distribution_rules:
+          - kinship obligation
+          - household allocation
+          - reciprocal sharing
+          - communal redistribution
+          - tribute
+          - exchange
+        political_effect: >
+          Control over distribution can create authority, dependency, status,
+          and inequality.
+        retrieval_tags:
+          - food distribution
+          - redistribution
+          - sharing
+          - authority
+
+      - concept_id: AHF-009.04
+        title: Consumption
+        canonical_term: early_food_consumption
+        definition: >
+          Consumption includes the preparation, allocation, eating, cultural
+          interpretation, and nutritional use of food.
+        influences:
+          - availability
+          - social status
+          - age
+          - gender
+          - ritual
+          - season
+          - processing technology
+        agricultural_effect: >
+          Dependence on cultivated staples may increase food energy while
+          narrowing diet diversity.
+        retrieval_tags:
+          - food consumption
+          - diet
+          - nutrition
+          - food culture
+
+      - concept_id: AHF-009.05
+        title: Resilience
+        canonical_term: early_food_system_resilience
+        definition: >
+          Food-system resilience is the ability to withstand, adapt to, and
+          recover from climatic, ecological, social, political, or storage
+          shocks.
+        resilience_mechanisms:
+          - diversification
+          - mobility
+          - storage
+          - exchange
+          - social sharing
+          - staggered timing
+          - distributed settlement
+        failure_signals:
+          - reserve depletion
+          - dietary narrowing
+          - forced migration
+          - conflict
+          - seed consumption
+          - population decline
+        retrieval_tags:
+          - resilience
+          - food-system shock
+          - recovery
+          - diversification
+
+  - section_id: AHF-010
+    title: Knowledge Transmission
+    markdown_heading: "## AHF-010 Knowledge Transmission"
+    purpose: >
+      Explain how agricultural knowledge was observed, tested, preserved,
+      taught, adapted, and transferred between generations and communities.
+    concepts:
+
+      - concept_id: AHF-010.01
+        title: Observation
+        canonical_term: agricultural_observation
+        definition: >
+          Observation is the systematic or repeated noticing of environmental,
+          biological, seasonal, and social patterns relevant to food systems.
+        observed_patterns:
+          - germination
+          - rainfall
+          - flowering
+          - animal migration
+          - soil moisture
+          - storage survival
+          - food toxicity
+        importance: >
+          Observation converts environmental experience into knowledge that can
+          guide future decisions.
+        retrieval_tags:
+          - observation
+          - ecological knowledge
+          - seasonal pattern
+          - learning
+
+      - concept_id: AHF-010.02
+        title: Oral tradition
+        canonical_term: oral_knowledge_transmission
+        definition: >
+          Oral tradition transmits knowledge through stories, songs, proverbs,
+          ritual, naming systems, instruction, warning, and collective memory.
+        transmitted_content:
+          - seasonal calendars
+          - land memory
+          - processing rules
+          - danger warnings
+          - water locations
+          - social obligations
+        strengths:
+          - adaptable
+          - community-based
+          - integrated with culture
+        vulnerabilities:
+          - language loss
+          - displacement
+          - death of custodians
+          - suppression
+        retrieval_tags:
+          - oral tradition
+          - collective memory
+          - cultural transmission
+          - agricultural knowledge
+
+      - concept_id: AHF-010.03
+        title: Experimentation
+        canonical_term: early_agricultural_experimentation
+        definition: >
+          Experimentation is the intentional or informal testing of different
+          locations, timings, selections, processing methods, storage
+          conditions, and management practices.
+        experiment_types:
+          - trial planting
+          - altered harvest timing
+          - selective seed retention
+          - changed storage method
+          - landscape burning
+          - transplanting
+        learning_cycle:
+          - attempt
+          - observe result
+          - compare
+          - remember
+          - repeat or reject
+        retrieval_tags:
+          - experimentation
+          - trial and error
+          - innovation
+          - cultivation learning
+
+      - concept_id: AHF-010.04
+        title: Teaching
+        canonical_term: agricultural_teaching
+        definition: >
+          Teaching is the deliberate transfer of knowledge, skill, judgment,
+          and cultural meaning through demonstration, correction, participation,
+          explanation, and supervised practice.
+        teaching_contexts:
+          - household work
+          - communal activity
+          - apprenticeship
+          - ritual
+          - seasonal movement
+          - specialist instruction
+        importance: >
+          Teaching increases the reliability of complex practices that cannot
+          be learned through observation alone.
+        retrieval_tags:
+          - teaching
+          - apprenticeship
+          - skill transfer
+          - intergenerational learning
+
+      - concept_id: AHF-010.05
+        title: Innovation
+        canonical_term: early_agricultural_innovation
+        definition: >
+          Innovation is the creation, adaptation, recombination, or adoption of
+          a practice, tool, institution, classification, or management strategy
+          that changes a food system.
+        innovation_sources:
+          - local experimentation
+          - environmental pressure
+          - migration
+          - trade
+          - imitation
+          - accident
+          - specialist knowledge
+        adoption_conditions:
+          - perceived benefit
+          - local compatibility
+          - available labour
+          - material access
+          - social acceptance
+          - manageable risk
+        retrieval_tags:
+          - innovation
+          - adaptation
+          - knowledge exchange
+          - agricultural change
+
+  - section_id: AHF-011
+    title: Evolution Frameworks
+    markdown_heading: "## AHF-011 Evolution Frameworks"
+    purpose: >
+      Provide complementary analytical frameworks for interpreting the origins
+      and development of agriculture.
+    concepts:
+
+      - concept_id: AHF-011.01
+        title: Ecological framework
+        canonical_term: ecological_framework
+        definition: >
+          The ecological framework examines relationships among climate, water,
+          soils, species, disturbance, biodiversity, resource distribution, and
+          human management.
+        key_questions:
+          - what resources were available
+          - how predictable were they
+          - how did human action alter ecosystems
+          - what ecological limits existed
+        strengths:
+          - explains local variation
+          - highlights feedback
+          - reveals environmental constraints
+        limitation: >
+          Ecology alone cannot explain social choice, power, culture, or
+          institutional organization.
+        retrieval_tags:
+          - ecological framework
+          - environment
+          - resource distribution
+          - niche construction
+
+      - concept_id: AHF-011.02
+        title: Anthropological framework
+        canonical_term: anthropological_framework
+        definition: >
+          The anthropological framework examines culture, kinship, identity,
+          labour, belief, exchange, gender, authority, mobility, and social
+          learning.
+        key_questions:
+          - how were decisions organized
+          - how was knowledge transmitted
+          - how were resources shared
+          - how did belief influence food systems
+        strengths:
+          - centers human meaning
+          - explains social variation
+          - examines household organization
+        limitation: >
+          Analogies with recent societies must not be treated as direct proof of
+          ancient behaviour.
+        retrieval_tags:
+          - anthropology
+          - culture
+          - kinship
+          - social organization
+
+      - concept_id: AHF-011.03
+        title: Archaeological framework
+        canonical_term: archaeological_framework
+        definition: >
+          The archaeological framework reconstructs past food systems from
+          material remains, landscapes, structures, biological evidence, and
+          spatial patterns.
+        evidence_sources:
+          - plant remains
+          - animal remains
+          - tools
+          - storage structures
+          - settlement patterns
+          - soils
+          - residues
+          - human remains
+        strengths:
+          - provides physical evidence
+          - supports chronology
+          - reveals long-term patterns
+        limitations:
+          - preservation bias
+          - incomplete excavation
+          - dating uncertainty
+          - interpretive ambiguity
+        retrieval_tags:
+          - archaeology
+          - material evidence
+          - archaeobotany
+          - settlement evidence
+
+      - concept_id: AHF-011.04
+        title: Systems framework
+        canonical_term: agricultural_systems_framework
+        definition: >
+          The systems framework treats agriculture as an interacting network of
+          people, resources, knowledge, labour, institutions, technology,
+          storage, exchange, and environmental feedback.
+        system_elements:
+          - inputs
+          - processes
+          - outputs
+          - feedback
+          - constraints
+          - actors
+          - risks
+          - adaptation
+        strengths:
+          - connects multiple causes
+          - models feedback
+          - exposes interdependencies
+          - supports comparison
+        retrieval_tags:
+          - systems thinking
+          - feedback
+          - interdependency
+          - agricultural system
+
+      - concept_id: AHF-011.05
+        title: Economic framework
+        canonical_term: early_agricultural_economic_framework
+        definition: >
+          The economic framework examines scarcity, labour allocation,
+          opportunity cost, exchange, storage, risk, surplus, ownership, and
+          incentives.
+        key_questions:
+          - why allocate labour to delayed returns
+          - what alternatives were forgone
+          - who controlled surplus
+          - how was risk distributed
+        strengths:
+          - explains choice and tradeoffs
+          - evaluates labour cost
+          - analyzes exchange and surplus
+        limitations:
+          - historical actors may not optimize only material gain
+          - cultural and political values alter economic decisions
+        retrieval_tags:
+          - agricultural economics
+          - opportunity cost
+          - surplus
+          - labour allocation
+
+global_entities:
+
+  - entity_id: AHF-ENT-001
+    name: Human Community
+    entity_type: social_group
+    attributes:
+      - population
+      - mobility
+      - knowledge
+      - labour
+      - food requirements
+      - social organization
+    relationships:
+      - relation: depends_on
+        target: Food System
+      - relation: modifies
+        target: Environment
+      - relation: transmits
+        target: Knowledge
+
+  - entity_id: AHF-ENT-002
+    name: Environment
+    entity_type: ecological_system
+    attributes:
+      - climate
+      - water
+      - soil
+      - vegetation
+      - animals
+      - disturbance
+    relationships:
+      - relation: shapes
+        target: Resource Availability
+      - relation: influences
+        target: Human Mobility
+      - relation: is_modified_by
+        target: Human Community
+
+  - entity_id: AHF-ENT-003
+    name: Food System
+    entity_type: socio_ecological_system
+    attributes:
+      - acquisition
+      - production
+      - storage
+      - distribution
+      - consumption
+      - waste
+      - resilience
+    relationships:
+      - relation: supports
+        target: Human Community
+      - relation: depends_on
+        target: Environment
+      - relation: is_guided_by
+        target: Knowledge
+
+  - entity_id: AHF-ENT-004
+    name: Knowledge
+    entity_type: information_system
+    attributes:
+      - observation
+      - memory
+      - experimentation
+      - teaching
+      - innovation
+    relationships:
+      - relation: guides
+        target: Decision Making
+      - relation: improves
+        target: Resource Management
+      - relation: is_transmitted_by
+        target: Human Community
+
+  - entity_id: AHF-ENT-005
+    name: Settlement
+    entity_type: spatial_social_system
+    attributes:
+      - permanence
+      - population
+      - housing
+      - storage
+      - governance
+      - access rules
+    relationships:
+      - relation: supports
+        target: Storage
+      - relation: encourages
+        target: Cultivation
+      - relation: is_strengthened_by
+        target: Food Production
+
+global_relationships:
+
+  - relationship_id: AHF-EDGE-001
+    source: Climate Transition
+    relation: changes
+    target: Resource Distribution
+
+  - relationship_id: AHF-EDGE-002
+    source: Resource Distribution
+    relation: influences
+    target: Human Mobility
+
+  - relationship_id: AHF-EDGE-003
+    source: Human Mobility
+    relation: influences
+    target: Settlement Permanence
+
+  - relationship_id: AHF-EDGE-004
+    source: Settlement Permanence
+    relation: supports
+    target: Storage Investment
+
+  - relationship_id: AHF-EDGE-005
+    source: Storage Investment
+    relation: encourages
+    target: Delayed Return Activities
+
+  - relationship_id: AHF-EDGE-006
+    source: Delayed Return Activities
+    relation: strengthens
+    target: Property Claims
+
+  - relationship_id: AHF-EDGE-007
+    source: Environmental Observation
+    relation: produces
+    target: Ecological Knowledge
+
+  - relationship_id: AHF-EDGE-008
+    source: Ecological Knowledge
+    relation: supports
+    target: Resource Management
+
+  - relationship_id: AHF-EDGE-009
+    source: Resource Management
+    relation: may_develop_into
+    target: Cultivation
+
+  - relationship_id: AHF-EDGE-010
+    source: Cultivation
+    relation: may_create
+    target: Selection Pressure
+
+  - relationship_id: AHF-EDGE-011
+    source: Selection Pressure
+    relation: contributes_to
+    target: Domestication
+
+  - relationship_id: AHF-EDGE-012
+    source: Food Production
+    relation: can_support
+    target: Population Growth
+
+  - relationship_id: AHF-EDGE-013
+    source: Population Growth
+    relation: can_increase
+    target: Production Pressure
+
+  - relationship_id: AHF-EDGE-014
+    source: Production Pressure
+    relation: may_encourage
+    target: Intensification
+
+  - relationship_id: AHF-EDGE-015
+    source: Knowledge Transmission
+    relation: preserves
+    target: Agricultural Practice
+
+  - relationship_id: AHF-EDGE-016
+    source: Exchange
+    relation: spreads
+    target: Agricultural Knowledge
+
+  - relationship_id: AHF-EDGE-017
+    source: Cooperation
+    relation: enables
+    target: Collective Labour
+
+  - relationship_id: AHF-EDGE-018
+    source: Collective Labour
+    relation: supports
+    target: Village Infrastructure
+
+  - relationship_id: AHF-EDGE-019
+    source: Surplus
+    relation: can_create
+    target: Social Authority
+
+  - relationship_id: AHF-EDGE-020
+    source: Storage Control
+    relation: can_increase
+    target: Social Inequality
+
+evidence_taxonomy:
+
+  - evidence_id: AHF-EVD-001
+    name: Archaeobotanical Evidence
+    description: >
+      Preserved seeds, fruits, wood, fibres, phytoliths, pollen, starch, and
+      other plant traces used to reconstruct plant use and cultivation.
+
+  - evidence_id: AHF-EVD-002
+    name: Zooarchaeological Evidence
+    description: >
+      Animal bones, teeth, shells, age profiles, injury patterns, and other
+      remains used to reconstruct hunting, management, and domestication.
+
+  - evidence_id: AHF-EVD-003
+    name: Settlement Evidence
+    description: >
+      Housing, activity areas, storage, pathways, boundaries, waste, and spatial
+      organization used to study sedentism and village development.
+
+  - evidence_id: AHF-EVD-004
+    name: Tool Evidence
+    description: >
+      Tools, wear patterns, residues, breakage, and manufacturing evidence used
+      to infer acquisition, cultivation, processing, and storage.
+
+  - evidence_id: AHF-EVD-005
+    name: Palaeoclimatic Evidence
+    description: >
+      Sediments, ice, pollen, charcoal, water records, and other indicators used
+      to reconstruct past climatic and ecological conditions.
+
+  - evidence_id: AHF-EVD-006
+    name: Genetic Evidence
+    description: >
+      Genetic variation used to study domestication, population movement,
+      selection, and relationships among managed and wild populations.
+
+  - evidence_id: AHF-EVD-007
+    name: Bioarchaeological Evidence
+    description: >
+      Human remains used to examine diet, disease, labour stress, mobility,
+      mortality, and demographic change.
+
+misconceptions:
+
+  - misconception_id: AHF-MIS-001
+    claim: Agriculture was invented once.
+    correction: >
+      Agriculture emerged through multiple independent and interacting pathways.
+
+  - misconception_id: AHF-MIS-002
+    claim: Hunter-gatherers had little environmental knowledge.
+    correction: >
+      Hunter-gatherer societies often possessed highly detailed ecological,
+      seasonal, technological, and social knowledge.
+
+  - misconception_id: AHF-MIS-003
+    claim: Permanent settlement began only after farming.
+    correction: >
+      Some communities became semi-sedentary or sedentary before depending
+      heavily on cultivated food.
+
+  - misconception_id: AHF-MIS-004
+    claim: Domestication and cultivation mean the same thing.
+    correction: >
+      Cultivation is management of growth, while domestication involves
+      inherited biological or behavioural change over generations.
+
+  - misconception_id: AHF-MIS-005
+    claim: Agriculture immediately improved human health.
+    correction: >
+      Early agricultural dependence could increase calories while reducing
+      dietary diversity and increasing disease exposure.
+
+  - misconception_id: AHF-MIS-006
+    claim: Agricultural development was an irreversible progression.
+    correction: >
+      Communities could adopt, reduce, combine, or abandon cultivation depending
+      on environment, risk, labour, and social conditions.
+
+cross_references:
+
+  internal_sections:
+    AHF-001:
+      related:
+        - AHF-002
+        - AHF-004
+        - AHF-011
+
+    AHF-002:
+      related:
+        - AHF-001
+        - AHF-003
+        - AHF-004
+        - AHF-009
+
+    AHF-003:
+      related:
+        - AHF-002
+        - AHF-005
+        - AHF-009
+
+    AHF-004:
+      related:
+        - AHF-001
+        - AHF-002
+        - AHF-003
+        - AHF-005
+
+    AHF-005:
+      related:
+        - AHF-003
+        - AHF-006
+        - AHF-007
+        - AHF-010
+
+    AHF-006:
+      related:
+        - AHF-005
+        - AHF-008
+        - AHF-009
+
+    AHF-007:
+      related:
+        - AHF-001
+        - AHF-005
+        - AHF-009
+
+    AHF-008:
+      related:
+        - AHF-006
+        - AHF-009
+        - AHF-010
+
+    AHF-009:
+      related:
+        - AHF-002
+        - AHF-006
+        - AHF-008
+        - AHF-010
+
+    AHF-010:
+      related:
+        - AHF-001
+        - AHF-005
+        - AHF-007
+        - AHF-011
+
+    AHF-011:
+      related:
+        - AHF-001
+        - AHF-002
+        - AHF-004
+        - AHF-010
+
+retrieval_configuration:
+
+  high_priority_queries:
+    - why did agriculture emerge
+    - transition from food gathering to farming
+    - hunter-gatherer knowledge
+    - causes of sedentism
+    - difference between cultivation and domestication
+    - early food storage
+    - climate and agricultural origins
+    - knowledge transmission before writing
+    - early village organization
+    - theories of agricultural evolution
+
+  query_expansions:
+    agricultural_origins:
+      aliases:
+        - origins of agriculture
+        - agricultural emergence
+        - agricultural transition
+        - beginnings of farming
+
+    hunter_gatherer:
+      aliases:
+        - forager
+        - food-gathering community
+        - mobile subsistence society
+
+    sedentism:
+      aliases:
+        - settled life
+        - settlement permanence
+        - reduced residential mobility
+
+    domestication:
+      aliases:
+        - biological domestication
+        - human-directed selection
+        - managed evolutionary change
+
+  answer_requirements:
+    - distinguish facts from interpretations
+    - state uncertainty where evidence is incomplete
+    - avoid universal claims
+    - identify alternative explanations
+    - connect environment and social organization
+    - avoid portraying agriculture as automatic progress
+
+quality_controls:
+
+  concept_rules:
+    each_concept_must_have_unique_meaning: true
+    duplicate_concept_text_forbidden: true
+    renamed_duplicate_concepts_forbidden: true
+    artificial_concept_numbering_forbidden: true
+
+  synchronization_rules:
+    markdown_yaml_pair_required: true
+    stable_ids_required: true
+    missing_markdown_section_forbidden: true
+    yaml_may_add_semantic_detail: true
+    yaml_must_not_contradict_markdown: true
+
+  knowledge_rules:
+    placeholders_allowed: false
+    unsourced_statistics_allowed: false
+    fabricated_claims_allowed: false
+    overgeneralization_allowed: false
+    uncertainty_disclosure_required: true
+
+version_history:
+
+  - version: v001
+    date: "2026-07-12"
+    changes:
+      - created the foundational Agricultural History YAML companion
+      - mapped sections AHF-001 through AHF-011
+      - introduced unique concept identifiers
+      - added ontology and knowledge-graph relationships
+      - added evidence taxonomy
+      - added misconceptions and corrections
+      - added retrieval configuration
+      - added quality-control rules
